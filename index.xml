@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>My New Hugo Site on My New Hugo Site</title>
-    <link>http://example.org/</link>
-    <description>Recent content in My New Hugo Site on My New Hugo Site</description>
+    <title>your site title on your site title</title>
+    <link>http://your-site-here/</link>
+    <description>Recent content in your site title on your site title</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 12 Aug 2018 19:55:47 +0900</lastBuildDate>
@@ -11,10 +11,10 @@
     
     <item>
       <title>First Try</title>
-      <link>http://example.org/post/first-try/</link>
+      <link>http://your-site-here/post/first-try/</link>
       <pubDate>Sun, 12 Aug 2018 19:55:47 +0900</pubDate>
       
-      <guid>http://example.org/post/first-try/</guid>
+      <guid>http://your-site-here/post/first-try/</guid>
       <description>Hello Hugo Blog !!!</description>
     </item>
     
