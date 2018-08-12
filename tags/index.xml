@@ -27,5 +27,68 @@
       <description></description>
     </item>
     
+    <item>
+      <title>Github</title>
+      <link>http://integerous.github.io/tags/github/</link>
+      <pubDate>Sun, 12 Aug 2018 20:48:55 +0900</pubDate>
+      
+      <guid>http://integerous.github.io/tags/github/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Hugo</title>
+      <link>http://integerous.github.io/tags/hugo/</link>
+      <pubDate>Sun, 12 Aug 2018 20:48:55 +0900</pubDate>
+      
+      <guid>http://integerous.github.io/tags/hugo/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Jekyll</title>
+      <link>http://integerous.github.io/tags/jekyll/</link>
+      <pubDate>Sun, 12 Aug 2018 20:48:55 +0900</pubDate>
+      
+      <guid>http://integerous.github.io/tags/jekyll/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Static Site Generator</title>
+      <link>http://integerous.github.io/tags/static-site-generator/</link>
+      <pubDate>Sun, 12 Aug 2018 20:48:55 +0900</pubDate>
+      
+      <guid>http://integerous.github.io/tags/static-site-generator/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>블로그</title>
+      <link>http://integerous.github.io/tags/%EB%B8%94%EB%A1%9C%EA%B7%B8/</link>
+      <pubDate>Sun, 12 Aug 2018 20:48:55 +0900</pubDate>
+      
+      <guid>http://integerous.github.io/tags/%EB%B8%94%EB%A1%9C%EA%B7%B8/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>블로그 만들기</title>
+      <link>http://integerous.github.io/tags/%EB%B8%94%EB%A1%9C%EA%B7%B8-%EB%A7%8C%EB%93%A4%EA%B8%B0/</link>
+      <pubDate>Sun, 12 Aug 2018 20:48:55 +0900</pubDate>
+      
+      <guid>http://integerous.github.io/tags/%EB%B8%94%EB%A1%9C%EA%B7%B8-%EB%A7%8C%EB%93%A4%EA%B8%B0/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>휴고</title>
+      <link>http://integerous.github.io/tags/%ED%9C%B4%EA%B3%A0/</link>
+      <pubDate>Sun, 12 Aug 2018 20:48:55 +0900</pubDate>
+      
+      <guid>http://integerous.github.io/tags/%ED%9C%B4%EA%B3%A0/</guid>
+      <description></description>
+    </item>
+    
   </channel>
 </rss>

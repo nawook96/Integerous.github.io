@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Posts on Integerous Devlog</title>
-    <link>http://integerous.github.io/post/</link>
-    <description>Recent content in Posts on Integerous Devlog</description>
+    <title>휴고 on Integerous Devlog</title>
+    <link>http://integerous.github.io/tags/%ED%9C%B4%EA%B3%A0/</link>
+    <description>Recent content in 휴고 on Integerous Devlog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 12 Aug 2018 20:48:55 +0900</lastBuildDate>
-    <atom:link href="/post/" rel="self" type="application/rss+xml" />
+    <atom:link href="/tags/%ED%9C%B4%EA%B3%A0/" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Creating_Static_Blog</title>
@@ -20,15 +20,6 @@
 놀다 지친 여름휴가 막바지에 집중공략을 시작했다. (블로그도 다시 시작해볼겸)
  1. Static Site Generator 란? 2. Static Site Generator 종류 이 곳에서 모든(?) Static Site Generator들을 한눈에 볼 수 있었다.
 3. Hugo! 너로 정했다! 4. Hugo + Github Page 만들어가는 과정 4-1.</description>
-    </item>
-    
-    <item>
-      <title>First Try</title>
-      <link>http://integerous.github.io/post/wow/</link>
-      <pubDate>Sun, 12 Aug 2018 19:55:47 +0900</pubDate>
-      
-      <guid>http://integerous.github.io/post/wow/</guid>
-      <description>Hello Hugo Blog !!!</description>
     </item>
     
   </channel>

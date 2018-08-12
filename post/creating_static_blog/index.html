@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="generator" content="Hugo 0.46" />
+    <link rel="shortcut icon" href="/images/favicon.ico">
+    <link href="http://integerous.github.io/index.xml" rel="alternate" type="application/rss+xml" title="Integerous Devlog" />
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+    
+    <script src="https://apis.google.com/js/platform.js" async defer>{lang: 'ja'}</script>
+    
+    <link rel="stylesheet" href="https://yandex.st/highlightjs/8.0/styles/default.min.css">
+    <script src="https://yandex.st/highlightjs/8.0/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    
+    <link rel="stylesheet" type="text/css" href="/css/style.css">
+    <title>Creating_Static_Blog | Integerous Devlog</title>
+  </head>
+  <body>
+    <div id="wrap">
+      
+      <header class="site-header">
+        <div class="site-header-left">
+          <a class="site-header-title" href="http://integerous.github.io/">Integerous Devlog</a>
+        </div>
+      </header>
+      <div class="container">
+        <div id="main">
+
+<div class="article">
+  <header>
+    <div class="article-header">
+      <h1>Creating_Static_Blog</h1>
+      <div class="article-meta">
+        <span class="posttime">2018/08/12</span>
+        
+<div class="tags">
+  <ul>
+    
+    <li>
+        <a href="/tags/hugo">Hugo</a>
+    </li>
+    
+    <li>
+        <a href="/tags/static-site-generator">Static Site Generator</a>
+    </li>
+    
+    <li>
+        <a href="/tags/github">github</a>
+    </li>
+    
+    <li>
+        <a href="/tags/%ED%9C%B4%EA%B3%A0">휴고</a>
+    </li>
+    
+    <li>
+        <a href="/tags/%EB%B8%94%EB%A1%9C%EA%B7%B8">블로그</a>
+    </li>
+    
+    <li>
+        <a href="/tags/jekyll">Jekyll</a>
+    </li>
+    
+    <li>
+        <a href="/tags/%EB%B8%94%EB%A1%9C%EA%B7%B8-%EB%A7%8C%EB%93%A4%EA%B8%B0">블로그 만들기</a>
+    </li>
+    
+  </ul>
+</div>
+
+
+      </div>
+    </div>
+    
+<div id="share-buttons">
+  <ul>
+    
+    <li>
+      <a href="https://twitter.com/share" class="twitter-share-button" data-via="integerous">Tweet</a>
+      <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+    </li>
+    
+    
+    
+    
+    
+    
+    <li>
+      <div class="g-plusone" data-size="medium"></div>
+    </li>
+    
+    
+    
+  </ul>
+</div>
+
+
+  </header>
+  <div class="content">
+    
+
+<h1 id="static-site-generator-정적-사이트-생성기">Static Site Generator (정적 사이트 생성기)</h1>
+
+<blockquote>
+<p>주소가 github.io인 개발 블로그들이 눈에 많이 띄었다.<br />
+그래서 찾아 헤매던 도중 Jekyll, Hexo, Hugo 등 Static Site Generator의 존재를 알게 되었다.<br />
+놀다 지친 여름휴가 막바지에 집중공략을 시작했다. (블로그도 다시 시작해볼겸)</p>
+</blockquote>
+
+<h2 id="1-static-site-generator-란">1. Static Site Generator 란?</h2>
+
+<h2 id="2-static-site-generator-종류">2. Static Site Generator 종류</h2>
+
+<p><a href="https://www.staticgen.com/">이 곳</a>에서 모든(?) Static Site Generator들을 한눈에 볼 수 있었다.</p>
+
+<h2 id="3-hugo-너로-정했다">3. Hugo! 너로 정했다!</h2>
+
+<h2 id="4-hugo-github-page-만들어가는-과정">4. Hugo + Github Page 만들어가는 과정</h2>
+
+<h3 id="4-1-hugo-설치">4-1. Hugo 설치</h3>
+
+<blockquote>
+<p>나도 멋깔나게 <code>$ brew install hugo</code>를 mac 터미널에 입력해서 설치하고 싶었다.<br />
+하지만 현실은 WINDOWS&hellip;<br />
+Giraffe Academy의 <a href="https://gohugo.io/getting-started/installing#windows">Windows에서 Hugo설치하기</a> 이 영상 하나면 설치는 쉽다. (젊은 형아가 영어로 설명해줌)
+- <a href="https://github.com/gohugoio/hugo/releases">hugo 공식 깃헙</a>에서 운영체제에 맞는 최신버전 다운로드
+- <code>C:\Hugo\bin</code> 디렉토리 생성해서 다운받은 압축파일 해제
+- 어느 위치에서나 Hugo가 실행될 수 있도록<code>$ set PATH=%PATH%;C:\Hugo\bin</code> 명령으로 환경변수에 <code>C:\Hugo\bin</code>추가
+- 명령 프롬프트에 <code>$ hugo version</code> 혹은 <code>$ hugo help</code>로 동작 확인</p>
+</blockquote>
+
+<h3 id="4-2-github-저장소-2개-만들기">4-2. Github 저장소 2개 만들기</h3>
+
+<ul>
+<li>하나는 Hugo의 컨텐츠와 소스파일들을 포함할 <code>&lt;YOUR-PROJECT&gt;</code> 저장소 생성 (나의 경우 <code>blog</code>라는 이름으로 생성)</li>
+<li>다른 하나는 렌더링된 버전의 Hugo 웹사이트를 포함할 <code>&lt;USERNAME&gt;.github.io</code> 저장소 생성 (<code>integerous.github.io</code>)</li>
+</ul>
+
+<h3 id="4-3-directory-structure-구성">4-3. Directory Structure 구성</h3>
+
+<ul>
+<li><code>$ hugo new site blog</code> 명령으로 로컬에서 컨텐츠를 관리하기 위한 장소(Hugo/blog) 생성</li>
+<li><code>C:\Hugo\blog</code>에서 <code>$ dir</code>로 directory structure를 확인할 수 있다.</li>
+</ul>
+
+<h3 id="4-4-테마-다운로드-및-설정">4-4. 테마 다운로드 및 설정</h3>
+
+<ul>
+<li><a href="https://themes.gohugo.io/">https://themes.gohugo.io/</a> 에서 원하는 테마를 선택한다.</li>
+<li>선택한 테마의 github에서 저장소 주소를 복사한다.</li>
+<li><code>C:\Hugo\blog\themes</code>에 선택한 테마를 clone한다. <code>$ git clone https://github.com/선택한/테마</code></li>
+<li><code>config.toml</code> 파일을 선택한 테마의 설명서에 따라 수정한다.</li>
+</ul>
+
+<h3 id="4-5-remote와-submodule-설정">4-5. Remote와 Submodule 설정</h3>
+
+<ul>
+<li>깃헙에 만든 <code>blog 저장소</code>를 local의 blog 디렉토리의 remote로 등록한다.
+
+<ul>
+<li><code>C:\Hugo\blog</code> 로 이동</li>
+<li><code>$ git init</code></li>
+<li><code>$ git remote add origin git@github.com:integerous/blog.git</code></li>
+</ul></li>
+<li><code>integerous.github.io 저장소</code>를 blog의 submodule로 등록한다.
+
+<ul>
+<li><code>$ git submodule add -b masater git@github.com:integerous/integerous.github.io.git public</code></li>
+<li>이렇게 함으로써 <code>hugo</code> 명령으로 <code>public</code>에 웹사이트를 만들 때, 만들어진 <code>public</code> 디렉토리는 다른 remote origin을 가질 것이다.</li>
+</ul></li>
+</ul>
+
+<h3 id="4-6-컨텐츠-생성">4-6. 컨텐츠 생성</h3>
+
+<ul>
+<li><code>$ hugo new post/test1.md</code> 명령으로 파일을 생성하면 <code>\content\post\test1.md</code></li>
+</ul>
+
+<h3 id="4-7-컨텐츠-업로드-블로그에">4-7. 컨텐츠 업로드 (블로그에)</h3>
+
+<ul>
+<li>Linux는 <a href="http://gohugo.io/tutorials/github-pages-blog/">http://gohugo.io/tutorials/github-pages-blog/</a> 의 deploy.sh 파일을 사용</li>
+<li></li>
+</ul>
+
+<h2 id="reference">*Reference</h2>
+
+<ul>
+<li><a href="http://tadakichi.tistory.com/188">Jekyll, Hexo, Hugo 간단 비교 글</a></li>
+</ul>
+
+  </div>
+  <footer>
+    <div class="article-footer">
+      
+<div class="tags">
+  <ul>
+    
+    <li>
+        <a href="/tags/hugo">Hugo</a>
+    </li>
+    
+    <li>
+        <a href="/tags/static-site-generator">Static Site Generator</a>
+    </li>
+    
+    <li>
+        <a href="/tags/github">github</a>
+    </li>
+    
+    <li>
+        <a href="/tags/%ED%9C%B4%EA%B3%A0">휴고</a>
+    </li>
+    
+    <li>
+        <a href="/tags/%EB%B8%94%EB%A1%9C%EA%B7%B8">블로그</a>
+    </li>
+    
+    <li>
+        <a href="/tags/jekyll">Jekyll</a>
+    </li>
+    
+    <li>
+        <a href="/tags/%EB%B8%94%EB%A1%9C%EA%B7%B8-%EB%A7%8C%EB%93%A4%EA%B8%B0">블로그 만들기</a>
+    </li>
+    
+  </ul>
+</div>
+
+
+      
+      
+<div id="share-buttons">
+  <ul>
+    
+    <li>
+      <a href="https://twitter.com/share" class="twitter-share-button" data-via="integerous">Tweet</a>
+      <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+    </li>
+    
+    
+    
+    
+    
+    
+    <li>
+      <div class="g-plusone" data-size="medium"></div>
+    </li>
+    
+    
+    
+  </ul>
+</div>
+
+
+      
+      
+      <div id="pagenavigation-next-prev">
+        
+        <div id="pagenavigation-next">
+          <span class="pagenav-label">Previous</span>
+          <a href="http://integerous.github.io/post/wow/">First Try</a>
+        </div>
+        
+        
+      </div>
+      
+    </div>
+  </footer>
+</div>
+        </div>
+        <div class="sidebar">
+  
+  
+  <div class="sidebar-content">
+    <div class="sidebar-header">
+      <span>Author</span>
+    </div>
+    <div id="author">
+      <span>Ryan Jeongsu Han (한정수)</span>
+      <div>
+        
+        <a href="https://twitter.com/integerous"><i class="fa fa-twitter-square fa-2x" aria-hidden="true"></i></a>
+        
+        
+        <a href="https://github.com/integerous"><i class="fa fa-github-square fa-2x" aria-hidden="true"></i></a>
+        
+        
+        <a href="https://www.linkedin.com/in/integerous"><i class="fa fa-linkedin-square fa-2x" aria-hidden="true"></i></a>
+        
+        
+      </div>
+    </div>
+  </div>
+  
+  
+  <div class="sidebar-content">
+    <div class="sidebar-header">
+      <span>Categories</span>
+    </div>
+    <div class="categories">
+      <ul>
+        
+        <li>
+          <a href="/categories/devlog"><span></span>devlog (1)</a>
+        </li>
+        
+        <li>
+          <a href="/categories/etc"><span></span>etc (1)</a>
+        </li>
+        
+      </ul>
+    </div>
+  </div>
+  
+  <div class="sidebar-content">
+    <div class="sidebar-header">
+      <span>RSS</span>
+    </div>
+    <div id="rss">
+      <a href="http://integerous.github.io/index.xml" type="application/rss+xml" target="_blank">
+        <i class="fa fa-rss-square fa-2x" aria-hidden="true"></i>
+      </a>
+    </div>
+  </div>
+</div>
+
+      </div>
+      <footer>
+        <div id="site-footer-wrap">
+          <div id="site-footer">
+            <span>Powered by <a href="https://gohugo.io/">Hugo</a>.</span>
+            <span>
+              
+              Copyright (c) 2018, <a href="http://integerous.github.io/">Integerous Devlog</a>
+              
+            </span>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
+
