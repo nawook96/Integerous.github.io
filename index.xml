@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>your site title on your site title</title>
-    <link>http://your-site-here/</link>
-    <description>Recent content in your site title on your site title</description>
+    <title>Integerous Devlog on Integerous Devlog</title>
+    <link>http://integerous.github.io/</link>
+    <description>Recent content in Integerous Devlog on Integerous Devlog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 12 Aug 2018 19:55:47 +0900</lastBuildDate>
@@ -11,10 +11,10 @@
     
     <item>
       <title>First Try</title>
-      <link>http://your-site-here/post/first-try/</link>
+      <link>http://integerous.github.io/post/wow/</link>
       <pubDate>Sun, 12 Aug 2018 19:55:47 +0900</pubDate>
       
-      <guid>http://your-site-here/post/first-try/</guid>
+      <guid>http://integerous.github.io/post/wow/</guid>
       <description>Hello Hugo Blog !!!</description>
     </item>
     

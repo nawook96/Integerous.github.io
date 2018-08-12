@@ -1,12 +1,31 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Tags on your site title</title>
-    <link>http://your-site-here/tags/</link>
-    <description>Recent content in Tags on your site title</description>
+    <title>Tags on Integerous Devlog</title>
+    <link>http://integerous.github.io/tags/</link>
+    <description>Recent content in Tags on Integerous Devlog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
+    <lastBuildDate>Sun, 12 Aug 2018 19:55:47 +0900</lastBuildDate>
     <atom:link href="/tags/" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Develop</title>
+      <link>http://integerous.github.io/tags/develop/</link>
+      <pubDate>Sun, 12 Aug 2018 19:55:47 +0900</pubDate>
+      
+      <guid>http://integerous.github.io/tags/develop/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Devlog</title>
+      <link>http://integerous.github.io/tags/devlog/</link>
+      <pubDate>Sun, 12 Aug 2018 19:55:47 +0900</pubDate>
+      
+      <guid>http://integerous.github.io/tags/devlog/</guid>
+      <description></description>
+    </item>
     
   </channel>
 </rss>

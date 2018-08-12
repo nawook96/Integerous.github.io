@@ -1,12 +1,21 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Categories on your site title</title>
-    <link>http://your-site-here/categories/</link>
-    <description>Recent content in Categories on your site title</description>
+    <title>Categories on Integerous Devlog</title>
+    <link>http://integerous.github.io/categories/</link>
+    <description>Recent content in Categories on Integerous Devlog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <atom:link href="/categories/" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Devlog</title>
+      <link>http://integerous.github.io/categories/devlog/</link>
+      <pubDate>Sun, 12 Aug 2018 19:55:47 +0900</pubDate>
+      
+      <guid>http://integerous.github.io/categories/devlog/</guid>
+      <description></description>
+    </item>
     
   </channel>
 </rss>

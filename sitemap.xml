@@ -3,28 +3,47 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>http://your-site-here/post/first-try/</loc>
+    <loc>http://integerous.github.io/post/wow/</loc>
     <lastmod>2018-08-12T19:55:47+09:00</lastmod>
   </url>
   
   <url>
-    <loc>http://your-site-here/categories/</loc>
+    <loc>http://integerous.github.io/categories/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://your-site-here/post/</loc>
+    <loc>http://integerous.github.io/tags/develop/</loc>
     <lastmod>2018-08-12T19:55:47+09:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://your-site-here/tags/</loc>
+    <loc>http://integerous.github.io/categories/devlog/</loc>
+    <lastmod>2018-08-12T19:55:47+09:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://your-site-here/</loc>
+    <loc>http://integerous.github.io/tags/devlog/</loc>
+    <lastmod>2018-08-12T19:55:47+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://integerous.github.io/</loc>
+    <lastmod>2018-08-12T19:55:47+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://integerous.github.io/post/</loc>
+    <lastmod>2018-08-12T19:55:47+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://integerous.github.io/tags/</loc>
     <lastmod>2018-08-12T19:55:47+09:00</lastmod>
     <priority>0</priority>
   </url>
