@@ -10,7 +10,7 @@
     <atom:link href="/post/" rel="self" type="application/rss+xml" />
     
     <item>
-      <title>Shortcode</title>
+      <title>Shortcode 테스트 </title>
       <link>http://integerous.github.io/post/shortcode/</link>
       <pubDate>Mon, 13 Aug 2018 22:32:32 +0900</pubDate>
       
