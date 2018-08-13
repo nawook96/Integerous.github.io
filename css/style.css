@@ -363,6 +363,9 @@ h4:before {
 
 .article-header {
   margin-bottom: 20px;
+  /* 밑은 내가 수정한 부분 */
+  padding-bottom: 10px;
+  border-bottom: 1px solid #B4B3BA;
 }
 
 .article .adsense {
