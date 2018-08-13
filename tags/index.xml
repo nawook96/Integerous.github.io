@@ -39,7 +39,7 @@
     <item>
       <title>Hugo</title>
       <link>http://integerous.github.io/tags/hugo/</link>
-      <pubDate>Sun, 12 Aug 2018 20:48:55 +0900</pubDate>
+      <pubDate>Mon, 13 Aug 2018 22:32:32 +0900</pubDate>
       
       <guid>http://integerous.github.io/tags/hugo/</guid>
       <description></description>
@@ -51,6 +51,15 @@
       <pubDate>Sun, 12 Aug 2018 20:48:55 +0900</pubDate>
       
       <guid>http://integerous.github.io/tags/jekyll/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Shortcode</title>
+      <link>http://integerous.github.io/tags/shortcode/</link>
+      <pubDate>Mon, 13 Aug 2018 22:32:32 +0900</pubDate>
+      
+      <guid>http://integerous.github.io/tags/shortcode/</guid>
       <description></description>
     </item>
     

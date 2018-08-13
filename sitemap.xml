@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>http://integerous.github.io/post/shortcode/</loc>
+    <lastmod>2018-08-13T22:32:32+09:00</lastmod>
+  </url>
+  
+  <url>
     <loc>http://integerous.github.io/post/creating_static_blog/</loc>
     <lastmod>2018-08-12T20:48:55+09:00</lastmod>
   </url>
@@ -24,20 +29,20 @@
   </url>
   
   <url>
-    <loc>http://integerous.github.io/tags/devlog/</loc>
-    <lastmod>2018-08-12T19:55:47+09:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>http://integerous.github.io/categories/devlog/</loc>
     <lastmod>2018-08-12T19:55:47+09:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
+    <loc>http://integerous.github.io/tags/devlog/</loc>
+    <lastmod>2018-08-12T19:55:47+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>http://integerous.github.io/categories/etc/</loc>
-    <lastmod>2018-08-12T20:48:55+09:00</lastmod>
+    <lastmod>2018-08-13T22:32:32+09:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -49,13 +54,13 @@
   
   <url>
     <loc>http://integerous.github.io/tags/hugo/</loc>
-    <lastmod>2018-08-12T20:48:55+09:00</lastmod>
+    <lastmod>2018-08-13T22:32:32+09:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>http://integerous.github.io/</loc>
-    <lastmod>2018-08-12T20:48:55+09:00</lastmod>
+    <lastmod>2018-08-13T22:32:32+09:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -67,7 +72,13 @@
   
   <url>
     <loc>http://integerous.github.io/post/</loc>
-    <lastmod>2018-08-12T20:48:55+09:00</lastmod>
+    <lastmod>2018-08-13T22:32:32+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://integerous.github.io/tags/shortcode/</loc>
+    <lastmod>2018-08-13T22:32:32+09:00</lastmod>
     <priority>0</priority>
   </url>
   
