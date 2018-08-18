@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>휴고 on Integerous Devlog</title>
+    <title>휴고 on Integerous 개발블로그</title>
     <link>http://integerous.github.io/tags/%ED%9C%B4%EA%B3%A0/</link>
-    <description>Recent content in 휴고 on Integerous Devlog</description>
+    <description>Recent content in 휴고 on Integerous 개발블로그</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ko-kr</language>
     <lastBuildDate>Sun, 12 Aug 2018 20:48:55 +0900</lastBuildDate>
