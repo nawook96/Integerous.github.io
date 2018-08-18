@@ -100,17 +100,7 @@ a:hover {
   margin-top: 4px;
 }
 
-.article .content {
-  clear: left;
-  color: #303030;
-  margin-bottom: 10px;
-}
 
-.article .content ol,
-.article .content ul
-{
-  padding-left: 40px;
-}
 
 .article .content a {
   color: #0366d6;
@@ -366,8 +356,7 @@ h4 {
 } */
 
 .article-header {
-  margin-bottom: 20px;
-  /* 정수 */
+  margin-bottom: 45px;
   padding-bottom: 10px;
   border-bottom: 1px solid #B4B3BA;
 }
@@ -386,7 +375,27 @@ h4 {
 
 .article .content {
   word-break: break-word;
+  clear: left;
+  color: #303030;
+  margin-bottom: 10px;
+  font-size: 16px;
+  line-height: 1.5;
 }
+
+.article .content ol,
+.article .content ul {
+  padding-left: 2em;
+}
+
+.article .content ul ul,
+.article .content ul ol,
+.article .content ol ol,
+.article .content ol ul {
+  margin-top : 0;
+  margin-bottom : 0;
+}
+
+
 /* 정수 */
 .article .content>*:first-child{
   margin-top: 0 !important;
