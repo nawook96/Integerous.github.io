@@ -301,6 +301,10 @@ h2 {
     font-size: 25px;
     min-height: 40px;
     line-height: 40px;
+
+    /* 내가 추가한 부분 */
+    border-bottom: 1px solid #eaecef;
+    padding-bottom: 0.3em;
 }
 
 h2:before {
