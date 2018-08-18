@@ -4,6 +4,7 @@
 * {
   margin: 0px;
   padding: 0px;
+  box-sizing: border-box;
 }
 
 html, body {
@@ -292,7 +293,7 @@ h2 {
     /* padding: 20px 0px 20px 41px; */
     color: #303030;
     font-size: 25px;
-    min-height: 40px;
+    /* min-height: 40px; */
     line-height: 40px;
 }
 
@@ -321,7 +322,7 @@ h3 {
     /* padding: 10px 0px 10px 30px; */
     color: #303030;
     font-size: 20px;
-    min-height: 33px;
+    /* min-height: 33px; */
     line-height: 33px;
 }
 
@@ -340,7 +341,7 @@ h4 {
     /* padding: 10px 0px 10px 25px; */
     color: #303030;
     font-size: 16px;
-    min-height: 25px;
+    /* min-height: 25px; */
     line-height: 25px;
     /* content: ""; */
 }
