@@ -311,10 +311,6 @@ h2 {
     font-size: 25px;
     min-height: 40px;
     line-height: 40px;
-
-    /* 내가 추가한 부분 */
-    border-bottom: 1px solid #eaecef;
-    padding-bottom: 0.3em;
 }
 
 /* h2:before {
@@ -391,6 +387,16 @@ h4:before {
 
 .article .content {
   word-break: break-word;
+}
+
+/* 정수 */
+.article .content h2 {
+  border-bottom: 1px solid #eaecef;
+  padding-bottom: 0.3em;
+}
+
+.article .content li+li {
+  margin-top: .25em;
 }
 
 .article .content ul,
