@@ -123,11 +123,14 @@ a:hover {
 }
 
 .article .content a {
-  font-size: 14px;
+  color: #0366d6;
+  text-decoration: none;
 }
 
 .article .content a:hover {
-  font-size: 14px;
+  color: red;
+  font-weight: bold;
+  /* font-size: 14px; */
 }
 
 .article .tags a {
@@ -433,15 +436,26 @@ h4 {
 
 .article .content ul,
 .article .content ol,
-.article .content p {
-  margin-bottom: 20px;
+.article .content dl,
+.article .content p,
+.article .content table,
+.article .content pre,
+.article .content blockquote, {
+  margin-top: 0;
+  margin-bottom: 16px;
 }
 
 .article .content pre {
+  padding: 16px;
   overflow: auto;
+  font-size: 85%;
+  line-height: 1.45;
+  background-color: #f6f8fa;
+  border-radius: 3px;
+  /* overflow: auto;
   white-space: pre-wrap;
   word-wrap: break-word;
-  margin-bottom: 20px;
+  margin-bottom: 20px; */
 }
 
 .article .content blockquote {
