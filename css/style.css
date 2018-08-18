@@ -82,7 +82,7 @@ a:hover {
  * articles
  */
 .article {
-  width: 590px;
+  width: 650px;
   padding: 0px 20px 20px 20px;
   clear: left;
   overflow: hidden;
@@ -135,7 +135,7 @@ a:hover {
  * sidebar
  */
 .sidebar {
-  width: 310px;
+  width: 250px;
   float: right;
   min-height:200px; 
   height: 200px;
