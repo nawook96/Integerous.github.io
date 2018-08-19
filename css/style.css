@@ -383,10 +383,16 @@ h4 {
   line-height: 1.5;
 }
 
-.article .content .toc {
+#toc {
   font-size: 14px;
   display: flex;
-    justify-content: flex-end;
+    align-items: center;
+    flex-direction: column;
+}
+
+#TableOfContents{
+  padding: 10px 10px 0px 0px;
+  border: 1px solid #B4B3BA;
 }
 
 .article .content ol,

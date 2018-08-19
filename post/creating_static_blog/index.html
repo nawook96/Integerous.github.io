@@ -35,7 +35,8 @@
       <h1>Hugo 블로그 만들기</h1>
       <div class="article-meta">
         <span class="posttime">작성일 : 2018/08/12</span>
-        <span class="posttime">최종수정일 : 2018/08/19</span>
+        
+        <span class="posttime">글자수 : 2086 자</span>
         
 <div class="tags">
   <ul>
@@ -65,37 +66,6 @@
     
   </header>
   <div class="content">
-    
-      <div class="toc">
-        <h4>Table of Contents</h4>
-          <nav id="TableOfContents">
-<ul>
-<li><a href="#정적-블로그-만들기-feat-hugo-github-page">정적 블로그 만들기 (feat. Hugo &amp; Github Page)</a>
-<ul>
-<li><a href="#1-static-site-generator-란">1. Static Site Generator 란?</a></li>
-<li><a href="#2-static-site-generator-선택-과정">2. Static Site Generator 선택 과정</a></li>
-<li><a href="#3-hugo-너로-정했다">3. Hugo, 너로 정했다!</a></li>
-<li><a href="#4-hugo-github-page-만드는-과정">4. Hugo + Github Page 만드는 과정</a>
-<ul>
-<li><a href="#4-1-hugo-설치">4.1. Hugo 설치</a></li>
-<li><a href="#4-2-github-저장소-2개-만들기">4.2. Github 저장소 2개 만들기</a></li>
-<li><a href="#4-3-directory-structure-구성">4.3. Directory Structure 구성</a></li>
-<li><a href="#4-4-테마-다운로드-및-설정">4.4. 테마 다운로드 및 설정</a></li>
-<li><a href="#4-5-remote와-submodule-설정">4.5. Remote와 Submodule 설정</a></li>
-<li><a href="#4-6-컨텐츠-생성">4.6. 컨텐츠 생성</a></li>
-<li><a href="#4-7-컨텐츠-업로드-블로그에">4.7. 컨텐츠 업로드 (블로그에)</a></li>
-</ul></li>
-<li><a href="#5-github-스타일-댓글-기능-추가하기">5. Github 스타일 댓글 기능 추가하기</a>
-<ul>
-<li><a href="#5-1-작동-원리">5.1. 작동 원리</a></li>
-<li><a href="#5-2-사용-방법">5.2. 사용 방법</a></li>
-</ul></li>
-<li><a href="#reference">*Reference</a></li>
-</ul></li>
-</ul>
-</nav>
-      </div>
-    
     
 
 <h1 id="정적-블로그-만들기-feat-hugo-github-page">정적 블로그 만들기 (feat. Hugo &amp; Github Page)</h1>
@@ -259,13 +229,14 @@ Giraffe Academy의 <a href="https://gohugo.io/getting-started/installing#windows
 <li><a href="https://utteranc.es/">Utterance document</a>에서 방금 만든 저장소를 입력하고(나의 경우 Integerous/blog-comments)</li>
 <li>블로그 글과 Github 이슈를 매핑할 방법 6가지 중 한 가지를 선택하면</li>
 <li>밑에 아래와 같은 script를 자동으로 생성해준다.<br />
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#f92672">&lt;</span><span style="color:#a6e22e">script</span> <span style="color:#a6e22e">src</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;https://utteranc.es/client.js&#34;</span>
-        <span style="color:#a6e22e">repo</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;integerous/blog-comments&#34;</span>
-        <span style="color:#a6e22e">issue</span><span style="color:#f92672">-</span><span style="color:#a6e22e">term</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;pathname&#34;</span>
-        <span style="color:#a6e22e">crossorigin</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;anonymous&#34;</span>
-        <span style="color:#66d9ef">async</span><span style="color:#f92672">&gt;</span>
-<span style="color:#f92672">&lt;</span><span style="color:#960050;background-color:#1e0010">/script&gt;</span>
-</code></pre></div></li>
+<code>
+&lt;script src=&quot;https://utteranc.es/client.js&quot;
+    repo=&quot;integerous/blog-comments&quot;
+    issue-term=&quot;pathname&quot;
+    crossorigin=&quot;anonymous&quot;
+    async&gt;
+&lt;/script&gt;
+</code></li>
 <li>위의 script를 본인의 블로그 템플릿중 원하는 위치에 넣으면</li>
 <li>끝!</li>
 </ol>
@@ -282,6 +253,39 @@ Giraffe Academy의 <a href="https://gohugo.io/getting-started/installing#windows
 </ul>
 
   </div>
+  <aside class="aside">
+    
+      <div id="toc">
+        <h4>Table of Contents</h4>
+          <nav id="TableOfContents">
+<ul>
+<li><a href="#정적-블로그-만들기-feat-hugo-github-page">정적 블로그 만들기 (feat. Hugo &amp; Github Page)</a>
+<ul>
+<li><a href="#1-static-site-generator-란">1. Static Site Generator 란?</a></li>
+<li><a href="#2-static-site-generator-선택-과정">2. Static Site Generator 선택 과정</a></li>
+<li><a href="#3-hugo-너로-정했다">3. Hugo, 너로 정했다!</a></li>
+<li><a href="#4-hugo-github-page-만드는-과정">4. Hugo + Github Page 만드는 과정</a>
+<ul>
+<li><a href="#4-1-hugo-설치">4.1. Hugo 설치</a></li>
+<li><a href="#4-2-github-저장소-2개-만들기">4.2. Github 저장소 2개 만들기</a></li>
+<li><a href="#4-3-directory-structure-구성">4.3. Directory Structure 구성</a></li>
+<li><a href="#4-4-테마-다운로드-및-설정">4.4. 테마 다운로드 및 설정</a></li>
+<li><a href="#4-5-remote와-submodule-설정">4.5. Remote와 Submodule 설정</a></li>
+<li><a href="#4-6-컨텐츠-생성">4.6. 컨텐츠 생성</a></li>
+<li><a href="#4-7-컨텐츠-업로드-블로그에">4.7. 컨텐츠 업로드 (블로그에)</a></li>
+</ul></li>
+<li><a href="#5-github-스타일-댓글-기능-추가하기">5. Github 스타일 댓글 기능 추가하기</a>
+<ul>
+<li><a href="#5-1-작동-원리">5.1. 작동 원리</a></li>
+<li><a href="#5-2-사용-방법">5.2. 사용 방법</a></li>
+</ul></li>
+<li><a href="#reference">*Reference</a></li>
+</ul></li>
+</ul>
+</nav>
+      </div>
+    
+  </aside>
   <footer>
     <div class="article-footer">
       
@@ -319,6 +323,40 @@ Giraffe Academy의 <a href="https://gohugo.io/getting-started/installing#windows
   
   
   <div class="sidebar-content">
+      
+      <div class="sidebar-header">
+          <span>Table of Contents</span>
+      </div>
+        <div id="toc">
+          <h4>Table of Contents</h4>
+          <nav id="TableOfContents">
+<ul>
+<li><a href="#정적-블로그-만들기-feat-hugo-github-page">정적 블로그 만들기 (feat. Hugo &amp; Github Page)</a>
+<ul>
+<li><a href="#1-static-site-generator-란">1. Static Site Generator 란?</a></li>
+<li><a href="#2-static-site-generator-선택-과정">2. Static Site Generator 선택 과정</a></li>
+<li><a href="#3-hugo-너로-정했다">3. Hugo, 너로 정했다!</a></li>
+<li><a href="#4-hugo-github-page-만드는-과정">4. Hugo + Github Page 만드는 과정</a>
+<ul>
+<li><a href="#4-1-hugo-설치">4.1. Hugo 설치</a></li>
+<li><a href="#4-2-github-저장소-2개-만들기">4.2. Github 저장소 2개 만들기</a></li>
+<li><a href="#4-3-directory-structure-구성">4.3. Directory Structure 구성</a></li>
+<li><a href="#4-4-테마-다운로드-및-설정">4.4. 테마 다운로드 및 설정</a></li>
+<li><a href="#4-5-remote와-submodule-설정">4.5. Remote와 Submodule 설정</a></li>
+<li><a href="#4-6-컨텐츠-생성">4.6. 컨텐츠 생성</a></li>
+<li><a href="#4-7-컨텐츠-업로드-블로그에">4.7. 컨텐츠 업로드 (블로그에)</a></li>
+</ul></li>
+<li><a href="#5-github-스타일-댓글-기능-추가하기">5. Github 스타일 댓글 기능 추가하기</a>
+<ul>
+<li><a href="#5-1-작동-원리">5.1. 작동 원리</a></li>
+<li><a href="#5-2-사용-방법">5.2. 사용 방법</a></li>
+</ul></li>
+<li><a href="#reference">*Reference</a></li>
+</ul></li>
+</ul>
+</nav>
+        </div>
+      
     <div class="sidebar-header">
       <span>Author</span>
     </div>
