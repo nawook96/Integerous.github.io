@@ -1,20 +1,56 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Integerous 개발블로그</title>
+    <title>Categories on Integerous 개발블로그</title>
     <link>http://integerous.github.io/categories/</link>
-    <description>Recent content on Integerous 개발블로그</description>
+    <description>Recent content in Categories on Integerous 개발블로그</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ko-kr</language>
     <lastBuildDate>Sun, 19 Aug 2018 18:32:21 +0900</lastBuildDate>
     <atom:link href="/categories/" rel="self" type="application/rss+xml" />
     
     <item>
-      <title>PagnationTest2</title>
-      <link>http://integerous.github.io/post/2018/pagnationtest2/</link>
+      <title></title>
+      <link>http://integerous.github.io/categories/</link>
       <pubDate>Sun, 19 Aug 2018 18:32:21 +0900</pubDate>
       
-      <guid>http://integerous.github.io/post/2018/pagnationtest2/</guid>
+      <guid>http://integerous.github.io/categories/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>2018</title>
+      <link>http://integerous.github.io/categories/2018/</link>
+      <pubDate>Sun, 19 Aug 2018 18:32:27 +0900</pubDate>
+      
+      <guid>http://integerous.github.io/categories/2018/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Devlog</title>
+      <link>http://integerous.github.io/categories/devlog/</link>
+      <pubDate>Sun, 12 Aug 2018 19:55:47 +0900</pubDate>
+      
+      <guid>http://integerous.github.io/categories/devlog/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Etc</title>
+      <link>http://integerous.github.io/categories/etc/</link>
+      <pubDate>Sat, 18 Aug 2018 15:52:40 +0900</pubDate>
+      
+      <guid>http://integerous.github.io/categories/etc/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Test</title>
+      <link>http://integerous.github.io/categories/test/</link>
+      <pubDate>Sun, 19 Aug 2018 18:32:27 +0900</pubDate>
+      
+      <guid>http://integerous.github.io/categories/test/</guid>
       <description></description>
     </item>
     
