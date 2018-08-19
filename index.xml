@@ -6,35 +6,8 @@
     <description>Recent content in Integerous 개발블로그 on Integerous 개발블로그</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ko-kr</language>
-    <lastBuildDate>Sun, 19 Aug 2018 19:05:48 +0900</lastBuildDate>
+    <lastBuildDate>Sun, 19 Aug 2018 18:32:27 +0900</lastBuildDate>
     <atom:link href="/" rel="self" type="application/rss+xml" />
-    
-    <item>
-      <title>NewContentEditortest3</title>
-      <link>http://integerous.github.io/post/2018/newcontenteditortest3/</link>
-      <pubDate>Sun, 19 Aug 2018 19:05:48 +0900</pubDate>
-      
-      <guid>http://integerous.github.io/post/2018/newcontenteditortest3/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>NewContentEditorTest2</title>
-      <link>http://integerous.github.io/post/2018/newcontenteditortest2/</link>
-      <pubDate>Sun, 19 Aug 2018 19:02:29 +0900</pubDate>
-      
-      <guid>http://integerous.github.io/post/2018/newcontenteditortest2/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>NewContentEditorTest</title>
-      <link>http://integerous.github.io/post/2018/newcontenteditortest/</link>
-      <pubDate>Sun, 19 Aug 2018 19:01:50 +0900</pubDate>
-      
-      <guid>http://integerous.github.io/post/2018/newcontenteditortest/</guid>
-      <description></description>
-    </item>
     
     <item>
       <title>PagnationTest3</title>
