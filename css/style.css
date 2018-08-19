@@ -383,17 +383,22 @@ h4 {
   line-height: 1.5;
 }
 
-#toc {
-  font-size: 14px;
-  display: flex;
-    align-items: center;
-    flex-direction: column;
-}
 
 #TableOfContents{
   font-size: 14px;
-  padding: 10px 10px 0px 0px;
+  
+  padding: 10px;
   border: 1px solid #B4B3BA;
+}
+
+#TableOfContents li a{
+  color: #4078C0;
+  text-decoration: none;
+}
+
+#TableOfContents li a:hover{
+  font-weight: bold;
+  color: red;
 }
 
 .article .content ol,
