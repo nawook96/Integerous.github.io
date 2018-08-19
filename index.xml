@@ -6,8 +6,35 @@
     <description>Recent content in Integerous 개발블로그 on Integerous 개발블로그</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ko-kr</language>
-    <lastBuildDate>Sat, 18 Aug 2018 15:52:40 +0900</lastBuildDate>
+    <lastBuildDate>Sun, 19 Aug 2018 18:32:27 +0900</lastBuildDate>
     <atom:link href="/" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>PagnationTest3</title>
+      <link>http://integerous.github.io/post/2018/pagnationtest3/</link>
+      <pubDate>Sun, 19 Aug 2018 18:32:27 +0900</pubDate>
+      
+      <guid>http://integerous.github.io/post/2018/pagnationtest3/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>PagnationTest2</title>
+      <link>http://integerous.github.io/post/2018/pagnationtest2/</link>
+      <pubDate>Sun, 19 Aug 2018 18:32:21 +0900</pubDate>
+      
+      <guid>http://integerous.github.io/post/2018/pagnationtest2/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>PagnationTest</title>
+      <link>http://integerous.github.io/post/2018/pagnationtest/</link>
+      <pubDate>Sun, 19 Aug 2018 18:32:03 +0900</pubDate>
+      
+      <guid>http://integerous.github.io/post/2018/pagnationtest/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>마크다운 테스트</title>
@@ -15,9 +42,7 @@
       <pubDate>Sat, 18 Aug 2018 15:52:40 +0900</pubDate>
       
       <guid>http://integerous.github.io/post/2018/markdown-test/</guid>
-      <description>마크다운 문법 테스트 마크다운 문법 테스트 마크다운 문법 테스트 마크다운 문법 테스트 마크다운 문법 테스트 마크다운 문법 테스트  마크다운 문법 테스트
-  마크다운 문법 테스트  마크다운 문법 테스트 마크다운 문법 테스트  마크다운 문법 테스트    마크다운 문법 테스트 마크다운 문법 테스트 마크다운 문법 테스트 마크다운 문법 테스트 마크다운 문법 테스트  마크다운 문법 테스트
-마크다운 문법 테스트  마크다운 문법 테스트 마크다운 문법 테스트 마크다운 문법 테스트  마크다운 문법 테스트 마크다운 문법 테스트 마크다운 문법 테스트    마크다운 문법 테스트</description>
+      <description>마크다운 문법 테스트 마크다운 문법 테스트 마크다운 문법 테스트 마크다운 문법 테스트 마크다운 문법 테스트 마크다운 문법 테스트 마크다운 문법 테스트 마크다운 문법 테</description>
     </item>
     
     <item>
@@ -26,8 +51,7 @@
       <pubDate>Mon, 13 Aug 2018 22:32:32 +0900</pubDate>
       
       <guid>http://integerous.github.io/post/shortcode/</guid>
-      <description>Shortcode 테스트
-  </description>
+      <description>Shortcode 테스트</description>
     </item>
     
     <item>
@@ -36,12 +60,7 @@
       <pubDate>Sun, 12 Aug 2018 20:48:55 +0900</pubDate>
       
       <guid>http://integerous.github.io/post/creating_static_blog/</guid>
-      <description>정적 블로그 만들기 (feat. Hugo &amp;amp; Github Page)  주소가 github.io인 개발 블로그들이 눈에 많이 띄었다.
-그래서 찾아 헤매던 도중 Jekyll, Hexo, Hugo 등 Static Site Generator의 존재를 알게 되었다.
-Static Site Generator와 Github Page의 조합으로 Devlog로 사용할 개인 블로그를 만들기로 했다.
-놀다 지친 여름휴가 막바지에 집중공략을 시작했다.
- 1. Static Site Generator 란? 이 글이 정적 웹사이트 생성기와 동적 웹사이트 생성기의 차이를 잘 설명해주고 있다.
-2. Static Site Generator 선택 과정 이 곳에서 모든(?</description>
+      <description>정적 블로그 만들기 (feat. Hugo &amp;amp; Github Page) 주소가 github.io인 개발 블로그들이 눈에 많이 띄었다. 그래서 찾아 헤매던 도중 Jekyll, Hexo, Hugo 등 Static Site Generator의 존재를</description>
     </item>
     
     <item>
