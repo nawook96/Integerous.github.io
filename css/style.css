@@ -383,7 +383,7 @@ h4 {
   line-height: 1.5;
 }
 
-/* #toc {
+#toc {
   font-size: 14px;
   display: flex;
     align-items: center;
@@ -393,7 +393,7 @@ h4 {
 #TableOfContents{
   padding: 10px 10px 0px 0px;
   border: 1px solid #B4B3BA;
-} */
+}
 
 .article .content ol,
 .article .content ul {
