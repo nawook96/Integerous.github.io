@@ -225,6 +225,7 @@ a:hover {
   margin-bottom: 10px;
   color: #888;
   font-family: sans-serif;
+  font-style: italic;
 }
 
 #author a {
@@ -238,7 +239,7 @@ a:hover {
 }
 
 #author img {
-  max-width: 81%;
+  max-width: 84%;
   border-radius: 50%;
   margin-bottom: 10px;
 }
