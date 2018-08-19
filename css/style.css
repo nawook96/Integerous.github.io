@@ -223,6 +223,8 @@ a:hover {
 #author span {
   display: inline-block;
   margin-bottom: 10px;
+  color: #888;
+  font-family: sans-serif;
 }
 
 #author a {
@@ -822,6 +824,10 @@ h4 {
 
   #site-footer {
     padding: 10px 0px 10px 10px;
+  }
+
+  #author img {
+    max-width: 55%;
   }
 }
 
