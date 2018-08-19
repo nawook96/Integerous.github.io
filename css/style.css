@@ -383,6 +383,12 @@ h4 {
   line-height: 1.5;
 }
 
+.article .content .toc {
+  font-size: 14px;
+  display: flex;
+    justify-content: flex-end;
+}
+
 .article .content ol,
 .article .content ul {
   padding-left: 2em;
