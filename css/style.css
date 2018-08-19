@@ -391,6 +391,7 @@ h4 {
 }
 
 #TableOfContents{
+  font-size: 14px;
   padding: 10px 10px 0px 0px;
   border: 1px solid #B4B3BA;
 }
