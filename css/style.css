@@ -222,7 +222,7 @@ a:hover {
 
 #author span {
   display: inline-block;
-  margin-bottom: 5px;
+  margin-bottom: 10px;
 }
 
 #author a {
@@ -233,6 +233,12 @@ a:hover {
 
 #author a:hover {
   color: #4078C0;
+}
+
+#author img {
+  max-width: 81%;
+  border-radius: 50%;
+  margin-bottom: 10px;
 }
 
 /**
