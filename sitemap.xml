@@ -3,23 +3,28 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>http://integerous.github.io/post/2018/thoughts/hotbed/</loc>
+    <lastmod>2018-08-24T04:56:25+09:00</lastmod>
+  </url>
+  
+  <url>
     <loc>http://integerous.github.io/post/2018/thoughts/ashton/</loc>
-    <lastmod>2018-08-24T04:39:51+09:00</lastmod>
+    <lastmod>2018-08-24T04:44:12+09:00</lastmod>
   </url>
   
   <url>
     <loc>http://integerous.github.io/post/2018/thoughts/withoutplan/</loc>
-    <lastmod>2018-08-24T04:30:32+09:00</lastmod>
+    <lastmod>2018-08-24T04:44:12+09:00</lastmod>
   </url>
   
   <url>
     <loc>http://integerous.github.io/post/2018/thoughts/4thgrade/</loc>
-    <lastmod>2018-08-24T04:30:32+09:00</lastmod>
+    <lastmod>2018-08-24T04:44:12+09:00</lastmod>
   </url>
   
   <url>
     <loc>http://integerous.github.io/post/2018/thoughts/bali/</loc>
-    <lastmod>2018-08-24T04:05:04+09:00</lastmod>
+    <lastmod>2018-08-24T04:44:12+09:00</lastmod>
   </url>
   
   <url>
@@ -65,13 +70,13 @@
   
   <url>
     <loc>http://integerous.github.io/</loc>
-    <lastmod>2018-08-24T04:39:51+09:00</lastmod>
+    <lastmod>2018-08-24T04:56:25+09:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>http://integerous.github.io/post/</loc>
-    <lastmod>2018-08-24T04:39:51+09:00</lastmod>
+    <lastmod>2018-08-24T04:56:25+09:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -88,20 +93,20 @@
   </url>
   
   <url>
-    <loc>http://integerous.github.io/categories/thoughts/</loc>
-    <lastmod>2018-08-24T04:39:51+09:00</lastmod>
+    <loc>http://integerous.github.io/tags/thoughts/</loc>
+    <lastmod>2018-08-24T04:56:25+09:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://integerous.github.io/tags/thoughts/</loc>
-    <lastmod>2018-08-24T04:39:51+09:00</lastmod>
+    <loc>http://integerous.github.io/categories/thoughts/</loc>
+    <lastmod>2018-08-24T04:56:25+09:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>http://integerous.github.io/tags/thougths/</loc>
-    <lastmod>2018-08-24T04:05:04+09:00</lastmod>
+    <lastmod>2018-08-24T04:44:12+09:00</lastmod>
     <priority>0</priority>
   </url>
   
