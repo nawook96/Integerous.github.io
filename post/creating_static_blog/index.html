@@ -208,44 +208,44 @@ Giraffe Academy의 <a href="https://gohugo.io/getting-started/installing#windows
 
 <ul>
 <li><a href="http://gohugo.io/tutorials/github-pages-blog/">Hugo Docs</a>의 deploy.sh 파일을 활용하여 쉘스크립트 작성
-```go-html-template
-#!/bin/bash</li>
+<div class="highlight"><pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">  <span style="color:#099">#!/bin/bash
+</span><span style="color:#099"></span>
+  <span style="color:#366">echo</span> -e <span style="color:#c30">&#34;\033[0;32mDeploying updates to GitHub...\033[0m&#34;</span>
+
+  <span style="color:#09f;font-style:italic"># Build the project.
+</span><span style="color:#09f;font-style:italic"></span>  hugo -t hugo-theme-geppaku
+
+  <span style="color:#09f;font-style:italic"># Go To Public folder
+</span><span style="color:#09f;font-style:italic"></span>  <span style="color:#366">cd</span> public
+  <span style="color:#09f;font-style:italic"># Add changes to git.
+</span><span style="color:#09f;font-style:italic"></span>  git add .
+
+  <span style="color:#09f;font-style:italic"># Commit changes.
+</span><span style="color:#09f;font-style:italic"></span>  <span style="color:#033">msg</span><span style="color:#555">=</span><span style="color:#c30">&#34;rebuilding site `date`&#34;</span>
+  <span style="color:#069;font-weight:bold">if</span> <span style="color:#555">[</span> <span style="color:#033">$#</span> -eq <span style="color:#f60">1</span> <span style="color:#555">]</span>
+    <span style="color:#069;font-weight:bold">then</span> <span style="color:#033">msg</span><span style="color:#555">=</span><span style="color:#c30">&#34;</span><span style="color:#033">$1</span><span style="color:#c30">&#34;</span>
+  <span style="color:#069;font-weight:bold">fi</span>
+  git commit -m <span style="color:#c30">&#34;</span><span style="color:#033">$msg</span><span style="color:#c30">&#34;</span>
+
+  <span style="color:#09f;font-style:italic"># Push source and build repos.
+</span><span style="color:#09f;font-style:italic"></span>  git push origin master
+
+  <span style="color:#09f;font-style:italic"># Come Back up to the Project Root
+</span><span style="color:#09f;font-style:italic"></span>  <span style="color:#366">cd</span> ..
+
+
+  <span style="color:#09f;font-style:italic"># blog 저장소 Commit &amp; Push
+</span><span style="color:#09f;font-style:italic"></span>  git add .
+
+  <span style="color:#033">msg</span><span style="color:#555">=</span><span style="color:#c30">&#34;rebuilding site `date`&#34;</span>
+  <span style="color:#069;font-weight:bold">if</span> <span style="color:#555">[</span> <span style="color:#033">$#</span> -eq <span style="color:#f60">1</span> <span style="color:#555">]</span>
+    <span style="color:#069;font-weight:bold">then</span> <span style="color:#033">msg</span><span style="color:#555">=</span><span style="color:#c30">&#34;</span><span style="color:#033">$1</span><span style="color:#c30">&#34;</span>
+  <span style="color:#069;font-weight:bold">fi</span>
+  git commit -m <span style="color:#c30">&#34;</span><span style="color:#033">$msg</span><span style="color:#c30">&#34;</span>
+
+  git push origin master
+  </code></pre></div></li>
 </ul>
-
-<p>echo -e &ldquo;\033[0;32mDeploying updates to GitHub&hellip;\033[0m&rdquo;</p>
-
-<p># Build the project.
-  hugo -t hugo-theme-geppaku</p>
-
-<p># Go To Public folder
-  cd public
-  # Add changes to git.
-  git add .</p>
-
-<p># Commit changes.
-  msg=&ldquo;rebuilding site <code>date</code>&ldquo;
-  if [ $# -eq 1 ]
-    then msg=&ldquo;$1&rdquo;
-  fi
-  git commit -m &ldquo;$msg&rdquo;</p>
-
-<p># Push source and build repos.
-  git push origin master</p>
-
-<p># Come Back up to the Project Root
-  cd ..</p>
-
-<p># blog 저장소 Commit &amp; Push
-  git add .</p>
-
-<p>msg=&ldquo;rebuilding site <code>date</code>&ldquo;
-  if [ $# -eq 1 ]
-    then msg=&ldquo;$1&rdquo;
-  fi
-  git commit -m &ldquo;$msg&rdquo;</p>
-
-<p>git push origin master
-  ```</p>
 
 <h1 id="5-utterences-github-댓글-위젯-추가하기">5. Utterences (Github 댓글 위젯) 추가하기</h1>
 
@@ -274,12 +274,12 @@ Giraffe Academy의 <a href="https://gohugo.io/getting-started/installing#windows
 <li><a href="https://utteranc.es/">Utterance document</a>에서 방금 만든 저장소를 입력하고(나의 경우 Integerous/blog-comments)</li>
 <li>블로그 글과 Github 이슈를 매핑할 방법 6가지 중 한 가지를 선택하면</li>
 <li>밑에 아래와 같은 script를 자동으로 생성해준다.
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">    &lt;<span style="color:#f92672">script</span> <span style="color:#a6e22e">src</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;https://utteranc.es/client.js&#34;</span>
-            <span style="color:#a6e22e">repo</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;integerous/blog-comments&#34;</span>
-            <span style="color:#a6e22e">issue-term</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;pathname&#34;</span>
-            <span style="color:#a6e22e">crossorigin</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;anonymous&#34;</span>
-            <span style="color:#a6e22e">async</span>&gt;
-    &lt;/<span style="color:#f92672">script</span>&gt;
+<div class="highlight"><pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">    &lt;<span style="color:#309;font-weight:bold">script</span> <span style="color:#309">src</span><span style="color:#555">=</span><span style="color:#c30">&#34;https://utteranc.es/client.js&#34;</span>
+            <span style="color:#309">repo</span><span style="color:#555">=</span><span style="color:#c30">&#34;integerous/blog-comments&#34;</span>
+            <span style="color:#309">issue-term</span><span style="color:#555">=</span><span style="color:#c30">&#34;pathname&#34;</span>
+            <span style="color:#309">crossorigin</span><span style="color:#555">=</span><span style="color:#c30">&#34;anonymous&#34;</span>
+            <span style="color:#309">async</span>&gt;
+    &lt;/<span style="color:#309;font-weight:bold">script</span>&gt;
     </code></pre></div></li>
 <li>위의 script를 본인의 블로그 템플릿중 원하는 위치에 넣으면</li>
 <li>끝!<br /></li>
