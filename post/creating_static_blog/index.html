@@ -204,46 +204,44 @@ Giraffe Academy의 <a href="https://gohugo.io/getting-started/installing#windows
 
 <h3 id="4-8-쉘-스크립트로-업로드-자동화하기">4.8. 쉘 스크립트로 업로드 자동화하기</h3>
 
-<ul>
-<li><a href="http://gohugo.io/tutorials/github-pages-blog/">Hugo Docs</a>의 deploy.sh 파일을 활용하여 쉘스크립트 작성
-<div class="highlight"><pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-script" data-lang="script">  #!/bin/bash
+<p><a href="http://gohugo.io/tutorials/github-pages-blog/">Hugo Docs</a>의 deploy.sh 파일을 활용하여 쉘스크립트 작성
+  <div class="highlight"><pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">  <span style="color:#099">#!/bin/bash
+</span><span style="color:#099"></span>
+  <span style="color:#366">echo</span> -e <span style="color:#c30">&#34;\033[0;32mDeploying updates to GitHub...\033[0m&#34;</span>
 
-  echo -e &#34;\033[0;32mDeploying updates to GitHub...\033[0m&#34;
+  <span style="color:#09f;font-style:italic"># Build the project.
+</span><span style="color:#09f;font-style:italic"></span>  hugo -t hugo-theme-geppaku
 
-  # Build the project.
-  hugo -t hugo-theme-geppaku
+  <span style="color:#09f;font-style:italic"># Go To Public folder
+</span><span style="color:#09f;font-style:italic"></span>  <span style="color:#366">cd</span> public
+  <span style="color:#09f;font-style:italic"># Add changes to git.
+</span><span style="color:#09f;font-style:italic"></span>  git add .
 
-  # Go To Public folder
-  cd public
-  # Add changes to git.
-  git add .
+  <span style="color:#09f;font-style:italic"># Commit changes.
+</span><span style="color:#09f;font-style:italic"></span>  <span style="color:#033">msg</span><span style="color:#555">=</span><span style="color:#c30">&#34;rebuilding site `date`&#34;</span>
+  <span style="color:#069;font-weight:bold">if</span> <span style="color:#555">[</span> <span style="color:#033">$#</span> -eq <span style="color:#f60">1</span> <span style="color:#555">]</span>
+    <span style="color:#069;font-weight:bold">then</span> <span style="color:#033">msg</span><span style="color:#555">=</span><span style="color:#c30">&#34;</span><span style="color:#033">$1</span><span style="color:#c30">&#34;</span>
+  <span style="color:#069;font-weight:bold">fi</span>
+  git commit -m <span style="color:#c30">&#34;</span><span style="color:#033">$msg</span><span style="color:#c30">&#34;</span>
 
-  # Commit changes.
-  msg=&#34;rebuilding site `date`&#34;
-  if [ $# -eq 1 ]
-    then msg=&#34;$1&#34;
-  fi
-  git commit -m &#34;$msg&#34;
+  <span style="color:#09f;font-style:italic"># Push source and build repos.
+</span><span style="color:#09f;font-style:italic"></span>  git push origin master
 
-  # Push source and build repos.
+  <span style="color:#09f;font-style:italic"># Come Back up to the Project Root
+</span><span style="color:#09f;font-style:italic"></span>  <span style="color:#366">cd</span> ..
+
+
+  <span style="color:#09f;font-style:italic"># blog 저장소 Commit &amp; Push
+</span><span style="color:#09f;font-style:italic"></span>  git add .
+
+  <span style="color:#033">msg</span><span style="color:#555">=</span><span style="color:#c30">&#34;rebuilding site `date`&#34;</span>
+  <span style="color:#069;font-weight:bold">if</span> <span style="color:#555">[</span> <span style="color:#033">$#</span> -eq <span style="color:#f60">1</span> <span style="color:#555">]</span>
+    <span style="color:#069;font-weight:bold">then</span> <span style="color:#033">msg</span><span style="color:#555">=</span><span style="color:#c30">&#34;</span><span style="color:#033">$1</span><span style="color:#c30">&#34;</span>
+  <span style="color:#069;font-weight:bold">fi</span>
+  git commit -m <span style="color:#c30">&#34;</span><span style="color:#033">$msg</span><span style="color:#c30">&#34;</span>
+
   git push origin master
-
-  # Come Back up to the Project Root
-  cd ..
-
-
-  # blog 저장소 Commit &amp; Push
-  git add .
-
-  msg=&#34;rebuilding site `date`&#34;
-  if [ $# -eq 1 ]
-    then msg=&#34;$1&#34;
-  fi
-  git commit -m &#34;$msg&#34;
-
-  git push origin master
-  </code></pre></div></li>
-</ul>
+  </code></pre></div></p>
 
 <h1 id="5-utterences-github-댓글-위젯-추가하기">5. Utterences (Github 댓글 위젯) 추가하기</h1>
 
