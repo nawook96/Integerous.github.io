@@ -1,38 +1,20 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Etc on Integerous 개발블로그</title>
+    <title>Etc on Integerous Devlog</title>
     <link>http://integerous.github.io/categories/etc/</link>
-    <description>Recent content in Etc on Integerous 개발블로그</description>
+    <description>Recent content in Etc on Integerous Devlog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ko-kr</language>
-    <lastBuildDate>Sat, 18 Aug 2018 15:52:40 +0900</lastBuildDate>
+    <lastBuildDate>Sun, 12 Aug 2018 20:48:55 +0900</lastBuildDate>
     <atom:link href="/categories/etc/" rel="self" type="application/rss+xml" />
     
     <item>
-      <title>마크다운 테스트</title>
-      <link>http://integerous.github.io/post/2018/markdown-test/</link>
-      <pubDate>Sat, 18 Aug 2018 15:52:40 +0900</pubDate>
-      
-      <guid>http://integerous.github.io/post/2018/markdown-test/</guid>
-      <description>마크다운 문법 테스트 마크다운 문법 테스트 마크다운 문법 테스트 마크다운 문법 테스트 마크다운 문법 테스트 마크다운 문법 테스트 마크다운 문법 테스트 마크다운 문법 테</description>
-    </item>
-    
-    <item>
-      <title>Shortcode 테스트</title>
-      <link>http://integerous.github.io/post/shortcode/</link>
-      <pubDate>Mon, 13 Aug 2018 22:32:32 +0900</pubDate>
-      
-      <guid>http://integerous.github.io/post/shortcode/</guid>
-      <description>Shortcode 테스트</description>
-    </item>
-    
-    <item>
       <title>Hugo로 블로그 만들기</title>
-      <link>http://integerous.github.io/post/creating_static_blog/</link>
+      <link>http://integerous.github.io/post/2018/creating_static_blog/</link>
       <pubDate>Sun, 12 Aug 2018 20:48:55 +0900</pubDate>
       
-      <guid>http://integerous.github.io/post/creating_static_blog/</guid>
+      <guid>http://integerous.github.io/post/2018/creating_static_blog/</guid>
       <description>주소가 github.io인 개발 블로그들이 눈에 많이 띄었다. 찾아보니 Jekyll, Hexo, Hugo 등 Static Site Generator의 존재를 알게 되었다. Hugo와 Github Page의 조합</description>
     </item>
     

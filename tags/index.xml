@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Tags on Integerous 개발블로그</title>
+    <title>Tags on Integerous Devlog</title>
     <link>http://integerous.github.io/tags/</link>
-    <description>Recent content in Tags on Integerous 개발블로그</description>
+    <description>Recent content in Tags on Integerous Devlog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ko-kr</language>
     <lastBuildDate>Sun, 12 Aug 2018 20:48:55 +0900</lastBuildDate>
@@ -19,24 +19,6 @@
     </item>
     
     <item>
-      <title>Develop</title>
-      <link>http://integerous.github.io/tags/develop/</link>
-      <pubDate>Sun, 12 Aug 2018 19:55:47 +0900</pubDate>
-      
-      <guid>http://integerous.github.io/tags/develop/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Devlog</title>
-      <link>http://integerous.github.io/tags/devlog/</link>
-      <pubDate>Sun, 12 Aug 2018 19:55:47 +0900</pubDate>
-      
-      <guid>http://integerous.github.io/tags/devlog/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>Github</title>
       <link>http://integerous.github.io/tags/github/</link>
       <pubDate>Sun, 12 Aug 2018 20:48:55 +0900</pubDate>
@@ -48,27 +30,9 @@
     <item>
       <title>Hugo</title>
       <link>http://integerous.github.io/tags/hugo/</link>
-      <pubDate>Mon, 13 Aug 2018 22:32:32 +0900</pubDate>
+      <pubDate>Sun, 12 Aug 2018 20:48:55 +0900</pubDate>
       
       <guid>http://integerous.github.io/tags/hugo/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Markdown</title>
-      <link>http://integerous.github.io/tags/markdown/</link>
-      <pubDate>Sat, 18 Aug 2018 15:52:40 +0900</pubDate>
-      
-      <guid>http://integerous.github.io/tags/markdown/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Shortcode</title>
-      <link>http://integerous.github.io/tags/shortcode/</link>
-      <pubDate>Mon, 13 Aug 2018 22:32:32 +0900</pubDate>
-      
-      <guid>http://integerous.github.io/tags/shortcode/</guid>
       <description></description>
     </item>
     
@@ -78,24 +42,6 @@
       <pubDate>Sun, 12 Aug 2018 20:48:55 +0900</pubDate>
       
       <guid>http://integerous.github.io/tags/static/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Test</title>
-      <link>http://integerous.github.io/tags/test/</link>
-      <pubDate>Sun, 19 Aug 2018 18:32:27 +0900</pubDate>
-      
-      <guid>http://integerous.github.io/tags/test/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>마크다운</title>
-      <link>http://integerous.github.io/tags/%EB%A7%88%ED%81%AC%EB%8B%A4%EC%9A%B4/</link>
-      <pubDate>Sat, 18 Aug 2018 15:52:40 +0900</pubDate>
-      
-      <guid>http://integerous.github.io/tags/%EB%A7%88%ED%81%AC%EB%8B%A4%EC%9A%B4/</guid>
       <description></description>
     </item>
     
