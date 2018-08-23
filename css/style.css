@@ -688,14 +688,18 @@ h4 {
   /* clear: left; */
   display: flex;
   justify-content: center;
+  align-items: center;
+  padding: 10px 0px;
   background-color: #f6f8fa;
- 
 }
 
-#pagenavigation-next {
-  margin-bottom: 15px;
-  padding-right: 50px;
+#pagenavigation-next-prev > div{
+  padding: 0px 20px;
 }
+
+/* #pagenavigation-next {
+  padding-right: 50px;
+} */
 
 #pagenavigation-next-prev span {
   display: block;
@@ -705,12 +709,15 @@ h4 {
 
 #pagenavigation-next-prev a {
   color: #747474;
-  font-size: 14px;
+  font-size: 16px;
+  text-decoration: none;
 }
 
 #pagenavigation-next-prev a:hover {
   color: #4078C0;
-  font-size: 14px;
+  font-size: 16px;
+  text-decoration: none;
+  font-weight: bold;
 }
 
 /**
