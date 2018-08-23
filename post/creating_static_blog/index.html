@@ -208,7 +208,7 @@ Giraffe Academy의 <a href="https://gohugo.io/getting-started/installing#windows
 
 <ul>
 <li><a href="http://gohugo.io/tutorials/github-pages-blog/">Hugo Docs</a>의 deploy.sh 파일을 활용하여 쉘스크립트 작성
-~~~sh
+```sh
 #!/bin/bash</li>
 </ul>
 
@@ -245,7 +245,7 @@ Giraffe Academy의 <a href="https://gohugo.io/getting-started/installing#windows
   git commit -m &ldquo;$msg&rdquo;</p>
 
 <p>git push origin master
-  ~~~</p>
+  ```</p>
 
 <h1 id="5-utterences-github-댓글-위젯-추가하기">5. Utterences (Github 댓글 위젯) 추가하기</h1>
 
@@ -274,12 +274,12 @@ Giraffe Academy의 <a href="https://gohugo.io/getting-started/installing#windows
 <li><a href="https://utteranc.es/">Utterance document</a>에서 방금 만든 저장소를 입력하고(나의 경우 Integerous/blog-comments)</li>
 <li>블로그 글과 Github 이슈를 매핑할 방법 6가지 중 한 가지를 선택하면</li>
 <li>밑에 아래와 같은 script를 자동으로 생성해준다.
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">    &lt;<span style="color:#000080">script</span> <span style="color:#008080">src</span><span style="font-weight:bold">=</span><span style="color:#b84">&#34;https://utteranc.es/client.js&#34;</span>
-            <span style="color:#008080">repo</span><span style="font-weight:bold">=</span><span style="color:#b84">&#34;integerous/blog-comments&#34;</span>
-            <span style="color:#008080">issue-term</span><span style="font-weight:bold">=</span><span style="color:#b84">&#34;pathname&#34;</span>
-            <span style="color:#008080">crossorigin</span><span style="font-weight:bold">=</span><span style="color:#b84">&#34;anonymous&#34;</span>
-            <span style="color:#008080">async</span>&gt;
-    &lt;/<span style="color:#000080">script</span>&gt;
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">    &lt;<span style="color:#f92672">script</span> <span style="color:#a6e22e">src</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;https://utteranc.es/client.js&#34;</span>
+            <span style="color:#a6e22e">repo</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;integerous/blog-comments&#34;</span>
+            <span style="color:#a6e22e">issue-term</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;pathname&#34;</span>
+            <span style="color:#a6e22e">crossorigin</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;anonymous&#34;</span>
+            <span style="color:#a6e22e">async</span>&gt;
+    &lt;/<span style="color:#f92672">script</span>&gt;
     </code></pre></div></li>
 <li>위의 script를 본인의 블로그 템플릿중 원하는 위치에 넣으면</li>
 <li>끝!<br /></li>
