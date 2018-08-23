@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Integerous Devlog on Integerous Devlog</title>
-    <link>http://integerous.github.io/</link>
-    <description>Recent content in Integerous Devlog on Integerous Devlog</description>
+    <title>Thoughts on Integerous Devlog</title>
+    <link>http://integerous.github.io/categories/thoughts/</link>
+    <description>Recent content in Thoughts on Integerous Devlog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ko-kr</language>
     <lastBuildDate>Fri, 24 Aug 2018 03:57:22 +0900</lastBuildDate>
-    <atom:link href="/" rel="self" type="application/rss+xml" />
+    <atom:link href="/categories/thoughts/" rel="self" type="application/rss+xml" />
     
     <item>
       <title>2016년 발리 서핑</title>
@@ -16,15 +16,6 @@
       
       <guid>http://integerous.github.io/post/2018/thoughts/bali/</guid>
       <description>2016년 7월 19일 새벽부터 서핑을 하노라면 파도가 좋고, 바다는 나의 것이며, 상어도 꿈나라에 있을테다. 동이 틀 무렵에는 하늘색보다 바다색이 앞서 변하고,</description>
-    </item>
-    
-    <item>
-      <title>Hugo로 블로그 만들기</title>
-      <link>http://integerous.github.io/post/2018/creating_static_blog/</link>
-      <pubDate>Sun, 12 Aug 2018 20:48:55 +0900</pubDate>
-      
-      <guid>http://integerous.github.io/post/2018/creating_static_blog/</guid>
-      <description>주소가 github.io인 개발 블로그들이 눈에 많이 띄었다. 찾아보니 Jekyll, Hexo, Hugo 등 Static Site Generator의 존재를 알게 되었다. Hugo와 Github Page의 조합</description>
     </item>
     
   </channel>
