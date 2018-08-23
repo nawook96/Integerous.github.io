@@ -115,11 +115,11 @@ a:hover {
 }
 
 .article .tags a {
-  font-size: 10px;
+  font-size: 11px;
 }
 
 .article .tags a:hover {
-  font-size: 10px;
+  font-size: 11px;
 }
 
 /**
@@ -169,7 +169,7 @@ a:hover {
   color: #303030;
   font-size: 14px;
   padding: 2px 3px;
-  border: 1px solid #747474;
+  border: 1px dotted #747474;
 }
 
 .tags a:hover {
@@ -366,7 +366,7 @@ h4 {
 } */
 
 .article-header {
-  margin-bottom: 45px;
+  margin-bottom: 25px;
   padding-bottom: 10px;
   border-bottom: 1px solid #B4B3BA;
 }
@@ -388,7 +388,7 @@ h4 {
   clear: left;
   color: #303030;
   margin-bottom: 10px;
-  font-size: 15px;
+  font-size: 15.5px;
   line-height: 1.5;
 }
 
@@ -687,12 +687,14 @@ h4 {
 #pagenavigation-next-prev {
   /* clear: left; */
   display: flex;
-    justify-content: space-evenly;
+  justify-content: center;
+  background-color: #f6f8fa;
  
 }
 
 #pagenavigation-next {
   margin-bottom: 15px;
+  padding-right: 50px;
 }
 
 #pagenavigation-next-prev span {
@@ -804,7 +806,7 @@ h4 {
   }
 
   #article-list h2 {
-    font-size: 14px;
+    font-size: 16px;
   }
 
   #article-list {
@@ -831,7 +833,7 @@ h4 {
   }
 
   #author img {
-    max-width: 55%;
+    max-width: 50%;
   }
 }
 
