@@ -388,7 +388,7 @@ h4 {
   clear: left;
   color: #303030;
   margin-bottom: 10px;
-  font-size: 16px;
+  font-size: 15px;
   line-height: 1.5;
 }
 
@@ -474,7 +474,7 @@ h4 {
 .article .content pre {
   padding: 16px;
   overflow: auto;
-  font-size: 85%;
+  font-size: 90%;
   line-height: 1.45;
   background-color: #f6f8fa;
   border-radius: 3px;
@@ -769,7 +769,7 @@ h4 {
   }
 
   #author img {
-    max-width: 55%;
+    max-width: 30%;
   }
 
   .sidebar .adsense {
