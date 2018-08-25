@@ -183,7 +183,14 @@ Giraffe Academy의 <a href="https://gohugo.io/getting-started/installing#windows
 <h3 id="4-6-컨텐츠-생성">4.6. 컨텐츠 생성</h3>
 
 <ul>
-<li><code>$ hugo new post/test1.md</code> 명령으로 파일을 생성하면 <code>\content\post\test1.md</code></li>
+<li><code>C:\Hugo\blog</code> 디렉토리에서 <code>$ hugo new post/test1.md</code> 명령으로 파일을 생성하면 <code>\content\post\</code> 디렉토리에 <code>test1.md</code> 파일이 생성된다.</li>
+<li>파일 생성 명령에 자동으로 편집기(나의 경우 VSCode)가 실행되도록 하려면
+
+<ol>
+<li><code>config.toml</code> 파일에 <code>newContentEditor = &quot;실행파일 파일명&quot;</code> 를 설정해준다.</li>
+<li>실행파일 파일명이 Code.exe 면 <code>newContentEditor = &quot;Code&quot;</code> 라고 작성.</li>
+<li>시스템 환경변수에 VS Code 실행파일이 있는 경로를 추가해준다. (필수!)</li>
+</ol></li>
 </ul>
 
 <h3 id="4-7-컨텐츠-업로드-블로그에">4.7. 컨텐츠 업로드 (블로그에)</h3>
@@ -412,11 +419,11 @@ Hugo 공식 문서에 소개된 댓글 위젯 중 Utterences는 없길래 생애
       <ul>
         
         <li>
-          <a href="/categories/2018"><span></span>2018 (2)</a>
+          <a href="/categories/2018"><span></span>2018 (3)</a>
         </li>
         
         <li>
-          <a href="/categories/aws"><span></span>aws (1)</a>
+          <a href="/categories/aws"><span></span>aws (2)</a>
         </li>
         
         <li>
