@@ -6,8 +6,17 @@
     <description>Recent content in Integerous Devlog on Integerous Devlog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ko-kr</language>
-    <lastBuildDate>Fri, 24 Aug 2018 04:56:25 +0900</lastBuildDate>
+    <lastBuildDate>Sat, 25 Aug 2018 21:26:12 +0900</lastBuildDate>
     <atom:link href="/" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>AWS 자격증 공부법</title>
+      <link>http://integerous.github.io/post/2018/aws/certificate/</link>
+      <pubDate>Sat, 25 Aug 2018 21:26:12 +0900</pubDate>
+      
+      <guid>http://integerous.github.io/post/2018/aws/certificate/</guid>
+      <description>AWS SAA 자격증 준비 AWS Certified Solution Architect Associate 자격증 준비 방법과 과정을 기록 모든 자료는 중요하고 유용한 순서로 정렬함. Index 0. 내가 정한 학습 순서 1. 필수 학습 자료 2. 추가 학습 자료 3. 합</description>
+    </item>
     
     <item>
       <title>뜨거운 침대</title>
@@ -56,10 +65,10 @@
     
     <item>
       <title>Hugo로 블로그 만들기</title>
-      <link>http://integerous.github.io/post/2018/creating_static_blog/</link>
+      <link>http://integerous.github.io/post/2018/etc/creating_static_blog/</link>
       <pubDate>Sun, 12 Aug 2018 20:48:55 +0900</pubDate>
       
-      <guid>http://integerous.github.io/post/2018/creating_static_blog/</guid>
+      <guid>http://integerous.github.io/post/2018/etc/creating_static_blog/</guid>
       <description>주소가 github.io인 개발 블로그들이 눈에 많이 띄었다. 찾아보니 Jekyll, Hexo, Hugo 등 Static Site Generator의 존재를 알게 되었다. Hugo와 Github Page의 조합</description>
     </item>
     
