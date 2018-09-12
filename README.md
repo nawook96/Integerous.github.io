@@ -3,7 +3,8 @@
 >주소가 github.io인 개발 블로그들이 눈에 많이 띄었다.  
 >찾아보니 Jekyll, Hexo, Hugo 등 Static Site Generator의 존재를 알게 되었다.  
 >Hugo와 Github Page의 조합으로 Devlog로 사용할 [개인 블로그](https://ryan-han.com)를 만들기로 했다.  
->놀다 지친 2018년 여름휴가 막바지에 집중공략을 시작했다.
+>놀다 지친 2018년 여름휴가 막바지에 집중공략을 시작했다.  
+>결과물 : https://ryan-han.com
 
 ## 1. Static Site Generator 란?
 [이 글](https://blog.nacyot.com/articles/2014-01-15-static-site-generator/)이 정적 웹사이트 생성기와 동적 웹사이트 생성기의 차이를 잘 설명해주고 있다.
