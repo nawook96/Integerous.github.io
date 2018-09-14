@@ -10,7 +10,7 @@
     <atom:link href="/tags/static/" rel="self" type="application/rss+xml" />
     
     <item>
-      <title>Hugo로 블로그 만들기</title>
+      <title>Hugo로 github.io 블로그 만들기</title>
       <link>http://integerous.github.io/post/2018/etc/creating_static_blog/</link>
       <pubDate>Sun, 12 Aug 2018 20:48:55 +0900</pubDate>
       
