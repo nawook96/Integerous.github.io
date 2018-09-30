@@ -82,8 +82,8 @@ abstract class 클래스이름{
 <ul>
 <li>선언부만 작성하고 구현부는 작성하지 않은 것이 추상메소드.<br /></li>
 </ul>
-<div class="highlight"><pre style="color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#999;font-style:italic">/* 주석을 통해 기능 설명 */</span>
-<span style="color:#6ab825;font-weight:bold">abstract</span> 리턴타입 <span style="color:#447fcf">메소드이름</span>();</code></pre></div>
+<div class="highlight"><pre style="color:#586e75;background-color:#eee8d5;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#93a1a1;font-style:italic">/* 주석을 통해 기능 설명 */</span>
+<span style="color:#859900">abstract</span> <span style="color:#268bd2">리턴타입</span> <span style="color:#268bd2">메소드이름</span>();</code></pre></div>
 <ul>
 <li>추상클래스로부터 상속받는 자손클래스는 오버라이딩을 통해 조상인 추상클래스의 추상메소드를 모두 구현해야 한다.</li>
 <li>만약 부모로 부터 상속받은 추상메소드 중 하나라도 구현하지 않으면 자식클래스 역시 추상클래스로 지정해야 한다.</li>
@@ -98,15 +98,15 @@ abstract class 클래스이름{
 </ul>
 
 <h2 id="4-인터페이스의-작성">4. 인터페이스의 작성</h2>
-<div class="highlight"><pre style="color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#6ab825;font-weight:bold">interface</span> <span style="color:#447fcf">PlayingCard</span> {
-  <span style="color:#6ab825;font-weight:bold">public</span> <span style="color:#6ab825;font-weight:bold">static</span> <span style="color:#6ab825;font-weight:bold">final</span> <span style="color:#6ab825;font-weight:bold">int</span> SPADE = 4;
-  <span style="color:#6ab825;font-weight:bold">final</span> <span style="color:#6ab825;font-weight:bold">int</span> DIAMOND = 3; <span style="color:#999;font-style:italic">//public static final int DIAMOND = 3;
-</span><span style="color:#999;font-style:italic"></span>  <span style="color:#6ab825;font-weight:bold">static</span> <span style="color:#6ab825;font-weight:bold">int</span> HEART = 2;  <span style="color:#999;font-style:italic">//public static final int HEART = 2;
-</span><span style="color:#999;font-style:italic"></span>  <span style="color:#6ab825;font-weight:bold">int</span> CLOVER = 1;        <span style="color:#999;font-style:italic">//public static final int CLOVER = 1;
-</span><span style="color:#999;font-style:italic"></span>  
-  <span style="color:#6ab825;font-weight:bold">public</span> <span style="color:#6ab825;font-weight:bold">abstract</span> String <span style="color:#447fcf">getCardNumber</span>();
-  String <span style="color:#447fcf">getCardKind</span>();  <span style="color:#999;font-style:italic">//public abstract String getCardKind();
-</span><span style="color:#999;font-style:italic"></span>}</code></pre></div>
+<div class="highlight"><pre style="color:#586e75;background-color:#eee8d5;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#859900">interface</span> <span style="color:#cb4b16">PlayingCard</span> {
+  <span style="color:#859900">public</span> <span style="color:#859900">static</span> <span style="color:#859900">final</span> <span style="color:#859900;font-weight:bold">int</span> <span style="color:#268bd2">SPADE</span> = <span style="color:#268bd2">4</span>;
+  <span style="color:#859900">final</span> <span style="color:#859900;font-weight:bold">int</span> <span style="color:#268bd2">DIAMOND</span> = <span style="color:#268bd2">3</span>; <span style="color:#93a1a1;font-style:italic">//public static final int DIAMOND = 3;
+</span><span style="color:#93a1a1;font-style:italic"></span>  <span style="color:#859900">static</span> <span style="color:#859900;font-weight:bold">int</span> <span style="color:#268bd2">HEART</span> = <span style="color:#268bd2">2</span>;  <span style="color:#93a1a1;font-style:italic">//public static final int HEART = 2;
+</span><span style="color:#93a1a1;font-style:italic"></span>  <span style="color:#859900;font-weight:bold">int</span> <span style="color:#268bd2">CLOVER</span> = <span style="color:#268bd2">1</span>;        <span style="color:#93a1a1;font-style:italic">//public static final int CLOVER = 1;
+</span><span style="color:#93a1a1;font-style:italic"></span>  
+  <span style="color:#859900">public</span> <span style="color:#859900">abstract</span> <span style="color:#268bd2">String</span> <span style="color:#268bd2">getCardNumber</span>();
+  <span style="color:#268bd2">String</span> <span style="color:#268bd2">getCardKind</span>();  <span style="color:#93a1a1;font-style:italic">//public abstract String getCardKind();
+</span><span style="color:#93a1a1;font-style:italic"></span>}</code></pre></div>
 <ul>
 <li>모든 멤버변수는 public static final 이어야하며, 이를 생략할 수 있다.</li>
 <li>모든 메서드는 public abstract 이어야하며, 이를 생략할 수 있다.
