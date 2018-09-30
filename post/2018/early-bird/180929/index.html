@@ -103,23 +103,20 @@ str1.equals(str2) ? true</p></li>
   String str4 = new String(&ldquo;abc&rdquo;);
   str3 == str4 ? false
   str3.equals(str4) ? true</p>
-
-<pre><code>### 1.2. 문자열 리터럴
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">### 1.2. 문자열 리터럴
 - 클래스 파일에는 소스파일에 포함된 모든 리터럴의 목록이 있다.
 - 해당 클래스 파일이 클래스 로더에 의해 메모리에 올라갈 때, 리터럴 목록에 있는 리터럴들이 JVM내에 있는 상수 저장소(constant pool)에 저장된다.
 ### 1.3. 빈 문자열
 - 길이가 0인 배열은 존재한다.(C언어는 불가능)
 - char형 배열도 길이가 0인 배열 생성할 수 있고, 이 배열을 내부적으로 가지고 있는 문자열이 빈 문자열이다.
-- `String s = &quot;&quot;;` 에서 참조변수 `s`가 참조하고 있는 String 인스턴스는 내부에 `new char[0]` 같이 길이가 0인 char형 배열을 저장하고 있는 것이다.
+- `String s = &#34;&#34;;` 에서 참조변수 `s`가 참조하고 있는 String 인스턴스는 내부에 `new char[0]` 같이 길이가 0인 char형 배열을 저장하고 있는 것이다.
 - `char[] chArr = new char[0];`
 - `int[] iArr = {};`
 ### 1.4. `join()`과 `StringJoiner` (jdk1.8부터 추가)
 - `join()`은 문자열 사이에 구분자를 넣어서 결합
 - ~~~java
-  String[] arr = { &quot;dog&quot;, &quot;cat&quot;, &quot;bear&quot;};
-  String str = String.join(&quot;-&quot;, arr);
-</code></pre>
-
+  String[] arr = { &#34;dog&#34;, &#34;cat&#34;, &#34;bear&#34;};
+  String str = String.join(&#34;-&#34;, arr);</pre></div>
 <ul>
 <li><code>java.util.StringJoiner</code>클래스 사용하여 문자열 결합</li>
 <li>~~~java
@@ -130,17 +127,14 @@ sj.add(s.toUpperCase());</li>
 </ul>
 
 <p>System.out.println(sj.toString()); // [AAA,BBB,CCC]</p>
-
-<pre><code>### 1.5. 기본형-String 변환
-- 숫자에 빈문자열(&quot;&quot;) 더하기
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">### 1.5. 기본형-String 변환
+- 숫자에 빈문자열(&#34;&#34;) 더하기
 - `valueOf()` 사용
 - ~~~java
-  String str1 = 100 + &quot;&quot;; // 100 &gt; &quot;100&quot;
-  String str2 = String.valueOf(100); // 100 &gt; &quot;100&quot;
-  int i = Integer.parseInt(&quot;100&quot;) // &quot;100&quot; &gt; 100
-  int i2 = Integer.valueOf(&quot;100&quot;) // &quot;100&quot; &gt; 100
-</code></pre>
-
+  String str1 = 100 + &#34;&#34;; // 100 &gt; &#34;100&#34;
+  String str2 = String.valueOf(100); // 100 &gt; &#34;100&#34;
+  int i = Integer.parseInt(&#34;100&#34;) // &#34;100&#34; &gt; 100
+  int i2 = Integer.valueOf(&#34;100&#34;) // &#34;100&#34; &gt; 100</pre></div>
 <ul>
 <li>valueOf()의 반환타입은 int가 아니라 Integer지만 오토박싱에 의해 자동변환</li>
 <li><code>valueOf(String s)</code> 는 메소드 내부에 <code>parseInt(String s)</code>를 호출할 뿐이므로, 두 메소드는 반환 타입만 다르고 같은 메소드다.</li>
