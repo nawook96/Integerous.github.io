@@ -15,7 +15,7 @@
       <pubDate>Mon, 01 Oct 2018 01:02:41 +0900</pubDate>
       
       <guid>http://integerous.github.io/post/2018/early-bird/180930/</guid>
-      <description>자바의 정석(남궁성 저) 학습 날씨가 너무나 좋았던 일요일 1. StringBuffer &amp;amp; StringBuilder 클래스 java public final class StringBuffer implements java.io.Serializable { private char[] value; ... } String클래스는 Immutable이므로 인스턴</description>
+      <description>자바의 정석(남궁성 저) 학습 날씨가 너무나 좋았던 일요일 1. StringBuffer &amp;amp; StringBuilder 클래스 public final class StringBuffer implements java.io.Serializable { private char[] value; ... } String클래스는 Immutable이므로 인스턴스</description>
     </item>
     
     <item>

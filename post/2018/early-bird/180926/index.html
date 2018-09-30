@@ -106,17 +106,17 @@
 <h2 id="4-멀티-catch-블럭">4. 멀티 catch 블럭</h2>
 
 <ul>
-<li>JDK1.7부터 여러 catch블럭을 <code>|</code>기호를 이용해서 하나의 catch 블럭으로 합칠 수 있다.
+<li>JDK1.7부터 여러 catch블럭을 <code>|</code>기호를 이용해서 하나의 catch 블럭으로 합칠 수 있다.<br />
 <code>java
 try {
 ...
 } catch (ExceptionA e)  {
-  e.printStackTrace();
+e.printStackTrace();
 } catch (ExceptionB e2) {
-  e2.printStacktrace();
+e2.printStacktrace();
 }
 </code></li>
-<li>이 try-catch 문을 아래와 같이 바꿀 수 있다.
+<li>이 try-catch 문을 아래와 같이 바꿀 수 있다.<br />
 <code>java
 try {
 ...
@@ -130,7 +130,7 @@ e.printStackTrace();
 <h2 id="5-메소드에-예외-선언">5. 메소드에 예외 선언</h2>
 
 <ul>
-<li>메소드에 예외를 선언하는 방법
+<li>메소드에 예외를 선언하는 방법<br />
 <code>java
 void method() throws Exception1, Exception2, ... ExceptionN {
 ...

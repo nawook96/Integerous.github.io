@@ -64,14 +64,11 @@
 </blockquote>
 
 <h2 id="1-stringbuffer-stringbuilder-클래스">1. StringBuffer &amp; StringBuilder 클래스</h2>
-
+<div class="highlight"><pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java">  <span style="color:#8b008b;font-weight:bold">public</span> <span style="color:#8b008b;font-weight:bold">final</span> <span style="color:#8b008b;font-weight:bold">class</span> <span style="color:#008b45;font-weight:bold">StringBuffer</span> <span style="color:#8b008b;font-weight:bold">implements</span> java.<span style="color:#658b00">io</span>.<span style="color:#658b00">Serializable</span> {
+    <span style="color:#8b008b;font-weight:bold">private</span> <span style="color:#00688b;font-weight:bold">char</span>[] value;
+    ...
+  }</code></pre></div>
 <ul>
-<li><code>java
-public final class StringBuffer implements java.io.Serializable {
-private char[] value;
-...
-}
-</code></li>
 <li>String클래스는 Immutable이므로 인스턴스를 생성할 때 지정된 문자열을 변경할 수 없지만, StringBuffer클래스는 가능하다.</li>
 <li>내부적으로 문자열 편집을 위한 buffer를 가지고 있으며, StringBuffer 인스턴스를 생성할 때 그 크기를 지정할 수 있다.</li>
 <li>buffer의 크기를 지정하지 않으면 16개의 문자를 저장할 수 있는 크기의 버퍼 생성</li>
@@ -80,8 +77,8 @@ private char[] value;
 <h3 id="1-1-append">1.1 append()</h3>
 
 <ul>
-<li><code>append()</code>는 반환타입이 StringBuffer이며 자신의 주소를 반환한다.</li>
-<li><code>java
+<li><code>append()</code>는 반환타입이 StringBuffer이며 자신의 주소를 반환한다.
+<code>java
 StringBuffer sb = new StringBuffer(&quot;abc&quot;);
 sb.append(&quot;123&quot;).append(&quot;ZZ&quot;);
 </code></li>
