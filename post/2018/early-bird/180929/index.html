@@ -67,12 +67,12 @@
 
 <ul>
 <li>String 클래스는 문자열을 저장하기 위해 문자형 배열 변수(char[]) value를 인스턴스 변수로 정의되어있다.</li>
-<li>~~~java
+<li><code>java
 public final class String implements java.io.Serializable, Comparable {
 private char[] value;
-&hellip;
+...
 }
-~~~</li>
+</code></li>
 <li>인스턴스 생성 시 생성자의 매개변수로 입력받는 문자열은 인스턴스 변수 <code>value</code>에 문자형 배열 <code>char[]</code>로 저장되는 것이다.</li>
 <li>String 클래스는 앞에 final이 붙어 있으므로 다른 클래스의 부모가 될 수 없다.</li>
 
@@ -92,7 +92,7 @@ private char[] value;
 
 <li><p>문자열 리터럴은 이미 존재하는 것을 재사용 하는 것이다. (문자열 리터럴은 클래스가 메모리에 로드될 때 자동으로 미리 생성된다.)</p></li>
 
-<li><p>~~~java
+<li><p>```java
 String str1 = &ldquo;abc&rdquo;;
 String str2 = &ldquo;abc&rdquo;;
 str1 == str2 ? true
@@ -115,14 +115,14 @@ str1.equals(str2) ? true</p></li>
 - `int[] iArr = {};`
 ### 1.4. `join()`과 `StringJoiner` (jdk1.8부터 추가)
 - `join()`은 문자열 사이에 구분자를 넣어서 결합
-- ~~~java
+- ```java
   String[] arr = { &quot;dog&quot;, &quot;cat&quot;, &quot;bear&quot;};
   String str = String.join(&quot;-&quot;, arr);
 </code></pre>
 
 <ul>
 <li><code>java.util.StringJoiner</code>클래스 사용하여 문자열 결합</li>
-<li>~~~java
+<li>```java
 StringJoiner sj = new StringJoiner(&ldquo;,&rdquo; , &ldquo;[&rdquo; , &ldquo;]&rdquo;);
 String[] strArr = { &ldquo;aaa&rdquo;, &ldquo;bbb&rdquo;, &ldquo;ccc&rdquo; };
 for(String s : strArr)
@@ -134,7 +134,7 @@ sj.add(s.toUpperCase());</li>
 <pre><code>### 1.5. 기본형-String 변환
 - 숫자에 빈문자열(&quot;&quot;) 더하기
 - `valueOf()` 사용
-- ~~~java
+- ```java
   String str1 = 100 + &quot;&quot;; // 100 &gt; &quot;100&quot;
   String str2 = String.valueOf(100); // 100 &gt; &quot;100&quot;
   int i = Integer.parseInt(&quot;100&quot;) // &quot;100&quot; &gt; 100

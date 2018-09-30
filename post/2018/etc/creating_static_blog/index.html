@@ -217,40 +217,40 @@ Giraffe Academy의 <a href="https://gohugo.io/getting-started/installing#windows
 <h3 id="4-8-쉘-스크립트로-업로드-자동화하기">4.8. 쉘 스크립트로 업로드 자동화하기</h3>
 
 <p><a href="http://gohugo.io/tutorials/github-pages-blog/">Hugo Docs</a>의 deploy.sh 파일을 활용하여 쉘스크립트 작성
-  <div class="highlight"><pre style="color:#586e75;background-color:#eee8d5;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">  <span style="color:#93a1a1;font-style:italic">#!/bin/bash
-</span><span style="color:#93a1a1;font-style:italic"></span>
-  <span style="color:#cb4b16">echo</span> -e <span style="color:#2aa198">&#34;\033[0;32mDeploying updates to GitHub...\033[0m&#34;</span>
+  <div class="highlight"><pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">  <span style="color:#1e889b">#!/bin/bash
+</span><span style="color:#1e889b"></span>
+  <span style="color:#658b00">echo</span> -e <span style="color:#cd5555">&#34;\033[0;32mDeploying updates to GitHub...\033[0m&#34;</span>
 
-  <span style="color:#93a1a1;font-style:italic"># Build the project.
-</span><span style="color:#93a1a1;font-style:italic"></span>  hugo -t hugo-theme-geppaku
+  <span style="color:#228b22"># Build the project.
+</span><span style="color:#228b22"></span>  hugo -t hugo-theme-geppaku
 
-  <span style="color:#93a1a1;font-style:italic"># Go To Public folder
-</span><span style="color:#93a1a1;font-style:italic"></span>  <span style="color:#cb4b16">cd</span> public
-  <span style="color:#93a1a1;font-style:italic"># Add changes to git.
-</span><span style="color:#93a1a1;font-style:italic"></span>  git add .
+  <span style="color:#228b22"># Go To Public folder
+</span><span style="color:#228b22"></span>  <span style="color:#658b00">cd</span> public
+  <span style="color:#228b22"># Add changes to git.
+</span><span style="color:#228b22"></span>  git add .
 
-  <span style="color:#93a1a1;font-style:italic"># Commit changes.
-</span><span style="color:#93a1a1;font-style:italic"></span>  <span style="color:#268bd2">msg</span>=<span style="color:#2aa198">&#34;rebuilding site `date`&#34;</span>
-  <span style="color:#859900">if</span> [ <span style="color:#268bd2">$#</span> -eq <span style="color:#2aa198;font-weight:bold">1</span> ]
-    <span style="color:#859900">then</span> <span style="color:#268bd2">msg</span>=<span style="color:#2aa198">&#34;</span><span style="color:#268bd2">$1</span><span style="color:#2aa198">&#34;</span>
-  <span style="color:#859900">fi</span>
-  git commit -m <span style="color:#2aa198">&#34;</span><span style="color:#268bd2">$msg</span><span style="color:#2aa198">&#34;</span>
+  <span style="color:#228b22"># Commit changes.
+</span><span style="color:#228b22"></span>  <span style="color:#00688b">msg</span>=<span style="color:#cd5555">&#34;rebuilding site `date`&#34;</span>
+  <span style="color:#8b008b;font-weight:bold">if</span> [ <span style="color:#00688b">$#</span> -eq <span style="color:#b452cd">1</span> ]
+    <span style="color:#8b008b;font-weight:bold">then</span> <span style="color:#00688b">msg</span>=<span style="color:#cd5555">&#34;</span><span style="color:#00688b">$1</span><span style="color:#cd5555">&#34;</span>
+  <span style="color:#8b008b;font-weight:bold">fi</span>
+  git commit -m <span style="color:#cd5555">&#34;</span><span style="color:#00688b">$msg</span><span style="color:#cd5555">&#34;</span>
 
-  <span style="color:#93a1a1;font-style:italic"># Push source and build repos.
-</span><span style="color:#93a1a1;font-style:italic"></span>  git push origin master
+  <span style="color:#228b22"># Push source and build repos.
+</span><span style="color:#228b22"></span>  git push origin master
 
-  <span style="color:#93a1a1;font-style:italic"># Come Back up to the Project Root
-</span><span style="color:#93a1a1;font-style:italic"></span>  <span style="color:#cb4b16">cd</span> ..
+  <span style="color:#228b22"># Come Back up to the Project Root
+</span><span style="color:#228b22"></span>  <span style="color:#658b00">cd</span> ..
 
 
-  <span style="color:#93a1a1;font-style:italic"># blog 저장소 Commit &amp; Push
-</span><span style="color:#93a1a1;font-style:italic"></span>  git add .
+  <span style="color:#228b22"># blog 저장소 Commit &amp; Push
+</span><span style="color:#228b22"></span>  git add .
 
-  <span style="color:#268bd2">msg</span>=<span style="color:#2aa198">&#34;rebuilding site `date`&#34;</span>
-  <span style="color:#859900">if</span> [ <span style="color:#268bd2">$#</span> -eq <span style="color:#2aa198;font-weight:bold">1</span> ]
-    <span style="color:#859900">then</span> <span style="color:#268bd2">msg</span>=<span style="color:#2aa198">&#34;</span><span style="color:#268bd2">$1</span><span style="color:#2aa198">&#34;</span>
-  <span style="color:#859900">fi</span>
-  git commit -m <span style="color:#2aa198">&#34;</span><span style="color:#268bd2">$msg</span><span style="color:#2aa198">&#34;</span>
+  <span style="color:#00688b">msg</span>=<span style="color:#cd5555">&#34;rebuilding site `date`&#34;</span>
+  <span style="color:#8b008b;font-weight:bold">if</span> [ <span style="color:#00688b">$#</span> -eq <span style="color:#b452cd">1</span> ]
+    <span style="color:#8b008b;font-weight:bold">then</span> <span style="color:#00688b">msg</span>=<span style="color:#cd5555">&#34;</span><span style="color:#00688b">$1</span><span style="color:#cd5555">&#34;</span>
+  <span style="color:#8b008b;font-weight:bold">fi</span>
+  git commit -m <span style="color:#cd5555">&#34;</span><span style="color:#00688b">$msg</span><span style="color:#cd5555">&#34;</span>
 
   git push origin master
   </code></pre></div></p>
@@ -284,12 +284,12 @@ Hugo 공식 문서에 소개된 댓글 위젯 중 Utterences는 없길래 생애
 <li>블로그 글과 Github 이슈를 매핑할 방법 6가지 중 한 가지를 선택하면</li>
 
 <li><p>밑에 아래와 같은 script를 자동으로 생성해준다.
-<div class="highlight"><pre style="color:#586e75;background-color:#eee8d5;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">    &lt;<span style="color:#268bd2;font-weight:bold">script</span> <span style="color:#268bd2">src</span>=<span style="color:#2aa198">&#34;https://utteranc.es/client.js&#34;</span>
-            <span style="color:#268bd2">repo</span>=<span style="color:#2aa198">&#34;integerous/blog-comments&#34;</span>
-            <span style="color:#268bd2">issue-term</span>=<span style="color:#2aa198">&#34;pathname&#34;</span>
-            <span style="color:#268bd2">crossorigin</span>=<span style="color:#2aa198">&#34;anonymous&#34;</span>
-            <span style="color:#268bd2">async</span>&gt;
-    &lt;/<span style="color:#268bd2;font-weight:bold">script</span>&gt;</code></pre></div></p></li>
+<div class="highlight"><pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">    &lt;<span style="color:#8b008b;font-weight:bold">script</span> <span style="color:#658b00">src</span>=<span style="color:#cd5555">&#34;https://utteranc.es/client.js&#34;</span>
+            <span style="color:#658b00">repo</span>=<span style="color:#cd5555">&#34;integerous/blog-comments&#34;</span>
+            <span style="color:#658b00">issue-term</span>=<span style="color:#cd5555">&#34;pathname&#34;</span>
+            <span style="color:#658b00">crossorigin</span>=<span style="color:#cd5555">&#34;anonymous&#34;</span>
+            <span style="color:#658b00">async</span>&gt;
+    &lt;/<span style="color:#8b008b;font-weight:bold">script</span>&gt;</code></pre></div></p></li>
 
 <li><p>위의 script를 본인의 블로그 템플릿중 원하는 위치에 넣으면</p></li>
 

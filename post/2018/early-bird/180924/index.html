@@ -98,15 +98,15 @@ abstract 리턴타입 메소드이름();
 </ul>
 
 <h2 id="4-인터페이스의-작성">4. 인터페이스의 작성</h2>
-<div class="highlight"><pre style="color:#586e75;background-color:#eee8d5;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#859900">interface</span> <span style="color:#cb4b16">PlayingCard</span> {
-  <span style="color:#859900">public</span> <span style="color:#859900">static</span> <span style="color:#859900">final</span> <span style="color:#859900;font-weight:bold">int</span> <span style="color:#268bd2">SPADE</span> = <span style="color:#268bd2">4</span>;
-  <span style="color:#859900">final</span> <span style="color:#859900;font-weight:bold">int</span> <span style="color:#268bd2">DIAMOND</span> = <span style="color:#268bd2">3</span>; <span style="color:#93a1a1;font-style:italic">//public static final int DIAMOND = 3;
-</span><span style="color:#93a1a1;font-style:italic"></span>  <span style="color:#859900">static</span> <span style="color:#859900;font-weight:bold">int</span> <span style="color:#268bd2">HEART</span> = <span style="color:#268bd2">2</span>;  <span style="color:#93a1a1;font-style:italic">//public static final int HEART = 2;
-</span><span style="color:#93a1a1;font-style:italic"></span>  <span style="color:#859900;font-weight:bold">int</span> <span style="color:#268bd2">CLOVER</span> = <span style="color:#268bd2">1</span>;        <span style="color:#93a1a1;font-style:italic">//public static final int CLOVER = 1;
-</span><span style="color:#93a1a1;font-style:italic"></span>  
-  <span style="color:#859900">public</span> <span style="color:#859900">abstract</span> <span style="color:#268bd2">String</span> <span style="color:#268bd2">getCardNumber</span>();
-  <span style="color:#268bd2">String</span> <span style="color:#268bd2">getCardKind</span>();  <span style="color:#93a1a1;font-style:italic">//public abstract String getCardKind();
-</span><span style="color:#93a1a1;font-style:italic"></span>}</code></pre></div>
+<div class="highlight"><pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#8b008b;font-weight:bold">interface</span> <span style="color:#008b45;font-weight:bold">PlayingCard</span> {
+  <span style="color:#8b008b;font-weight:bold">public</span> <span style="color:#8b008b;font-weight:bold">static</span> <span style="color:#8b008b;font-weight:bold">final</span> <span style="color:#00688b;font-weight:bold">int</span> SPADE = 4;
+  <span style="color:#8b008b;font-weight:bold">final</span> <span style="color:#00688b;font-weight:bold">int</span> DIAMOND = 3; <span style="color:#228b22">//public static final int DIAMOND = 3;
+</span><span style="color:#228b22"></span>  <span style="color:#8b008b;font-weight:bold">static</span> <span style="color:#00688b;font-weight:bold">int</span> HEART = 2;  <span style="color:#228b22">//public static final int HEART = 2;
+</span><span style="color:#228b22"></span>  <span style="color:#00688b;font-weight:bold">int</span> CLOVER = 1;        <span style="color:#228b22">//public static final int CLOVER = 1;
+</span><span style="color:#228b22"></span>  
+  <span style="color:#8b008b;font-weight:bold">public</span> <span style="color:#8b008b;font-weight:bold">abstract</span> String <span style="color:#008b45">getCardNumber</span>();
+  String <span style="color:#008b45">getCardKind</span>();  <span style="color:#228b22">//public abstract String getCardKind();
+</span><span style="color:#228b22"></span>}</code></pre></div>
 <ul>
 <li>모든 멤버변수는 public static final 이어야하며, 이를 생략할 수 있다.</li>
 <li>모든 메서드는 public abstract 이어야하며, 이를 생략할 수 있다.
@@ -126,9 +126,9 @@ abstract 리턴타입 메소드이름();
 <li>클래스는 <code>extends</code>(확장하다) 사용, 인터페이스는 <code>implements</code>(구현하다) 사용.</li>
 <li>상속과 구현을 동시에 할 수 있다.<br /></li>
 </ul>
-<div class="highlight"><pre style="color:#586e75;background-color:#eee8d5;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#859900">class</span> <span style="color:#cb4b16">Fighter</span> <span style="color:#859900">extends</span> <span style="color:#268bd2">Unit</span> <span style="color:#859900">implements</span> <span style="color:#268bd2">Fightable</span> {
-<span style="color:#859900">public</span> <span style="color:#859900;font-weight:bold">void</span> <span style="color:#268bd2">move</span>(<span style="color:#859900;font-weight:bold">int</span> <span style="color:#268bd2">x</span>, <span style="color:#859900;font-weight:bold">int</span> <span style="color:#268bd2">y</span>)  { <span style="color:#93a1a1;font-style:italic">/* 내용 생략 */</span> }
-<span style="color:#859900">public</span> <span style="color:#859900;font-weight:bold">void</span> <span style="color:#268bd2">attack</span>(<span style="color:#268bd2">Unit</span> <span style="color:#268bd2">u</span>)  { <span style="color:#93a1a1;font-style:italic">/* 내용 생략 */</span> }
+<div class="highlight"><pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#8b008b;font-weight:bold">class</span> <span style="color:#008b45;font-weight:bold">Fighter</span> <span style="color:#8b008b;font-weight:bold">extends</span> Unit <span style="color:#8b008b;font-weight:bold">implements</span> Fightable {
+    <span style="color:#8b008b;font-weight:bold">public</span> <span style="color:#00688b;font-weight:bold">void</span> <span style="color:#008b45">move</span>(<span style="color:#00688b;font-weight:bold">int</span> x, <span style="color:#00688b;font-weight:bold">int</span> y)  { <span style="color:#228b22">/* 내용 생략 */</span> }
+    <span style="color:#8b008b;font-weight:bold">public</span> <span style="color:#00688b;font-weight:bold">void</span> <span style="color:#008b45">attack</span>(Unit u)  { <span style="color:#228b22">/* 내용 생략 */</span> }
 }</code></pre></div>
   </div>
   <footer>
