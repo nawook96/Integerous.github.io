@@ -98,15 +98,15 @@ abstract 리턴타입 메소드이름();
 </ul>
 
 <h2 id="4-인터페이스의-작성">4. 인터페이스의 작성</h2>
-<div class="highlight"><pre style="color:#ccc;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#00cd00">interface</span> <span style="color:#00cdcd">PlayingCard</span> <span style="color:#39c">{</span>
-  <span style="color:#00cd00">public</span> <span style="color:#00cd00">static</span> <span style="color:#00cd00">final</span> <span style="color:#00cd00">int</span> SPADE <span style="color:#39c">=</span> 4<span style="color:#39c">;</span>
-  <span style="color:#00cd00">final</span> <span style="color:#00cd00">int</span> DIAMOND <span style="color:#39c">=</span> 3<span style="color:#39c">;</span> <span style="color:#000080">//public static final int DIAMOND = 3;
-</span><span style="color:#000080"></span>  <span style="color:#00cd00">static</span> <span style="color:#00cd00">int</span> HEART <span style="color:#39c">=</span> 2<span style="color:#39c">;</span>  <span style="color:#000080">//public static final int HEART = 2;
-</span><span style="color:#000080"></span>  <span style="color:#00cd00">int</span> CLOVER <span style="color:#39c">=</span> 1<span style="color:#39c">;</span>        <span style="color:#000080">//public static final int CLOVER = 1;
-</span><span style="color:#000080"></span>  
-  <span style="color:#00cd00">public</span> <span style="color:#00cd00">abstract</span> String getCardNumber<span style="color:#39c">();</span>
-  String getCardKind<span style="color:#39c">();</span>  <span style="color:#000080">//public abstract String getCardKind();
-</span><span style="color:#000080"></span><span style="color:#39c">}</span></code></pre></div>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#00f">interface</span> <span style="color:#2b91af">PlayingCard</span> {
+  <span style="color:#00f">public</span> <span style="color:#00f">static</span> <span style="color:#00f">final</span> <span style="color:#2b91af">int</span> SPADE = 4;
+  <span style="color:#00f">final</span> <span style="color:#2b91af">int</span> DIAMOND = 3; <span style="color:#008000">//public static final int DIAMOND = 3;
+</span><span style="color:#008000"></span>  <span style="color:#00f">static</span> <span style="color:#2b91af">int</span> HEART = 2;  <span style="color:#008000">//public static final int HEART = 2;
+</span><span style="color:#008000"></span>  <span style="color:#2b91af">int</span> CLOVER = 1;        <span style="color:#008000">//public static final int CLOVER = 1;
+</span><span style="color:#008000"></span>  
+  <span style="color:#00f">public</span> <span style="color:#00f">abstract</span> String getCardNumber();
+  String getCardKind();  <span style="color:#008000">//public abstract String getCardKind();
+</span><span style="color:#008000"></span>}</code></pre></div>
 <ul>
 <li>모든 멤버변수는 public static final 이어야하며, 이를 생략할 수 있다.</li>
 <li>모든 메서드는 public abstract 이어야하며, 이를 생략할 수 있다.
@@ -124,15 +124,12 @@ abstract 리턴타입 메소드이름();
 <li>클래스와 달리 다중 상속이 가능하다.</li>
 <li>인터페이스도 추상클래스처럼 그 자체로는 인스턴스를 생성할 수 없다.</li>
 <li>클래스는 <code>extends</code>(확장하다) 사용, 인터페이스는 <code>implements</code>(구현하다) 사용.</li>
-<li>상속과 구현을 동시에 할 수 있다.<br />
-<code>java
-class Fighter extends Unit implements Fightable {
-public void move(int x, int y)  { /* 내용 생략 */ }
-public void attack(Unit u)  { /* 내용 생략 */ }
-}
-</code></li>
+<li>상속과 구현을 동시에 할 수 있다.<br /></li>
 </ul>
-
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#00f">class</span> <span style="color:#2b91af">Fighter</span> <span style="color:#00f">extends</span> Unit <span style="color:#00f">implements</span> Fightable {
+<span style="color:#00f">public</span> <span style="color:#2b91af">void</span> move(<span style="color:#2b91af">int</span> x, <span style="color:#2b91af">int</span> y)  { <span style="color:#008000">/* 내용 생략 */</span> }
+<span style="color:#00f">public</span> <span style="color:#2b91af">void</span> attack(Unit u)  { <span style="color:#008000">/* 내용 생략 */</span> }
+}</code></pre></div>
   </div>
   <footer>
     <div class="article-footer">
