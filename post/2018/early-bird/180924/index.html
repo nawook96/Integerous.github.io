@@ -70,67 +70,48 @@
 <li>추상메소드가 없어도 <code>abstract</code>를 붙여서 추상클래스로 지정할 수 있다.</li>
 <li>추상클래스는 인스턴스를 생성할 수 없다.</li>
 <li>추상클래스는 상속을 통해서 자손클래스에 의해서만 완성된다.
-~~~java
-abstract class 클래스이름{
-&hellip;
-}
-~~~</li>
-</ul>
+<div class="highlight"><pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#069;font-weight:bold">abstract</span> <span style="color:#069;font-weight:bold">class</span> <span style="color:#0a8;font-weight:bold">클래스이름</span><span style="color:#555">{</span>
+  <span style="color:#555">...</span>
+<span style="color:#555">}</span>
+<span style="color:#555">{{</span> <span style="color:#555">/</span>highlight <span style="color:#555">&gt;}}</span>
 
-<h2 id="2-추상-메소드-abstract-method">2. 추상 메소드 (Abstract method)</h2>
+<span style="color:#a00;background-color:#faa">##</span> 2<span style="color:#555">.</span> 추상 <span style="color:#c0f">메소드</span> <span style="color:#555">(</span>Abstract method<span style="color:#555">)</span>
+<span style="color:#555">-</span> 선언부만 작성하고 구현부는 작성하지 않은 것이 추상메소드<span style="color:#555">.</span>
+<span style="color:#555">&lt;</span>div class<span style="color:#555">=</span><span style="color:#c30">&#34;highlight&#34;</span><span style="color:#555">&gt;&lt;</span>pre style<span style="color:#555">=</span><span style="color:#c30">&#34;background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;</span><span style="color:#555">&gt;&lt;</span>code class<span style="color:#555">=</span><span style="color:#c30">&#34;language-java&#34;</span> data<span style="color:#555">-</span>lang<span style="color:#555">=</span><span style="color:#c30">&#34;java&#34;</span><span style="color:#555">&gt;&lt;</span>span style<span style="color:#555">=</span><span style="color:#c30">&#34;color:#09f;font-style:italic&#34;</span><span style="color:#555">&gt;</span><span style="color:#09f;font-style:italic">/* 주석을 통해 기능 설명 */</span><span style="color:#555">&lt;/</span>span<span style="color:#555">&gt;</span>
+<span style="color:#555">&lt;</span>span style<span style="color:#555">=</span><span style="color:#c30">&#34;color:#069;font-weight:bold&#34;</span><span style="color:#555">&gt;</span><span style="color:#069;font-weight:bold">abstract</span><span style="color:#555">&lt;/</span>span<span style="color:#555">&gt;</span> 리턴타입 <span style="color:#555">&lt;</span>span style<span style="color:#555">=</span><span style="color:#c30">&#34;color:#c0f&#34;</span><span style="color:#555">&gt;</span>메소드이름<span style="color:#555">&lt;/</span>span<span style="color:#555">&gt;&lt;</span>span style<span style="color:#555">=</span><span style="color:#c30">&#34;color:#555&#34;</span><span style="color:#555">&gt;();&lt;/</span>span<span style="color:#555">&gt;&lt;/</span>code<span style="color:#555">&gt;&lt;/</span>pre<span style="color:#555">&gt;&lt;/</span>div<span style="color:#555">&gt;</span>
+<span style="color:#555">-</span> 추상클래스로부터 상속받는 자손클래스는 오버라이딩을 통해 조상인 추상클래스의 추상메소드를 모두 구현해야 한다<span style="color:#555">.</span>
+<span style="color:#555">-</span> 만약 부모로 부터 상속받은 추상메소드 중 하나라도 구현하지 않으면 자식클래스 역시 추상클래스로 지정해야 한다<span style="color:#555">.</span>
 
-<ul>
-<li>선언부만 작성하고 구현부는 작성하지 않은 것이 추상메소드.
-~~~java
-/* 주석을 통해 기능 설명 */
-abstract 리턴타입 메소드이름();
-~~~</li>
-<li>추상클래스로부터 상속받는 자손클래스는 오버라이딩을 통해 조상인 추상클래스의 추상메소드를 모두 구현해야 한다.</li>
-<li>만약 부모로 부터 상속받은 추상메소드 중 하나라도 구현하지 않으면 자식클래스 역시 추상클래스로 지정해야 한다.</li>
-</ul>
+<span style="color:#a00;background-color:#faa">##</span> 3<span style="color:#555">.</span> 인터페이스
+<span style="color:#555">-</span> 인터페이스는 일종의 추상클래스다<span style="color:#555">.</span>
+<span style="color:#555">-</span> 인터페이스는 추상클래스처럼 추상메소드를 갖지만<span style="color:#555">,</span> 추상클래스와 달리 몸통을 갖춘 일반 메소드 또는 멤버변수를 가질 수 없다<span style="color:#555">.</span>
+<span style="color:#555">-</span> 인터페이스는 오직 추상메소드와 상수만을 멤버로 가질 수 있다<span style="color:#555">.</span>
 
-<h2 id="3-인터페이스">3. 인터페이스</h2>
-
-<ul>
-<li>인터페이스는 일종의 추상클래스다.</li>
-<li>인터페이스는 추상클래스처럼 추상메소드를 갖지만, 추상클래스와 달리 몸통을 갖춘 일반 메소드 또는 멤버변수를 가질 수 없다.</li>
-<li>인터페이스는 오직 추상메소드와 상수만을 멤버로 가질 수 있다.</li>
-</ul>
-
-<h2 id="4-인터페이스의-작성">4. 인터페이스의 작성</h2>
-<div class="highlight"><pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#069;font-weight:bold">interface</span> <span style="color:#0a8;font-weight:bold">PlayingCard</span> <span style="color:#555">{</span>
-  <span style="color:#069;font-weight:bold">public</span> <span style="color:#069;font-weight:bold">static</span> <span style="color:#069;font-weight:bold">final</span> <span style="color:#078;font-weight:bold">int</span> SPADE <span style="color:#555">=</span> 4<span style="color:#555">;</span>
-  <span style="color:#069;font-weight:bold">final</span> <span style="color:#078;font-weight:bold">int</span> DIAMOND <span style="color:#555">=</span> 3<span style="color:#555">;</span> <span style="color:#09f;font-style:italic">//public static final int DIAMOND = 3;
-</span><span style="color:#09f;font-style:italic"></span>  <span style="color:#069;font-weight:bold">static</span> <span style="color:#078;font-weight:bold">int</span> HEART <span style="color:#555">=</span> 2<span style="color:#555">;</span>  <span style="color:#09f;font-style:italic">//public static final int HEART = 2;
-</span><span style="color:#09f;font-style:italic"></span>  <span style="color:#078;font-weight:bold">int</span> CLOVER <span style="color:#555">=</span> 1<span style="color:#555">;</span>        <span style="color:#09f;font-style:italic">//public static final int CLOVER = 1;
-</span><span style="color:#09f;font-style:italic"></span>  
-  <span style="color:#069;font-weight:bold">public</span> <span style="color:#069;font-weight:bold">abstract</span> String <span style="color:#c0f">getCardNumber</span><span style="color:#555">();</span>
-  String <span style="color:#c0f">getCardKind</span><span style="color:#555">();</span>  <span style="color:#09f;font-style:italic">//public abstract String getCardKind();
-</span><span style="color:#09f;font-style:italic"></span><span style="color:#555">}</span></code></pre></div>
-<ul>
-<li>모든 멤버변수는 public static final 이어야하며, 이를 생략할 수 있다.</li>
-<li>모든 메서드는 public abstract 이어야하며, 이를 생략할 수 있다.
-
-<ul>
-<li>단, jdk 1.8부터 static 메서드와 디폴트 메서트는 예외
-<br /></li>
-</ul></li>
-</ul>
-
-<h2 id="5-인터페이스의-상속과-구현">5. 인터페이스의 상속과 구현</h2>
-
-<ul>
-<li>인터페이스는 인터페이스로부터만 상속받을 수 있다.</li>
-<li>클래스와 달리 다중 상속이 가능하다.</li>
-<li>인터페이스도 추상클래스처럼 그 자체로는 인스턴스를 생성할 수 없다.</li>
-<li>클래스는 <code>extends</code>(확장하다) 사용, 인터페이스는 <code>implements</code>(구현하다) 사용.</li>
-<li>상속과 구현을 동시에 할 수 있다.
-~~~java
-class Fighter extends Unit implements Fightable {
-public void move(int x, int y)  { /* 내용 생략 <em>/ }
-public void attack(Unit u)  { /</em> 내용 생략 */ }
-}
-~~~</li>
+<span style="color:#a00;background-color:#faa">##</span> 4<span style="color:#555">.</span> 인터페이스의 작성
+<span style="color:#555">&lt;</span>div class<span style="color:#555">=</span><span style="color:#c30">&#34;highlight&#34;</span><span style="color:#555">&gt;&lt;</span>pre style<span style="color:#555">=</span><span style="color:#c30">&#34;background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;</span><span style="color:#555">&gt;&lt;</span>code class<span style="color:#555">=</span><span style="color:#c30">&#34;language-java&#34;</span> data<span style="color:#555">-</span>lang<span style="color:#555">=</span><span style="color:#c30">&#34;java&#34;</span><span style="color:#555">&gt;&lt;</span>span style<span style="color:#555">=</span><span style="color:#c30">&#34;color:#069;font-weight:bold&#34;</span><span style="color:#555">&gt;</span>interface<span style="color:#555">&lt;/</span>span<span style="color:#555">&gt;</span> <span style="color:#555">&lt;</span>span style<span style="color:#555">=</span><span style="color:#c30">&#34;color:#0a8;font-weight:bold&#34;</span><span style="color:#555">&gt;</span>PlayingCard<span style="color:#555">&lt;/</span>span<span style="color:#555">&gt;</span> <span style="color:#555">&lt;</span>span style<span style="color:#555">=</span><span style="color:#c30">&#34;color:#555&#34;</span><span style="color:#555">&gt;{&lt;/</span>span<span style="color:#555">&gt;</span>
+  <span style="color:#555">&lt;</span>span style<span style="color:#555">=</span><span style="color:#c30">&#34;color:#069;font-weight:bold&#34;</span><span style="color:#555">&gt;</span><span style="color:#069;font-weight:bold">public</span><span style="color:#555">&lt;/</span>span<span style="color:#555">&gt;</span> <span style="color:#555">&lt;</span>span style<span style="color:#555">=</span><span style="color:#c30">&#34;color:#069;font-weight:bold&#34;</span><span style="color:#555">&gt;</span><span style="color:#069;font-weight:bold">static</span><span style="color:#555">&lt;/</span>span<span style="color:#555">&gt;</span> <span style="color:#555">&lt;</span>span style<span style="color:#555">=</span><span style="color:#c30">&#34;color:#069;font-weight:bold&#34;</span><span style="color:#555">&gt;</span><span style="color:#069;font-weight:bold">final</span><span style="color:#555">&lt;/</span>span<span style="color:#555">&gt;</span> <span style="color:#555">&lt;</span>span style<span style="color:#555">=</span><span style="color:#c30">&#34;color:#078;font-weight:bold&#34;</span><span style="color:#555">&gt;</span><span style="color:#078;font-weight:bold">int</span><span style="color:#555">&lt;/</span>span<span style="color:#555">&gt;</span> SPADE <span style="color:#555">&lt;</span>span style<span style="color:#555">=</span><span style="color:#c30">&#34;color:#555&#34;</span><span style="color:#555">&gt;=&lt;/</span>span<span style="color:#555">&gt;</span> 4<span style="color:#555">&lt;</span>span style<span style="color:#555">=</span><span style="color:#c30">&#34;color:#555&#34;</span><span style="color:#555">&gt;;&lt;/</span>span<span style="color:#555">&gt;</span>
+  <span style="color:#555">&lt;</span>span style<span style="color:#555">=</span><span style="color:#c30">&#34;color:#069;font-weight:bold&#34;</span><span style="color:#555">&gt;</span><span style="color:#069;font-weight:bold">final</span><span style="color:#555">&lt;/</span>span<span style="color:#555">&gt;</span> <span style="color:#555">&lt;</span>span style<span style="color:#555">=</span><span style="color:#c30">&#34;color:#078;font-weight:bold&#34;</span><span style="color:#555">&gt;</span><span style="color:#078;font-weight:bold">int</span><span style="color:#555">&lt;/</span>span<span style="color:#555">&gt;</span> DIAMOND <span style="color:#555">&lt;</span>span style<span style="color:#555">=</span><span style="color:#c30">&#34;color:#555&#34;</span><span style="color:#555">&gt;=&lt;/</span>span<span style="color:#555">&gt;</span> 3<span style="color:#555">&lt;</span>span style<span style="color:#555">=</span><span style="color:#c30">&#34;color:#555&#34;</span><span style="color:#555">&gt;;&lt;/</span>span<span style="color:#555">&gt;</span> <span style="color:#555">&lt;</span>span style<span style="color:#555">=</span><span style="color:#c30">&#34;color:#09f;font-style:italic&#34;</span><span style="color:#555">&gt;</span><span style="color:#09f;font-style:italic">//public static final int DIAMOND = 3;
+</span><span style="color:#09f;font-style:italic"></span><span style="color:#555">&lt;/</span>span<span style="color:#555">&gt;&lt;</span>span style<span style="color:#555">=</span><span style="color:#c30">&#34;color:#09f;font-style:italic&#34;</span><span style="color:#555">&gt;&lt;/</span>span<span style="color:#555">&gt;</span>  <span style="color:#555">&lt;</span>span style<span style="color:#555">=</span><span style="color:#c30">&#34;color:#069;font-weight:bold&#34;</span><span style="color:#555">&gt;</span><span style="color:#069;font-weight:bold">static</span><span style="color:#555">&lt;/</span>span<span style="color:#555">&gt;</span> <span style="color:#555">&lt;</span>span style<span style="color:#555">=</span><span style="color:#c30">&#34;color:#078;font-weight:bold&#34;</span><span style="color:#555">&gt;</span><span style="color:#078;font-weight:bold">int</span><span style="color:#555">&lt;/</span>span<span style="color:#555">&gt;</span> HEART <span style="color:#555">&lt;</span>span style<span style="color:#555">=</span><span style="color:#c30">&#34;color:#555&#34;</span><span style="color:#555">&gt;=&lt;/</span>span<span style="color:#555">&gt;</span> 2<span style="color:#555">&lt;</span>span style<span style="color:#555">=</span><span style="color:#c30">&#34;color:#555&#34;</span><span style="color:#555">&gt;;&lt;/</span>span<span style="color:#555">&gt;</span>  <span style="color:#555">&lt;</span>span style<span style="color:#555">=</span><span style="color:#c30">&#34;color:#09f;font-style:italic&#34;</span><span style="color:#555">&gt;</span><span style="color:#09f;font-style:italic">//public static final int HEART = 2;
+</span><span style="color:#09f;font-style:italic"></span><span style="color:#555">&lt;/</span>span<span style="color:#555">&gt;&lt;</span>span style<span style="color:#555">=</span><span style="color:#c30">&#34;color:#09f;font-style:italic&#34;</span><span style="color:#555">&gt;&lt;/</span>span<span style="color:#555">&gt;</span>  <span style="color:#555">&lt;</span>span style<span style="color:#555">=</span><span style="color:#c30">&#34;color:#078;font-weight:bold&#34;</span><span style="color:#555">&gt;</span><span style="color:#078;font-weight:bold">int</span><span style="color:#555">&lt;/</span>span<span style="color:#555">&gt;</span> CLOVER <span style="color:#555">&lt;</span>span style<span style="color:#555">=</span><span style="color:#c30">&#34;color:#555&#34;</span><span style="color:#555">&gt;=&lt;/</span>span<span style="color:#555">&gt;</span> 1<span style="color:#555">&lt;</span>span style<span style="color:#555">=</span><span style="color:#c30">&#34;color:#555&#34;</span><span style="color:#555">&gt;;&lt;/</span>span<span style="color:#555">&gt;</span>        <span style="color:#555">&lt;</span>span style<span style="color:#555">=</span><span style="color:#c30">&#34;color:#09f;font-style:italic&#34;</span><span style="color:#555">&gt;</span><span style="color:#09f;font-style:italic">//public static final int CLOVER = 1;
+</span><span style="color:#09f;font-style:italic"></span><span style="color:#555">&lt;/</span>span<span style="color:#555">&gt;&lt;</span>span style<span style="color:#555">=</span><span style="color:#c30">&#34;color:#09f;font-style:italic&#34;</span><span style="color:#555">&gt;&lt;/</span>span<span style="color:#555">&gt;</span>  
+  <span style="color:#555">&lt;</span>span style<span style="color:#555">=</span><span style="color:#c30">&#34;color:#069;font-weight:bold&#34;</span><span style="color:#555">&gt;</span><span style="color:#069;font-weight:bold">public</span><span style="color:#555">&lt;/</span>span<span style="color:#555">&gt;</span> <span style="color:#555">&lt;</span>span style<span style="color:#555">=</span><span style="color:#c30">&#34;color:#069;font-weight:bold&#34;</span><span style="color:#555">&gt;</span><span style="color:#069;font-weight:bold">abstract</span><span style="color:#555">&lt;/</span>span<span style="color:#555">&gt;</span> String <span style="color:#555">&lt;</span>span style<span style="color:#555">=</span><span style="color:#c30">&#34;color:#c0f&#34;</span><span style="color:#555">&gt;</span>getCardNumber<span style="color:#555">&lt;/</span>span<span style="color:#555">&gt;&lt;</span>span style<span style="color:#555">=</span><span style="color:#c30">&#34;color:#555&#34;</span><span style="color:#555">&gt;();&lt;/</span>span<span style="color:#555">&gt;</span>
+  String <span style="color:#555">&lt;</span>span style<span style="color:#555">=</span><span style="color:#c30">&#34;color:#c0f&#34;</span><span style="color:#555">&gt;</span>getCardKind<span style="color:#555">&lt;/</span>span<span style="color:#555">&gt;&lt;</span>span style<span style="color:#555">=</span><span style="color:#c30">&#34;color:#555&#34;</span><span style="color:#555">&gt;();&lt;/</span>span<span style="color:#555">&gt;</span>  <span style="color:#555">&lt;</span>span style<span style="color:#555">=</span><span style="color:#c30">&#34;color:#09f;font-style:italic&#34;</span><span style="color:#555">&gt;</span><span style="color:#09f;font-style:italic">//public abstract String getCardKind();
+</span><span style="color:#09f;font-style:italic"></span><span style="color:#555">&lt;/</span>span<span style="color:#555">&gt;&lt;</span>span style<span style="color:#555">=</span><span style="color:#c30">&#34;color:#09f;font-style:italic&#34;</span><span style="color:#555">&gt;&lt;/</span>span<span style="color:#555">&gt;&lt;</span>span style<span style="color:#555">=</span><span style="color:#c30">&#34;color:#555&#34;</span><span style="color:#555">&gt;}&lt;/</span>span<span style="color:#555">&gt;&lt;/</span>code<span style="color:#555">&gt;&lt;/</span>pre<span style="color:#555">&gt;&lt;/</span>div<span style="color:#555">&gt;</span>
+<span style="color:#555">-</span> 모든 멤버변수는 <span style="color:#069;font-weight:bold">public</span> <span style="color:#069;font-weight:bold">static</span> <span style="color:#069;font-weight:bold">final</span> 이어야하며<span style="color:#555">,</span> 이를 생략할 수 있다<span style="color:#555">.</span>
+<span style="color:#555">-</span> 모든 메서드는 <span style="color:#069;font-weight:bold">public</span> <span style="color:#069;font-weight:bold">abstract</span> 이어야하며<span style="color:#555">,</span> 이를 생략할 수 있다<span style="color:#555">.</span>
+  <span style="color:#555">-</span> 단<span style="color:#555">,</span> jdk 1<span style="color:#555">.</span><span style="color:#309">8부터</span> <span style="color:#069;font-weight:bold">static</span> 메서드와 디폴트 메서트는 예외
+  
+<span style="color:#a00;background-color:#faa">##</span> 5<span style="color:#555">.</span> 인터페이스의 상속과 구현
+<span style="color:#555">-</span> 인터페이스는 인터페이스로부터만 상속받을 수 있다<span style="color:#555">.</span>
+<span style="color:#555">-</span> 클래스와 달리 다중 상속이 가능하다<span style="color:#555">.</span>
+<span style="color:#555">-</span> 인터페이스도 추상클래스처럼 그 자체로는 인스턴스를 생성할 수 없다<span style="color:#555">.</span>
+<span style="color:#555">-</span> 클래스는 <span style="color:#a00;background-color:#faa">`</span><span style="color:#069;font-weight:bold">extends</span><span style="color:#a00;background-color:#faa">`</span><span style="color:#555">(</span>확장하다<span style="color:#555">)</span> 사용<span style="color:#555">,</span> 인터페이스는 <span style="color:#a00;background-color:#faa">`</span><span style="color:#069;font-weight:bold">implements</span><span style="color:#a00;background-color:#faa">`</span><span style="color:#555">(</span>구현하다<span style="color:#555">)</span> 사용<span style="color:#555">.</span>
+<span style="color:#555">-</span> 상속과 구현을 동시에 할 수 있다<span style="color:#555">.</span>
+  <span style="color:#555">&lt;</span>div class<span style="color:#555">=</span><span style="color:#c30">&#34;highlight&#34;</span><span style="color:#555">&gt;&lt;</span>pre style<span style="color:#555">=</span><span style="color:#c30">&#34;background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;</span><span style="color:#555">&gt;&lt;</span>code class<span style="color:#555">=</span><span style="color:#c30">&#34;language-java&#34;</span> data<span style="color:#555">-</span>lang<span style="color:#555">=</span><span style="color:#c30">&#34;java&#34;</span><span style="color:#555">&gt;</span>  <span style="color:#555">&lt;</span>span style<span style="color:#555">=</span><span style="color:#c30">&#34;color:#069;font-weight:bold&#34;</span><span style="color:#555">&gt;</span>class<span style="color:#555">&lt;/</span>span<span style="color:#555">&gt;</span> <span style="color:#555">&lt;</span>span style<span style="color:#555">=</span><span style="color:#c30">&#34;color:#0a8;font-weight:bold&#34;</span><span style="color:#555">&gt;</span>Fighter<span style="color:#555">&lt;/</span>span<span style="color:#555">&gt;</span> <span style="color:#555">&lt;</span>span style<span style="color:#555">=</span><span style="color:#c30">&#34;color:#069;font-weight:bold&#34;</span><span style="color:#555">&gt;</span><span style="color:#069;font-weight:bold">extends</span><span style="color:#555">&lt;/</span>span<span style="color:#555">&gt;</span> Unit <span style="color:#555">&lt;</span>span style<span style="color:#555">=</span><span style="color:#c30">&#34;color:#069;font-weight:bold&#34;</span><span style="color:#555">&gt;</span><span style="color:#069;font-weight:bold">implements</span><span style="color:#555">&lt;/</span>span<span style="color:#555">&gt;</span> Fightable <span style="color:#555">&lt;</span>span style<span style="color:#555">=</span><span style="color:#c30">&#34;color:#555&#34;</span><span style="color:#555">&gt;{&lt;/</span>span<span style="color:#555">&gt;</span>
+    <span style="color:#555">&lt;</span>span style<span style="color:#555">=</span><span style="color:#c30">&#34;color:#069;font-weight:bold&#34;</span><span style="color:#555">&gt;</span><span style="color:#069;font-weight:bold">public</span><span style="color:#555">&lt;/</span>span<span style="color:#555">&gt;</span> <span style="color:#555">&lt;</span>span style<span style="color:#555">=</span><span style="color:#c30">&#34;color:#078;font-weight:bold&#34;</span><span style="color:#555">&gt;</span><span style="color:#078;font-weight:bold">void</span><span style="color:#555">&lt;/</span>span<span style="color:#555">&gt;</span> <span style="color:#555">&lt;</span>span style<span style="color:#555">=</span><span style="color:#c30">&#34;color:#c0f&#34;</span><span style="color:#555">&gt;</span>move<span style="color:#555">&lt;/</span>span<span style="color:#555">&gt;&lt;</span>span style<span style="color:#555">=</span><span style="color:#c30">&#34;color:#555&#34;</span><span style="color:#555">&gt;(&lt;/</span>span<span style="color:#555">&gt;&lt;</span>span style<span style="color:#555">=</span><span style="color:#c30">&#34;color:#078;font-weight:bold&#34;</span><span style="color:#555">&gt;</span><span style="color:#078;font-weight:bold">int</span><span style="color:#555">&lt;/</span>span<span style="color:#555">&gt;</span> x<span style="color:#555">&lt;</span>span style<span style="color:#555">=</span><span style="color:#c30">&#34;color:#555&#34;</span><span style="color:#555">&gt;,&lt;/</span>span<span style="color:#555">&gt;</span> <span style="color:#555">&lt;</span>span style<span style="color:#555">=</span><span style="color:#c30">&#34;color:#078;font-weight:bold&#34;</span><span style="color:#555">&gt;</span><span style="color:#078;font-weight:bold">int</span><span style="color:#555">&lt;/</span>span<span style="color:#555">&gt;</span> y<span style="color:#555">&lt;</span>span style<span style="color:#555">=</span><span style="color:#c30">&#34;color:#555&#34;</span><span style="color:#555">&gt;)&lt;/</span>span<span style="color:#555">&gt;</span>  <span style="color:#555">&lt;</span>span style<span style="color:#555">=</span><span style="color:#c30">&#34;color:#555&#34;</span><span style="color:#555">&gt;{&lt;/</span>span<span style="color:#555">&gt;</span> <span style="color:#555">&lt;</span>span style<span style="color:#555">=</span><span style="color:#c30">&#34;color:#09f;font-style:italic&#34;</span><span style="color:#555">&gt;</span><span style="color:#09f;font-style:italic">/* 내용 생략 */</span><span style="color:#555">&lt;/</span>span<span style="color:#555">&gt;</span> <span style="color:#555">&lt;</span>span style<span style="color:#555">=</span><span style="color:#c30">&#34;color:#555&#34;</span><span style="color:#555">&gt;}&lt;/</span>span<span style="color:#555">&gt;</span>
+    <span style="color:#555">&lt;</span>span style<span style="color:#555">=</span><span style="color:#c30">&#34;color:#069;font-weight:bold&#34;</span><span style="color:#555">&gt;</span><span style="color:#069;font-weight:bold">public</span><span style="color:#555">&lt;/</span>span<span style="color:#555">&gt;</span> <span style="color:#555">&lt;</span>span style<span style="color:#555">=</span><span style="color:#c30">&#34;color:#078;font-weight:bold&#34;</span><span style="color:#555">&gt;</span><span style="color:#078;font-weight:bold">void</span><span style="color:#555">&lt;/</span>span<span style="color:#555">&gt;</span> <span style="color:#555">&lt;</span>span style<span style="color:#555">=</span><span style="color:#c30">&#34;color:#c0f&#34;</span><span style="color:#555">&gt;</span>attack<span style="color:#555">&lt;/</span>span<span style="color:#555">&gt;&lt;</span>span style<span style="color:#555">=</span><span style="color:#c30">&#34;color:#555&#34;</span><span style="color:#555">&gt;(&lt;/</span>span<span style="color:#555">&gt;</span>Unit u<span style="color:#555">&lt;</span>span style<span style="color:#555">=</span><span style="color:#c30">&#34;color:#555&#34;</span><span style="color:#555">&gt;)&lt;/</span>span<span style="color:#555">&gt;</span>  <span style="color:#555">&lt;</span>span style<span style="color:#555">=</span><span style="color:#c30">&#34;color:#555&#34;</span><span style="color:#555">&gt;{&lt;/</span>span<span style="color:#555">&gt;</span> <span style="color:#555">&lt;</span>span style<span style="color:#555">=</span><span style="color:#c30">&#34;color:#09f;font-style:italic&#34;</span><span style="color:#555">&gt;</span><span style="color:#09f;font-style:italic">/* 내용 생략 */</span><span style="color:#555">&lt;/</span>span<span style="color:#555">&gt;</span> <span style="color:#555">&lt;</span>span style<span style="color:#555">=</span><span style="color:#c30">&#34;color:#555&#34;</span><span style="color:#555">&gt;}&lt;/</span>span<span style="color:#555">&gt;</span>
+  <span style="color:#555">&lt;</span>span style<span style="color:#555">=</span><span style="color:#c30">&#34;color:#555&#34;</span><span style="color:#555">&gt;}&lt;/</span>span<span style="color:#555">&gt;</span>
+  <span style="color:#555">&lt;/</span>code<span style="color:#555">&gt;&lt;/</span>pre<span style="color:#555">&gt;&lt;/</span>div<span style="color:#555">&gt;</span></code></pre></div></li>
 </ul>
 
   </div>
@@ -205,10 +186,6 @@ public void attack(Unit u)  { /</em> 내용 생략 */ }
 <li>
 <ul>
 <li><a href="#1-추상-클래스-abstract-class">1. 추상 클래스 (Abstract class)</a></li>
-<li><a href="#2-추상-메소드-abstract-method">2. 추상 메소드 (Abstract method)</a></li>
-<li><a href="#3-인터페이스">3. 인터페이스</a></li>
-<li><a href="#4-인터페이스의-작성">4. 인터페이스의 작성</a></li>
-<li><a href="#5-인터페이스의-상속과-구현">5. 인터페이스의 상속과 구현</a></li>
 </ul></li>
 </ul>
 </nav>
@@ -225,10 +202,6 @@ public void attack(Unit u)  { /</em> 내용 생략 */ }
       <ul>
         
         <li>
-          <a href="/categories/"><span></span> (1)</a>
-        </li>
-        
-        <li>
           <a href="/categories/2018"><span></span>2018 (14)</a>
         </li>
         
@@ -237,7 +210,7 @@ public void attack(Unit u)  { /</em> 내용 생략 */ }
         </li>
         
         <li>
-          <a href="/categories/early-bird"><span></span>early-bird (7)</a>
+          <a href="/categories/early-bird"><span></span>early-bird (8)</a>
         </li>
         
         <li>
