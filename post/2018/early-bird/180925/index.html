@@ -68,25 +68,25 @@
 <ul>
 <li>리턴 타입이 인터페이스라는 것은 메소드가 해당 인터페이스를 구현한 클래스의 인스턴스를 반환한다는 것을 의미한다.<br /></li>
 </ul>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java">Fightable <span style="color:#50fa7b">method</span><span style="color:#ff79c6">()</span>  <span style="color:#ff79c6">{</span>
-    <span style="color:#ff79c6">...</span>
-    Fighter f <span style="color:#ff79c6">=</span> <span style="color:#ff79c6">new</span> Fighter<span style="color:#ff79c6">();</span>
-    <span style="color:#ff79c6">return</span> f<span style="color:#ff79c6">;</span></code></pre></div>
+<div class="highlight"><pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java">Fightable <span style="color:#008b45">method</span>()  {
+    ...
+    Fighter f = <span style="color:#8b008b;font-weight:bold">new</span> Fighter();
+    <span style="color:#8b008b;font-weight:bold">return</span> f;</code></pre></div>
 <ul>
 <li>repair 메소드의 매개변수의 타입을 Repairable로 선언하면, 이 메소드의 매개변수로 Repairable 인터페이스를 구현한 클래스의 인스턴스만 받아들여진다.</li>
 </ul>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#8be9fd;font-style:italic">interface</span> <span style="color:#50fa7b">Repairable</span><span style="color:#ff79c6">()</span> <span style="color:#ff79c6">{}</span>
-<span style="color:#8be9fd;font-style:italic">class</span> <span style="color:#50fa7b">SCV</span> <span style="color:#8be9fd;font-style:italic">extends</span> GroundUnit <span style="color:#8be9fd;font-style:italic">implements</span> Repairable <span style="color:#ff79c6">{</span>
-    <span style="color:#ff79c6">...</span>
-<span style="color:#ff79c6">}</span>
-<span style="color:#8be9fd;font-style:italic">class</span> <span style="color:#50fa7b">Tank</span> <span style="color:#8be9fd;font-style:italic">extends</span> GroundUnit <span style="color:#8be9fd;font-style:italic">implements</span> Repairable <span style="color:#ff79c6">{</span>
-    <span style="color:#ff79c6">...</span>
-<span style="color:#ff79c6">}</span>
-<span style="color:#8be9fd;font-style:italic">class</span> <span style="color:#50fa7b">Drop</span> <span style="color:#8be9fd;font-style:italic">extends</span> AirUnit <span style="color:#8be9fd;font-style:italic">implements</span> Repairable  <span style="color:#ff79c6">{</span>
-    <span style="color:#ff79c6">...</span>
-<span style="color:#ff79c6">}</span></code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#8be9fd">void</span> <span style="color:#50fa7b">repair</span><span style="color:#ff79c6">(</span>Repairable r<span style="color:#ff79c6">)</span> <span style="color:#ff79c6">{</span>
-    <span style="color:#6272a4">// 매개변수로 넘겨받은 유닛을 수리한다.
-</span><span style="color:#6272a4"></span><span style="color:#ff79c6">}</span></code></pre></div>
+<div class="highlight"><pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#8b008b;font-weight:bold">interface</span> <span style="color:#008b45">Repairable</span>() {}
+<span style="color:#8b008b;font-weight:bold">class</span> <span style="color:#008b45;font-weight:bold">SCV</span> <span style="color:#8b008b;font-weight:bold">extends</span> GroundUnit <span style="color:#8b008b;font-weight:bold">implements</span> Repairable {
+    ...
+}
+<span style="color:#8b008b;font-weight:bold">class</span> <span style="color:#008b45;font-weight:bold">Tank</span> <span style="color:#8b008b;font-weight:bold">extends</span> GroundUnit <span style="color:#8b008b;font-weight:bold">implements</span> Repairable {
+    ...
+}
+<span style="color:#8b008b;font-weight:bold">class</span> <span style="color:#008b45;font-weight:bold">Drop</span> <span style="color:#8b008b;font-weight:bold">extends</span> AirUnit <span style="color:#8b008b;font-weight:bold">implements</span> Repairable  {
+    ...
+}</code></pre></div><div class="highlight"><pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#00688b;font-weight:bold">void</span> <span style="color:#008b45">repair</span>(Repairable r) {
+    <span style="color:#228b22">// 매개변수로 넘겨받은 유닛을 수리한다.
+</span><span style="color:#228b22"></span>}</code></pre></div>
 <ul>
 <li>앞으로 새로운 클래스가 추가될 때, SCV의 repair 메소드에 의해 수리가 가능하도록 하려면 Repairable 인터페이스를 구현하면 된다.</li>
 <li>인터페이스 타입의 매개변수가 갖는 의미는 메소드 호출 시 해당 인터페이스를 구현한 클래스의 인스턴스를 매개변수로 제공해야 한다는 것이다.</li>

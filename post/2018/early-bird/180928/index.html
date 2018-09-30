@@ -77,13 +77,13 @@
 
 <ul>
 <li><p>JDK1.5부터 오버라이딩할 때 부모 메소드의 반환타입을 자식 클래스의 타입으로 변경 가능하다.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#8be9fd;font-style:italic">public</span> Point <span style="color:#50fa7b">clone</span><span style="color:#ff79c6">()</span>  <span style="color:#ff79c6">{</span> <span style="color:#6272a4">// 반환타입을 Object에서 Point로 변경
-</span><span style="color:#6272a4"></span>Object obj <span style="color:#ff79c6">=</span> <span style="color:#ff79c6">null</span><span style="color:#ff79c6">;</span>
-<span style="color:#ff79c6">try</span> <span style="color:#ff79c6">{</span>
-    obj <span style="color:#ff79c6">=</span> <span style="color:#8be9fd;font-style:italic">super</span><span style="color:#ff79c6">.</span><span style="color:#50fa7b">clone</span><span style="color:#ff79c6">();</span>
-<span style="color:#ff79c6">}</span> <span style="color:#ff79c6">catch</span><span style="color:#ff79c6">(</span>CloneNotSupportedException e<span style="color:#ff79c6">)</span> <span style="color:#ff79c6">{}</span>
+<div class="highlight"><pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#8b008b;font-weight:bold">public</span> Point <span style="color:#008b45">clone</span>()  { <span style="color:#228b22">// 반환타입을 Object에서 Point로 변경
+</span><span style="color:#228b22"></span>Object obj = <span style="color:#8b008b;font-weight:bold">null</span>;
+<span style="color:#8b008b;font-weight:bold">try</span> {
+    obj = <span style="color:#8b008b;font-weight:bold">super</span>.<span style="color:#658b00">clone</span>();
+} <span style="color:#8b008b;font-weight:bold">catch</span>(CloneNotSupportedException e) {}
     
-<span style="color:#ff79c6">return</span> <span style="color:#ff79c6">(</span>Point<span style="color:#ff79c6">)</span>obj<span style="color:#ff79c6">;</span> <span style="color:#ff79c6">//</span>Point 타입으로 형변환</code></pre></div></li>
+<span style="color:#8b008b;font-weight:bold">return</span> (Point)obj; //Point 타입으로 형변환</code></pre></div></li>
 
 <li><p>공변 반환타입을 사용하면 조상의 타입이 아닌, 실제로 반환되는 자손 객체의 타입으로 반환할 수 있어 번거로운 형변환이 줄었다.</p>
 

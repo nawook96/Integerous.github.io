@@ -108,21 +108,21 @@
 <ul>
 <li>JDK1.7부터 여러 catch블럭을 <code>|</code>기호를 이용해서 하나의 catch 블럭으로 합칠 수 있다.</li>
 </ul>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java">    <span style="color:#ff79c6">try</span> <span style="color:#ff79c6">{</span>
-        <span style="color:#ff79c6">...</span>
-    <span style="color:#ff79c6">}</span> <span style="color:#ff79c6">catch</span> <span style="color:#ff79c6">(</span>ExceptionA e<span style="color:#ff79c6">)</span>  <span style="color:#ff79c6">{</span>
-        e<span style="color:#ff79c6">.</span><span style="color:#50fa7b">printStackTrace</span><span style="color:#ff79c6">();</span>
-    <span style="color:#ff79c6">}</span> <span style="color:#ff79c6">catch</span> <span style="color:#ff79c6">(</span>ExceptionB e2<span style="color:#ff79c6">)</span> <span style="color:#ff79c6">{</span>
-        e2<span style="color:#ff79c6">.</span><span style="color:#50fa7b">printStacktrace</span><span style="color:#ff79c6">();</span>
-    <span style="color:#ff79c6">}</span></code></pre></div>
+<div class="highlight"><pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java">    <span style="color:#8b008b;font-weight:bold">try</span> {
+        ...
+    } <span style="color:#8b008b;font-weight:bold">catch</span> (ExceptionA e)  {
+        e.<span style="color:#658b00">printStackTrace</span>();
+    } <span style="color:#8b008b;font-weight:bold">catch</span> (ExceptionB e2) {
+        e2.<span style="color:#658b00">printStacktrace</span>();
+    }</code></pre></div>
 <ul>
 <li>이 try-catch 문을 아래와 같이 바꿀 수 있다.</li>
 </ul>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#ff79c6">try</span> <span style="color:#ff79c6">{</span>
-    <span style="color:#ff79c6">...</span>
-<span style="color:#ff79c6">}</span> <span style="color:#ff79c6">catch</span> <span style="color:#ff79c6">(</span>ExceptionA <span style="color:#ff79c6">|</span> ExceptionB e<span style="color:#ff79c6">)</span> <span style="color:#ff79c6">{</span>
-    e<span style="color:#ff79c6">.</span><span style="color:#50fa7b">printStackTrace</span><span style="color:#ff79c6">();</span>
-<span style="color:#ff79c6">}</span></code></pre></div>
+<div class="highlight"><pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#8b008b;font-weight:bold">try</span> {
+    ...
+} <span style="color:#8b008b;font-weight:bold">catch</span> (ExceptionA | ExceptionB e) {
+    e.<span style="color:#658b00">printStackTrace</span>();
+}</code></pre></div>
 <ul>
 <li>단, 예외클래스들이 조상-자손 관계에 있으면 컴파일 에러가 발생한다.(불필요한 코드는 제거하라는 의미의 에러)</li>
 </ul>
