@@ -77,13 +77,13 @@
 
 <ul>
 <li><p>JDK1.5부터 오버라이딩할 때 부모 메소드의 반환타입을 자식 클래스의 타입으로 변경 가능하다.</p>
-<div class="highlight"><pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#8b008b;font-weight:bold">public</span> Point <span style="color:#008b45">clone</span>()  { <span style="color:#228b22">// 반환타입을 Object에서 Point로 변경
-</span><span style="color:#228b22"></span>Object obj = <span style="color:#8b008b;font-weight:bold">null</span>;
-<span style="color:#8b008b;font-weight:bold">try</span> {
-    obj = <span style="color:#8b008b;font-weight:bold">super</span>.<span style="color:#658b00">clone</span>();
-} <span style="color:#8b008b;font-weight:bold">catch</span>(CloneNotSupportedException e) {}
+<div class="highlight"><pre style="color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#6ab825;font-weight:bold">public</span> Point <span style="color:#447fcf">clone</span>()  { <span style="color:#999;font-style:italic">// 반환타입을 Object에서 Point로 변경
+</span><span style="color:#999;font-style:italic"></span>Object obj = <span style="color:#6ab825;font-weight:bold">null</span>;
+<span style="color:#6ab825;font-weight:bold">try</span> {
+    obj = <span style="color:#6ab825;font-weight:bold">super</span>.<span style="color:#bbb">clone</span>();
+} <span style="color:#6ab825;font-weight:bold">catch</span>(CloneNotSupportedException e) {}
     
-<span style="color:#8b008b;font-weight:bold">return</span> (Point)obj; //Point 타입으로 형변환</code></pre></div></li>
+<span style="color:#6ab825;font-weight:bold">return</span> (Point)obj; //Point 타입으로 형변환</code></pre></div></li>
 
 <li><p>공변 반환타입을 사용하면 조상의 타입이 아닌, 실제로 반환되는 자손 객체의 타입으로 반환할 수 있어 번거로운 형변환이 줄었다.</p>
 
@@ -96,17 +96,17 @@
 
 <ul>
 <li>배열도 객체이기 때문에 Object 클래스를 상속받으며, 동시에 Cloneable 인터페이스와 Serializable 인터페이스가 구현되어 있다.</li>
-<li>일반적으로 배열을 복사할 때는 같은 길이의 새로운 배열을 생성한 다음 <code>System.arraycopy()</code>를 이용해서 내용을 복사하지만 <code>clone()</code>을 이용해서 간단하게 복사할 수 있다.
+<li>일반적으로 배열을 복사할 때는 같은 길이의 새로운 배열을 생성한 다음 <code>System.arraycopy()</code>를 이용해서 내용을 복사하지만 <code>clone()</code>을 이용해서 간단하게 복사할 수 있다.<br />
 <code>java
 int[] arr = {1,2,3,4,5};
 int[] arrClone = arr.clone();
-</code>
+</code><br />
 <code>java
 int[] arr = {1,2,3,4,5};
 int[] arrClone = new int[arr.length];
 System.arraycopy(arr,0,arrClone,0,arr.length);
-</code></li>
-<li>배열 뿐만 아니라 <code>java.util</code> 패키지의
+</code><br /></li>
+<li>배열 뿐만 아니라 <code>java.util</code> 패키지의<br />
 &gt;Vector<br />
 &gt;ArrayList<br />
 &gt;LinkedList<br />
@@ -145,7 +145,7 @@ System.arraycopy(arr,0,arrClone,0,arr.length);
 public final class Class implements ... {
 ...
 }
-</code></li>
+</code><br /></li>
 <li>Class 객체는 클래스의 모든 정보를 담고 있으며, 클래스 당 1개만 존재한다.</li>
 <li>클래스 파일이 &lsquo;ClassLoader&rsquo;에 의해 메모리에 올라갈 때 자동으로 생성
 
