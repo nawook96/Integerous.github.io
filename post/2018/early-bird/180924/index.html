@@ -98,15 +98,15 @@ abstract 리턴타입 메소드이름();
 </ul>
 
 <h2 id="4-인터페이스의-작성">4. 인터페이스의 작성</h2>
-<div class="highlight"><pre style="color:#8a8a8a;background-color:#1c1c1c;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#0087ff">interface</span> <span style="color:#0087ff">PlayingCard</span> {
-  <span style="color:#0087ff">public</span> <span style="color:#0087ff">static</span> <span style="color:#0087ff">final</span> <span style="color:#af0000">int</span> SPADE = 4;
-  <span style="color:#0087ff">final</span> <span style="color:#af0000">int</span> DIAMOND = 3; <span style="color:#4e4e4e">//public static final int DIAMOND = 3;
-</span><span style="color:#4e4e4e"></span>  <span style="color:#0087ff">static</span> <span style="color:#af0000">int</span> HEART = 2;  <span style="color:#4e4e4e">//public static final int HEART = 2;
-</span><span style="color:#4e4e4e"></span>  <span style="color:#af0000">int</span> CLOVER = 1;        <span style="color:#4e4e4e">//public static final int CLOVER = 1;
-</span><span style="color:#4e4e4e"></span>  
-  <span style="color:#0087ff">public</span> <span style="color:#0087ff">abstract</span> String <span style="color:#0087ff">getCardNumber</span>();
-  String <span style="color:#0087ff">getCardKind</span>();  <span style="color:#4e4e4e">//public abstract String getCardKind();
-</span><span style="color:#4e4e4e"></span>}</code></pre></div>
+<div class="highlight"><pre style="color:#ccc;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#00cd00">interface</span> <span style="color:#00cdcd">PlayingCard</span> <span style="color:#39c">{</span>
+  <span style="color:#00cd00">public</span> <span style="color:#00cd00">static</span> <span style="color:#00cd00">final</span> <span style="color:#00cd00">int</span> SPADE <span style="color:#39c">=</span> 4<span style="color:#39c">;</span>
+  <span style="color:#00cd00">final</span> <span style="color:#00cd00">int</span> DIAMOND <span style="color:#39c">=</span> 3<span style="color:#39c">;</span> <span style="color:#000080">//public static final int DIAMOND = 3;
+</span><span style="color:#000080"></span>  <span style="color:#00cd00">static</span> <span style="color:#00cd00">int</span> HEART <span style="color:#39c">=</span> 2<span style="color:#39c">;</span>  <span style="color:#000080">//public static final int HEART = 2;
+</span><span style="color:#000080"></span>  <span style="color:#00cd00">int</span> CLOVER <span style="color:#39c">=</span> 1<span style="color:#39c">;</span>        <span style="color:#000080">//public static final int CLOVER = 1;
+</span><span style="color:#000080"></span>  
+  <span style="color:#00cd00">public</span> <span style="color:#00cd00">abstract</span> String getCardNumber<span style="color:#39c">();</span>
+  String getCardKind<span style="color:#39c">();</span>  <span style="color:#000080">//public abstract String getCardKind();
+</span><span style="color:#000080"></span><span style="color:#39c">}</span></code></pre></div>
 <ul>
 <li>모든 멤버변수는 public static final 이어야하며, 이를 생략할 수 있다.</li>
 <li>모든 메서드는 public abstract 이어야하며, 이를 생략할 수 있다.

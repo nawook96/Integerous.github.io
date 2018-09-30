@@ -97,9 +97,9 @@
 <code>java
 void doWork(Car c) {
 if (c instanceof FireEngine){
-  FireEngine fe = (FireEngine)c;
-  fe.water();
-  ...
+FireEngine fe = (FireEngine)c;
+fe.water();
+...
 }else if ...
 }
 </code>
@@ -120,9 +120,9 @@ if (c instanceof FireEngine){
 <li><code>Vector</code>클래스는 내부적으로 <code>Object</code>타입의 배열을 가지고 있어서, 이 배열에 객체를 추가하거나 제거할 수 있다.<br />
 <code>java
 public class Vector extends AbstractList
-            implements List, Cloneable, java.io.Serializable  {
-  protected Object elementData[];
-  ...
+        implements List, Cloneable, java.io.Serializable  {
+protected Object elementData[];
+...
 }
 </code></li>
 <li><code>Vector</code>클래스는 배열의 크기를 알아서 관리해주기 때문에 저장할 인스턴스의 개수에 신경 쓰지 않아도 된다.</li>

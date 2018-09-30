@@ -118,46 +118,46 @@ sb.append(&ldquo;123&rdquo;).append(&ldquo;ZZ&rdquo;);
 </ul>
 
 <h3 id="3-1-한글로-된-숫자를-아라비아-숫자로-변환">3.1. 한글로 된 숫자를 아라비아 숫자로 변환</h3>
-<div class="highlight"><pre style="color:#8a8a8a;background-color:#1c1c1c;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#d75f00">import</span> java.util.*;
+<div class="highlight"><pre style="color:#ccc;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#cd00cd">import</span> java.util.*<span style="color:#39c">;</span>
 
-<span style="color:#0087ff">class</span> <span style="color:#0087ff">StringTokenizer</span> {
-  <span style="color:#0087ff">public</span> <span style="color:#0087ff">static</span> <span style="color:#af0000">void</span> <span style="color:#0087ff">main</span>(String args[])  {
-    String input = <span style="color:#00afaf">&#34;삼십만삼천백십오&#34;</span>;
-    System.out.println(input); <span style="color:#4e4e4e">// 삼십만삼천백십오
-</span><span style="color:#4e4e4e"></span>    System.out.println(hangulToNum(input)); <span style="color:#4e4e4e">// 303115
-</span><span style="color:#4e4e4e"></span>  }
+<span style="color:#00cd00">class</span> <span style="color:#00cdcd">StringTokenizer</span> <span style="color:#39c">{</span>
+  <span style="color:#00cd00">public</span> <span style="color:#00cd00">static</span> <span style="color:#00cd00">void</span> main<span style="color:#39c">(</span>String args<span style="color:#39c">[])</span>  <span style="color:#39c">{</span>
+    String input <span style="color:#39c">=</span> <span style="color:#cd0000">&#34;삼십만삼천백십오&#34;</span><span style="color:#39c">;</span>
+    System<span style="color:#39c">.</span>out<span style="color:#39c">.</span>println<span style="color:#39c">(</span>input<span style="color:#39c">);</span> <span style="color:#000080">// 삼십만삼천백십오
+</span><span style="color:#000080"></span>    System<span style="color:#39c">.</span>out<span style="color:#39c">.</span>println<span style="color:#39c">(</span>hangulToNum<span style="color:#39c">(</span>input<span style="color:#39c">));</span> <span style="color:#000080">// 303115
+</span><span style="color:#000080"></span>  <span style="color:#39c">}</span>
   
-  <span style="color:#0087ff">public</span> <span style="color:#0087ff">static</span> <span style="color:#af0000">long</span> <span style="color:#0087ff">hangulToNum</span>(String input)  {
-    <span style="color:#af0000">long</span> result = 0;  <span style="color:#4e4e4e">// 최종 변환결과를 저장하기 위한 변수
-</span><span style="color:#4e4e4e"></span>    <span style="color:#af0000">long</span> tmpResult = 0; <span style="color:#4e4e4e">// 십백천 단위의 값을 저장하기 위한 임시변수
-</span><span style="color:#4e4e4e"></span>    <span style="color:#af0000">long</span> num = 0;
+  <span style="color:#00cd00">public</span> <span style="color:#00cd00">static</span> <span style="color:#00cd00">long</span> hangulToNum<span style="color:#39c">(</span>String input<span style="color:#39c">)</span>  <span style="color:#39c">{</span>
+    <span style="color:#00cd00">long</span> result <span style="color:#39c">=</span> 0<span style="color:#39c">;</span>  <span style="color:#000080">// 최종 변환결과를 저장하기 위한 변수
+</span><span style="color:#000080"></span>    <span style="color:#00cd00">long</span> tmpResult <span style="color:#39c">=</span> 0<span style="color:#39c">;</span> <span style="color:#000080">// 십백천 단위의 값을 저장하기 위한 임시변수
+</span><span style="color:#000080"></span>    <span style="color:#00cd00">long</span> num <span style="color:#39c">=</span> 0<span style="color:#39c">;</span>
     
-    <span style="color:#0087ff">final</span> String NUMBER = <span style="color:#00afaf">&#34;영일리삼사오육칠팔구&#34;</span>;
-    <span style="color:#0087ff">final</span> String UNIT = <span style="color:#00afaf">&#34;십백천만억조&#34;</span>;
-    <span style="color:#0087ff">final</span> <span style="color:#af0000">long</span>[] UNIT_NUM = {10,100,1000,10000,(<span style="color:#af0000">long</span>)1e8,(<span style="color:#af0000">long</span>)1e12};
+    <span style="color:#00cd00">final</span> String NUMBER <span style="color:#39c">=</span> <span style="color:#cd0000">&#34;영일리삼사오육칠팔구&#34;</span><span style="color:#39c">;</span>
+    <span style="color:#00cd00">final</span> String UNIT <span style="color:#39c">=</span> <span style="color:#cd0000">&#34;십백천만억조&#34;</span><span style="color:#39c">;</span>
+    <span style="color:#00cd00">final</span> <span style="color:#00cd00">long</span><span style="color:#39c">[]</span> UNIT_NUM <span style="color:#39c">=</span> <span style="color:#39c">{</span>10<span style="color:#39c">,</span>100<span style="color:#39c">,</span>1000<span style="color:#39c">,</span>10000<span style="color:#39c">,(</span><span style="color:#00cd00">long</span><span style="color:#39c">)</span>1e8<span style="color:#39c">,(</span><span style="color:#00cd00">long</span><span style="color:#39c">)</span>1e12<span style="color:#39c">};</span>
     
-    StringTokenizer st = <span style="color:#5f8700">new</span> StringTokenizer(input, UNIT, <span style="color:#d75f00">true</span>);
+    StringTokenizer st <span style="color:#39c">=</span> <span style="color:#cdcd00">new</span> StringTokenizer<span style="color:#39c">(</span>input<span style="color:#39c">,</span> UNIT<span style="color:#39c">,</span> <span style="color:#cdcd00">true</span><span style="color:#39c">);</span>
     
-    <span style="color:#5f8700">while</span>(st.hasMoreTokens()) {
-      String token = st.nextToken();
-      <span style="color:#af0000">int</span> check = NUMBER.indexOf(token);  <span style="color:#4e4e4e">// 숫자인지, 단위(UNIT)인지 확인
-</span><span style="color:#4e4e4e"></span>      
-      <span style="color:#5f8700">if</span>(check == -1) {
-        <span style="color:#5f8700">if</span>(<span style="color:#00afaf">&#34;만억조&#34;</span>.indexOf(token) == -1) {
-          tmpResult += ( num!=0 ? num : 1) * UNIT_NUM[UNIT.indexOf(token)];
-        }<span style="color:#5f8700">else</span> {
-          tmpResult += num;
-          result += (tmpResult!=0 ? tmpResult : 1) * UNIT_NUM[UNIT.indexOf(token)];
-          tmpResult = 0;
-        }
-        num = 0;
-      }<span style="color:#5f8700">else</span> {
-        num = check;
-      }
-    }
-    <span style="color:#5f8700">return</span> result + tmpResult + num;
-  }
-}</code></pre></div>
+    <span style="color:#cdcd00">while</span><span style="color:#39c">(</span>st<span style="color:#39c">.</span>hasMoreTokens<span style="color:#39c">())</span> <span style="color:#39c">{</span>
+      String token <span style="color:#39c">=</span> st<span style="color:#39c">.</span>nextToken<span style="color:#39c">();</span>
+      <span style="color:#00cd00">int</span> check <span style="color:#39c">=</span> NUMBER<span style="color:#39c">.</span>indexOf<span style="color:#39c">(</span>token<span style="color:#39c">);</span>  <span style="color:#000080">// 숫자인지, 단위(UNIT)인지 확인
+</span><span style="color:#000080"></span>      
+      <span style="color:#cdcd00">if</span><span style="color:#39c">(</span>check <span style="color:#39c">==</span> <span style="color:#39c">-</span>1<span style="color:#39c">)</span> <span style="color:#39c">{</span>
+        <span style="color:#cdcd00">if</span><span style="color:#39c">(</span><span style="color:#cd0000">&#34;만억조&#34;</span><span style="color:#39c">.</span>indexOf<span style="color:#39c">(</span>token<span style="color:#39c">)</span> <span style="color:#39c">==</span> <span style="color:#39c">-</span>1<span style="color:#39c">)</span> <span style="color:#39c">{</span>
+          tmpResult <span style="color:#39c">+=</span> <span style="color:#39c">(</span> num<span style="color:#39c">!=</span>0 <span style="color:#39c">?</span> num <span style="color:#39c">:</span> 1<span style="color:#39c">)</span> <span style="color:#39c">*</span> UNIT_NUM<span style="color:#39c">[</span>UNIT<span style="color:#39c">.</span>indexOf<span style="color:#39c">(</span>token<span style="color:#39c">)];</span>
+        <span style="color:#39c">}</span><span style="color:#cdcd00">else</span> <span style="color:#39c">{</span>
+          tmpResult <span style="color:#39c">+=</span> num<span style="color:#39c">;</span>
+          result <span style="color:#39c">+=</span> <span style="color:#39c">(</span>tmpResult<span style="color:#39c">!=</span>0 <span style="color:#39c">?</span> tmpResult <span style="color:#39c">:</span> 1<span style="color:#39c">)</span> <span style="color:#39c">*</span> UNIT_NUM<span style="color:#39c">[</span>UNIT<span style="color:#39c">.</span>indexOf<span style="color:#39c">(</span>token<span style="color:#39c">)];</span>
+          tmpResult <span style="color:#39c">=</span> 0<span style="color:#39c">;</span>
+        <span style="color:#39c">}</span>
+        num <span style="color:#39c">=</span> 0<span style="color:#39c">;</span>
+      <span style="color:#39c">}</span><span style="color:#cdcd00">else</span> <span style="color:#39c">{</span>
+        num <span style="color:#39c">=</span> check<span style="color:#39c">;</span>
+      <span style="color:#39c">}</span>
+    <span style="color:#39c">}</span>
+    <span style="color:#cdcd00">return</span> result <span style="color:#39c">+</span> tmpResult <span style="color:#39c">+</span> num<span style="color:#39c">;</span>
+  <span style="color:#39c">}</span>
+<span style="color:#39c">}</span></code></pre></div>
   </div>
   <footer>
     <div class="article-footer">
