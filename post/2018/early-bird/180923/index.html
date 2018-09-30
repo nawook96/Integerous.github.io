@@ -95,12 +95,12 @@
 <li>참조변수가 참조하고 있는 인스턴스의 실제 타입을 알아보기 위해 <code>instanceof</code> 연산자를 사용한다.(주로 조건문에 사용)</li>
 <li><code>instanceof</code>를 이용한 연산 결과로 <code>true</code>를 얻었다는 것은 참조변수가 검사한 타입으로 형변환이 가능하다는 뜻이다.<br /></li>
 </ul>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#2b91af">void</span> doWork(Car c) {
-<span style="color:#00f">if</span> (c <span style="color:#00f">instanceof</span> FireEngine){
-    FireEngine fe = (FireEngine)c;
-    fe.water();
+<div class="highlight"><pre style="color:#586e75;background-color:#eee8d5;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#859900;font-weight:bold">void</span> <span style="color:#268bd2">doWork</span>(<span style="color:#268bd2">Car</span> <span style="color:#268bd2">c</span>) {
+<span style="color:#859900">if</span> (<span style="color:#268bd2">c</span> <span style="color:#859900">instanceof</span> <span style="color:#268bd2">FireEngine</span>){
+    <span style="color:#268bd2">FireEngine</span> <span style="color:#268bd2">fe</span> = (<span style="color:#268bd2">FireEngine</span>)<span style="color:#268bd2">c</span>;
+    <span style="color:#268bd2">fe</span>.<span style="color:#268bd2">water</span>();
     ...
-}<span style="color:#00f">else</span> <span style="color:#00f">if</span> ...
+}<span style="color:#859900">else</span> <span style="color:#859900">if</span> ...
 }</code></pre></div>
 <h2 id="4-참조변수와-인스턴스의-연결">4. 참조변수와 인스턴스의 연결</h2>
 
@@ -115,9 +115,9 @@
 <li>부모타입의 참조변수 배열을 사용하면, 공통의 조상을 가진 서로 다른 종류의 객체를 배열로 묶어서 다룰 수 있다.</li>
 <li><code>Vector</code>클래스는 내부적으로 <code>Object</code>타입의 배열을 가지고 있어서, 이 배열에 객체를 추가하거나 제거할 수 있다.<br /></li>
 </ul>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#00f">public</span> <span style="color:#00f">class</span> <span style="color:#2b91af">Vector</span> <span style="color:#00f">extends</span> AbstractList
-            <span style="color:#00f">implements</span> List, Cloneable, java.io.Serializable  {
-    <span style="color:#00f">protected</span> Object elementData[];
+<div class="highlight"><pre style="color:#586e75;background-color:#eee8d5;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#859900">public</span> <span style="color:#859900">class</span> <span style="color:#cb4b16">Vector</span> <span style="color:#859900">extends</span> <span style="color:#268bd2">AbstractList</span>
+            <span style="color:#859900">implements</span> <span style="color:#268bd2">List</span>, <span style="color:#268bd2">Cloneable</span>, <span style="color:#268bd2">java</span>.<span style="color:#268bd2">io</span>.<span style="color:#268bd2">Serializable</span>  {
+    <span style="color:#859900">protected</span> <span style="color:#268bd2">Object</span> <span style="color:#268bd2">elementData</span>[];
     ...
 }</code></pre></div>
 <ul>
