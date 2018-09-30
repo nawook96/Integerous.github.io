@@ -106,36 +106,36 @@
 <h2 id="4-멀티-catch-블럭">4. 멀티 catch 블럭</h2>
 
 <ul>
-<li>JDK1.7부터 여러 catch블럭을 <code>|</code>기호를 이용해서 하나의 catch 블럭으로 합칠 수 있다.<br />
-<code>java
-try {
-...
-} catch (ExceptionA e)  {
-e.printStackTrace();
-} catch (ExceptionB e2) {
-e2.printStacktrace();
-}
-</code></li>
-<li>이 try-catch 문을 아래와 같이 바꿀 수 있다.<br />
-<code>java
-try {
-...
-} catch (ExceptionA | ExceptionB e) {
-e.printStackTrace();
-}
-</code></li>
+<li>JDK1.7부터 여러 catch블럭을 <code>|</code>기호를 이용해서 하나의 catch 블럭으로 합칠 수 있다.<br /></li>
+</ul>
+<div class="highlight"><pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#8b008b;font-weight:bold">try</span> {
+    ...
+} <span style="color:#8b008b;font-weight:bold">catch</span> (ExceptionA e)  {
+    e.<span style="color:#658b00">printStackTrace</span>();
+} <span style="color:#8b008b;font-weight:bold">catch</span> (ExceptionB e2) {
+    e2.<span style="color:#658b00">printStacktrace</span>();
+}</code></pre></div>
+<ul>
+<li>이 try-catch 문을 아래와 같이 바꿀 수 있다.<br /></li>
+</ul>
+<div class="highlight"><pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#8b008b;font-weight:bold">try</span> {
+    ...
+} <span style="color:#8b008b;font-weight:bold">catch</span> (ExceptionA | ExceptionB e) {
+    e.<span style="color:#658b00">printStackTrace</span>();
+}</code></pre></div>
+<ul>
 <li>단, 예외클래스들이 조상-자손 관계에 있으면 컴파일 에러가 발생한다.(불필요한 코드는 제거하라는 의미의 에러)</li>
 </ul>
 
 <h2 id="5-메소드에-예외-선언">5. 메소드에 예외 선언</h2>
 
 <ul>
-<li>메소드에 예외를 선언하는 방법<br />
-<code>java
-void method() throws Exception1, Exception2, ... ExceptionN {
-...
-}
-</code></li>
+<li>메소드에 예외를 선언하는 방법<br /></li>
+</ul>
+<div class="highlight"><pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#00688b;font-weight:bold">void</span> <span style="color:#008b45">method</span>() <span style="color:#8b008b;font-weight:bold">throws</span> Exception1, Exception2, ... ExceptionN {
+    ...
+}</code></pre></div>
+<ul>
 <li>메소드의 선언부에 예외를 선언함으로써 메소드를 사용하려는 사람이 메소드의 선언부를 보았을 때, 이 메소드를 사용하기 위해서는 어떠한 예외들이 처리되어져야 하는지 쉽게 알 수 있다.</li>
 </ul>
 
