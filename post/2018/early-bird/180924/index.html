@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="ko-kr">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="generator" content="Hugo 0.46" />
+    <link rel="shortcut icon" href="/images/favicon.ico">
+    <link href="http://integerous.github.io/index.xml" rel="alternate" type="application/rss+xml" title="Integerous Devlog" />
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+    
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:700i" rel="stylesheet">
+    
+    <script src="https://apis.google.com/js/platform.js" async defer>{lang: 'ja'}</script>
+    
+    <link rel="stylesheet" href="https://yandex.st/highlightjs/8.0/styles/default.min.css">
+    <script src="https://yandex.st/highlightjs/8.0/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    
+    <link rel="stylesheet" type="text/css" href="/css/style.css">
+    <title>180924 아침공부 #2 | Integerous Devlog</title>
+  </head>
+  <body>
+    <div id="wrap">
+      
+      <header class="site-header">
+        <div class="site-header-left">
+          <a class="site-header-title" href="http://integerous.github.io/">Integerous Devlog</a>
+        </div>
+      </header>
+      <div class="container">
+        <div id="main">
+
+<div class="article">
+  <header>
+    <div class="article-header">
+      <h1>180924 아침공부 #2</h1>
+      <div class="article-meta">
+        <span class="posttime">2018/10/03</span>
+        
+        
+        
+<div class="tags">
+  <ul>
+    
+    <li>
+        <a href="/tags/early-bird">early-bird</a>
+    </li>
+    
+    <li>
+        <a href="/tags/java">java</a>
+    </li>
+    
+  </ul>
+</div>
+
+
+      </div>
+    </div>
+    
+  </header>
+  <div class="content">
+    
+
+<blockquote>
+<p>자바의 정석(남궁성 저) 학습<br />
+추석 전날이라 그런지 집중력이 조금 떨어졌다.</p>
+</blockquote>
+
+<h2 id="1-추상-클래스-abstract-class">1. 추상 클래스 (Abstract class)</h2>
+
+<ul>
+<li>미완성 메소드(추상메소드)를 포함하고 있다는 것을 제외하고는 일반클래스와 같다.</li>
+<li>추상메소드가 없어도 <code>abstract</code>를 붙여서 추상클래스로 지정할 수 있다.</li>
+<li>추상클래스는 인스턴스를 생성할 수 없다.</li>
+<li>추상클래스는 상속을 통해서 자손클래스에 의해서만 완성된다.<br />
+<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#00a8c8">abstract</span> <span style="color:#00a8c8">class</span> <span style="color:#75af00">클래스이름</span>  <span style="color:#f92672">{</span>
+  <span style="color:#f92672">...</span>
+<span style="color:#f92672">}</span></code></pre></div></li>
+</ul>
+
+<h2 id="2-추상-메소드-abstract-method">2. 추상 메소드 (Abstract method)</h2>
+
+<ul>
+<li>선언부만 작성하고 구현부는 작성하지 않은 것이 추상메소드.
+<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#75715e">/* 주석을 통해 기능 설명 */</span>
+<span style="color:#00a8c8">abstract</span> <span style="color:#111">리턴타입</span> <span style="color:#75af00">메소드이름</span><span style="color:#f92672">();</span></code></pre></div></li>
+<li>추상클래스로부터 상속받는 자손클래스는 오버라이딩을 통해 조상인 추상클래스의 추상메소드를 모두 구현해야 한다.</li>
+<li>만약 부모로 부터 상속받은 추상메소드 중 하나라도 구현하지 않으면 자식클래스 역시 추상클래스로 지정해야 한다.</li>
+</ul>
+
+<h2 id="3-인터페이스">3. 인터페이스</h2>
+
+<ul>
+<li>인터페이스는 일종의 추상클래스다.</li>
+<li>인터페이스는 추상클래스처럼 추상메소드를 갖지만, 추상클래스와 달리 몸통을 갖춘 일반 메소드 또는 멤버변수를 가질 수 없다.</li>
+<li>인터페이스는 오직 추상메소드와 상수만을 멤버로 가질 수 있다.</li>
+</ul>
+
+<h2 id="4-인터페이스의-작성">4. 인터페이스의 작성</h2>
+
+<p><script type="text/javascript" src="http://gist.github.com/1b4654de4cf4f70de19c78a6b0df448d.js"></script>
+
+- 모든 멤버변수는 public static final 이어야하며, 이를 생략할 수 있다.
+- 모든 메서드는 public abstract 이어야하며, 이를 생략할 수 있다.
+  - 단, jdk 1.8부터 static 메서드와 디폴트 메서트는 예외</p>
+
+<h2 id="5-인터페이스의-상속과-구현">5. 인터페이스의 상속과 구현</h2>
+
+<ul>
+<li>인터페이스는 인터페이스로부터만 상속받을 수 있다.</li>
+<li>클래스와 달리 다중 상속이 가능하다.</li>
+<li>인터페이스도 추상클래스처럼 그 자체로는 인스턴스를 생성할 수 없다.</li>
+<li>클래스는 <code>extends</code>(확장하다) 사용, 인터페이스는 <code>implements</code>(구현하다) 사용.</li>
+<li>상속과 구현을 동시에 할 수 있다.
+<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java">  <span style="color:#00a8c8">class</span> <span style="color:#75af00">Fighter</span> <span style="color:#00a8c8">extends</span> <span style="color:#111">Unit</span> <span style="color:#00a8c8">implements</span> <span style="color:#111">Fightable</span> <span style="color:#f92672">{</span>
+    <span style="color:#00a8c8">public</span> <span style="color:#00a8c8">void</span> <span style="color:#75af00">move</span><span style="color:#f92672">(</span><span style="color:#00a8c8">int</span> <span style="color:#111">x</span><span style="color:#f92672">,</span> <span style="color:#00a8c8">int</span> <span style="color:#111">y</span><span style="color:#f92672">)</span>  <span style="color:#f92672">{</span> <span style="color:#75715e">/* 내용 생략 */</span> <span style="color:#f92672">}</span>
+    <span style="color:#00a8c8">public</span> <span style="color:#00a8c8">void</span> <span style="color:#75af00">attack</span><span style="color:#f92672">(</span><span style="color:#111">Unit</span> <span style="color:#111">u</span><span style="color:#f92672">)</span>  <span style="color:#f92672">{</span> <span style="color:#75715e">/* 내용 생략 */</span> <span style="color:#f92672">}</span>
+  <span style="color:#f92672">}</span>
+  </code></pre></div></li>
+</ul>
+
+  </div>
+  <footer>
+    <div class="article-footer">
+      
+      
+      
+      
+      
+      <div id="pagenavigation-next-prev">
+        
+        <div id="pagenavigation-next">
+          <span class="pagenav-label">&lt; 이전 글</span>
+          <a href="http://integerous.github.io/post/2018/early-bird/180923/">180923 아침공부 #1</a>
+        </div>
+        
+        
+        <div id="pagenavigation-prev">
+          <span class="pagenav-label">다음 글 ></span>
+          <a href="http://integerous.github.io/post/2018/early-bird/180925/">180925 아침공부 #3</a>
+        </div>
+        
+      </div>
+      
+    </div>
+
+    <script src="https://utteranc.es/client.js"
+    repo="integerous/blog-comments"
+    issue-term="pathname"
+    crossorigin="anonymous"
+    async>
+    </script>
+  </footer>
+</div>
+        </div>
+        <div class="sidebar">
+  
+  
+  <div class="sidebar-content">
+    <div class="sidebar-header">
+      <span>Author</span>
+    </div>
+    <div id="author">
+      <img src="https://ryan-han.com/images/ryanjs.png">
+      <span>Ryan Jeongsu Han (한정수)</span>
+      <div>
+        
+        <a href="https://github.com/integerous"><i class="fa fa-github-square fa-2x" aria-hidden="true"></i></a>
+        
+        
+        <a href="https://www.linkedin.com/in/integerous"><i class="fa fa-linkedin-square fa-2x" aria-hidden="true"></i></a>
+        
+        
+        <a href="https://www.instagram.com/ryemha_"><i class="fa fa-instagram fa-2x" aria-hidden="true"></i></a>
+        
+        
+        <a href="https://twitter.com/integerous"><i class="fa fa-twitter-square fa-2x" aria-hidden="true"></i></a>
+        
+      </div>
+    </div>
+  </div>
+  
+  
+  
+  <div class="sidebar-content">
+    <div class="sidebar-header">
+      <span>Table of Contents</span>
+    </div>
+    <nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li><a href="#1-추상-클래스-abstract-class">1. 추상 클래스 (Abstract class)</a></li>
+<li><a href="#2-추상-메소드-abstract-method">2. 추상 메소드 (Abstract method)</a></li>
+<li><a href="#3-인터페이스">3. 인터페이스</a></li>
+<li><a href="#4-인터페이스의-작성">4. 인터페이스의 작성</a></li>
+<li><a href="#5-인터페이스의-상속과-구현">5. 인터페이스의 상속과 구현</a></li>
+</ul></li>
+</ul>
+</nav>
+  </div>
+  
+  
+  
+  
+  <div class="sidebar-content">
+    <div class="sidebar-header">
+      <span>Categories</span>
+    </div>
+    <div class="categories">
+      <ul>
+        
+        <li>
+          <a href="/categories/2018"><span></span>2018 (9)</a>
+        </li>
+        
+        <li>
+          <a href="/categories/aws"><span></span>aws (2)</a>
+        </li>
+        
+        <li>
+          <a href="/categories/early-bird"><span></span>early-bird (3)</a>
+        </li>
+        
+        <li>
+          <a href="/categories/essay"><span></span>essay (8)</a>
+        </li>
+        
+        <li>
+          <a href="/categories/etc"><span></span>etc (1)</a>
+        </li>
+        
+      </ul>
+    </div>
+  </div>
+  
+  <div class="sidebar-content">
+    <div class="sidebar-header">
+      <span>RSS</span>
+    </div>
+    <div id="rss">
+      <a href="http://integerous.github.io/index.xml" type="application/rss+xml" target="_blank">
+        <i class="fa fa-rss-square fa-2x" aria-hidden="true"></i>
+      </a>
+    </div>
+  </div>
+</div>
+
+      </div>
+      <footer>
+        <div id="site-footer-wrap">
+          <div id="site-footer">
+            <span>Powered by <a href="https://gohugo.io/">Hugo</a>.</span>
+            <span>
+              
+              Copyright (c) 2018, <a href="http://integerous.github.io/">Integerous Devlog</a>
+              
+            </span>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
+

@@ -6,8 +6,35 @@
     <description>Recent content in Integerous Devlog on Integerous Devlog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ko-kr</language>
-    <lastBuildDate>Tue, 18 Sep 2018 04:00:42 +0900</lastBuildDate>
+    <lastBuildDate>Wed, 03 Oct 2018 12:45:51 +0900</lastBuildDate>
     <atom:link href="/" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>180925 아침공부 #3</title>
+      <link>http://integerous.github.io/post/2018/early-bird/180925/</link>
+      <pubDate>Wed, 03 Oct 2018 12:45:51 +0900</pubDate>
+      
+      <guid>http://integerous.github.io/post/2018/early-bird/180925/</guid>
+      <description>자바의 정석(남궁성 저) 학습 날씨가 많이 추워졌다. 아침 찬바람 맞고 코찔찔이 상태. 1. 인터페이스를 이용한 다형성 리턴 타입이 인터페이스라는 것은 메소드가 해당</description>
+    </item>
+    
+    <item>
+      <title>180924 아침공부 #2</title>
+      <link>http://integerous.github.io/post/2018/early-bird/180924/</link>
+      <pubDate>Wed, 03 Oct 2018 12:33:20 +0900</pubDate>
+      
+      <guid>http://integerous.github.io/post/2018/early-bird/180924/</guid>
+      <description>자바의 정석(남궁성 저) 학습 추석 전날이라 그런지 집중력이 조금 떨어졌다. 1. 추상 클래스 (Abstract class) 미완성 메소드(추상메소드)를 포함하고 있다는 것을 제외하고는 일</description>
+    </item>
+    
+    <item>
+      <title>180923 아침공부 #1</title>
+      <link>http://integerous.github.io/post/2018/early-bird/180923/</link>
+      <pubDate>Wed, 03 Oct 2018 11:43:34 +0900</pubDate>
+      
+      <guid>http://integerous.github.io/post/2018/early-bird/180923/</guid>
+      <description>아침공부 #1 자바의 정석(남궁성 저) 학습 이 책을 한참 공부하다가 정보처리기사 필기 시험기간을 맞이해서 멈추었던 것 같다. 1. 다형성 (Polymorphism) Java에서는 한 타입의 참</description>
+    </item>
     
     <item>
       <title>내 우주가 생긴 날</title>
