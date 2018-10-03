@@ -72,10 +72,20 @@
 
 <blockquote>
 <p>주소가 github.io인 개발 블로그들이 눈에 많이 띄었다.<br />
-찾아보니 Jekyll, Hexo, Hugo 등 Static Site Generator의 존재를 알게 되었다.<br />
-Hugo와 Github Page의 조합으로 Devlog로 사용할 <a href="https://ryan-han.com">개인 블로그</a>를 만들기로 했다.<br />
-놀다 지친 여름휴가 막바지에 집중공략을 시작했다.</p>
+찾다보니 Jekyll, Hexo, Hugo 등 Static Site Generator의 존재를 알게 되었다.<br />
+Hugo와 Github Page의 조합으로 Devlog로 사용할 개인 블로그를 만들기로 했다.<br />
+놀다 지친 여름휴가 막바지에 집중공략을 시작!</p>
 </blockquote>
+
+<h2 id="0-목차">0. 목차</h2>
+
+<pre><code>1. Static Site Generator 란?
+2. Static Site Generator 선택 과정
+3. Hugo, 너로 정했다!
+4. Hugo + Github Page 만드는 과정
+5. 댓글 위젯 추가하기 (Utterances 사용)
+6. 사용 후기 (계속 추가 예정)
+</code></pre>
 
 <h2 id="1-static-site-generator-란">1. Static Site Generator 란?</h2>
 
@@ -90,7 +100,7 @@ Hugo와 Github Page의 조합으로 Devlog로 사용할 <a href="https://ryan-ha
   -루비 기반
   -현재 가장 인기 있음(깃헙 별 수 제일 많음)
   -한글 레퍼런스도 제일 많음
-  -느리다는 제보가 많음 (빌드 한번 다시 하는데 5분씩 걸린다고)
+  -느리다는 제보가 많음(몇 십개의 포스팅 뿐인데도 빌드 하는데 5분씩 걸린다고)
   -윈도우 공식 지원 안됨
 
 Hexo
@@ -116,13 +126,13 @@ Hugo
 <ul>
 <li>Go로 제작되었다. (Go를 공부중이다.)</li>
 <li>Hugo는 런타임에 다른 의존성이 필요하지 않아 빌드시간이 세계에서 제일 빠르다. (&ldquo;Hugo is the world’s fastest static website engine.&rdquo;)</li>
-<li>Hugo는 한글 Reference가 거의 없는 오픈소스이며 Jekyll에 비해 기여할 수 있는 여지가 남아있다. 즉, <strong><em>오픈소스에 기여할 기회 !!</em></strong></li>
+<li><strong><em>오픈소스에 기여할 기회 !!</em></strong> (Hugo는 한글 Reference가 거의 없는 오픈소스이며 Jekyll에 비해 기여할 수 있는 여지가 남아있다.)</li>
 </ul>
 
-<h3 id="3-2-cloudz-labs-http-tech-cloudz-labs-io-posts-hugo-hugo-에서-hugo를-선택한-이유">3.2. <a href="http://tech.cloudz-labs.io/posts/hugo/hugo/">CloudZ Labs</a>에서 Hugo를 선택한 이유</h3>
+<h3 id="3-2-cloudz-labs-http-tech-cloudz-labs-io-posts-hugo-hugo-에서-github-page와-환상의-조합인-jekyll-대신-hugo를-선택한-이유">3.2. <a href="http://tech.cloudz-labs.io/posts/hugo/hugo/">CloudZ Labs</a>에서 Github Page와 환상의 조합인 Jekyll 대신 Hugo를 선택한 이유</h3>
 
 <ul>
-<li>Jekyll을 사용할 경우, 별도의 Build 과정 없이 Repository에 Push만으로 작성한 글들이 알아서 Publishing됩니다. 하지만, 글이 많아질 수록 Jekyll의 빌드 성능은 현저하게 저하됩니다. 하지만, Hugo는 Build 과정이 있어도 성능저하 없이, 빠르게 글을 Publishing할 수 있습니다. Go나 기타 종속성 없이, Hugo CLI를 통해서 쉽게 블로그 및 글을 생성할 수 있습니다. 그래서, Hugo로 블로그를 만들게 되었습니다.</li>
+<li>&ldquo;Jekyll을 사용할 경우, 별도의 Build 과정 없이 Repository에 Push만으로 작성한 글들이 알아서 Publishing됩니다. 하지만, 글이 많아질 수록 Jekyll의 빌드 성능은 현저하게 저하됩니다. 하지만, Hugo는 Build 과정이 있어도 성능저하 없이, 빠르게 글을 Publishing할 수 있습니다. Go나 기타 종속성 없이, Hugo CLI를 통해서 쉽게 블로그 및 글을 생성할 수 있습니다. 그래서, Hugo로 블로그를 만들게 되었습니다.&rdquo;</li>
 </ul>
 
 <h2 id="4-hugo-github-page-만드는-과정">4. Hugo + Github Page 만드는 과정</h2>
@@ -132,11 +142,11 @@ Hugo
 <blockquote>
 <p>나도 멋깔나게 <code>$ brew install hugo</code>를 mac 터미널에 입력해서 설치하고 싶었다.<br />
 하지만 현실은 WINDOWS&hellip;<br />
-Giraffe Academy의 <a href="https://gohugo.io/getting-started/installing#windows">Windows에서 Hugo설치하기</a> 이 영상 하나면 설치는 쉽다. (젊은 형아가 영어로 설명해줌)</p>
+Giraffe Academy의 <a href="https://gohugo.io/getting-started/installing#windows">Windows에서 Hugo설치하기</a> 이 영상 하나면 설치는 쉽다.</p>
 </blockquote>
 
 <ul>
-<li><a href="https://github.com/gohugoio/hugo/releases">Hugo 공식 깃헙</a>에서 운영체제에 맞는 최신버전 다운로드</li>
+<li><a href="https://github.com/gohugoio/hugo/releases">hugo 공식 깃헙</a>에서 운영체제에 맞는 최신버전 다운로드</li>
 <li><code>C:\Hugo\bin</code> 디렉토리 생성해서 다운받은 압축파일 해제</li>
 <li>어느 위치에서나 Hugo가 실행될 수 있도록<code>$ set PATH=%PATH%;C:\Hugo\bin</code> 명령으로 환경변수에 <code>C:\Hugo\bin</code>추가</li>
 <li>명령 프롬프트에 <code>$ hugo version</code> 혹은 <code>$ hugo help</code>로 동작 확인</li>
@@ -186,14 +196,15 @@ Giraffe Academy의 <a href="https://gohugo.io/getting-started/installing#windows
 <h3 id="4-6-컨텐츠-생성">4.6. 컨텐츠 생성</h3>
 
 <ul>
-<li><code>C:\Hugo\blog</code> 디렉토리에서 <code>$ hugo new post/test1.md</code> 명령으로 파일을 생성하면 <code>\content\post\</code> 디렉토리에 <code>test1.md</code> 파일이 생성된다.</li>
-<li>파일 생성 명령에 자동으로 편집기(나의 경우 VSCode)가 실행되도록 하려면
+<li><code>$ hugo new post/test1.md</code> 명령으로 파일을 생성하면 <code>\content\post\test1.md</code></li>
+<li>컨텐츠가 어떻게 보여지는지 확인하려면
 
-<ol>
-<li><code>config.toml</code> 파일에 <code>newContentEditor = &quot;실행파일 파일명&quot;</code> 를 설정해준다.</li>
-<li>실행파일 파일명이 Code.exe 면 <code>newContentEditor = &quot;Code&quot;</code> 라고 작성.</li>
-<li>시스템 환경변수에 VS Code 실행파일이 있는 경로를 추가해준다. (필수!)</li>
-</ol></li>
+<ul>
+<li><code>$ hugo server</code> 혹은 <code>$ hugo server -D</code>로 웹서버 실행</li>
+<li><code>http://localhost:1313/</code>에 접속해서 확인</li>
+<li>-D 옵션은 draft 문서들도 보여지는 옵션. 다른 옵션은 <a href="https://gohugo.io/commands/hugo_server/#options">여기</a>에서 확인
+<br /></li>
+</ul></li>
 </ul>
 
 <h3 id="4-7-컨텐츠-업로드-블로그에">4.7. 컨텐츠 업로드 (블로그에)</h3>
@@ -216,56 +227,57 @@ Giraffe Academy의 <a href="https://gohugo.io/getting-started/installing#windows
 
 <h3 id="4-8-쉘-스크립트로-업로드-자동화하기">4.8. 쉘 스크립트로 업로드 자동화하기</h3>
 
-<p><a href="http://gohugo.io/tutorials/github-pages-blog/">Hugo Docs</a>의 deploy.sh 파일을 활용하여 쉘스크립트 작성
-  <div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">  <span style="color:#75715e">#!/bin/bash
-</span><span style="color:#75715e"></span>
-  <span style="color:#111">echo</span> -e <span style="color:#d88200">&#34;\033[0;32mDeploying updates to GitHub...\033[0m&#34;</span>
+<ul>
+<li><a href="http://gohugo.io/tutorials/github-pages-blog/">Hugo Docs</a>의 deploy.sh 파일을 활용하여 쉘스크립트 작성
+<div class="highlight"><pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh"><span style="color:#1e889b">#!/bin/bash
+</span><span style="color:#1e889b"></span>
+<span style="color:#658b00">echo</span> -e <span style="color:#cd5555">&#34;\033[0;32mDeploying updates to GitHub...\033[0m&#34;</span>
 
-  <span style="color:#75715e"># Build the project.
-</span><span style="color:#75715e"></span>  hugo -t hugo-theme-geppaku
+<span style="color:#228b22"># Build the project.
+</span><span style="color:#228b22"></span>hugo -t hugo-theme-geppaku
 
-  <span style="color:#75715e"># Go To Public folder
-</span><span style="color:#75715e"></span>  <span style="color:#111">cd</span> public
-  <span style="color:#75715e"># Add changes to git.
-</span><span style="color:#75715e"></span>  git add .
+<span style="color:#228b22"># Go To Public folder
+</span><span style="color:#228b22"></span><span style="color:#658b00">cd</span> public
+<span style="color:#228b22"># Add changes to git.
+</span><span style="color:#228b22"></span>git add .
 
-  <span style="color:#75715e"># Commit changes.
-</span><span style="color:#75715e"></span>  <span style="color:#111">msg</span><span style="color:#f92672">=</span><span style="color:#d88200">&#34;rebuilding site `date`&#34;</span>
-  <span style="color:#00a8c8">if</span> <span style="color:#f92672">[</span> <span style="color:#111">$#</span> -eq <span style="color:#ae81ff">1</span> <span style="color:#f92672">]</span>
-    <span style="color:#00a8c8">then</span> <span style="color:#111">msg</span><span style="color:#f92672">=</span><span style="color:#d88200">&#34;</span><span style="color:#111">$1</span><span style="color:#d88200">&#34;</span>
-  <span style="color:#00a8c8">fi</span>
-  git commit -m <span style="color:#d88200">&#34;</span><span style="color:#111">$msg</span><span style="color:#d88200">&#34;</span>
+<span style="color:#228b22"># Commit changes.
+</span><span style="color:#228b22"></span><span style="color:#00688b">msg</span>=<span style="color:#cd5555">&#34;rebuilding site `date`&#34;</span>
+<span style="color:#8b008b;font-weight:bold">if</span> [ <span style="color:#00688b">$#</span> -eq <span style="color:#b452cd">1</span> ]
+  <span style="color:#8b008b;font-weight:bold">then</span> <span style="color:#00688b">msg</span>=<span style="color:#cd5555">&#34;</span><span style="color:#00688b">$1</span><span style="color:#cd5555">&#34;</span>
+<span style="color:#8b008b;font-weight:bold">fi</span>
+git commit -m <span style="color:#cd5555">&#34;</span><span style="color:#00688b">$msg</span><span style="color:#cd5555">&#34;</span>
 
-  <span style="color:#75715e"># Push source and build repos.
-</span><span style="color:#75715e"></span>  git push origin master
+<span style="color:#228b22"># Push source and build repos.
+</span><span style="color:#228b22"></span>git push origin master
 
-  <span style="color:#75715e"># Come Back up to the Project Root
-</span><span style="color:#75715e"></span>  <span style="color:#111">cd</span> ..
+<span style="color:#228b22"># Come Back up to the Project Root
+</span><span style="color:#228b22"></span><span style="color:#658b00">cd</span> ..
 
 
-  <span style="color:#75715e"># blog 저장소 Commit &amp; Push
-</span><span style="color:#75715e"></span>  git add .
+<span style="color:#228b22"># blog 저장소 Commit &amp; Push
+</span><span style="color:#228b22"></span>git add .
 
-  <span style="color:#111">msg</span><span style="color:#f92672">=</span><span style="color:#d88200">&#34;rebuilding site `date`&#34;</span>
-  <span style="color:#00a8c8">if</span> <span style="color:#f92672">[</span> <span style="color:#111">$#</span> -eq <span style="color:#ae81ff">1</span> <span style="color:#f92672">]</span>
-    <span style="color:#00a8c8">then</span> <span style="color:#111">msg</span><span style="color:#f92672">=</span><span style="color:#d88200">&#34;</span><span style="color:#111">$1</span><span style="color:#d88200">&#34;</span>
-  <span style="color:#00a8c8">fi</span>
-  git commit -m <span style="color:#d88200">&#34;</span><span style="color:#111">$msg</span><span style="color:#d88200">&#34;</span>
+<span style="color:#00688b">msg</span>=<span style="color:#cd5555">&#34;rebuilding site `date`&#34;</span>
+<span style="color:#8b008b;font-weight:bold">if</span> [ <span style="color:#00688b">$#</span> -eq <span style="color:#b452cd">1</span> ]
+  <span style="color:#8b008b;font-weight:bold">then</span> <span style="color:#00688b">msg</span>=<span style="color:#cd5555">&#34;</span><span style="color:#00688b">$1</span><span style="color:#cd5555">&#34;</span>
+<span style="color:#8b008b;font-weight:bold">fi</span>
+git commit -m <span style="color:#cd5555">&#34;</span><span style="color:#00688b">$msg</span><span style="color:#cd5555">&#34;</span>
 
-  git push origin master
-  </code></pre></div></p>
+git push origin master</code></pre></div></li>
+</ul>
 
-<h1 id="5-utterences-github-댓글-위젯-추가하기">5. Utterences (Github 댓글 위젯) 추가하기</h1>
+<h2 id="5-utterences-github-댓글-위젯-추가하기">5. Utterences (Github 댓글 위젯) 추가하기</h2>
 
 <blockquote>
 <p><a href="https://blog.outsider.ne.kr/1356?category=1">아웃사이더님의 블로그 글</a>에서 Utterences의 존재를 알게 되었다.<br />
-Hugo 공식 문서에 소개된 댓글 위젯 중 Utterences는 없길래 생애 처음으로 오픈소스에 PR을 날려봄!!</p>
+Hugo 공식 문서에 소개된 댓글 위젯 중 Utterences는 없길래 생애 처음으로 오픈소스에 PR을 날려봄!</p>
 </blockquote>
 
 <h3 id="5-1-hugo-docs에서-내-pull-request-받아줌">5.1. Hugo Docs에서 내 Pull Request 받아줌!!!</h3>
 
 <blockquote>
-<p>생애 첫 오픈소스 기여! (매우 소소한 기여지만.. 오픈소스에 기여하기 시작했다는 사실만으로 햄볶!!)</p>
+<p>생애 첫 오픈소스 기여! (매우 소소한 기여지만.. 오픈소스에 기여하기 시작했다는 사실만으로 햄볶!)</p>
 </blockquote>
 
 <p><img src="https://github.com/Integerous/TIL/blob/master/ETC/images/myfirstPR.png?raw=true" alt="" /></p>
@@ -282,19 +294,65 @@ Hugo 공식 문서에 소개된 댓글 위젯 중 Utterences는 없길래 생애
 <li>Github에 public 저장소를 만들고(blog-comments 등으로)</li>
 <li><a href="https://utteranc.es/">Utterance document</a>에서 방금 만든 저장소를 입력하고(나의 경우 Integerous/blog-comments)</li>
 <li>블로그 글과 Github 이슈를 매핑할 방법 6가지 중 한 가지를 선택하면</li>
-
-<li><p>밑에 아래와 같은 script를 자동으로 생성해준다.
-<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">    <span style="color:#111">&lt;</span><span style="color:#f92672">script</span> <span style="color:#75af00">src</span><span style="color:#f92672">=</span><span style="color:#d88200">&#34;https://utteranc.es/client.js&#34;</span>
-            <span style="color:#75af00">repo</span><span style="color:#f92672">=</span><span style="color:#d88200">&#34;integerous/blog-comments&#34;</span>
-            <span style="color:#75af00">issue-term</span><span style="color:#f92672">=</span><span style="color:#d88200">&#34;pathname&#34;</span>
-            <span style="color:#75af00">crossorigin</span><span style="color:#f92672">=</span><span style="color:#d88200">&#34;anonymous&#34;</span>
-            <span style="color:#75af00">async</span><span style="color:#111">&gt;</span>
-    <span style="color:#111">&lt;/</span><span style="color:#f92672">script</span><span style="color:#111">&gt;</span></code></pre></div></p></li>
-
-<li><p>위의 script를 본인의 블로그 템플릿중 원하는 위치에 넣으면</p></li>
-
-<li><p>끝!</p></li>
+<li>밑에 아래와 같은 script를 자동으로 생성해준다.
+<div class="highlight"><pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript">&lt;script src=<span style="color:#cd5555">&#34;https://utteranc.es/client.js&#34;</span>
+        repo=<span style="color:#cd5555">&#34;integerous/blog-comments&#34;</span>
+        issue-term=<span style="color:#cd5555">&#34;pathname&#34;</span>
+        crossorigin=<span style="color:#cd5555">&#34;anonymous&#34;</span>
+        <span style="color:#8b008b;font-weight:bold">async</span>&gt;
+&lt;<span style="color:#a61717;background-color:#e3d2d2">/script&gt;</span>
+</code></pre></div></li>
+<li>위의 script를 본인의 블로그 템플릿중 원하는 위치에 넣으면</li>
+<li>끝!<br /></li>
 </ol>
+
+<h1 id="6-사용-후기-계속-추가될-예정">6. 사용 후기 (계속 추가될 예정)</h1>
+
+<h2 id="6-1-마크다운-파일에-gist-삽입하기">6.1. 마크다운 파일에 Gist 삽입하기</h2>
+
+<blockquote>
+<p>Gist는 마크다운 파일에 embed 되지 않는다. 하지만 Hugo, Jekyll 에서는 가능하다.</p>
+</blockquote>
+
+<h3 id="6-1-1-gist-생성">6.1.1. Gist 생성</h3>
+
+<ul>
+<li><a href="https://gist.github.com/">Gist</a>에 코드를 작성</li>
+<li>java 코드면 파일명을 <code>파일명.java</code>로 만들고 <code>Create public gist</code> 클릭</li>
+<li>생성되는 gist의 sha1 hash(url 끝부분)을 복사</li>
+</ul>
+
+<h3 id="6-1-2-hugo에-커스텀-shorcodes-생성">6.1.2. Hugo에 커스텀 shorcodes 생성</h3>
+
+<blockquote>
+<p>간단한 설명은 <a href="http://blog.cronally.com/embed-gists-with-hugo/">여기</a> 참고.<br />
+자세한 사용법은 <a href="https://www.youtube.com/watch?v=Eu4zSaKOY4A&amp;list=PLLAZ4kZ9dFpOnyRlyS-liKL5ReHDcj4G3&amp;index=22">이 튜토리얼 영상</a> 참고</p>
+</blockquote>
+
+<ul>
+<li><code>themes/본인테마/layouts</code> 디렉토리에 <code>shortcodes</code> 폴더를 생성</li>
+<li><code>shortcodes</code> 폴더 내에 <code>gist.html</code> 파일 생성 (파일명은 상관없지만 gist로 하는게 정체성이 분명함)</li>
+<li><code>gist.html</code>에 아래 코드 입력</li>
+</ul>
+
+<div class="highlight"><pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript">&lt;script type=<span style="color:#cd5555">&#34;text/javascript&#34;</span> src=<span style="color:#cd5555">&#34;http://gist.github.com/{{ .Get 0 }}.js&#34;</span>&gt;&lt;<span style="color:#a61717;background-color:#e3d2d2">/script&gt;</span>
+</code></pre></div>
+
+<ul>
+<li>여기서 <code>{{ . GET 0 }}</code>에 들어갈 부분이 위에서 복사해둔 각 gist의 sha1 hash(url 끝부분)이다.</li>
+</ul>
+
+<h3 id="6-1-3-shortcode-삽입">6.1.3. shortcode 삽입</h3>
+
+<ul>
+<li>글 내용 중 코드가 들어갈 부분에 {{&lt; gist url끝부분 &gt;}} 을 넣어주면,</li>
+</ul>
+
+<p><img src="https://github.com/Integerous/TIL/blob/master/ETC/images/exampleGist.png?raw=true" alt="gistExample" /></p>
+
+<ul>
+<li>위 처럼 마크다운 파일(.md)에도 gist를 삽입할 수 있다. (행복)</li>
+</ul>
 
 <h2 id="블로그-주소">*블로그 주소</h2>
 
@@ -309,6 +367,8 @@ Hugo 공식 문서에 소개된 댓글 위젯 중 Utterences는 없길래 생애
 <li><a href="https://github.com/sabzil/blog/blob/master/content/post/tips/hugo.md">Github Page에 Hugo 올리기</a></li>
 <li><a href="https://blog.outsider.ne.kr/1356?category=1">페이스북 댓글을 Utterances로 교체하기</a></li>
 <li><a href="https://utteranc.es/">Utterances 프로젝트</a></li>
+<li><a href="https://www.youtube.com/watch?v=Eu4zSaKOY4A&amp;list=PLLAZ4kZ9dFpOnyRlyS-liKL5ReHDcj4G3&amp;index=22">Youtube Hugo 튜토리얼</a></li>
+<li><a href="http://blog.cronally.com/embed-gists-with-hugo/">Hugo에서 gist 사용하기</a></li>
 </ul>
 
   </div>
@@ -377,12 +437,13 @@ Hugo 공식 문서에 소개된 댓글 위젯 중 Utterences는 없길래 생애
 <ul>
 <li>
 <ul>
+<li><a href="#0-목차">0. 목차</a></li>
 <li><a href="#1-static-site-generator-란">1. Static Site Generator 란?</a></li>
 <li><a href="#2-static-site-generator-선택-과정">2. Static Site Generator 선택 과정</a></li>
 <li><a href="#3-hugo-너로-정했다">3. Hugo, 너로 정했다!</a>
 <ul>
 <li><a href="#3-1-내가-hugo를-선택한-이유">3.1. 내가 Hugo를 선택한 이유</a></li>
-<li><a href="#3-2-cloudz-labs-http-tech-cloudz-labs-io-posts-hugo-hugo-에서-hugo를-선택한-이유">3.2. <a href="http://tech.cloudz-labs.io/posts/hugo/hugo/">CloudZ Labs</a>에서 Hugo를 선택한 이유</a></li>
+<li><a href="#3-2-cloudz-labs-http-tech-cloudz-labs-io-posts-hugo-hugo-에서-github-page와-환상의-조합인-jekyll-대신-hugo를-선택한-이유">3.2. <a href="http://tech.cloudz-labs.io/posts/hugo/hugo/">CloudZ Labs</a>에서 Github Page와 환상의 조합인 Jekyll 대신 Hugo를 선택한 이유</a></li>
 </ul></li>
 <li><a href="#4-hugo-github-page-만드는-과정">4. Hugo + Github Page 만드는 과정</a>
 <ul>
@@ -395,14 +456,20 @@ Hugo 공식 문서에 소개된 댓글 위젯 중 Utterences는 없길래 생애
 <li><a href="#4-7-컨텐츠-업로드-블로그에">4.7. 컨텐츠 업로드 (블로그에)</a></li>
 <li><a href="#4-8-쉘-스크립트로-업로드-자동화하기">4.8. 쉘 스크립트로 업로드 자동화하기</a></li>
 </ul></li>
-</ul></li>
 <li><a href="#5-utterences-github-댓글-위젯-추가하기">5. Utterences (Github 댓글 위젯) 추가하기</a>
-<ul>
-<li>
 <ul>
 <li><a href="#5-1-hugo-docs에서-내-pull-request-받아줌">5.1. Hugo Docs에서 내 Pull Request 받아줌!!!</a></li>
 <li><a href="#5-2-작동-원리">5.2. 작동 원리</a></li>
 <li><a href="#5-3-사용-방법">5.3. 사용 방법</a></li>
+</ul></li>
+</ul></li>
+<li><a href="#6-사용-후기-계속-추가될-예정">6. 사용 후기 (계속 추가될 예정)</a>
+<ul>
+<li><a href="#6-1-마크다운-파일에-gist-삽입하기">6.1. 마크다운 파일에 Gist 삽입하기</a>
+<ul>
+<li><a href="#6-1-1-gist-생성">6.1.1. Gist 생성</a></li>
+<li><a href="#6-1-2-hugo에-커스텀-shorcodes-생성">6.1.2. Hugo에 커스텀 shorcodes 생성</a></li>
+<li><a href="#6-1-3-shortcode-삽입">6.1.3. shortcode 삽입</a></li>
 </ul></li>
 <li><a href="#블로그-주소">*블로그 주소</a></li>
 <li><a href="#reference">*Reference</a></li>
@@ -422,7 +489,7 @@ Hugo 공식 문서에 소개된 댓글 위젯 중 Utterences는 없길래 생애
       <ul>
         
         <li>
-          <a href="/categories/2018"><span></span>2018 (9)</a>
+          <a href="/categories/2018"><span></span>2018 (21)</a>
         </li>
         
         <li>
@@ -430,7 +497,7 @@ Hugo 공식 문서에 소개된 댓글 위젯 중 Utterences는 없길래 생애
         </li>
         
         <li>
-          <a href="/categories/early-bird"><span></span>early-bird (3)</a>
+          <a href="/categories/early-bird"><span></span>early-bird (10)</a>
         </li>
         
         <li>

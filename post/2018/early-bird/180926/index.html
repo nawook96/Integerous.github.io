@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="ko-kr">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="generator" content="Hugo 0.46" />
+    <link rel="shortcut icon" href="/images/favicon.ico">
+    <link href="http://integerous.github.io/index.xml" rel="alternate" type="application/rss+xml" title="Integerous Devlog" />
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+    
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:700i" rel="stylesheet">
+    
+    <script src="https://apis.google.com/js/platform.js" async defer>{lang: 'ja'}</script>
+    
+    <link rel="stylesheet" href="https://yandex.st/highlightjs/8.0/styles/default.min.css">
+    <script src="https://yandex.st/highlightjs/8.0/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    
+    <link rel="stylesheet" type="text/css" href="/css/style.css">
+    <title>180926 아침공부 #4 | Integerous Devlog</title>
+  </head>
+  <body>
+    <div id="wrap">
+      
+      <header class="site-header">
+        <div class="site-header-left">
+          <a class="site-header-title" href="http://integerous.github.io/">Integerous Devlog</a>
+        </div>
+      </header>
+      <div class="container">
+        <div id="main">
+
+<div class="article">
+  <header>
+    <div class="article-header">
+      <h1>180926 아침공부 #4</h1>
+      <div class="article-meta">
+        <span class="posttime">2018/10/03</span>
+        
+        
+        
+<div class="tags">
+  <ul>
+    
+    <li>
+        <a href="/tags/early-bird">early-bird</a>
+    </li>
+    
+    <li>
+        <a href="/tags/java">java</a>
+    </li>
+    
+  </ul>
+</div>
+
+
+      </div>
+    </div>
+    
+  </header>
+  <div class="content">
+    
+
+<blockquote>
+<p>자바의 정석(남궁성 저) 학습<br />
+연휴 마지막 날. 날씨가 너무 좋아서 강아지 운동장에 가게되어 공부를 많이 못했다.</p>
+</blockquote>
+
+<h2 id="1-예외-처리-exception-handling">1. 예외 처리 (Exception handling)</h2>
+
+<ul>
+<li>에러는 메모리 부족(OutOfMemoryError)이나 스택오버플로우(StackOverFlowError)처럼 일단 발생하면 복구할 수 없는 심각한 오류</li>
+<li>예외는 발생하더라도 수습될 수 있는 오류</li>
+</ul>
+
+<h2 id="2-예외-클래스-계층-구조">2. 예외 클래스 계층 구조</h2>
+
+<ul>
+<li>Object
+
+<ul>
+<li>Throwable</li>
+<li><strong><em>Exception</em></strong>
+
+<ul>
+<li><strong><em>RuntimeException</em></strong></li>
+<li>ArithmeticException</li>
+<li>ClassCastException</li>
+<li>NullPointerException</li>
+<li>IndexOutOfBoundException</li>
+<li>IOException</li>
+</ul></li>
+<li>Error</li>
+</ul></li>
+<li>예외 클래스는 <strong><em>Exception</em></strong> 클래스와 자식들과 <strong><em>RuntimeException</em></strong> 클래스와 자식들로 나뉜다.</li>
+<li><strong><em>Exception</em></strong> 클래스들 : 사용자의 실수와 같은 외적인 요인에 의해 발생하는 예외</li>
+<li><strong><em>RuntimeException</em></strong> 클래스들 : 개발자의 실수로 발생하는 예외</li>
+<li>모든 예외 클래스는 Exception 클래스의 자손이므로, catch블럭의 괄호()에 Exception클래스 타입의 참조변수를 선언하면, 어떤 종류의 예외가 발생하더라도 이 catch블럭()에 의해서 처리된다.</li>
+</ul>
+
+<h2 id="3-printstacktrace-와-getmessage">3. printStackTrace()와 getMessage()</h2>
+
+<ul>
+<li>예외가 발생했을 때 생성되는 예외 클래스의 인스턴스에는 발생한 예외에 대한 정보가 담겨져 있으며, getMessage()와 printStackTrace()를 사용해서 이 정보를 얻을 수 있다.</li>
+<li><code>printStackTrace()</code> : 예외발생 당시의 호출스택(Call Stack)에 있었던 메서드의 정보와 예외 메세지를 화면에 출력한다.</li>
+<li><code>getMessage()</code> : 발생한 예외클래스의 인스턴스에 저장된 메세지를 얻을 수 있다.</li>
+</ul>
+
+<h2 id="4-멀티-catch-블럭">4. 멀티 catch 블럭</h2>
+
+<ul>
+<li>JDK1.7부터 여러 catch블럭을 <code>|</code>기호를 이용해서 하나의 catch 블럭으로 합칠 수 있다.
+<div class="highlight"><pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#8b008b;font-weight:bold">try</span> {
+...
+} <span style="color:#8b008b;font-weight:bold">catch</span> (ExceptionA e)  {
+    e.<span style="color:#658b00">printStackTrace</span>();
+} <span style="color:#8b008b;font-weight:bold">catch</span> (ExceptionB e2) {
+    e2.<span style="color:#658b00">printStacktrace</span>();
+}</code></pre></div></li>
+<li>이 try-catch 문을 아래와 같이 바꿀 수 있다.
+<div class="highlight"><pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#8b008b;font-weight:bold">try</span> {
+...
+} <span style="color:#8b008b;font-weight:bold">catch</span> (ExceptionA | ExceptionB e) {
+    e.<span style="color:#658b00">printStackTrace</span>();
+}</code></pre></div></li>
+<li>단, 예외클래스들이 조상-자손 관계에 있으면 컴파일 에러가 발생한다.(불필요한 코드는 제거하라는 의미의 에러)</li>
+</ul>
+
+<h2 id="5-메소드에-예외-선언">5. 메소드에 예외 선언</h2>
+
+<ul>
+<li>메소드에 예외를 선언하는 방법
+<div class="highlight"><pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#00688b;font-weight:bold">void</span> <span style="color:#008b45">method</span>() <span style="color:#8b008b;font-weight:bold">throws</span> Exception1, Exception2, ... ExceptionN {
+...
+}</code></pre></div></li>
+<li>메소드의 선언부에 예외를 선언함으로써 메소드를 사용하려는 사람이 메소드의 선언부를 보았을 때, 이 메소드를 사용하기 위해서는 어떠한 예외들이 처리되어져야 하는지 쉽게 알 수 있다.</li>
+</ul>
+
+<h2 id="6-finally-블럭">6. finally 블럭</h2>
+
+<ul>
+<li>finally 블럭은 try-catch문과 함께 예외의 발생여부에 상관없이 실행되어야할 코드를 포함시킬 목적으로 사용된다.</li>
+<li>finally 블럭은 try-catch문의 맨 마지막에 위치해야 한다.</li>
+<li>try 블럭에서 return문이 실행되는 경우에도 finally블럭의 문장들이 먼저 실행된 후에, 현재 실행 중인 메소드를 종료한다.</li>
+</ul>
+
+  </div>
+  <footer>
+    <div class="article-footer">
+      
+      
+      
+      
+      
+      <div id="pagenavigation-next-prev">
+        
+        <div id="pagenavigation-next">
+          <span class="pagenav-label">&lt; 이전 글</span>
+          <a href="http://integerous.github.io/post/2018/early-bird/180925/">180925 아침공부 #3</a>
+        </div>
+        
+        
+        <div id="pagenavigation-prev">
+          <span class="pagenav-label">다음 글 ></span>
+          <a href="http://integerous.github.io/post/2018/early-bird/180927/">180927 아침공부 #5</a>
+        </div>
+        
+      </div>
+      
+    </div>
+
+    <script src="https://utteranc.es/client.js"
+    repo="integerous/blog-comments"
+    issue-term="pathname"
+    crossorigin="anonymous"
+    async>
+    </script>
+  </footer>
+</div>
+        </div>
+        <div class="sidebar">
+  
+  
+  <div class="sidebar-content">
+    <div class="sidebar-header">
+      <span>Author</span>
+    </div>
+    <div id="author">
+      <img src="https://ryan-han.com/images/ryanjs.png">
+      <span>Ryan Jeongsu Han (한정수)</span>
+      <div>
+        
+        <a href="https://github.com/integerous"><i class="fa fa-github-square fa-2x" aria-hidden="true"></i></a>
+        
+        
+        <a href="https://www.linkedin.com/in/integerous"><i class="fa fa-linkedin-square fa-2x" aria-hidden="true"></i></a>
+        
+        
+        <a href="https://www.instagram.com/ryemha_"><i class="fa fa-instagram fa-2x" aria-hidden="true"></i></a>
+        
+        
+        <a href="https://twitter.com/integerous"><i class="fa fa-twitter-square fa-2x" aria-hidden="true"></i></a>
+        
+      </div>
+    </div>
+  </div>
+  
+  
+  
+  <div class="sidebar-content">
+    <div class="sidebar-header">
+      <span>Table of Contents</span>
+    </div>
+    <nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li><a href="#1-예외-처리-exception-handling">1. 예외 처리 (Exception handling)</a></li>
+<li><a href="#2-예외-클래스-계층-구조">2. 예외 클래스 계층 구조</a></li>
+<li><a href="#3-printstacktrace-와-getmessage">3. printStackTrace()와 getMessage()</a></li>
+<li><a href="#4-멀티-catch-블럭">4. 멀티 catch 블럭</a></li>
+<li><a href="#5-메소드에-예외-선언">5. 메소드에 예외 선언</a></li>
+<li><a href="#6-finally-블럭">6. finally 블럭</a></li>
+</ul></li>
+</ul>
+</nav>
+  </div>
+  
+  
+  
+  
+  <div class="sidebar-content">
+    <div class="sidebar-header">
+      <span>Categories</span>
+    </div>
+    <div class="categories">
+      <ul>
+        
+        <li>
+          <a href="/categories/2018"><span></span>2018 (21)</a>
+        </li>
+        
+        <li>
+          <a href="/categories/aws"><span></span>aws (2)</a>
+        </li>
+        
+        <li>
+          <a href="/categories/early-bird"><span></span>early-bird (10)</a>
+        </li>
+        
+        <li>
+          <a href="/categories/essay"><span></span>essay (8)</a>
+        </li>
+        
+        <li>
+          <a href="/categories/etc"><span></span>etc (1)</a>
+        </li>
+        
+      </ul>
+    </div>
+  </div>
+  
+  <div class="sidebar-content">
+    <div class="sidebar-header">
+      <span>RSS</span>
+    </div>
+    <div id="rss">
+      <a href="http://integerous.github.io/index.xml" type="application/rss+xml" target="_blank">
+        <i class="fa fa-rss-square fa-2x" aria-hidden="true"></i>
+      </a>
+    </div>
+  </div>
+</div>
+
+      </div>
+      <footer>
+        <div id="site-footer-wrap">
+          <div id="site-footer">
+            <span>Powered by <a href="https://gohugo.io/">Hugo</a>.</span>
+            <span>
+              
+              Copyright (c) 2018, <a href="http://integerous.github.io/">Integerous Devlog</a>
+              
+            </span>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
+

@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="ko-kr">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="generator" content="Hugo 0.46" />
+    <link rel="shortcut icon" href="/images/favicon.ico">
+    <link href="http://integerous.github.io/index.xml" rel="alternate" type="application/rss+xml" title="Integerous Devlog" />
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+    
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:700i" rel="stylesheet">
+    
+    <script src="https://apis.google.com/js/platform.js" async defer>{lang: 'ja'}</script>
+    
+    <link rel="stylesheet" href="https://yandex.st/highlightjs/8.0/styles/default.min.css">
+    <script src="https://yandex.st/highlightjs/8.0/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    
+    <link rel="stylesheet" type="text/css" href="/css/style.css">
+    <title>181001 아침공부 #9 | Integerous Devlog</title>
+  </head>
+  <body>
+    <div id="wrap">
+      
+      <header class="site-header">
+        <div class="site-header-left">
+          <a class="site-header-title" href="http://integerous.github.io/">Integerous Devlog</a>
+        </div>
+      </header>
+      <div class="container">
+        <div id="main">
+
+<div class="article">
+  <header>
+    <div class="article-header">
+      <h1>181001 아침공부 #9</h1>
+      <div class="article-meta">
+        <span class="posttime">2018/10/03</span>
+        
+        
+        
+<div class="tags">
+  <ul>
+    
+    <li>
+        <a href="/tags/early-bird">early-bird</a>
+    </li>
+    
+    <li>
+        <a href="/tags/java">java</a>
+    </li>
+    
+  </ul>
+</div>
+
+
+      </div>
+    </div>
+    
+  </header>
+  <div class="content">
+    
+
+<blockquote>
+<p>자바의 정석(남궁성 저) 2권 학습<br />
+월요병은 난치병인가보다.. 다소 늦잠!</p>
+</blockquote>
+
+<h2 id="1-calendar-와-date">1. Calendar 와 Date</h2>
+
+<ul>
+<li><code>Date</code>는 JDK1.0, <code>Calendar</code>는 JDK1.1 부터 제공되었다.</li>
+<li>JDK1.8부터 <code>java.time 패키지</code>로 Calendar와 Date의 단점을 개선한 클래스들이 추가되었다.</li>
+<li><code>Calendar</code>는 추상클래스라서 객체를 직접 생성할 수 없고, 메소드를 통해서 완전히 구현된 클래스의 인스턴스를 얻어야 한다.
+<div class="highlight"><pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#228b22">// 에러. 추상클래스는 인스턴스를 생성할 수 없다.
+</span><span style="color:#228b22"></span>Calendar cal = <span style="color:#8b008b;font-weight:bold">new</span> Calendar(); 
+
+<span style="color:#228b22">// 굿. getInstance()는 Calendar 클래스를 구현한 클래스의 인스턴스를 반환
+</span><span style="color:#228b22"></span>Calendar cal = Calendar.<span style="color:#658b00">getInstance</span>();</code></pre></div></li>
+<li><code>getInstance()</code>가 <code>static</code>인 이유
+
+<ul>
+<li>메소드 내의 코드에서 인스턴스 변수를 사용하거나 인스턴스 메소드를 호출하지 않기 때문</li>
+<li><code>static</code>이 아니라면 객체를 생성한 다음에 호출해야 하는데 Calendar는 추상클래스라 객체를 생성할 수 없기 때문</li>
+</ul></li>
+</ul>
+
+<h2 id="2-calendar-와-date-간-변환">2. Calendar 와 Date 간 변환</h2>
+
+<ul>
+<li>Calendar가 추가되면서 Date는 대부분의 메소드가 <code>deprecated</code> 되었다.</li>
+<li>Java API 문서에서 더 이상 사용을 권장하지 않는 대상에 <code>deprecated</code>를 붙였다.
+<div class="highlight"><pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#228b22">//1. Calendar를 Date로 변환
+</span><span style="color:#228b22"></span>    Calendar cal = Calendar.<span style="color:#658b00">getInstance</span>();
+      ...
+    Date d = <span style="color:#8b008b;font-weight:bold">new</span> Date(cal.<span style="color:#658b00">getTimeInMillis</span>());
+
+<span style="color:#228b22">//2. Date를 Calendar로 변환
+</span><span style="color:#228b22"></span>    Date d = <span style="color:#8b008b;font-weight:bold">new</span> Date();
+      ...
+    Calendar cal = Calendar.<span style="color:#658b00">getInstance</span>();
+    cal.<span style="color:#658b00">setTime</span>(d);</code></pre></div></li>
+<li>get(Calendar.MONTH)로 얻어오는 값은 1~12가 아니라 0~11이다. 그래서 0이 1월 11이 12월을 의미한다.</li>
+</ul>
+
+  </div>
+  <footer>
+    <div class="article-footer">
+      
+      
+      
+      
+      
+      <div id="pagenavigation-next-prev">
+        
+        <div id="pagenavigation-next">
+          <span class="pagenav-label">&lt; 이전 글</span>
+          <a href="http://integerous.github.io/post/2018/early-bird/180930/">180930 아침공부 #8</a>
+        </div>
+        
+        
+        <div id="pagenavigation-prev">
+          <span class="pagenav-label">다음 글 ></span>
+          <a href="http://integerous.github.io/post/2018/early-bird/181002/">181002 아침공부 #10</a>
+        </div>
+        
+      </div>
+      
+    </div>
+
+    <script src="https://utteranc.es/client.js"
+    repo="integerous/blog-comments"
+    issue-term="pathname"
+    crossorigin="anonymous"
+    async>
+    </script>
+  </footer>
+</div>
+        </div>
+        <div class="sidebar">
+  
+  
+  <div class="sidebar-content">
+    <div class="sidebar-header">
+      <span>Author</span>
+    </div>
+    <div id="author">
+      <img src="https://ryan-han.com/images/ryanjs.png">
+      <span>Ryan Jeongsu Han (한정수)</span>
+      <div>
+        
+        <a href="https://github.com/integerous"><i class="fa fa-github-square fa-2x" aria-hidden="true"></i></a>
+        
+        
+        <a href="https://www.linkedin.com/in/integerous"><i class="fa fa-linkedin-square fa-2x" aria-hidden="true"></i></a>
+        
+        
+        <a href="https://www.instagram.com/ryemha_"><i class="fa fa-instagram fa-2x" aria-hidden="true"></i></a>
+        
+        
+        <a href="https://twitter.com/integerous"><i class="fa fa-twitter-square fa-2x" aria-hidden="true"></i></a>
+        
+      </div>
+    </div>
+  </div>
+  
+  
+  
+  <div class="sidebar-content">
+    <div class="sidebar-header">
+      <span>Table of Contents</span>
+    </div>
+    <nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li><a href="#1-calendar-와-date">1. Calendar 와 Date</a></li>
+<li><a href="#2-calendar-와-date-간-변환">2. Calendar 와 Date 간 변환</a></li>
+</ul></li>
+</ul>
+</nav>
+  </div>
+  
+  
+  
+  
+  <div class="sidebar-content">
+    <div class="sidebar-header">
+      <span>Categories</span>
+    </div>
+    <div class="categories">
+      <ul>
+        
+        <li>
+          <a href="/categories/2018"><span></span>2018 (21)</a>
+        </li>
+        
+        <li>
+          <a href="/categories/aws"><span></span>aws (2)</a>
+        </li>
+        
+        <li>
+          <a href="/categories/early-bird"><span></span>early-bird (10)</a>
+        </li>
+        
+        <li>
+          <a href="/categories/essay"><span></span>essay (8)</a>
+        </li>
+        
+        <li>
+          <a href="/categories/etc"><span></span>etc (1)</a>
+        </li>
+        
+      </ul>
+    </div>
+  </div>
+  
+  <div class="sidebar-content">
+    <div class="sidebar-header">
+      <span>RSS</span>
+    </div>
+    <div id="rss">
+      <a href="http://integerous.github.io/index.xml" type="application/rss+xml" target="_blank">
+        <i class="fa fa-rss-square fa-2x" aria-hidden="true"></i>
+      </a>
+    </div>
+  </div>
+</div>
+
+      </div>
+      <footer>
+        <div id="site-footer-wrap">
+          <div id="site-footer">
+            <span>Powered by <a href="https://gohugo.io/">Hugo</a>.</span>
+            <span>
+              
+              Copyright (c) 2018, <a href="http://integerous.github.io/">Integerous Devlog</a>
+              
+            </span>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
+

@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="ko-kr">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="generator" content="Hugo 0.46" />
+    <link rel="shortcut icon" href="/images/favicon.ico">
+    <link href="http://integerous.github.io/index.xml" rel="alternate" type="application/rss+xml" title="Integerous Devlog" />
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+    
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:700i" rel="stylesheet">
+    
+    <script src="https://apis.google.com/js/platform.js" async defer>{lang: 'ja'}</script>
+    
+    <link rel="stylesheet" href="https://yandex.st/highlightjs/8.0/styles/default.min.css">
+    <script src="https://yandex.st/highlightjs/8.0/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    
+    <link rel="stylesheet" type="text/css" href="/css/style.css">
+    <title>181002 아침공부 #10 | Integerous Devlog</title>
+  </head>
+  <body>
+    <div id="wrap">
+      
+      <header class="site-header">
+        <div class="site-header-left">
+          <a class="site-header-title" href="http://integerous.github.io/">Integerous Devlog</a>
+        </div>
+      </header>
+      <div class="container">
+        <div id="main">
+
+<div class="article">
+  <header>
+    <div class="article-header">
+      <h1>181002 아침공부 #10</h1>
+      <div class="article-meta">
+        <span class="posttime">2018/10/03</span>
+        
+        
+        
+<div class="tags">
+  <ul>
+    
+    <li>
+        <a href="/tags/early-bird">early-bird</a>
+    </li>
+    
+    <li>
+        <a href="/tags/java">java</a>
+    </li>
+    
+  </ul>
+</div>
+
+
+      </div>
+    </div>
+    
+  </header>
+  <div class="content">
+    
+
+<blockquote>
+<p>자바의 정석(남궁성 저) 2권 학습<br />
+와이프가 아파서 내 마음도 아팠다.</p>
+</blockquote>
+
+<h2 id="1-calendar-와-date-어제에-이어서">1. Calendar 와 Date (어제에 이어서)</h2>
+
+<h3 id="1-1-두-날짜간의-차이-구하기">1.1. 두 날짜간의 차이 구하기</h3>
+
+<ul>
+<li>두 날짜를 최소단위인 초단위로 변경한 다음 그 차이를 구한다.</li>
+</ul>
+
+<h3 id="1-2-시간상의-전후-알기">1.2. 시간상의 전후 알기</h3>
+
+<ul>
+<li>두 날짜간의 차이가 양수인지 음수인지 판단</li>
+<li><code>boolean after(Object when)</code> 또는 <code>boolean before(Object when)</code> 사용</li>
+</ul>
+
+<h3 id="1-3-특정-날짜-시간-기준-일정-기간-전후의-날짜-시간-알기">1.3. 특정 날짜/시간 기준 일정 기간 전후의 날짜/시간 알기</h3>
+
+<ul>
+<li><code>add(int field, int amount)</code></li>
+<li><code>roll(int field, int amount)</code>
+
+<ul>
+<li><code>add()</code>와의 차이점은 다른 필드에 영향 미치지 않음</li>
+<li>단, Calendar.DATE가 말일일 때, <code>roll</code>로 Calendar.MONTH를 변경하면 Calendar.DATE 필드에 영향을 미친다.</li>
+</ul></li>
+</ul>
+
+<h3 id="1-4-해당-월의-마지막날-알기">1.4. 해당 월의 마지막날 알기</h3>
+
+<ul>
+<li>다음 달의 1일에서 하루 빼기</li>
+<li><code>getActualMaximum(Calendar.DATE)</code> 사용</li>
+</ul>
+
+<h3 id="1-5-일-수-계산">1.5. 일 수 계산</h3>
+
+<ul>
+<li>Calendar는 1970년 1월 1일을 기준으로 계산</li>
+<li>1970년 1월 1일 이전에 날짜에 대해 <code>getTimeInMillis()</code>를 호출하면 음수 반환
+<br /></li>
+</ul>
+
+<h2 id="2-형식화-클래스">2. 형식화 클래스</h2>
+
+<h3 id="2-1-decimalformat">2.1. DecimalFormat</h3>
+
+<ul>
+<li>DecimalFormat을 이용하면 숫자 데이터를 정수, 부동소수점, 금액 등의 다양한 형식으로 표현할 수 있다.</li>
+<li>반대로 일정한 형식의 텍스트 데이터를 숫자로 쉽게 변환</li>
+<li>형식화 클래스는 패턴을 정의하는 것이 전부다.</li>
+<li>DecimalFormat 사용법
+<div class="highlight"><pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#00688b;font-weight:bold">double</span> number = 1234567.<span style="color:#658b00">89</span>;
+
+<span style="color:#228b22">// 1.원하는 출력형식의 패턴을 작성하여 DecimalFormat 인스턴스를 생성
+</span><span style="color:#228b22"></span>DecimalFormat df = <span style="color:#8b008b;font-weight:bold">new</span> DecimalFormat(<span style="color:#cd5555">&#34;#.#E0&#34;</span>); 
+
+<span style="color:#228b22">// 2.출력하고자 하는 문자열로 format 메소드를 호출
+</span><span style="color:#228b22"></span>String result = df.<span style="color:#658b00">format</span>(number);</code></pre></div></li>
+</ul>
+
+<h3 id="2-2-simpledateformat">2.2. SimpleDateFormat</h3>
+
+<ul>
+<li>날짜 데이터를 원하는 형태로 다양하게 출력</li>
+<li>사용방법
+
+<ul>
+<li>원하는 출력 형식의 패턴을 작성하여 SimpleDateFormat 인스턴스를 생성</li>
+<li>출력하고자 하는 Date 인스턴스를 가지고 format(Date d)를 호출
+<div class="highlight"><pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java">Date today = <span style="color:#8b008b;font-weight:bold">new</span> Date();
+SimpleDateFormat df = <span style="color:#8b008b;font-weight:bold">new</span> SimpleDateFormat(<span style="color:#cd5555">&#34;yyyy-MM-dd&#34;</span>);
+String result = df.<span style="color:#658b00">format</span>(today);
+//오늘 날짜를 yyyy-MM-dd 형태로 반환</code></pre></div></li>
+</ul></li>
+<li><code>parse(String source)</code>를 사용하여 날짜 데이터의 출력형식 변환 가능</li>
+<li>SimpleDateFormat의 <code>parse(String source)</code>는 문자열 source를 날짜 Date 인스턴스로 변환해줌
+<div class="highlight"><pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java">DateFormat df = <span style="color:#8b008b;font-weight:bold">new</span> SimpleDateFormat(<span style="color:#cd5555">&#34;yyyy년 MM월 dd일&#34;</span>);
+DateFormat df2 = <span style="color:#8b008b;font-weight:bold">new</span> SimpleDateFormat(<span style="color:#cd5555">&#34;yyyy/MM/dd&#34;</span>);
+Date d = df.<span style="color:#658b00">parse</span>(<span style="color:#cd5555">&#34;2018년 10월 3일&#34;</span>);
+
+System.<span style="color:#658b00">out</span>.<span style="color:#658b00">println</span>(df2.<span style="color:#658b00">format</span>(d)); // 2018/10/03</code></pre></div></li>
+</ul>
+
+<h3 id="2-3-choiceformat">2.3. ChoiceFormat</h3>
+
+<ul>
+<li>ChoiceFormat은 특정 범위에 속하는 값을 문자열로 변환</li>
+<li>연속적/불연속적인 범위의 값 처리에 유용(예를 들어 90점까지 A, 80점까지 B, ..)</li>
+<li>패턴을 사용할 경우 <code>limit#value</code> 형태로 사용
+
+<ul>
+<li>구분자로 <code>#</code>는 경계값 포함, <code>&lt;</code>는 미포함</li>
+</ul></li>
+</ul>
+
+  </div>
+  <footer>
+    <div class="article-footer">
+      
+      
+      
+      
+      
+      <div id="pagenavigation-next-prev">
+        
+        <div id="pagenavigation-next">
+          <span class="pagenav-label">&lt; 이전 글</span>
+          <a href="http://integerous.github.io/post/2018/early-bird/181001/">181001 아침공부 #9</a>
+        </div>
+        
+        
+      </div>
+      
+    </div>
+
+    <script src="https://utteranc.es/client.js"
+    repo="integerous/blog-comments"
+    issue-term="pathname"
+    crossorigin="anonymous"
+    async>
+    </script>
+  </footer>
+</div>
+        </div>
+        <div class="sidebar">
+  
+  
+  <div class="sidebar-content">
+    <div class="sidebar-header">
+      <span>Author</span>
+    </div>
+    <div id="author">
+      <img src="https://ryan-han.com/images/ryanjs.png">
+      <span>Ryan Jeongsu Han (한정수)</span>
+      <div>
+        
+        <a href="https://github.com/integerous"><i class="fa fa-github-square fa-2x" aria-hidden="true"></i></a>
+        
+        
+        <a href="https://www.linkedin.com/in/integerous"><i class="fa fa-linkedin-square fa-2x" aria-hidden="true"></i></a>
+        
+        
+        <a href="https://www.instagram.com/ryemha_"><i class="fa fa-instagram fa-2x" aria-hidden="true"></i></a>
+        
+        
+        <a href="https://twitter.com/integerous"><i class="fa fa-twitter-square fa-2x" aria-hidden="true"></i></a>
+        
+      </div>
+    </div>
+  </div>
+  
+  
+  
+  <div class="sidebar-content">
+    <div class="sidebar-header">
+      <span>Table of Contents</span>
+    </div>
+    <nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li><a href="#1-calendar-와-date-어제에-이어서">1. Calendar 와 Date (어제에 이어서)</a>
+<ul>
+<li><a href="#1-1-두-날짜간의-차이-구하기">1.1. 두 날짜간의 차이 구하기</a></li>
+<li><a href="#1-2-시간상의-전후-알기">1.2. 시간상의 전후 알기</a></li>
+<li><a href="#1-3-특정-날짜-시간-기준-일정-기간-전후의-날짜-시간-알기">1.3. 특정 날짜/시간 기준 일정 기간 전후의 날짜/시간 알기</a></li>
+<li><a href="#1-4-해당-월의-마지막날-알기">1.4. 해당 월의 마지막날 알기</a></li>
+<li><a href="#1-5-일-수-계산">1.5. 일 수 계산</a></li>
+</ul></li>
+<li><a href="#2-형식화-클래스">2. 형식화 클래스</a>
+<ul>
+<li><a href="#2-1-decimalformat">2.1. DecimalFormat</a></li>
+<li><a href="#2-2-simpledateformat">2.2. SimpleDateFormat</a></li>
+<li><a href="#2-3-choiceformat">2.3. ChoiceFormat</a></li>
+</ul></li>
+</ul></li>
+</ul>
+</nav>
+  </div>
+  
+  
+  
+  
+  <div class="sidebar-content">
+    <div class="sidebar-header">
+      <span>Categories</span>
+    </div>
+    <div class="categories">
+      <ul>
+        
+        <li>
+          <a href="/categories/2018"><span></span>2018 (21)</a>
+        </li>
+        
+        <li>
+          <a href="/categories/aws"><span></span>aws (2)</a>
+        </li>
+        
+        <li>
+          <a href="/categories/early-bird"><span></span>early-bird (10)</a>
+        </li>
+        
+        <li>
+          <a href="/categories/essay"><span></span>essay (8)</a>
+        </li>
+        
+        <li>
+          <a href="/categories/etc"><span></span>etc (1)</a>
+        </li>
+        
+      </ul>
+    </div>
+  </div>
+  
+  <div class="sidebar-content">
+    <div class="sidebar-header">
+      <span>RSS</span>
+    </div>
+    <div id="rss">
+      <a href="http://integerous.github.io/index.xml" type="application/rss+xml" target="_blank">
+        <i class="fa fa-rss-square fa-2x" aria-hidden="true"></i>
+      </a>
+    </div>
+  </div>
+</div>
+
+      </div>
+      <footer>
+        <div id="site-footer-wrap">
+          <div id="site-footer">
+            <span>Powered by <a href="https://gohugo.io/">Hugo</a>.</span>
+            <span>
+              
+              Copyright (c) 2018, <a href="http://integerous.github.io/">Integerous Devlog</a>
+              
+            </span>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
+

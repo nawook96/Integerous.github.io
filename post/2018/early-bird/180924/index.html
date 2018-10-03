@@ -74,17 +74,17 @@
 <li>추상메소드가 없어도 <code>abstract</code>를 붙여서 추상클래스로 지정할 수 있다.</li>
 <li>추상클래스는 인스턴스를 생성할 수 없다.</li>
 <li>추상클래스는 상속을 통해서 자손클래스에 의해서만 완성된다.<br />
-<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#00a8c8">abstract</span> <span style="color:#00a8c8">class</span> <span style="color:#75af00">클래스이름</span>  <span style="color:#f92672">{</span>
-  <span style="color:#f92672">...</span>
-<span style="color:#f92672">}</span></code></pre></div></li>
+<div class="highlight"><pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#8b008b;font-weight:bold">abstract</span> <span style="color:#8b008b;font-weight:bold">class</span> <span style="color:#008b45;font-weight:bold">클래스이름</span>  {
+  ...
+}</code></pre></div></li>
 </ul>
 
 <h2 id="2-추상-메소드-abstract-method">2. 추상 메소드 (Abstract method)</h2>
 
 <ul>
 <li>선언부만 작성하고 구현부는 작성하지 않은 것이 추상메소드.
-<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#75715e">/* 주석을 통해 기능 설명 */</span>
-<span style="color:#00a8c8">abstract</span> <span style="color:#111">리턴타입</span> <span style="color:#75af00">메소드이름</span><span style="color:#f92672">();</span></code></pre></div></li>
+<div class="highlight"><pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#228b22">/* 주석을 통해 기능 설명 */</span>
+<span style="color:#8b008b;font-weight:bold">abstract</span> 리턴타입 <span style="color:#008b45">메소드이름</span>();</code></pre></div></li>
 <li>추상클래스로부터 상속받는 자손클래스는 오버라이딩을 통해 조상인 추상클래스의 추상메소드를 모두 구현해야 한다.</li>
 <li>만약 부모로 부터 상속받은 추상메소드 중 하나라도 구현하지 않으면 자식클래스 역시 추상클래스로 지정해야 한다.</li>
 </ul>
@@ -99,11 +99,24 @@
 
 <h2 id="4-인터페이스의-작성">4. 인터페이스의 작성</h2>
 
-<p><script type="text/javascript" src="http://gist.github.com/1b4654de4cf4f70de19c78a6b0df448d.js"></script>
+<ul>
+<li><div class="highlight"><pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#8b008b;font-weight:bold">interface</span> <span style="color:#008b45;font-weight:bold">PlayingCard</span> {
+  <span style="color:#8b008b;font-weight:bold">public</span> <span style="color:#8b008b;font-weight:bold">static</span> <span style="color:#8b008b;font-weight:bold">final</span> <span style="color:#00688b;font-weight:bold">int</span> SPADE = 4;
+  <span style="color:#8b008b;font-weight:bold">final</span> <span style="color:#00688b;font-weight:bold">int</span> DIAMOND = 3; <span style="color:#228b22">//public static final int DIAMOND = 3;
+</span><span style="color:#228b22"></span>  <span style="color:#8b008b;font-weight:bold">static</span> <span style="color:#00688b;font-weight:bold">int</span> HEART = 2;  <span style="color:#228b22">//public static final int HEART = 2;
+</span><span style="color:#228b22"></span>  <span style="color:#00688b;font-weight:bold">int</span> CLOVER = 1;        <span style="color:#228b22">//public static final int CLOVER = 1;
+</span><span style="color:#228b22"></span>  
+  <span style="color:#8b008b;font-weight:bold">public</span> <span style="color:#8b008b;font-weight:bold">abstract</span> String <span style="color:#008b45">getCardNumber</span>();
+  String <span style="color:#008b45">getCardKind</span>();  <span style="color:#228b22">//public abstract String getCardKind();
+</span><span style="color:#228b22"></span>}</code></pre></div></li>
+<li>모든 멤버변수는 public static final 이어야하며, 이를 생략할 수 있다.<br /></li>
+<li>모든 메서드는 public abstract 이어야하며, 이를 생략할 수 있다.<br />
 
-- 모든 멤버변수는 public static final 이어야하며, 이를 생략할 수 있다.
-- 모든 메서드는 public abstract 이어야하며, 이를 생략할 수 있다.
-  - 단, jdk 1.8부터 static 메서드와 디폴트 메서트는 예외</p>
+<ul>
+<li>단, jdk 1.8부터 static 메서드와 디폴트 메서트는 예외
+<br /></li>
+</ul></li>
+</ul>
 
 <h2 id="5-인터페이스의-상속과-구현">5. 인터페이스의 상속과 구현</h2>
 
@@ -113,11 +126,10 @@
 <li>인터페이스도 추상클래스처럼 그 자체로는 인스턴스를 생성할 수 없다.</li>
 <li>클래스는 <code>extends</code>(확장하다) 사용, 인터페이스는 <code>implements</code>(구현하다) 사용.</li>
 <li>상속과 구현을 동시에 할 수 있다.
-<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java">  <span style="color:#00a8c8">class</span> <span style="color:#75af00">Fighter</span> <span style="color:#00a8c8">extends</span> <span style="color:#111">Unit</span> <span style="color:#00a8c8">implements</span> <span style="color:#111">Fightable</span> <span style="color:#f92672">{</span>
-    <span style="color:#00a8c8">public</span> <span style="color:#00a8c8">void</span> <span style="color:#75af00">move</span><span style="color:#f92672">(</span><span style="color:#00a8c8">int</span> <span style="color:#111">x</span><span style="color:#f92672">,</span> <span style="color:#00a8c8">int</span> <span style="color:#111">y</span><span style="color:#f92672">)</span>  <span style="color:#f92672">{</span> <span style="color:#75715e">/* 내용 생략 */</span> <span style="color:#f92672">}</span>
-    <span style="color:#00a8c8">public</span> <span style="color:#00a8c8">void</span> <span style="color:#75af00">attack</span><span style="color:#f92672">(</span><span style="color:#111">Unit</span> <span style="color:#111">u</span><span style="color:#f92672">)</span>  <span style="color:#f92672">{</span> <span style="color:#75715e">/* 내용 생략 */</span> <span style="color:#f92672">}</span>
-  <span style="color:#f92672">}</span>
-  </code></pre></div></li>
+<div class="highlight"><pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#8b008b;font-weight:bold">class</span> <span style="color:#008b45;font-weight:bold">Fighter</span> <span style="color:#8b008b;font-weight:bold">extends</span> Unit <span style="color:#8b008b;font-weight:bold">implements</span> Fightable {
+  <span style="color:#8b008b;font-weight:bold">public</span> <span style="color:#00688b;font-weight:bold">void</span> <span style="color:#008b45">move</span>(<span style="color:#00688b;font-weight:bold">int</span> x, <span style="color:#00688b;font-weight:bold">int</span> y)  { <span style="color:#228b22">/* 내용 생략 */</span> }
+  <span style="color:#8b008b;font-weight:bold">public</span> <span style="color:#00688b;font-weight:bold">void</span> <span style="color:#008b45">attack</span>(Unit u)  { <span style="color:#228b22">/* 내용 생략 */</span> }
+}</code></pre></div></li>
 </ul>
 
   </div>
@@ -212,7 +224,7 @@
       <ul>
         
         <li>
-          <a href="/categories/2018"><span></span>2018 (9)</a>
+          <a href="/categories/2018"><span></span>2018 (21)</a>
         </li>
         
         <li>
@@ -220,7 +232,7 @@
         </li>
         
         <li>
-          <a href="/categories/early-bird"><span></span>early-bird (3)</a>
+          <a href="/categories/early-bird"><span></span>early-bird (10)</a>
         </li>
         
         <li>

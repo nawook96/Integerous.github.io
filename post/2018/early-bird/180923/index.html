@@ -62,8 +62,6 @@
   <div class="content">
     
 
-<h1 id="아침공부-1">아침공부 #1</h1>
-
 <blockquote>
 <p>자바의 정석(남궁성 저) 학습<br />
 이 책을 한참 공부하다가 정보처리기사 필기 시험기간을 맞이해서 멈추었던 것 같다.</p>
@@ -91,17 +89,13 @@
 <ul>
 <li>참조변수가 참조하고 있는 인스턴스의 실제 타입을 알아보기 위해 <code>instanceof</code> 연산자를 사용한다.(주로 조건문에 사용)</li>
 <li><code>instanceof</code>를 이용한 연산 결과로 <code>true</code>를 얻었다는 것은 참조변수가 검사한 타입으로 형변환이 가능하다는 뜻이다.
-<script type="text/javascript" src="http://gist.github.com/a5cda350b8a973e3940b2e59a55229ea.js"></script>
-
-<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java">  <span style="color:#00a8c8">void</span> <span style="color:#75af00">doWork</span><span style="color:#f92672">(</span><span style="color:#111">Car</span> <span style="color:#111">c</span><span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
-    <span style="color:#00a8c8">if</span> <span style="color:#f92672">(</span><span style="color:#111">c</span> <span style="color:#00a8c8">instanceof</span> <span style="color:#111">FireEngine</span><span style="color:#f92672">){</span>
-        <span style="color:#111">FireEngine</span> <span style="color:#111">fe</span> <span style="color:#f92672">=</span> <span style="color:#f92672">(</span><span style="color:#111">FireEngine</span><span style="color:#f92672">)</span><span style="color:#111">c</span><span style="color:#f92672">;</span>
-        <span style="color:#111">fe</span><span style="color:#f92672">.</span><span style="color:#75af00">water</span><span style="color:#f92672">();</span>
-        <span style="color:#f92672">...</span>
-    <span style="color:#f92672">}</span><span style="color:#00a8c8">else</span> <span style="color:#00a8c8">if</span> <span style="color:#f92672">...</span>
-  <span style="color:#f92672">}</span>
-  </code></pre></div>
-<br /></li>
+<div class="highlight"><pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#00688b;font-weight:bold">void</span> <span style="color:#008b45">doWork</span>(Car c) {
+  <span style="color:#8b008b;font-weight:bold">if</span> (c <span style="color:#8b008b;font-weight:bold">instanceof</span> FireEngine){
+      FireEngine fe = (FireEngine)c;
+      fe.<span style="color:#658b00">water</span>();
+      ...
+  }<span style="color:#8b008b;font-weight:bold">else</span> <span style="color:#8b008b;font-weight:bold">if</span> ...
+}</code></pre></div></li>
 </ul>
 
 <h2 id="4-참조변수와-인스턴스의-연결">4. 참조변수와 인스턴스의 연결</h2>
@@ -115,14 +109,14 @@
 
 <ul>
 <li>부모타입의 참조변수 배열을 사용하면, 공통의 조상을 가진 서로 다른 종류의 객체를 배열로 묶어서 다룰 수 있다.</li>
-
-<li><p><code>Vector</code>클래스는 내부적으로 <code>Object</code>타입의 배열을 가지고 있어서, 이 배열에 객체를 추가하거나 제거할 수 있다.<br />
-<script type="text/javascript" src="http://gist.github.com/49d678714565e8287a2ef8989c821d2b.js"></script>
-</p></li>
-
-<li><p><code>Vector</code>클래스는 배열의 크기를 알아서 관리해주기 때문에 저장할 인스턴스의 개수에 신경 쓰지 않아도 된다.</p></li>
-
-<li><p><code>Vector</code>클래스는 단지 동적으로 크기가 관리되는 객체배열일 뿐이다.</p>
+<li><code>Vector</code>클래스는 내부적으로 <code>Object</code>타입의 배열을 가지고 있어서, 이 배열에 객체를 추가하거나 제거할 수 있다.<br />
+<div class="highlight"><pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#8b008b;font-weight:bold">public</span> <span style="color:#8b008b;font-weight:bold">class</span> <span style="color:#008b45;font-weight:bold">Vector</span> <span style="color:#8b008b;font-weight:bold">extends</span> AbstractList
+              <span style="color:#8b008b;font-weight:bold">implements</span> List, Cloneable, java.<span style="color:#658b00">io</span>.<span style="color:#658b00">Serializable</span>  {
+    <span style="color:#8b008b;font-weight:bold">protected</span> Object elementData[];
+    ...
+}</code></pre></div></li>
+<li><code>Vector</code>클래스는 배열의 크기를 알아서 관리해주기 때문에 저장할 인스턴스의 개수에 신경 쓰지 않아도 된다.</li>
+<li><code>Vector</code>클래스는 단지 동적으로 크기가 관리되는 객체배열일 뿐이다.
 
 <ul>
 <li><code>Vector item = new Vector();</code></li>
@@ -198,7 +192,7 @@
     </div>
     <nav id="TableOfContents">
 <ul>
-<li><a href="#아침공부-1">아침공부 #1</a>
+<li>
 <ul>
 <li><a href="#1-다형성-polymorphism">1. 다형성 (Polymorphism)</a></li>
 <li><a href="#2-참조변수의-형변환">2. 참조변수의 형변환</a></li>
@@ -221,7 +215,7 @@
       <ul>
         
         <li>
-          <a href="/categories/2018"><span></span>2018 (9)</a>
+          <a href="/categories/2018"><span></span>2018 (21)</a>
         </li>
         
         <li>
@@ -229,7 +223,7 @@
         </li>
         
         <li>
-          <a href="/categories/early-bird"><span></span>early-bird (3)</a>
+          <a href="/categories/early-bird"><span></span>early-bird (10)</a>
         </li>
         
         <li>
