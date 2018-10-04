@@ -6,8 +6,26 @@
     <description>Recent content in Java on Integerous Devlog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ko-kr</language>
-    <lastBuildDate>Wed, 03 Oct 2018 14:05:36 +0900</lastBuildDate>
+    <lastBuildDate>Fri, 05 Oct 2018 00:28:50 +0900</lastBuildDate>
     <atom:link href="/tags/java/" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>181004 아침공부 #12</title>
+      <link>http://integerous.github.io/post/2018/early-bird/181004/</link>
+      <pubDate>Fri, 05 Oct 2018 00:28:50 +0900</pubDate>
+      
+      <guid>http://integerous.github.io/post/2018/early-bird/181004/</guid>
+      <description>자바의 정석(남궁성 저) 2권 학습 군입대한지 정확히 8년이 지남..(무의미) 꿈에서 어떤 코드를 리뷰하고 있었다. 그러다 모닝콜에 살짝 정신이 들었을 때, &amp;l</description>
+    </item>
+    
+    <item>
+      <title>181003 아침공부 #11</title>
+      <link>http://integerous.github.io/post/2018/early-bird/181003/</link>
+      <pubDate>Fri, 05 Oct 2018 00:25:00 +0900</pubDate>
+      
+      <guid>http://integerous.github.io/post/2018/early-bird/181003/</guid>
+      <description>자바의 정석(남궁성 저) 2권 학습 개천절은 수요일이 제맛! 1. java.time 패키지 Java의 탄생과 함께한 Date와 Calendar의 단점을 해소하기 위해 JDK 1.8부</description>
+    </item>
     
     <item>
       <title>181002 아침공부 #10</title>
