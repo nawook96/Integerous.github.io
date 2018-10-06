@@ -6,8 +6,17 @@
     <description>Recent content in Posts on Integerous Devlog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ko-kr</language>
-    <lastBuildDate>Fri, 05 Oct 2018 00:47:42 +0900</lastBuildDate>
+    <lastBuildDate>Sat, 06 Oct 2018 19:04:55 +0900</lastBuildDate>
     <atom:link href="/post/" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>181005 아침공부 #13</title>
+      <link>http://integerous.github.io/post/2018/early-bird/181005/</link>
+      <pubDate>Sat, 06 Oct 2018 19:04:55 +0900</pubDate>
+      
+      <guid>http://integerous.github.io/post/2018/early-bird/181005/</guid>
+      <description>자바의 정석(남궁성 저) 2권 학습 오픈소스 아이디어가 계속 떠올라 집중이 안되었다. 1. java.time 패키지 (이어서) 1.1. LocalDateTime LocalDate와 LocalTime을 합</description>
+    </item>
     
     <item>
       <title>첫 삽 뜬 날</title>
@@ -15,7 +24,7 @@
       <pubDate>Fri, 05 Oct 2018 00:47:42 +0900</pubDate>
       
       <guid>http://integerous.github.io/post/2018/essay/thebegining/</guid>
-      <description>개발자가 되기로 마음먹고 첫 행동을 한 날 이때 산 책 중 아직도 못읽은 책이 있네.. 2017년 12월 14일 목요일 소프트웨어 엔지니어가 되기 위한 첫 여정이 시작되었</description>
+      <description>개발자가 되기로 마음먹고 첫 행동을 한 날 이 때 뜬 삽으로 아직도 삽질을.. 2017년 12월 14일 목요일 소프트웨어 엔지니어가 되기 위한 첫 여정이 시작되었다. 국</description>
     </item>
     
     <item>
@@ -133,15 +142,6 @@
       
       <guid>http://integerous.github.io/post/2018/essay/myuniverse/</guid>
       <description>10년 만에 내 방이 생긴 2016년 어느 겨울날 2016년 2월 5일 본인 몸뚱아리 눕힐 작은 공간마저 구하기 힘들었다던 어느 유명인사의 인생사에 비하면 엄살이지만</description>
-    </item>
-    
-    <item>
-      <title>퇴사한 회사 동기들에게 쓴 글</title>
-      <link>http://integerous.github.io/post/2018/essay/tofellows/</link>
-      <pubDate>Tue, 11 Sep 2018 12:45:00 +0900</pubDate>
-      
-      <guid>http://integerous.github.io/post/2018/essay/tofellows/</guid>
-      <description>퇴사와 결혼이 논쟁거리가 된 퇴사한 회사 동기들 단톡방에 쓴 글인데, 동기들로부터 개인톡으로 고맙다는 메세지를 많이 받아, 여기에 저장해둔다. 2018년 9월 7</description>
     </item>
     
   </channel>
