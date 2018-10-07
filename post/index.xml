@@ -6,8 +6,17 @@
     <description>Recent content in Posts on Integerous Devlog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ko-kr</language>
-    <lastBuildDate>Sun, 07 Oct 2018 18:21:44 +0900</lastBuildDate>
+    <lastBuildDate>Sun, 07 Oct 2018 20:53:47 +0900</lastBuildDate>
     <atom:link href="/post/" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>{ 출퇴근길 개발 읽기 } 기록소</title>
+      <link>http://integerous.github.io/post/2018/etc/devcomuter/</link>
+      <pubDate>Sun, 07 Oct 2018 20:53:47 +0900</pubDate>
+      
+      <guid>http://integerous.github.io/post/2018/etc/devcomuter/</guid>
+      <description>{ 출퇴근길 개발 읽기 } 단톡방에 올라온 컨텐츠 기록소 단톡방에 늦게 들어오신 분들은 이 곳에서 이전 컨텐츠를 확인하실 수 있습니다. { History } 2018년 10월 Java 유로</description>
+    </item>
     
     <item>
       <title>Java 문자열 연결방법 비교</title>
@@ -133,15 +142,6 @@
       
       <guid>http://integerous.github.io/post/2018/early-bird/180927/</guid>
       <description>자바의 정석(남궁성 저) 학습 5일 간의 연휴 이후 목요일에 찾아온 월요병.. 1. java.lang 패키지 java.lang 패키지의 클래스들은 import문 없이도 사용 가능하다. 2. Object 클래스</description>
-    </item>
-    
-    <item>
-      <title>180926 아침공부 #4</title>
-      <link>http://integerous.github.io/post/2018/early-bird/180926/</link>
-      <pubDate>Wed, 03 Oct 2018 13:20:33 +0900</pubDate>
-      
-      <guid>http://integerous.github.io/post/2018/early-bird/180926/</guid>
-      <description>자바의 정석(남궁성 저) 학습 연휴 마지막 날. 날씨가 너무 좋아서 강아지 운동장에 가게되어 공부를 많이 못했다. 1. 예외 처리 (Exception handling) 에러는 메모리 부족(OutOfM</description>
     </item>
     
   </channel>
