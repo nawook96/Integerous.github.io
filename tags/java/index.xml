@@ -15,7 +15,7 @@
       <pubDate>Sun, 07 Oct 2018 18:21:44 +0900</pubDate>
       
       <guid>http://integerous.github.io/post/2018/java/stringconcat/</guid>
-      <description>CodeWars에서 알고리즘 문제들을 풀다보면 문자열 연결할 일이 많았는데, 퍼포먼스 이슈가 많다보니 정리가 필요했다. 이 글에서는 StringBuilder, StringBuffer, + 연산자, Conc</description>
+      <description>CodeWars에서 알고리즘 문제들을 풀다보면 문자열 연결할 일이 많았는데, 퍼포먼스 이슈가 많다 보니 정리가 필요했다. 이 글에서는 StringBuilder, StringBuffer, + 연산자, Conc</description>
     </item>
     
     <item>
