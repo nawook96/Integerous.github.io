@@ -6,8 +6,17 @@
     <description>Recent content in 2018 on Integerous Devlog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ko-kr</language>
-    <lastBuildDate>Sun, 07 Oct 2018 20:53:47 +0900</lastBuildDate>
+    <lastBuildDate>Sun, 07 Oct 2018 22:56:09 +0900</lastBuildDate>
     <atom:link href="/categories/2018/" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>AWS VPC 총정리</title>
+      <link>http://integerous.github.io/post/2018/aws/vpc/</link>
+      <pubDate>Sun, 07 Oct 2018 22:56:09 +0900</pubDate>
+      
+      <guid>http://integerous.github.io/post/2018/aws/vpc/</guid>
+      <description>AWS Certified Solutions Architect - Associate 2018 강의를 듣고 내용 정리 1. What is a VPC ? VPC는 클라우드 내의 가상 데이터 센터. 2. What can you do with a VPC ? 내가 선택한 서브넷에 인스턴스를 실행할 수 있다.</description>
+    </item>
     
     <item>
       <title>{ 출퇴근길 개발 읽기 } 기록소</title>
@@ -15,7 +24,7 @@
       <pubDate>Sun, 07 Oct 2018 20:53:47 +0900</pubDate>
       
       <guid>http://integerous.github.io/post/2018/etc/devcomuter/</guid>
-      <description>{ 출퇴근길 개발 읽기 } 단톡방에 올라온 컨텐츠 기록소 단톡방에 늦게 들어오신 분들은 이 곳에서 이전 컨텐츠를 확인하실 수 있습니다. 링크는 { 출퇴근길 개발 읽기 } 페</description>
+      <description>{ 출퇴근길 개발 읽기 } 단톡방에 올라온 컨텐츠 기록소 단톡방에 늦게 들어오신 분들은 이 곳에서 이전 컨텐츠를 확인하실 수 있습니다. { History } 2018년 10월 Java 유로</description>
     </item>
     
     <item>
@@ -133,15 +142,6 @@
       
       <guid>http://integerous.github.io/post/2018/early-bird/180928/</guid>
       <description>자바의 정석(남궁성 저) 학습 &amp;lt;우리는 이렇게 왔다&amp;gt; 읽기 하루가 30시간 이면 얼마나 좋을까. 1. clone() 자신을 복제하여 새로운 인스턴스를 생성한다. Object</description>
-    </item>
-    
-    <item>
-      <title>180927 아침공부 #5</title>
-      <link>http://integerous.github.io/post/2018/early-bird/180927/</link>
-      <pubDate>Wed, 03 Oct 2018 13:26:15 +0900</pubDate>
-      
-      <guid>http://integerous.github.io/post/2018/early-bird/180927/</guid>
-      <description>자바의 정석(남궁성 저) 학습 5일 간의 연휴 이후 목요일에 찾아온 월요병.. 1. java.lang 패키지 java.lang 패키지의 클래스들은 import문 없이도 사용 가능하다. 2. Object 클래스</description>
     </item>
     
   </channel>
