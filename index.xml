@@ -6,8 +6,26 @@
     <description>Recent content in Integerous Devlog on Integerous Devlog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ko-kr</language>
-    <lastBuildDate>Sun, 07 Oct 2018 10:04:01 +0900</lastBuildDate>
+    <lastBuildDate>Sun, 07 Oct 2018 18:21:44 +0900</lastBuildDate>
     <atom:link href="/" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Java 문자열 연결방법 비교</title>
+      <link>http://integerous.github.io/post/2018/java/stringconcat/</link>
+      <pubDate>Sun, 07 Oct 2018 18:21:44 +0900</pubDate>
+      
+      <guid>http://integerous.github.io/post/2018/java/stringconcat/</guid>
+      <description>CodeWars에서 알고리즘 문제들을 풀다보면 문자열 연결할 일이 많았는데, 퍼포먼스 이슈가 많다보니 정리가 필요했다. 이 글에서는 StringBuilder, StringBuffer, + 연산자, Conc</description>
+    </item>
+    
+    <item>
+      <title>AWS S3 총정리</title>
+      <link>http://integerous.github.io/post/2018/aws/s3/</link>
+      <pubDate>Sun, 07 Oct 2018 18:12:32 +0900</pubDate>
+      
+      <guid>http://integerous.github.io/post/2018/aws/s3/</guid>
+      <description>S3 (Simple Storage Service) 인터넷 스토리지 서비스. 용량에 관계 없이 파일을 저장할 수 있고 웹(HTTP 프로토콜)에서 파일에 접근할 수 있다. 1. 사용 이유 S3는 저장 용량이 무한대</description>
+    </item>
     
     <item>
       <title>181007 아침공부 #15</title>
@@ -124,24 +142,6 @@
       
       <guid>http://integerous.github.io/post/2018/early-bird/180926/</guid>
       <description>자바의 정석(남궁성 저) 학습 연휴 마지막 날. 날씨가 너무 좋아서 강아지 운동장에 가게되어 공부를 많이 못했다. 1. 예외 처리 (Exception handling) 에러는 메모리 부족(OutOfM</description>
-    </item>
-    
-    <item>
-      <title>180925 아침공부 #3</title>
-      <link>http://integerous.github.io/post/2018/early-bird/180925/</link>
-      <pubDate>Wed, 03 Oct 2018 12:45:51 +0900</pubDate>
-      
-      <guid>http://integerous.github.io/post/2018/early-bird/180925/</guid>
-      <description>자바의 정석(남궁성 저) 학습 날씨가 많이 추워졌다. 아침 찬바람 맞고 코찔찔이 상태. 1. 인터페이스를 이용한 다형성 리턴 타입이 인터페이스라는 것은 메소드가 해당</description>
-    </item>
-    
-    <item>
-      <title>180924 아침공부 #2</title>
-      <link>http://integerous.github.io/post/2018/early-bird/180924/</link>
-      <pubDate>Wed, 03 Oct 2018 12:33:20 +0900</pubDate>
-      
-      <guid>http://integerous.github.io/post/2018/early-bird/180924/</guid>
-      <description>자바의 정석(남궁성 저) 학습 추석 전날이라 그런지 집중력이 조금 떨어졌다. 1. 추상 클래스 (Abstract class) 미완성 메소드(추상메소드)를 포함하고 있다는 것을 제외하고는 일</description>
     </item>
     
   </channel>

@@ -6,8 +6,17 @@
     <description>Recent content in Java on Integerous Devlog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ko-kr</language>
-    <lastBuildDate>Sun, 07 Oct 2018 10:04:01 +0900</lastBuildDate>
+    <lastBuildDate>Sun, 07 Oct 2018 18:21:44 +0900</lastBuildDate>
     <atom:link href="/tags/java/" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Java 문자열 연결방법 비교</title>
+      <link>http://integerous.github.io/post/2018/java/stringconcat/</link>
+      <pubDate>Sun, 07 Oct 2018 18:21:44 +0900</pubDate>
+      
+      <guid>http://integerous.github.io/post/2018/java/stringconcat/</guid>
+      <description>CodeWars에서 알고리즘 문제들을 풀다보면 문자열 연결할 일이 많았는데, 퍼포먼스 이슈가 많다보니 정리가 필요했다. 이 글에서는 StringBuilder, StringBuffer, + 연산자, Conc</description>
+    </item>
     
     <item>
       <title>181007 아침공부 #15</title>
@@ -133,15 +142,6 @@
       
       <guid>http://integerous.github.io/post/2018/early-bird/180924/</guid>
       <description>자바의 정석(남궁성 저) 학습 추석 전날이라 그런지 집중력이 조금 떨어졌다. 1. 추상 클래스 (Abstract class) 미완성 메소드(추상메소드)를 포함하고 있다는 것을 제외하고는 일</description>
-    </item>
-    
-    <item>
-      <title>180923 아침공부 #1</title>
-      <link>http://integerous.github.io/post/2018/early-bird/180923/</link>
-      <pubDate>Wed, 03 Oct 2018 11:43:34 +0900</pubDate>
-      
-      <guid>http://integerous.github.io/post/2018/early-bird/180923/</guid>
-      <description>자바의 정석(남궁성 저) 학습 이 책을 한참 공부하다가 정보처리기사 필기 시험기간을 맞이해서 멈추었던 것 같다. 1. 다형성 (Polymorphism) Java에서는 한 타입의 참조변수로 여</description>
     </item>
     
   </channel>
