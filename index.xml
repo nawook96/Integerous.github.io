@@ -6,8 +6,26 @@
     <description>Recent content in Integerous Devlog on Integerous Devlog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ko-kr</language>
-    <lastBuildDate>Sat, 06 Oct 2018 19:04:55 +0900</lastBuildDate>
+    <lastBuildDate>Sun, 07 Oct 2018 10:04:01 +0900</lastBuildDate>
     <atom:link href="/" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>181007 아침공부 #15</title>
+      <link>http://integerous.github.io/post/2018/early-bird/181007/</link>
+      <pubDate>Sun, 07 Oct 2018 10:04:01 +0900</pubDate>
+      
+      <guid>http://integerous.github.io/post/2018/early-bird/181007/</guid>
+      <description>자바의 정석(남궁성 저) 2권 학습 오늘은 어머니 생신! 1. ArrayList ArrayList는 기존의 Vector를 개선한 것. ArrayList는 Object 배열을 이용해서 데</description>
+    </item>
+    
+    <item>
+      <title>181006 아침공부 #14</title>
+      <link>http://integerous.github.io/post/2018/early-bird/181006/</link>
+      <pubDate>Sun, 07 Oct 2018 10:02:58 +0900</pubDate>
+      
+      <guid>http://integerous.github.io/post/2018/early-bird/181006/</guid>
+      <description>자바의 정석(남궁성 저) 2권 학습 비 많이 오는 토요일 아침 7시. 깔깔이 입고 공부 시작! 1. 컬렉션 프레임웍 (Collections Framework) &amp;lsquo;데이터 그룹을 다루고 표현하기 위한</description>
+    </item>
     
     <item>
       <title>181005 아침공부 #13</title>
@@ -124,24 +142,6 @@
       
       <guid>http://integerous.github.io/post/2018/early-bird/180924/</guid>
       <description>자바의 정석(남궁성 저) 학습 추석 전날이라 그런지 집중력이 조금 떨어졌다. 1. 추상 클래스 (Abstract class) 미완성 메소드(추상메소드)를 포함하고 있다는 것을 제외하고는 일</description>
-    </item>
-    
-    <item>
-      <title>180923 아침공부 #1</title>
-      <link>http://integerous.github.io/post/2018/early-bird/180923/</link>
-      <pubDate>Wed, 03 Oct 2018 11:43:34 +0900</pubDate>
-      
-      <guid>http://integerous.github.io/post/2018/early-bird/180923/</guid>
-      <description>자바의 정석(남궁성 저) 학습 이 책을 한참 공부하다가 정보처리기사 필기 시험기간을 맞이해서 멈추었던 것 같다. 1. 다형성 (Polymorphism) Java에서는 한 타입의 참조변수로 여</description>
-    </item>
-    
-    <item>
-      <title>내 우주가 생긴 날</title>
-      <link>http://integerous.github.io/post/2018/essay/myuniverse/</link>
-      <pubDate>Tue, 18 Sep 2018 04:00:42 +0900</pubDate>
-      
-      <guid>http://integerous.github.io/post/2018/essay/myuniverse/</guid>
-      <description>10년 만에 내 방이 생긴 2016년 어느 겨울날 2016년 2월 5일 본인 몸뚱아리 눕힐 작은 공간마저 구하기 힘들었다던 어느 유명인사의 인생사에 비하면 엄살이지만</description>
     </item>
     
   </channel>
