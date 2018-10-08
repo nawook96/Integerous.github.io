@@ -6,8 +6,17 @@
     <description>Recent content in Early Bird on Integerous Devlog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ko-kr</language>
-    <lastBuildDate>Sun, 07 Oct 2018 10:04:01 +0900</lastBuildDate>
+    <lastBuildDate>Tue, 09 Oct 2018 01:59:36 +0900</lastBuildDate>
     <atom:link href="/categories/early-bird/" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>181008 아침공부 #16</title>
+      <link>http://integerous.github.io/post/2018/early-bird/20181008/</link>
+      <pubDate>Tue, 09 Oct 2018 01:59:36 +0900</pubDate>
+      
+      <guid>http://integerous.github.io/post/2018/early-bird/20181008/</guid>
+      <description>자바의 정석(남궁성 저) 2권 학습 {출퇴근길 개발 읽기} 운영 첫날이라 공부를 별로 못했다. 1. LinkedList 배열은 데이터를 읽어오는데 걸리는 시간이 빠르다는 장점이 있지만</description>
+    </item>
     
     <item>
       <title>181007 아침공부 #15</title>
@@ -133,15 +142,6 @@
       
       <guid>http://integerous.github.io/post/2018/early-bird/180924/</guid>
       <description>자바의 정석(남궁성 저) 학습 추석 전날이라 그런지 집중력이 조금 떨어졌다. 1. 추상 클래스 (Abstract class) 미완성 메소드(추상메소드)를 포함하고 있다는 것을 제외하고는 일</description>
-    </item>
-    
-    <item>
-      <title>180923 아침공부 #1</title>
-      <link>http://integerous.github.io/post/2018/early-bird/180923/</link>
-      <pubDate>Wed, 03 Oct 2018 11:43:34 +0900</pubDate>
-      
-      <guid>http://integerous.github.io/post/2018/early-bird/180923/</guid>
-      <description>자바의 정석(남궁성 저) 학습 이 책을 한참 공부하다가 정보처리기사 필기 시험기간을 맞이해서 멈추었던 것 같다. 1. 다형성 (Polymorphism) Java에서는 한 타입의 참조변수로 여</description>
     </item>
     
   </channel>

@@ -6,8 +6,17 @@
     <description>Recent content in Java on Integerous Devlog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ko-kr</language>
-    <lastBuildDate>Sun, 07 Oct 2018 18:21:44 +0900</lastBuildDate>
+    <lastBuildDate>Tue, 09 Oct 2018 01:59:36 +0900</lastBuildDate>
     <atom:link href="/tags/java/" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>181008 아침공부 #16</title>
+      <link>http://integerous.github.io/post/2018/early-bird/20181008/</link>
+      <pubDate>Tue, 09 Oct 2018 01:59:36 +0900</pubDate>
+      
+      <guid>http://integerous.github.io/post/2018/early-bird/20181008/</guid>
+      <description>자바의 정석(남궁성 저) 2권 학습 {출퇴근길 개발 읽기} 운영 첫날이라 공부를 별로 못했다. 1. LinkedList 배열은 데이터를 읽어오는데 걸리는 시간이 빠르다는 장점이 있지만</description>
+    </item>
     
     <item>
       <title>Java 문자열 연결방법 비교</title>
@@ -133,15 +142,6 @@
       
       <guid>http://integerous.github.io/post/2018/early-bird/180925/</guid>
       <description>자바의 정석(남궁성 저) 학습 날씨가 많이 추워졌다. 아침 찬바람 맞고 코찔찔이 상태. 1. 인터페이스를 이용한 다형성 리턴 타입이 인터페이스라는 것은 메소드가 해당</description>
-    </item>
-    
-    <item>
-      <title>180924 아침공부 #2</title>
-      <link>http://integerous.github.io/post/2018/early-bird/180924/</link>
-      <pubDate>Wed, 03 Oct 2018 12:33:20 +0900</pubDate>
-      
-      <guid>http://integerous.github.io/post/2018/early-bird/180924/</guid>
-      <description>자바의 정석(남궁성 저) 학습 추석 전날이라 그런지 집중력이 조금 떨어졌다. 1. 추상 클래스 (Abstract class) 미완성 메소드(추상메소드)를 포함하고 있다는 것을 제외하고는 일</description>
     </item>
     
   </channel>
