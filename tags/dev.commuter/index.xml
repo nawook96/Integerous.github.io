@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Dev.commuter on Integerous Devlog</title>
+    <link>http://integerous.github.io/tags/dev.commuter/</link>
+    <description>Recent content in Dev.commuter on Integerous Devlog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ko-kr</language>
+    <lastBuildDate>Thu, 11 Oct 2018 08:48:06 +0900</lastBuildDate>
+    <atom:link href="/tags/dev.commuter/" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>2018-10-08</title>
+      <link>http://integerous.github.io/post/2018/dev.commuter/2018-10-08/</link>
+      <pubDate>Thu, 11 Oct 2018 08:48:06 +0900</pubDate>
+      
+      <guid>http://integerous.github.io/post/2018/dev.commuter/2018-10-08/</guid>
+      <description>2018년 10월 8일 Java 유료 논쟁, Oracle JDK와 Open JDK 차이 정리 비전공자를 채용하고 성장을 돕는 8퍼센트 CTO 이호성님 글 신규 Web 서비스시 고려해 볼 사항 - 우아한형제</description>
+    </item>
+    
+  </channel>
+</rss>

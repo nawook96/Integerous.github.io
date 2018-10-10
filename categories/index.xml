@@ -6,13 +6,13 @@
     <description>Recent content in Categories on Integerous Devlog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ko-kr</language>
-    <lastBuildDate>Tue, 09 Oct 2018 01:59:36 +0900</lastBuildDate>
+    <lastBuildDate>Thu, 11 Oct 2018 08:48:06 +0900</lastBuildDate>
     <atom:link href="/categories/" rel="self" type="application/rss+xml" />
     
     <item>
       <title>2018</title>
       <link>http://integerous.github.io/categories/2018/</link>
-      <pubDate>Tue, 09 Oct 2018 01:59:36 +0900</pubDate>
+      <pubDate>Thu, 11 Oct 2018 08:48:06 +0900</pubDate>
       
       <guid>http://integerous.github.io/categories/2018/</guid>
       <description></description>
@@ -24,6 +24,15 @@
       <pubDate>Sun, 07 Oct 2018 23:30:21 +0900</pubDate>
       
       <guid>http://integerous.github.io/categories/aws/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Dev.commuter</title>
+      <link>http://integerous.github.io/categories/dev.commuter/</link>
+      <pubDate>Thu, 11 Oct 2018 08:48:06 +0900</pubDate>
+      
+      <guid>http://integerous.github.io/categories/dev.commuter/</guid>
       <description></description>
     </item>
     
