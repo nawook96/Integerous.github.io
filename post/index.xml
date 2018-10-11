@@ -6,16 +6,43 @@
     <description>Recent content in Posts on Integerous Devlog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ko-kr</language>
-    <lastBuildDate>Thu, 11 Oct 2018 08:48:06 +0900</lastBuildDate>
+    <lastBuildDate>Thu, 11 Oct 2018 09:00:57 +0900</lastBuildDate>
     <atom:link href="/post/" rel="self" type="application/rss+xml" />
     
     <item>
-      <title>2018-10-08</title>
+      <title>18년 10월 11일 {출퇴근길 개발 읽기} (업데이트중)</title>
+      <link>http://integerous.github.io/post/2018/dev.commuter/2018-10-11/</link>
+      <pubDate>Thu, 11 Oct 2018 09:00:57 +0900</pubDate>
+      
+      <guid>http://integerous.github.io/post/2018/dev.commuter/2018-10-11/</guid>
+      <description>{ 출퇴근길 개발 읽기 } 오픈채팅방에 올라온 컨텐츠 기록소 단톡방에 새로 들어오신 분들은 이 곳에서 이전 컨텐츠를 확인하실 수 있습니다. 2018년 10월 11일 모</description>
+    </item>
+    
+    <item>
+      <title>18년 10월 10일 {출퇴근길 개발 읽기}</title>
+      <link>http://integerous.github.io/post/2018/dev.commuter/2018-10-10/</link>
+      <pubDate>Thu, 11 Oct 2018 09:00:05 +0900</pubDate>
+      
+      <guid>http://integerous.github.io/post/2018/dev.commuter/2018-10-10/</guid>
+      <description>{ 출퇴근길 개발 읽기 } 오픈채팅방에 올라온 컨텐츠 기록소 단톡방에 새로 들어오신 분들은 이 곳에서 이전 컨텐츠를 확인하실 수 있습니다. 2018년 10월 10일 데</description>
+    </item>
+    
+    <item>
+      <title>18년 10월 9일 {출퇴근길 개발 읽기}</title>
+      <link>http://integerous.github.io/post/2018/dev.commuter/2018-10-09/</link>
+      <pubDate>Thu, 11 Oct 2018 08:59:09 +0900</pubDate>
+      
+      <guid>http://integerous.github.io/post/2018/dev.commuter/2018-10-09/</guid>
+      <description>{ 출퇴근길 개발 읽기 } 오픈채팅방에 올라온 컨텐츠 기록소 단톡방에 새로 들어오신 분들은 이 곳에서 이전 컨텐츠를 확인하실 수 있습니다. 2018년 10월 9일 아주</description>
+    </item>
+    
+    <item>
+      <title>18년 10월 8일 {출퇴근길 개발 읽기}</title>
       <link>http://integerous.github.io/post/2018/dev.commuter/2018-10-08/</link>
       <pubDate>Thu, 11 Oct 2018 08:48:06 +0900</pubDate>
       
       <guid>http://integerous.github.io/post/2018/dev.commuter/2018-10-08/</guid>
-      <description>2018년 10월 8일 Java 유료 논쟁, Oracle JDK와 Open JDK 차이 정리 비전공자를 채용하고 성장을 돕는 8퍼센트 CTO 이호성님 글 신규 Web 서비스시 고려해 볼 사항 - 우아한형제</description>
+      <description>{ 출퇴근길 개발 읽기 } 오픈채팅방에 올라온 컨텐츠 기록소 단톡방에 새로 들어오신 분들은 이 곳에서 이전 컨텐츠를 확인하실 수 있습니다. 2018년 10월 8일 Java 유</description>
     </item>
     
     <item>
@@ -115,33 +142,6 @@
       
       <guid>http://integerous.github.io/post/2018/early-bird/181004/</guid>
       <description>자바의 정석(남궁성 저) 2권 학습 군입대한지 정확히 8년이 지남..(무의미) 꿈에서 어떤 코드를 리뷰하고 있었다. 그러다 모닝콜에 살짝 정신이 들었을 때, &amp;l</description>
-    </item>
-    
-    <item>
-      <title>181003 아침공부 #11</title>
-      <link>http://integerous.github.io/post/2018/early-bird/181003/</link>
-      <pubDate>Fri, 05 Oct 2018 00:25:00 +0900</pubDate>
-      
-      <guid>http://integerous.github.io/post/2018/early-bird/181003/</guid>
-      <description>자바의 정석(남궁성 저) 2권 학습 개천절은 수요일이 제맛! 1. java.time 패키지 Java의 탄생과 함께한 Date와 Calendar의 단점을 해소하기 위해 JDK 1.8부</description>
-    </item>
-    
-    <item>
-      <title>181002 아침공부 #10</title>
-      <link>http://integerous.github.io/post/2018/early-bird/181002/</link>
-      <pubDate>Wed, 03 Oct 2018 14:05:36 +0900</pubDate>
-      
-      <guid>http://integerous.github.io/post/2018/early-bird/181002/</guid>
-      <description>자바의 정석(남궁성 저) 2권 학습 와이프가 아파서 내 마음도 아팠다. 1. Calendar 와 Date (어제에 이어서) 1.1. 두 날짜간의 차이 구하기 두 날짜를 최소단위인 초단위로 변경한 다</description>
-    </item>
-    
-    <item>
-      <title>181001 아침공부 #9</title>
-      <link>http://integerous.github.io/post/2018/early-bird/181001/</link>
-      <pubDate>Wed, 03 Oct 2018 14:01:53 +0900</pubDate>
-      
-      <guid>http://integerous.github.io/post/2018/early-bird/181001/</guid>
-      <description>자바의 정석(남궁성 저) 2권 학습 월요병은 난치병인가보다.. 다소 늦잠! 1. Calendar 와 Date Date는 JDK1.0, Calendar는 JDK1.1 부터 제공되었다. JDK1.8부터 java.time</description>
     </item>
     
   </channel>

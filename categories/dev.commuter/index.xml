@@ -6,16 +6,43 @@
     <description>Recent content in Dev.commuter on Integerous Devlog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ko-kr</language>
-    <lastBuildDate>Thu, 11 Oct 2018 08:48:06 +0900</lastBuildDate>
+    <lastBuildDate>Thu, 11 Oct 2018 09:00:57 +0900</lastBuildDate>
     <atom:link href="/categories/dev.commuter/" rel="self" type="application/rss+xml" />
     
     <item>
-      <title>2018-10-08</title>
+      <title>18년 10월 11일 {출퇴근길 개발 읽기} (업데이트중)</title>
+      <link>http://integerous.github.io/post/2018/dev.commuter/2018-10-11/</link>
+      <pubDate>Thu, 11 Oct 2018 09:00:57 +0900</pubDate>
+      
+      <guid>http://integerous.github.io/post/2018/dev.commuter/2018-10-11/</guid>
+      <description>{ 출퇴근길 개발 읽기 } 오픈채팅방에 올라온 컨텐츠 기록소 단톡방에 새로 들어오신 분들은 이 곳에서 이전 컨텐츠를 확인하실 수 있습니다. 2018년 10월 11일 모</description>
+    </item>
+    
+    <item>
+      <title>18년 10월 10일 {출퇴근길 개발 읽기}</title>
+      <link>http://integerous.github.io/post/2018/dev.commuter/2018-10-10/</link>
+      <pubDate>Thu, 11 Oct 2018 09:00:05 +0900</pubDate>
+      
+      <guid>http://integerous.github.io/post/2018/dev.commuter/2018-10-10/</guid>
+      <description>{ 출퇴근길 개발 읽기 } 오픈채팅방에 올라온 컨텐츠 기록소 단톡방에 새로 들어오신 분들은 이 곳에서 이전 컨텐츠를 확인하실 수 있습니다. 2018년 10월 10일 데</description>
+    </item>
+    
+    <item>
+      <title>18년 10월 9일 {출퇴근길 개발 읽기}</title>
+      <link>http://integerous.github.io/post/2018/dev.commuter/2018-10-09/</link>
+      <pubDate>Thu, 11 Oct 2018 08:59:09 +0900</pubDate>
+      
+      <guid>http://integerous.github.io/post/2018/dev.commuter/2018-10-09/</guid>
+      <description>{ 출퇴근길 개발 읽기 } 오픈채팅방에 올라온 컨텐츠 기록소 단톡방에 새로 들어오신 분들은 이 곳에서 이전 컨텐츠를 확인하실 수 있습니다. 2018년 10월 9일 아주</description>
+    </item>
+    
+    <item>
+      <title>18년 10월 8일 {출퇴근길 개발 읽기}</title>
       <link>http://integerous.github.io/post/2018/dev.commuter/2018-10-08/</link>
       <pubDate>Thu, 11 Oct 2018 08:48:06 +0900</pubDate>
       
       <guid>http://integerous.github.io/post/2018/dev.commuter/2018-10-08/</guid>
-      <description>2018년 10월 8일 Java 유료 논쟁, Oracle JDK와 Open JDK 차이 정리 비전공자를 채용하고 성장을 돕는 8퍼센트 CTO 이호성님 글 신규 Web 서비스시 고려해 볼 사항 - 우아한형제</description>
+      <description>{ 출퇴근길 개발 읽기 } 오픈채팅방에 올라온 컨텐츠 기록소 단톡방에 새로 들어오신 분들은 이 곳에서 이전 컨텐츠를 확인하실 수 있습니다. 2018년 10월 8일 Java 유</description>
     </item>
     
   </channel>
