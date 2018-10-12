@@ -6,8 +6,17 @@
     <description>Recent content in Dev.commuter on Integerous Devlog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ko-kr</language>
-    <lastBuildDate>Thu, 11 Oct 2018 09:00:57 +0900</lastBuildDate>
+    <lastBuildDate>Fri, 12 Oct 2018 09:05:41 +0900</lastBuildDate>
     <atom:link href="/categories/dev.commuter/" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>18년 10월 12일 {출퇴근길 개발 읽기}</title>
+      <link>http://integerous.github.io/post/2018/dev.commuter/2018-10-12/</link>
+      <pubDate>Fri, 12 Oct 2018 09:05:41 +0900</pubDate>
+      
+      <guid>http://integerous.github.io/post/2018/dev.commuter/2018-10-12/</guid>
+      <description>{ 출퇴근길 개발 읽기 } 오픈채팅방에 올라온 컨텐츠 기록소 2018년 10월 12일 정규표현식의 개념과 패턴 사용법 총정리 DEVIEW 2018 1일차 후기 웹개발(JAVA,J</description>
+    </item>
     
     <item>
       <title>18년 10월 11일 {출퇴근길 개발 읽기}</title>
