@@ -6,8 +6,26 @@
     <description>Recent content in Java on Integerous Devlog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ko-kr</language>
-    <lastBuildDate>Tue, 09 Oct 2018 01:59:36 +0900</lastBuildDate>
+    <lastBuildDate>Sat, 13 Oct 2018 10:22:30 +0900</lastBuildDate>
     <atom:link href="/tags/java/" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>181011 아침공부 #18</title>
+      <link>http://integerous.github.io/post/2018/early-bird/20181011/</link>
+      <pubDate>Sat, 13 Oct 2018 10:22:30 +0900</pubDate>
+      
+      <guid>http://integerous.github.io/post/2018/early-bird/20181011/</guid>
+      <description>자바의 정석(남궁성 저) 2권 학습 10월 10일 아침공부 첫 실패! &amp;lsquo;하루도 빠짐 없이&amp;rsquo; 라는 못쓰게 되었으므로..완벽하기보다 꾸준</description>
+    </item>
+    
+    <item>
+      <title>181009 아침공부 #17</title>
+      <link>http://integerous.github.io/post/2018/early-bird/20181009/</link>
+      <pubDate>Sat, 13 Oct 2018 10:05:35 +0900</pubDate>
+      
+      <guid>http://integerous.github.io/post/2018/early-bird/20181009/</guid>
+      <description>자바의 정석(남궁성 저) 2권 학습 한글날! 어제 3시에 자버려서 아침 9시부터 공부시작! 1. Stack과 Queue Stack은 마지막에 저장한 데이터를 가장 먼저 꺼내</description>
+    </item>
     
     <item>
       <title>181008 아침공부 #16</title>
@@ -124,24 +142,6 @@
       
       <guid>http://integerous.github.io/post/2018/early-bird/180927/</guid>
       <description>자바의 정석(남궁성 저) 학습 5일 간의 연휴 이후 목요일에 찾아온 월요병.. 1. java.lang 패키지 java.lang 패키지의 클래스들은 import문 없이도 사용 가능하다. 2. Object 클래스</description>
-    </item>
-    
-    <item>
-      <title>180926 아침공부 #4</title>
-      <link>http://integerous.github.io/post/2018/early-bird/180926/</link>
-      <pubDate>Wed, 03 Oct 2018 13:20:33 +0900</pubDate>
-      
-      <guid>http://integerous.github.io/post/2018/early-bird/180926/</guid>
-      <description>자바의 정석(남궁성 저) 학습 연휴 마지막 날. 날씨가 너무 좋아서 강아지 운동장에 가게되어 공부를 많이 못했다. 1. 예외 처리 (Exception handling) 에러는 메모리 부족(OutOfM</description>
-    </item>
-    
-    <item>
-      <title>180925 아침공부 #3</title>
-      <link>http://integerous.github.io/post/2018/early-bird/180925/</link>
-      <pubDate>Wed, 03 Oct 2018 12:45:51 +0900</pubDate>
-      
-      <guid>http://integerous.github.io/post/2018/early-bird/180925/</guid>
-      <description>자바의 정석(남궁성 저) 학습 날씨가 많이 추워졌다. 아침 찬바람 맞고 코찔찔이 상태. 1. 인터페이스를 이용한 다형성 리턴 타입이 인터페이스라는 것은 메소드가 해당</description>
     </item>
     
   </channel>

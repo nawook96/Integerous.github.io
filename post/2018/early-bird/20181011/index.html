@@ -26,7 +26,7 @@
     <script>hljs.initHighlightingOnLoad();</script>
     
     <link rel="stylesheet" type="text/css" href="/css/style.css">
-    <title>대학교 4학년 | Integerous Devlog</title>
+    <title>181011 아침공부 #18 | Integerous Devlog</title>
   </head>
   <body>
     
@@ -60,9 +60,9 @@ if (!doNotTrack) {
 <div class="article">
   <header>
     <div class="article-header">
-      <h1>대학교 4학년</h1>
+      <h1>181011 아침공부 #18</h1>
       <div class="article-meta">
-        <span class="posttime">2018/08/24</span>
+        <span class="posttime">2018/10/13</span>
         
         
         
@@ -70,7 +70,11 @@ if (!doNotTrack) {
   <ul>
     
     <li>
-        <a href="/tags/essay">essay</a>
+        <a href="/tags/early-bird">early-bird</a>
+    </li>
+    
+    <li>
+        <a href="/tags/java">java</a>
     </li>
     
   </ul>
@@ -82,18 +86,102 @@ if (!doNotTrack) {
     
   </header>
   <div class="content">
-    <p><strong>2016년 1월 21일</strong></p>
+    
 
-<p>졸업을 무려 7학점 앞둔<br />
-아재느낌의 학생으로서</p>
+<blockquote>
+<p>자바의 정석(남궁성 저) 2권 학습<br />
+10월 10일 아침공부 첫 실패!<br />
+&lsquo;하루도 빠짐 없이&rsquo; 라는  못쓰게 되었으므로..완벽하기보다 꾸준히 해야겠다.</p>
+</blockquote>
 
-<p>하고싶은걸 하기위해 해야하는것,<br />
-해야하는걸 하기위해 해야하는것,<br />
-남들하니까 하기위해 해야하는것과 씨름해왔다. 그런데,</p>
+<h2 id="1-stack과-queue-이어서">1. Stack과 Queue (이어서)</h2>
 
-<p>남들하는건 우선 해놓고,<br />
-해야되는건 마지못해 하고,<br />
-하고싶은건 손도 못댄다.</p>
+<p>Java에서는 스택을 Stack 클래스로 구현하여 제공하고 있지만<br />
+큐는 Queue 인터페이스로 정의해놓고 클래스는 제공하지 않는다.<br />
+대신 Queue 인터페이스를 구현한 클래스들 중 하나를 선택해서 사용하면 된다.</p>
+
+<h2 id="2-stack-직접-구현하기">2. Stack 직접 구현하기</h2>
+<div class="highlight"><pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#8b008b;font-weight:bold">import</span> <span style="color:#008b45">java.util.*</span>;
+
+<span style="color:#8b008b;font-weight:bold">class</span> <span style="color:#008b45;font-weight:bold">MyStack</span> <span style="color:#8b008b;font-weight:bold">extends</span> Vector  {
+  <span style="color:#8b008b;font-weight:bold">public</span> Object <span style="color:#008b45">push</span>(Object item) {
+    addElement(item);
+    <span style="color:#8b008b;font-weight:bold">return</span> item;
+  }
+  
+  <span style="color:#8b008b;font-weight:bold">public</span> Object <span style="color:#008b45">pop</span>() {
+    Object obj = peek();  <span style="color:#228b22">//  Stack에 저장된 마지막 요소를 읽어온다.
+</span><span style="color:#228b22"></span>    removeElementAt(size()-1); <span style="color:#228b22">// 마지막 요소를 삭제한다. 배열의 인덱스가 0부터 시작하므로 1을 빼준다.
+</span><span style="color:#228b22"></span>    <span style="color:#8b008b;font-weight:bold">return</span> obj;
+  }
+  
+  <span style="color:#8b008b;font-weight:bold">public</span> Object <span style="color:#008b45">peek</span>() {
+    <span style="color:#00688b;font-weight:bold">int</span> len = size();
+    <span style="color:#8b008b;font-weight:bold">if</span> (len == 0)
+      <span style="color:#8b008b;font-weight:bold">throw</span> <span style="color:#8b008b;font-weight:bold">new</span> EmptyStackException();
+    <span style="color:#8b008b;font-weight:bold">return</span> elementAt(len -1);
+  }
+  
+  <span style="color:#8b008b;font-weight:bold">public</span> <span style="color:#00688b;font-weight:bold">boolean</span> <span style="color:#008b45">empty</span>()  {
+    <span style="color:#8b008b;font-weight:bold">return</span> size() == 0;
+  }
+  
+  <span style="color:#8b008b;font-weight:bold">public</span> <span style="color:#00688b;font-weight:bold">int</span> <span style="color:#008b45">search</span>(Object 0)  {
+    <span style="color:#00688b;font-weight:bold">int</span> i = lastIndexOf(o);   <span style="color:#228b22">// 끝에서부터 객체를 찾는다.
+</span><span style="color:#228b22"></span>    <span style="color:#8b008b;font-weight:bold">if</span> (i &gt;= 0)  {
+      <span style="color:#8b008b;font-weight:bold">return</span> size() - i;
+    }
+    <span style="color:#8b008b;font-weight:bold">return</span> -1;  <span style="color:#228b22">// 해당 객체를 찾지 못하면 -1 반환
+</span><span style="color:#228b22"></span>  }
+}</code></pre></div>
+<h2 id="3-deque-double-ended-queue">3. Deque(Double-Ended Queue)</h2>
+
+<blockquote>
+<p>Deque는 양쪽 끝에 추가/삭제 가능<br />
+Deque는 스택과 큐를 하나로 합쳐놓은 것과 같으며 스택으로 사용할 수도, 큐로 사용할 수도 있다.</p>
+</blockquote>
+
+<table>
+<thead>
+<tr>
+<th>Deque</th>
+<th>Queue</th>
+<th>Stack</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>offerLast()</td>
+<td>offer()</td>
+<td>push()</td>
+</tr>
+
+<tr>
+<td>pollLast()</td>
+<td></td>
+<td>pop()</td>
+</tr>
+
+<tr>
+<td>pollFirst()</td>
+<td>poll()</td>
+<td></td>
+</tr>
+
+<tr>
+<td>peekFirst()</td>
+<td>peek()</td>
+<td></td>
+</tr>
+
+<tr>
+<td>peekLast()</td>
+<td></td>
+<td>peek()</td>
+</tr>
+</tbody>
+</table>
 
   </div>
   <footer>
@@ -118,14 +206,9 @@ if (!doNotTrack) {
         
         <div id="pagenavigation-next">
           <span class="pagenav-label">&lt; 이전 글</span>
-          <a href="http://integerous.github.io/post/2018/essay/bali/">2016년 발리 서핑</a>
+          <a href="http://integerous.github.io/post/2018/early-bird/20181009/">181009 아침공부 #17</a>
         </div>
         
-        
-        <div id="pagenavigation-prev">
-          <span class="pagenav-label">다음 글 ></span>
-          <a href="http://integerous.github.io/post/2018/essay/withoutplan/">계획하지 않는 삶</a>
-        </div>
         
       </div>
       
@@ -178,6 +261,22 @@ if (!doNotTrack) {
   </div>
   
   
+  
+  <div class="sidebar-content">
+    <div class="sidebar-header">
+      <span>Table of Contents</span>
+    </div>
+    <nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li><a href="#1-stack과-queue-이어서">1. Stack과 Queue (이어서)</a></li>
+<li><a href="#2-stack-직접-구현하기">2. Stack 직접 구현하기</a></li>
+<li><a href="#3-deque-double-ended-queue">3. Deque(Double-Ended Queue)</a></li>
+</ul></li>
+</ul>
+</nav>
+  </div>
   
   
   

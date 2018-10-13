@@ -26,7 +26,7 @@
     <script>hljs.initHighlightingOnLoad();</script>
     
     <link rel="stylesheet" type="text/css" href="/css/style.css">
-    <title>대학교 4학년 | Integerous Devlog</title>
+    <title>181009 아침공부 #17 | Integerous Devlog</title>
   </head>
   <body>
     
@@ -60,9 +60,9 @@ if (!doNotTrack) {
 <div class="article">
   <header>
     <div class="article-header">
-      <h1>대학교 4학년</h1>
+      <h1>181009 아침공부 #17</h1>
       <div class="article-meta">
-        <span class="posttime">2018/08/24</span>
+        <span class="posttime">2018/10/13</span>
         
         
         
@@ -70,7 +70,11 @@ if (!doNotTrack) {
   <ul>
     
     <li>
-        <a href="/tags/essay">essay</a>
+        <a href="/tags/early-bird">early-bird</a>
+    </li>
+    
+    <li>
+        <a href="/tags/java">java</a>
     </li>
     
   </ul>
@@ -82,18 +86,56 @@ if (!doNotTrack) {
     
   </header>
   <div class="content">
-    <p><strong>2016년 1월 21일</strong></p>
+    
 
-<p>졸업을 무려 7학점 앞둔<br />
-아재느낌의 학생으로서</p>
+<blockquote>
+<p>자바의 정석(남궁성 저) 2권 학습<br />
+한글날! 어제 3시에 자버려서 아침 9시부터 공부시작!</p>
+</blockquote>
 
-<p>하고싶은걸 하기위해 해야하는것,<br />
-해야하는걸 하기위해 해야하는것,<br />
-남들하니까 하기위해 해야하는것과 씨름해왔다. 그런데,</p>
+<h2 id="1-stack과-queue">1. Stack과 Queue</h2>
 
-<p>남들하는건 우선 해놓고,<br />
-해야되는건 마지못해 하고,<br />
-하고싶은건 손도 못댄다.</p>
+<p>Stack은 마지막에 저장한 데이터를 가장 먼저 꺼내게 되는 LIFO(Last In First Out)구조.<br />
+Queue는 처음에 저장한 데이터를 가장 먼저 꺼내게 되는 FIFO(First In First Out)구조.</p>
+
+<h2 id="2-stack과-queue-구현">2. Stack과 Queue 구현</h2>
+
+<ul>
+<li>Stack
+
+<ul>
+<li>순차적으로 데이터를 추가하고 삭제하는 스택에는 ArrayList와 같은 배열 기반의 컬렉션 클래스가 적합</li>
+</ul></li>
+<li>Queue
+
+<ul>
+<li>큐는 데이터를 꺼낼 때 항상 첫번째 저장된 데이터를 삭제한다.</li>
+<li>그러므로 ArrayList와 같은 배열 기반의 컬렉션 클래스를 사용한다면, 데이터를 꺼낼 때마다 빈공간을 채우기 위해 데이터 복사가 발생해서 비효율적.</li>
+<li>큐는 ArrayList보다 데이터의 추가/삭제가 쉬운 LinkedList가 더 적합하다.
+<br /></li>
+</ul></li>
+</ul>
+
+<h2 id="3-stack-메소드">3. Stack 메소드</h2>
+
+<ul>
+<li><code>boolean empty()</code> : Stack이 비어있는지 알려준다.<br /></li>
+<li><code>Object peek()</code> : Stack의 맨 위에 저장된 객체를 반환. <code>pop()</code>과 달리 Stack에서 객체를 꺼내지는 않음<br /></li>
+<li><code>Object pop()</code> : Stack의 맨 위에 저장된 객체를 꺼낸다.</li>
+<li><code>Object push(Object item)</code> : Stack에 객체(item)를 저장한다.</li>
+<li><code>int search(Object o)</code> : Stack에서 주어진 객체(o)를 찾아서 그 위치를 반환. 못찾으면 -1 반환. (배열과 달리 위치는 0이 아닌 1부터 시작)</li>
+</ul>
+
+<h2 id="4-queue-메소드">4. Queue 메소드</h2>
+
+<ul>
+<li><code>boolean add(Object o)</code> : 지정된 객체를 Queue에 추가한다. 성공하면 <code>true</code> 반환. 저장공간 부족하면 <code>IlligalStateException</code> 발생</li>
+<li><code>boolean offer(Object o) : Queue에 객체를 저장. 성공하면</code>true<code>실패하면</code>false` 반환</li>
+<li><code>Object remove()</code> : Queue에서 객체를 꺼내 반환. 비어있으면 <code>NoSuchElementException</code> 발생</li>
+<li><code>Object poll()</code> : Queue에서 객체를 꺼내서 반환. 비어있으면 <code>null</code> 반환</li>
+<li><code>Object element()</code> : 삭제없이 요소를 읽어온다. <code>peek()</code>과 달리 Queue가 비었을 때 <code>NoSuchElementException 발생</code></li>
+<li><code>Object peek()</code> : 삭제없이 요소를 읽어 온다. Queue가 비어있으면 <code>null</code> 반환</li>
+</ul>
 
   </div>
   <footer>
@@ -118,13 +160,13 @@ if (!doNotTrack) {
         
         <div id="pagenavigation-next">
           <span class="pagenav-label">&lt; 이전 글</span>
-          <a href="http://integerous.github.io/post/2018/essay/bali/">2016년 발리 서핑</a>
+          <a href="http://integerous.github.io/post/2018/dev.commuter/2018-10-12/">18년 10월 12일 {출퇴근길 개발 읽기}</a>
         </div>
         
         
         <div id="pagenavigation-prev">
           <span class="pagenav-label">다음 글 ></span>
-          <a href="http://integerous.github.io/post/2018/essay/withoutplan/">계획하지 않는 삶</a>
+          <a href="http://integerous.github.io/post/2018/early-bird/20181011/">181011 아침공부 #18</a>
         </div>
         
       </div>
@@ -178,6 +220,23 @@ if (!doNotTrack) {
   </div>
   
   
+  
+  <div class="sidebar-content">
+    <div class="sidebar-header">
+      <span>Table of Contents</span>
+    </div>
+    <nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li><a href="#1-stack과-queue">1. Stack과 Queue</a></li>
+<li><a href="#2-stack과-queue-구현">2. Stack과 Queue 구현</a></li>
+<li><a href="#3-stack-메소드">3. Stack 메소드</a></li>
+<li><a href="#4-queue-메소드">4. Queue 메소드</a></li>
+</ul></li>
+</ul>
+</nav>
+  </div>
   
   
   
