@@ -6,8 +6,17 @@
     <description>Recent content in Integerous Devlog on Integerous Devlog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ko-kr</language>
-    <lastBuildDate>Sat, 13 Oct 2018 10:22:30 +0900</lastBuildDate>
+    <lastBuildDate>Sun, 14 Oct 2018 12:31:35 +0900</lastBuildDate>
     <atom:link href="/" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>18년 10월 13일 {출퇴근길 개발 읽기}</title>
+      <link>http://integerous.github.io/post/2018/dev.commuter/2018-10-13/</link>
+      <pubDate>Sun, 14 Oct 2018 12:31:35 +0900</pubDate>
+      
+      <guid>http://integerous.github.io/post/2018/dev.commuter/2018-10-13/</guid>
+      <description>{ 출퇴근길 개발 읽기 } 오픈채팅방에 올라온 컨텐츠 기록소 2018년 10월 13일 DEVIEW 2일차 후기 JDBC로 실행되는 SQL에 자동으로 프로젝트 정보 주석 남기기</description>
+    </item>
     
     <item>
       <title>181011 아침공부 #18</title>
@@ -15,7 +24,7 @@
       <pubDate>Sat, 13 Oct 2018 10:22:30 +0900</pubDate>
       
       <guid>http://integerous.github.io/post/2018/early-bird/20181011/</guid>
-      <description>자바의 정석(남궁성 저) 2권 학습 10월 10일 아침공부 첫 실패! &amp;lsquo;하루도 빠짐 없이&amp;rsquo; 라는 못쓰게 되었으므로..완벽하기보다 꾸준</description>
+      <description>자바의 정석(남궁성 저) 2권 학습 10월 10일 아침공부 첫 실패! &amp;lsquo;하루도 빠짐 없이&amp;rsquo; 라는 표현은 못쓰게 되었으므로..완벽하기보</description>
     </item>
     
     <item>
@@ -133,15 +142,6 @@
       
       <guid>http://integerous.github.io/post/2018/early-bird/181006/</guid>
       <description>자바의 정석(남궁성 저) 2권 학습 비 많이 오는 토요일 아침 7시. 깔깔이 입고 공부 시작! 1. 컬렉션 프레임웍 (Collections Framework) &amp;lsquo;데이터 그룹을 다루고 표현하기 위한</description>
-    </item>
-    
-    <item>
-      <title>181005 아침공부 #13</title>
-      <link>http://integerous.github.io/post/2018/early-bird/181005/</link>
-      <pubDate>Sat, 06 Oct 2018 19:04:55 +0900</pubDate>
-      
-      <guid>http://integerous.github.io/post/2018/early-bird/181005/</guid>
-      <description>자바의 정석(남궁성 저) 2권 학습 오픈소스 아이디어가 계속 떠올라 집중이 안되었다. 1. java.time 패키지 (이어서) 1.1. LocalDateTime LocalDate와 LocalTime을 합</description>
     </item>
     
   </channel>
