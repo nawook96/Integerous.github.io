@@ -6,8 +6,35 @@
     <description>Recent content in Posts on Integerous Devlog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ko-kr</language>
-    <lastBuildDate>Sun, 14 Oct 2018 12:31:35 +0900</lastBuildDate>
+    <lastBuildDate>Tue, 16 Oct 2018 12:39:06 +0900</lastBuildDate>
     <atom:link href="/post/" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>18년 10월 16일 {출퇴근길 개발 읽기}</title>
+      <link>http://integerous.github.io/post/2018/dev.commuter/2018-10-16/</link>
+      <pubDate>Tue, 16 Oct 2018 12:39:06 +0900</pubDate>
+      
+      <guid>http://integerous.github.io/post/2018/dev.commuter/2018-10-16/</guid>
+      <description>{ 출퇴근길 개발 읽기 } 오픈채팅방에 올라온 컨텐츠 기록소 2018년 10월 16일 초보 개발자에게 권장하는 객체지향 모델링 공부 방법 왜 장바구니 UX 디자인은 비효</description>
+    </item>
+    
+    <item>
+      <title>18년 10월 15일 {출퇴근길 개발 읽기}</title>
+      <link>http://integerous.github.io/post/2018/dev.commuter/2018-10-15/</link>
+      <pubDate>Tue, 16 Oct 2018 12:38:57 +0900</pubDate>
+      
+      <guid>http://integerous.github.io/post/2018/dev.commuter/2018-10-15/</guid>
+      <description>{ 출퇴근길 개발 읽기 } 오픈채팅방에 올라온 컨텐츠 기록소 2018년 10월 15일 신규 포인트 시스템 전환기 1편 개발단계 웹폰트 사용하기 (웹폰트의 모든 것) N</description>
+    </item>
+    
+    <item>
+      <title>18년 10월 14일 {출퇴근길 개발 읽기}</title>
+      <link>http://integerous.github.io/post/2018/dev.commuter/2018-10-14/</link>
+      <pubDate>Tue, 16 Oct 2018 12:38:48 +0900</pubDate>
+      
+      <guid>http://integerous.github.io/post/2018/dev.commuter/2018-10-14/</guid>
+      <description>{ 출퇴근길 개발 읽기 } 오픈채팅방에 올라온 컨텐츠 기록소 2018년 10월 14일 (번역) CSS에 대한 깊은 이해: 폰트 매트릭스, line-height와</description>
+    </item>
     
     <item>
       <title>18년 10월 13일 {출퇴근길 개발 읽기}</title>
@@ -115,33 +142,6 @@
       
       <guid>http://integerous.github.io/post/2018/java/stringconcat/</guid>
       <description>CodeWars에서 알고리즘 문제들을 풀다보면 문자열 연결할 일이 많았는데, 퍼포먼스 이슈가 많다 보니 정리가 필요했다. 이 글에서는 StringBuilder, StringBuffer, + 연산자, Conc</description>
-    </item>
-    
-    <item>
-      <title>AWS S3 총정리</title>
-      <link>http://integerous.github.io/post/2018/aws/s3/</link>
-      <pubDate>Sun, 07 Oct 2018 18:12:32 +0900</pubDate>
-      
-      <guid>http://integerous.github.io/post/2018/aws/s3/</guid>
-      <description>S3 (Simple Storage Service) 인터넷 스토리지 서비스. 용량에 관계 없이 파일을 저장할 수 있고 웹(HTTP 프로토콜)에서 파일에 접근할 수 있다. 1. 사용 이유 S3는 저장 용량이 무한대</description>
-    </item>
-    
-    <item>
-      <title>181007 아침공부 #15</title>
-      <link>http://integerous.github.io/post/2018/early-bird/181007/</link>
-      <pubDate>Sun, 07 Oct 2018 10:04:01 +0900</pubDate>
-      
-      <guid>http://integerous.github.io/post/2018/early-bird/181007/</guid>
-      <description>자바의 정석(남궁성 저) 2권 학습 오늘은 어머니 생신! 1. ArrayList ArrayList는 기존의 Vector를 개선한 것. ArrayList는 Object 배열을 이용해서 데</description>
-    </item>
-    
-    <item>
-      <title>181006 아침공부 #14</title>
-      <link>http://integerous.github.io/post/2018/early-bird/181006/</link>
-      <pubDate>Sun, 07 Oct 2018 10:02:58 +0900</pubDate>
-      
-      <guid>http://integerous.github.io/post/2018/early-bird/181006/</guid>
-      <description>자바의 정석(남궁성 저) 2권 학습 비 많이 오는 토요일 아침 7시. 깔깔이 입고 공부 시작! 1. 컬렉션 프레임웍 (Collections Framework) &amp;lsquo;데이터 그룹을 다루고 표현하기 위한</description>
     </item>
     
   </channel>
