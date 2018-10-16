@@ -6,8 +6,26 @@
     <description>Recent content in Integerous Devlog on Integerous Devlog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ko-kr</language>
-    <lastBuildDate>Tue, 16 Oct 2018 12:39:06 +0900</lastBuildDate>
+    <lastBuildDate>Wed, 17 Oct 2018 00:52:20 +0900</lastBuildDate>
     <atom:link href="/" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>181016 아침공부 #20</title>
+      <link>http://integerous.github.io/post/2018/early-bird/181016/</link>
+      <pubDate>Wed, 17 Oct 2018 00:52:20 +0900</pubDate>
+      
+      <guid>http://integerous.github.io/post/2018/early-bird/181016/</guid>
+      <description>자바의 정석(남궁성 저) 2권 학습 13일(토) 성주에서 참외 농사 지으시는 작은외삼촌댁 방문 14일(일) 거창에서 사과 농사 지으시는 큰외삼촌댁 방문 15일(</description>
+    </item>
+    
+    <item>
+      <title>181012 아침공부 #19</title>
+      <link>http://integerous.github.io/post/2018/early-bird/181012/</link>
+      <pubDate>Tue, 16 Oct 2018 23:57:21 +0900</pubDate>
+      
+      <guid>http://integerous.github.io/post/2018/early-bird/181012/</guid>
+      <description>자바의 정석(남궁성 저) 2권 학습 아침에는 공부하지만 저녁에 복습하며 정리를 못하고 있다.. 1. Iterator 컬렉션 프레임웍에서는 컬렉션에 저장된 요소들을 읽어오는 방법</description>
+    </item>
     
     <item>
       <title>18년 10월 16일 {출퇴근길 개발 읽기}</title>
@@ -34,6 +52,15 @@
       
       <guid>http://integerous.github.io/post/2018/dev.commuter/2018-10-14/</guid>
       <description>{ 출퇴근길 개발 읽기 } 오픈채팅방에 올라온 컨텐츠 기록소 2018년 10월 14일 (번역) CSS에 대한 깊은 이해: 폰트 매트릭스, line-height와</description>
+    </item>
+    
+    <item>
+      <title>286컴퓨터와 도트프린터</title>
+      <link>http://integerous.github.io/post/2018/essay/father/</link>
+      <pubDate>Sun, 14 Oct 2018 12:49:22 +0900</pubDate>
+      
+      <guid>http://integerous.github.io/post/2018/essay/father/</guid>
+      <description>2018년 10월 14일 성주 외삼촌댁에서 1997년 어느 가을 날. 아빠는 오토바이에 나와 누나를 앞뒤로 태우시고 10분 거리의 할아버지 댁에 갔다. 아빠가 운전</description>
     </item>
     
     <item>
@@ -115,33 +142,6 @@
       
       <guid>http://integerous.github.io/post/2018/early-bird/20181008/</guid>
       <description>자바의 정석(남궁성 저) 2권 학습 {출퇴근길 개발 읽기} 운영 첫날이라 공부를 별로 못했다. 1. LinkedList 배열은 데이터를 읽어오는데 걸리는 시간이 빠르다는 장점이 있지만</description>
-    </item>
-    
-    <item>
-      <title>AWS EC2 서버에 Java 프로젝트 배포/재배포</title>
-      <link>http://integerous.github.io/post/2018/aws/deployonec2/</link>
-      <pubDate>Sun, 07 Oct 2018 23:30:21 +0900</pubDate>
-      
-      <guid>http://integerous.github.io/post/2018/aws/deployonec2/</guid>
-      <description>회사 고객센터용 카카오톡 챗봇을 만들어 AWS EC2 서버에 배포하기 위해 박재성님 유튜브 강의를 들으며 실습한 내용 목차 1. AWS EC2 인스턴스 생성 2. 생성한 인스턴스(서버)에</description>
-    </item>
-    
-    <item>
-      <title>AWS VPC 총정리</title>
-      <link>http://integerous.github.io/post/2018/aws/vpc/</link>
-      <pubDate>Sun, 07 Oct 2018 22:56:09 +0900</pubDate>
-      
-      <guid>http://integerous.github.io/post/2018/aws/vpc/</guid>
-      <description>AWS Certified Solutions Architect - Associate 2018 강의를 듣고 내용 정리 1. What is a VPC ? VPC는 클라우드 내의 가상 데이터 센터. 2. What can you do with a VPC ? 내가 선택한 서브넷에 인스턴스를 실행할 수 있다.</description>
-    </item>
-    
-    <item>
-      <title>Java 문자열 연결방법 비교</title>
-      <link>http://integerous.github.io/post/2018/java/stringconcat/</link>
-      <pubDate>Sun, 07 Oct 2018 18:21:44 +0900</pubDate>
-      
-      <guid>http://integerous.github.io/post/2018/java/stringconcat/</guid>
-      <description>CodeWars에서 알고리즘 문제들을 풀다보면 문자열 연결할 일이 많았는데, 퍼포먼스 이슈가 많다 보니 정리가 필요했다. 이 글에서는 StringBuilder, StringBuffer, + 연산자, Conc</description>
     </item>
     
   </channel>
