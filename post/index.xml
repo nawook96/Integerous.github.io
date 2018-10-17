@@ -6,8 +6,17 @@
     <description>Recent content in Posts on Integerous Devlog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ko-kr</language>
-    <lastBuildDate>Wed, 17 Oct 2018 22:41:33 +0900</lastBuildDate>
+    <lastBuildDate>Thu, 18 Oct 2018 00:17:21 +0900</lastBuildDate>
     <atom:link href="/post/" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>181017 아침공부 #21</title>
+      <link>http://integerous.github.io/post/2018/early-bird/181017/</link>
+      <pubDate>Thu, 18 Oct 2018 00:17:21 +0900</pubDate>
+      
+      <guid>http://integerous.github.io/post/2018/early-bird/181017/</guid>
+      <description>자바의 정석(남궁성 저) 2권 학습 1. Comparator와 Comparable Arrays.sort()를 호출하면 알아서 배열을 정렬하는 것처럼 보이지만, 사실은 Chr</description>
+    </item>
     
     <item>
       <title>18년 10월 17일 {출퇴근길 개발 읽기}</title>
@@ -133,15 +142,6 @@
       
       <guid>http://integerous.github.io/post/2018/dev.commuter/2018-10-09/</guid>
       <description>{ 출퇴근길 개발 읽기 } 오픈채팅방에 올라온 컨텐츠 기록소 2018년 10월 9일 아주 거대한 (자바스크립트) 어플리케이션 구축하기 (번역글) 스타트업이 디자</description>
-    </item>
-    
-    <item>
-      <title>18년 10월 8일 {출퇴근길 개발 읽기}</title>
-      <link>http://integerous.github.io/post/2018/dev.commuter/2018-10-08/</link>
-      <pubDate>Thu, 11 Oct 2018 08:48:06 +0900</pubDate>
-      
-      <guid>http://integerous.github.io/post/2018/dev.commuter/2018-10-08/</guid>
-      <description>{ 출퇴근길 개발 읽기 } 오픈채팅방에 올라온 컨텐츠 기록소 2018년 10월 8일 Java 유료 논쟁, Oracle JDK와 Open JDK 차이 정리 비전공자를 채용하고 성장을 돕는 8퍼센트</description>
     </item>
     
   </channel>

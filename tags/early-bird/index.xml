@@ -6,8 +6,17 @@
     <description>Recent content in Early Bird on Integerous Devlog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ko-kr</language>
-    <lastBuildDate>Wed, 17 Oct 2018 00:52:20 +0900</lastBuildDate>
+    <lastBuildDate>Thu, 18 Oct 2018 00:17:21 +0900</lastBuildDate>
     <atom:link href="/tags/early-bird/" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>181017 아침공부 #21</title>
+      <link>http://integerous.github.io/post/2018/early-bird/181017/</link>
+      <pubDate>Thu, 18 Oct 2018 00:17:21 +0900</pubDate>
+      
+      <guid>http://integerous.github.io/post/2018/early-bird/181017/</guid>
+      <description>자바의 정석(남궁성 저) 2권 학습 1. Comparator와 Comparable Arrays.sort()를 호출하면 알아서 배열을 정렬하는 것처럼 보이지만, 사실은 Chr</description>
+    </item>
     
     <item>
       <title>181016 아침공부 #20</title>
@@ -133,15 +142,6 @@
       
       <guid>http://integerous.github.io/post/2018/early-bird/180929/</guid>
       <description>자바의 정석(남궁성 저) 학습 1. String 클래스 String 클래스는 문자열을 저장하기 위해 문자형 배열 변수(char[]) value를 인스턴스 변수로 정의되어있다. public final</description>
-    </item>
-    
-    <item>
-      <title>180928 아침공부 #6</title>
-      <link>http://integerous.github.io/post/2018/early-bird/180928/</link>
-      <pubDate>Wed, 03 Oct 2018 13:31:24 +0900</pubDate>
-      
-      <guid>http://integerous.github.io/post/2018/early-bird/180928/</guid>
-      <description>자바의 정석(남궁성 저) 학습 &amp;lt;우리는 이렇게 왔다&amp;gt; 읽기 하루가 30시간 이면 얼마나 좋을까. 1. clone() 자신을 복제하여 새로운 인스턴스를 생성한다. Object</description>
     </item>
     
   </channel>

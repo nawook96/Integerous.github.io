@@ -26,7 +26,7 @@
     <script>hljs.initHighlightingOnLoad();</script>
     
     <link rel="stylesheet" type="text/css" href="/css/style.css">
-    <title>2016년 발리 서핑 | Integerous Devlog</title>
+    <title>181017 아침공부 #21 | Integerous Devlog</title>
   </head>
   <body>
     
@@ -60,9 +60,9 @@ if (!doNotTrack) {
 <div class="article">
   <header>
     <div class="article-header">
-      <h1>2016년 발리 서핑</h1>
+      <h1>181017 아침공부 #21</h1>
       <div class="article-meta">
-        <span class="posttime">2018/08/24</span>
+        <span class="posttime">2018/10/18</span>
         
         
         
@@ -70,7 +70,11 @@ if (!doNotTrack) {
   <ul>
     
     <li>
-        <a href="/tags/essay">essay</a>
+        <a href="/tags/early-bird">early-bird</a>
+    </li>
+    
+    <li>
+        <a href="/tags/java">java</a>
     </li>
     
   </ul>
@@ -82,33 +86,68 @@ if (!doNotTrack) {
     
   </header>
   <div class="content">
-    <blockquote>
-<p>발리에서 30일간 서핑하던 어느 새벽</p>
+    
+
+<blockquote>
+<p>자바의 정석(남궁성 저) 2권 학습</p>
 </blockquote>
 
-<p><strong>2016년 7월 19일</strong></p>
+<h2 id="1-comparator와-comparable">1. Comparator와 Comparable</h2>
 
-<p>새벽부터 서핑을 하노라면<br />
-파도가 좋고,<br />
-바다는 나의 것이며,<br />
-상어도 꿈나라에 있을테다.</p>
+<blockquote>
+<p>Arrays.sort()를 호출하면 알아서 배열을 정렬하는 것처럼 보이지만,<br />
+사실은 Chractor클래스의 Comparable의 구현에 의해 정렬되었던 것.<br />
+Comparble을 구현한 클래스는 정렬이 가능하다는 것을 의미.</p>
+</blockquote>
+<div class="highlight"><pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#8b008b;font-weight:bold">public</span> <span style="color:#8b008b;font-weight:bold">interface</span> <span style="color:#008b45;font-weight:bold">Comparator</span> {
+  <span style="color:#00688b;font-weight:bold">int</span> <span style="color:#008b45">compare</span>(Object o1, Object o2);
+  <span style="color:#00688b;font-weight:bold">boolean</span> <span style="color:#008b45">equals</span>(Object obj);
+}
 
-<p>동이 틀 무렵에는<br />
-하늘색보다 바다색이 앞서 변하고,<br />
-비라도 내린다면<br />
-무지개가 무지 크다.</p>
+<span style="color:#8b008b;font-weight:bold">public</span> <span style="color:#8b008b;font-weight:bold">interface</span> <span style="color:#008b45;font-weight:bold">Comparable</span> {
+  <span style="color:#8b008b;font-weight:bold">public</span> <span style="color:#00688b;font-weight:bold">int</span> <span style="color:#008b45">compareTo</span>(Object o);
+}</code></pre></div>
+<blockquote>
+<p>Comparable은 java.lang 패키지에 있고, Comparator는 java.util 패키지에 있다.</p>
+</blockquote>
 
-<p>큰 파도를 넘을 때면<br />
-하늘로 승천하는 손오공이 되고,<br />
-큰 파도에 휩쓸릴 때면<br />
-세탁기 속 빨래감이 된다.</p>
+<ul>
+<li>Comparable : 기본 정렬기준을 구현하는데 사용.</li>
+<li>Comparator : 기본 정렬기준 외에 다른 기준으로 정렬하고자할 때 사용</li>
+</ul>
 
-<p>파워풀한 자연 앞에<br />
-나약한 존재가 되다보면,<br />
-별 것 아닌 일들에<br />
-청승떨지 않게 된다.</p>
+<h2 id="2-hashset">2. HashSet</h2>
 
-<p>#surfing #Bali</p>
+<blockquote>
+<p>HashSet은 Set인터페이스를 구현한 가장 대표적인 컬렉션.<br />
+HashSet은 저장순서를 유지하지 않으므로 저장순서를 유지하고자 한다면 LinkedHashSet 사용.</p>
+</blockquote>
+
+<ul>
+<li>로또번호 예제<br /></li>
+</ul>
+<div class="highlight"><pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#8b008b;font-weight:bold">import</span> <span style="color:#008b45">java.util.*</span>;
+
+<span style="color:#8b008b;font-weight:bold">class</span> <span style="color:#008b45;font-weight:bold">HashSetLotto</span>  {
+    <span style="color:#8b008b;font-weight:bold">public</span> <span style="color:#8b008b;font-weight:bold">static</span> <span style="color:#00688b;font-weight:bold">void</span> <span style="color:#008b45">main</span>(String[] args)  {
+        
+        Set set = <span style="color:#8b008b;font-weight:bold">new</span> HashSet();
+        
+        <span style="color:#8b008b;font-weight:bold">for</span> (<span style="color:#00688b;font-weight:bold">int</span> i = 0; set.<span style="color:#658b00">size</span>() &lt; 6; i++)  {
+            <span style="color:#00688b;font-weight:bold">int</span> num = (<span style="color:#00688b;font-weight:bold">int</span>)(Math.<span style="color:#658b00">random</span>()*45) + 1;
+            set.<span style="color:#658b00">add</span>(<span style="color:#8b008b;font-weight:bold">new</span> Integer(num));
+        }
+        
+        List list = <span style="color:#8b008b;font-weight:bold">new</span> LinkedList(set);
+        Collections.<span style="color:#658b00">sort</span>(list);
+        System.<span style="color:#658b00">out</span>.<span style="color:#658b00">println</span>(list);
+    }
+}</code></pre></div>
+<blockquote>
+<p>번호를 크기 순으로 정렬하기 위해 Collections클래스의 sort(List list)를 사용했다.<br />
+이 메서드는 인자로 List인터페이스 타입을 필요로 하기 때문에<br />
+LinkedList클래스의 생성자 LinkedList(Collection c)를 이용해서 HashSet에 저장된 객체들을 LinkedList에 담아서 처리했다.</p>
+</blockquote>
 
   </div>
   <footer>
@@ -133,14 +172,9 @@ if (!doNotTrack) {
         
         <div id="pagenavigation-next">
           <span class="pagenav-label">&lt; 이전 글</span>
-          <a href="http://integerous.github.io/post/2018/etc/creating_static_blog/">Hugo로 github.io 블로그 만들기</a>
+          <a href="http://integerous.github.io/post/2018/dev.commuter/2018-10-17/">18년 10월 17일 {출퇴근길 개발 읽기}</a>
         </div>
         
-        
-        <div id="pagenavigation-prev">
-          <span class="pagenav-label">다음 글 ></span>
-          <a href="http://integerous.github.io/post/2018/essay/4thgrade/">대학교 4학년</a>
-        </div>
         
       </div>
       
@@ -193,6 +227,21 @@ if (!doNotTrack) {
   </div>
   
   
+  
+  <div class="sidebar-content">
+    <div class="sidebar-header">
+      <span>Table of Contents</span>
+    </div>
+    <nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li><a href="#1-comparator와-comparable">1. Comparator와 Comparable</a></li>
+<li><a href="#2-hashset">2. HashSet</a></li>
+</ul></li>
+</ul>
+</nav>
+  </div>
   
   
   
