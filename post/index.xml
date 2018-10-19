@@ -6,8 +6,26 @@
     <description>Recent content in Posts on Integerous Devlog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ko-kr</language>
-    <lastBuildDate>Thu, 18 Oct 2018 00:17:21 +0900</lastBuildDate>
+    <lastBuildDate>Fri, 19 Oct 2018 09:36:53 +0900</lastBuildDate>
     <atom:link href="/post/" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>18년 10월 18일 {출퇴근길 개발 읽기}</title>
+      <link>http://integerous.github.io/post/2018/dev.commuter/2018-10-18/</link>
+      <pubDate>Fri, 19 Oct 2018 09:36:53 +0900</pubDate>
+      
+      <guid>http://integerous.github.io/post/2018/dev.commuter/2018-10-18/</guid>
+      <description>{ 출퇴근길 개발 읽기 } 오픈채팅방에 올라온 컨텐츠 기록소 2018년 10월 18일 안드로이드 모션 레이아웃 설명 (영문) 리눅스 open files, max user processes 설정 정리글 Git flow, GitHub flow,</description>
+    </item>
+    
+    <item>
+      <title>181018 아침공부 #22</title>
+      <link>http://integerous.github.io/post/2018/early-bird/181018/</link>
+      <pubDate>Fri, 19 Oct 2018 09:34:40 +0900</pubDate>
+      
+      <guid>http://integerous.github.io/post/2018/early-bird/181018/</guid>
+      <description>자바의 정석(남궁성 저) 2권 학습 1. TreeSet TreeSet은 이진검색트리(binary search tree) 형태로 데이터를 저장하는 컬렉션 클래스다. TreeSet은 이진검</description>
+    </item>
     
     <item>
       <title>181017 아침공부 #21</title>
@@ -124,24 +142,6 @@
       
       <guid>http://integerous.github.io/post/2018/dev.commuter/2018-10-11/</guid>
       <description>{ 출퇴근길 개발 읽기 } 오픈채팅방에 올라온 컨텐츠 기록소 2018년 10월 11일 모바일 웹사이트에 구글 AMP 적용하기 let과 var의 성능 비교 영상을 통한 자료</description>
-    </item>
-    
-    <item>
-      <title>18년 10월 10일 {출퇴근길 개발 읽기}</title>
-      <link>http://integerous.github.io/post/2018/dev.commuter/2018-10-10/</link>
-      <pubDate>Thu, 11 Oct 2018 09:00:05 +0900</pubDate>
-      
-      <guid>http://integerous.github.io/post/2018/dev.commuter/2018-10-10/</guid>
-      <description>{ 출퇴근길 개발 읽기 } 오픈채팅방에 올라온 컨텐츠 기록소 2018년 10월 10일 데이터 사이언스 인터뷰 질문 모음집 (영문) Top 10 DevOps 블로그와 웹사이트 2018 팀에서</description>
-    </item>
-    
-    <item>
-      <title>18년 10월 9일 {출퇴근길 개발 읽기}</title>
-      <link>http://integerous.github.io/post/2018/dev.commuter/2018-10-09/</link>
-      <pubDate>Thu, 11 Oct 2018 08:59:09 +0900</pubDate>
-      
-      <guid>http://integerous.github.io/post/2018/dev.commuter/2018-10-09/</guid>
-      <description>{ 출퇴근길 개발 읽기 } 오픈채팅방에 올라온 컨텐츠 기록소 2018년 10월 9일 아주 거대한 (자바스크립트) 어플리케이션 구축하기 (번역글) 스타트업이 디자</description>
     </item>
     
   </channel>
