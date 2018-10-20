@@ -6,8 +6,17 @@
     <description>Recent content in Posts on Integerous Devlog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ko-kr</language>
-    <lastBuildDate>Fri, 19 Oct 2018 09:36:53 +0900</lastBuildDate>
+    <lastBuildDate>Sat, 20 Oct 2018 11:05:49 +0900</lastBuildDate>
     <atom:link href="/post/" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>2018-10-19</title>
+      <link>http://integerous.github.io/post/2018/dev.commuter/2018-10-19/</link>
+      <pubDate>Sat, 20 Oct 2018 11:05:49 +0900</pubDate>
+      
+      <guid>http://integerous.github.io/post/2018/dev.commuter/2018-10-19/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>18년 10월 18일 {출퇴근길 개발 읽기}</title>
@@ -133,15 +142,6 @@
       
       <guid>http://integerous.github.io/post/2018/dev.commuter/2018-10-12/</guid>
       <description>{ 출퇴근길 개발 읽기 } 오픈채팅방에 올라온 컨텐츠 기록소 2018년 10월 12일 정규표현식의 개념과 패턴 사용법 총정리 DEVIEW 2018 1일차 후기 웹개발(JAVA,J</description>
-    </item>
-    
-    <item>
-      <title>18년 10월 11일 {출퇴근길 개발 읽기}</title>
-      <link>http://integerous.github.io/post/2018/dev.commuter/2018-10-11/</link>
-      <pubDate>Thu, 11 Oct 2018 09:00:57 +0900</pubDate>
-      
-      <guid>http://integerous.github.io/post/2018/dev.commuter/2018-10-11/</guid>
-      <description>{ 출퇴근길 개발 읽기 } 오픈채팅방에 올라온 컨텐츠 기록소 2018년 10월 11일 모바일 웹사이트에 구글 AMP 적용하기 let과 var의 성능 비교 영상을 통한 자료</description>
     </item>
     
   </channel>
