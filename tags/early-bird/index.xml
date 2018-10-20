@@ -6,8 +6,17 @@
     <description>Recent content in Early Bird on Integerous Devlog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ko-kr</language>
-    <lastBuildDate>Fri, 19 Oct 2018 09:34:40 +0900</lastBuildDate>
+    <lastBuildDate>Sat, 20 Oct 2018 13:33:44 +0900</lastBuildDate>
     <atom:link href="/tags/early-bird/" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>181019 아침공부 #23</title>
+      <link>http://integerous.github.io/post/2018/early-bird/181019/</link>
+      <pubDate>Sat, 20 Oct 2018 13:33:44 +0900</pubDate>
+      
+      <guid>http://integerous.github.io/post/2018/early-bird/181019/</guid>
+      <description>자바의 정석(남궁성 저) 2권 학습 1. HashMap Hashtable과 HashMap의 관계는 Vector와 ArrayList의 관계와 같아서 Hashtable</description>
+    </item>
     
     <item>
       <title>181018 아침공부 #22</title>
@@ -133,15 +142,6 @@
       
       <guid>http://integerous.github.io/post/2018/early-bird/181001/</guid>
       <description>자바의 정석(남궁성 저) 2권 학습 월요병은 난치병인가보다.. 다소 늦잠! 1. Calendar 와 Date Date는 JDK1.0, Calendar는 JDK1.1 부터 제공되었다. JDK1.8부터 java.time</description>
-    </item>
-    
-    <item>
-      <title>180930 아침공부 #8</title>
-      <link>http://integerous.github.io/post/2018/early-bird/180930/</link>
-      <pubDate>Wed, 03 Oct 2018 13:54:44 +0900</pubDate>
-      
-      <guid>http://integerous.github.io/post/2018/early-bird/180930/</guid>
-      <description>자바의 정석(남궁성 저) 학습 날씨가 너무나 좋았던 일요일 1. StringBuffer &amp;amp; StringBuilder 클래스 public final class StringBuffer implements java.io.Serializable { private char[] value; ... } String클래스는 Immutable이므로 인스턴스</description>
     </item>
     
   </channel>
