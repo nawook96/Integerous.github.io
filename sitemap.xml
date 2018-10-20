@@ -8,16 +8,6 @@
   </url>
   
   <url>
-    <loc>http://integerous.github.io/post/2018/dev.commuter/2018-10-19/</loc>
-    <lastmod>2018-10-20T12:22:42+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://integerous.github.io/post/2018/dev.commuter/2018-10-18/</loc>
-    <lastmod>2018-10-19T09:47:46+09:00</lastmod>
-  </url>
-  
-  <url>
     <loc>http://integerous.github.io/post/2018/early-bird/181018/</loc>
     <lastmod>2018-10-19T09:47:46+09:00</lastmod>
   </url>
@@ -25,11 +15,6 @@
   <url>
     <loc>http://integerous.github.io/post/2018/early-bird/181017/</loc>
     <lastmod>2018-10-18T00:31:59+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://integerous.github.io/post/2018/dev.commuter/2018-10-17/</loc>
-    <lastmod>2018-10-19T09:47:46+09:00</lastmod>
   </url>
   
   <url>
@@ -43,28 +28,8 @@
   </url>
   
   <url>
-    <loc>http://integerous.github.io/post/2018/dev.commuter/2018-10-16/</loc>
-    <lastmod>2018-10-17T02:57:06+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://integerous.github.io/post/2018/dev.commuter/2018-10-15/</loc>
-    <lastmod>2018-10-16T12:56:12+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://integerous.github.io/post/2018/dev.commuter/2018-10-14/</loc>
-    <lastmod>2018-10-16T12:56:12+09:00</lastmod>
-  </url>
-  
-  <url>
     <loc>http://integerous.github.io/post/2018/essay/father/</loc>
     <lastmod>2018-10-18T23:11:19+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://integerous.github.io/post/2018/dev.commuter/2018-10-13/</loc>
-    <lastmod>2018-10-14T12:43:58+09:00</lastmod>
   </url>
   
   <url>
@@ -75,31 +40,6 @@
   <url>
     <loc>http://integerous.github.io/post/2018/early-bird/20181009/</loc>
     <lastmod>2018-10-13T10:35:27+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://integerous.github.io/post/2018/dev.commuter/2018-10-12/</loc>
-    <lastmod>2018-10-13T00:20:45+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://integerous.github.io/post/2018/dev.commuter/2018-10-11/</loc>
-    <lastmod>2018-10-12T00:45:16+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://integerous.github.io/post/2018/dev.commuter/2018-10-10/</loc>
-    <lastmod>2018-10-11T09:05:46+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://integerous.github.io/post/2018/dev.commuter/2018-10-09/</loc>
-    <lastmod>2018-10-11T09:05:46+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://integerous.github.io/post/2018/dev.commuter/2018-10-08/</loc>
-    <lastmod>2018-10-11T09:05:46+09:00</lastmod>
   </url>
   
   <url>
@@ -119,7 +59,7 @@
   
   <url>
     <loc>http://integerous.github.io/post/2018/etc/stringconcat/</loc>
-    <lastmod>2018-10-20T20:32:22+09:00</lastmod>
+    <lastmod>2018-10-20T20:34:50+09:00</lastmod>
   </url>
   
   <url>
@@ -264,13 +204,13 @@
   </url>
   
   <url>
-    <loc>http://integerous.github.io/tags/aws/</loc>
+    <loc>http://integerous.github.io/categories/aws/</loc>
     <lastmod>2018-10-20T20:32:22+09:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://integerous.github.io/categories/aws/</loc>
+    <loc>http://integerous.github.io/tags/aws/</loc>
     <lastmod>2018-10-20T20:32:22+09:00</lastmod>
     <priority>0</priority>
   </url>
@@ -294,25 +234,13 @@
   </url>
   
   <url>
-    <loc>http://integerous.github.io/tags/dev.commuter/</loc>
-    <lastmod>2018-10-20T12:22:42+09:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://integerous.github.io/categories/dev.commuter/</loc>
-    <lastmod>2018-10-20T12:22:42+09:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://integerous.github.io/tags/early-bird/</loc>
+    <loc>http://integerous.github.io/categories/early-bird/</loc>
     <lastmod>2018-10-20T13:35:41+09:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://integerous.github.io/categories/early-bird/</loc>
+    <loc>http://integerous.github.io/tags/early-bird/</loc>
     <lastmod>2018-10-20T13:35:41+09:00</lastmod>
     <priority>0</priority>
   </url>
@@ -324,20 +252,20 @@
   </url>
   
   <url>
-    <loc>http://integerous.github.io/tags/essay/</loc>
-    <lastmod>2018-10-18T23:11:19+09:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>http://integerous.github.io/categories/essay/</loc>
     <lastmod>2018-10-18T23:11:19+09:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
+    <loc>http://integerous.github.io/tags/essay/</loc>
+    <lastmod>2018-10-18T23:11:19+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>http://integerous.github.io/categories/etc/</loc>
-    <lastmod>2018-10-20T20:32:22+09:00</lastmod>
+    <lastmod>2018-10-20T20:34:50+09:00</lastmod>
     <priority>0</priority>
   </url>
   

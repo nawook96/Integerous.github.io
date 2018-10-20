@@ -20,24 +20,6 @@
     </item>
     
     <item>
-      <title>18년 10월 19일 {출퇴근길 개발 읽기}</title>
-      <link>http://integerous.github.io/post/2018/dev.commuter/2018-10-19/</link>
-      <pubDate>Sat, 20 Oct 2018 11:05:49 +0900</pubDate>
-      
-      <guid>http://integerous.github.io/post/2018/dev.commuter/2018-10-19/</guid>
-      <description>{ 출퇴근길 개발 읽기 } 오픈채팅방에 올라온 컨텐츠 기록소 2018년 10월 19일 모던 웹 브라우저의 내부 살펴보기 개발자 필독서 50 선 안드로이드 모션 레이아웃 설</description>
-    </item>
-    
-    <item>
-      <title>18년 10월 18일 {출퇴근길 개발 읽기}</title>
-      <link>http://integerous.github.io/post/2018/dev.commuter/2018-10-18/</link>
-      <pubDate>Fri, 19 Oct 2018 09:36:53 +0900</pubDate>
-      
-      <guid>http://integerous.github.io/post/2018/dev.commuter/2018-10-18/</guid>
-      <description>{ 출퇴근길 개발 읽기 } 오픈채팅방에 올라온 컨텐츠 기록소 2018년 10월 18일 안드로이드 모션 레이아웃 설명 (영문) 리눅스 open files, max user processes 설정 정리글 Git flow, GitHub flow,</description>
-    </item>
-    
-    <item>
       <title>181018 아침공부 #22</title>
       <link>http://integerous.github.io/post/2018/early-bird/181018/</link>
       <pubDate>Fri, 19 Oct 2018 09:34:40 +0900</pubDate>
@@ -53,15 +35,6 @@
       
       <guid>http://integerous.github.io/post/2018/early-bird/181017/</guid>
       <description>자바의 정석(남궁성 저) 2권 학습 1. Comparator와 Comparable Arrays.sort()를 호출하면 알아서 배열을 정렬하는 것처럼 보이지만, 사실은 Chr</description>
-    </item>
-    
-    <item>
-      <title>18년 10월 17일 {출퇴근길 개발 읽기}</title>
-      <link>http://integerous.github.io/post/2018/dev.commuter/2018-10-17/</link>
-      <pubDate>Wed, 17 Oct 2018 22:41:33 +0900</pubDate>
-      
-      <guid>http://integerous.github.io/post/2018/dev.commuter/2018-10-17/</guid>
-      <description>{ 출퇴근길 개발 읽기 } 오픈채팅방에 올라온 컨텐츠 기록소 2018년 10월 17일 넥슨 면접에서 듣게 되는 질문 63가지(2018년 ver.) 장고 ORM 요리책 (번역) 유</description>
     </item>
     
     <item>
@@ -83,48 +56,12 @@
     </item>
     
     <item>
-      <title>18년 10월 16일 {출퇴근길 개발 읽기}</title>
-      <link>http://integerous.github.io/post/2018/dev.commuter/2018-10-16/</link>
-      <pubDate>Tue, 16 Oct 2018 12:39:06 +0900</pubDate>
-      
-      <guid>http://integerous.github.io/post/2018/dev.commuter/2018-10-16/</guid>
-      <description>{ 출퇴근길 개발 읽기 } 오픈채팅방에 올라온 컨텐츠 기록소 2018년 10월 16일 초보 개발자에게 권장하는 객체지향 모델링 공부 방법 왜 장바구니 UX 디자인은 비효</description>
-    </item>
-    
-    <item>
-      <title>18년 10월 15일 {출퇴근길 개발 읽기}</title>
-      <link>http://integerous.github.io/post/2018/dev.commuter/2018-10-15/</link>
-      <pubDate>Tue, 16 Oct 2018 12:38:57 +0900</pubDate>
-      
-      <guid>http://integerous.github.io/post/2018/dev.commuter/2018-10-15/</guid>
-      <description>{ 출퇴근길 개발 읽기 } 오픈채팅방에 올라온 컨텐츠 기록소 2018년 10월 15일 신규 포인트 시스템 전환기 1편 개발단계 웹폰트 사용하기 (웹폰트의 모든 것) N</description>
-    </item>
-    
-    <item>
-      <title>18년 10월 14일 {출퇴근길 개발 읽기}</title>
-      <link>http://integerous.github.io/post/2018/dev.commuter/2018-10-14/</link>
-      <pubDate>Tue, 16 Oct 2018 12:38:48 +0900</pubDate>
-      
-      <guid>http://integerous.github.io/post/2018/dev.commuter/2018-10-14/</guid>
-      <description>{ 출퇴근길 개발 읽기 } 오픈채팅방에 올라온 컨텐츠 기록소 2018년 10월 14일 (번역) CSS에 대한 깊은 이해: 폰트 매트릭스, line-height와</description>
-    </item>
-    
-    <item>
       <title>286컴퓨터와 도트프린터</title>
       <link>http://integerous.github.io/post/2018/essay/father/</link>
       <pubDate>Sun, 14 Oct 2018 12:49:22 +0900</pubDate>
       
       <guid>http://integerous.github.io/post/2018/essay/father/</guid>
       <description>2018년 10월 14일 성주 외삼촌댁에서 1997년 어느 가을 날. 나는 8살이었다. 아빠는 오토바이에 누나와 나를 앉히시고 10분 거리의 할아버지 댁에 갔다.</description>
-    </item>
-    
-    <item>
-      <title>18년 10월 13일 {출퇴근길 개발 읽기}</title>
-      <link>http://integerous.github.io/post/2018/dev.commuter/2018-10-13/</link>
-      <pubDate>Sun, 14 Oct 2018 12:31:35 +0900</pubDate>
-      
-      <guid>http://integerous.github.io/post/2018/dev.commuter/2018-10-13/</guid>
-      <description>{ 출퇴근길 개발 읽기 } 오픈채팅방에 올라온 컨텐츠 기록소 2018년 10월 13일 DEVIEW 2일차 후기 JDBC로 실행되는 SQL에 자동으로 프로젝트 정보 주석 남기기</description>
     </item>
     
     <item>
@@ -143,6 +80,69 @@
       
       <guid>http://integerous.github.io/post/2018/early-bird/20181009/</guid>
       <description>자바의 정석(남궁성 저) 2권 학습 한글날! 어제 3시에 자버려서 아침 9시부터 공부시작! 1. Stack과 Queue Stack은 마지막에 저장한 데이터를 가장 먼저 꺼내</description>
+    </item>
+    
+    <item>
+      <title>181008 아침공부 #16</title>
+      <link>http://integerous.github.io/post/2018/early-bird/20181008/</link>
+      <pubDate>Tue, 09 Oct 2018 01:59:36 +0900</pubDate>
+      
+      <guid>http://integerous.github.io/post/2018/early-bird/20181008/</guid>
+      <description>자바의 정석(남궁성 저) 2권 학습 {출퇴근길 개발 읽기} 운영 첫날이라 공부를 별로 못했다. 1. LinkedList 배열은 데이터를 읽어오는데 걸리는 시간이 빠르다는 장점이 있지만</description>
+    </item>
+    
+    <item>
+      <title>AWS EC2 서버에 Java 프로젝트 배포/재배포</title>
+      <link>http://integerous.github.io/post/2018/aws/deployonec2/</link>
+      <pubDate>Sun, 07 Oct 2018 23:30:21 +0900</pubDate>
+      
+      <guid>http://integerous.github.io/post/2018/aws/deployonec2/</guid>
+      <description>회사 고객센터용 카카오톡 챗봇을 만들어 AWS EC2 서버에 배포하기 위해 박재성님 유튜브 강의를 들으며 실습한 내용 목차 1. AWS EC2 인스턴스 생성 2. 생성한 인스턴스(서버)에</description>
+    </item>
+    
+    <item>
+      <title>AWS VPC 총정리</title>
+      <link>http://integerous.github.io/post/2018/aws/vpc/</link>
+      <pubDate>Sun, 07 Oct 2018 22:56:09 +0900</pubDate>
+      
+      <guid>http://integerous.github.io/post/2018/aws/vpc/</guid>
+      <description>AWS Certified Solutions Architect - Associate 2018 강의를 듣고 내용 정리 1. What is a VPC ? VPC는 클라우드 내의 가상 데이터 센터. 2. What can you do with a VPC ? 내가 선택한 서브넷에 인스턴스를 실행할 수 있다.</description>
+    </item>
+    
+    <item>
+      <title>Java 문자열 연결방법 비교</title>
+      <link>http://integerous.github.io/post/2018/etc/stringconcat/</link>
+      <pubDate>Sun, 07 Oct 2018 18:21:44 +0900</pubDate>
+      
+      <guid>http://integerous.github.io/post/2018/etc/stringconcat/</guid>
+      <description>CodeWars에서 알고리즘 문제들을 풀다보면 문자열 연결할 일이 많았는데, 퍼포먼스 이슈가 많다 보니 정리가 필요했다. 이 글에서는 StringBuilder, StringBuffer, + 연산자, Conc</description>
+    </item>
+    
+    <item>
+      <title>AWS S3 총정리</title>
+      <link>http://integerous.github.io/post/2018/aws/s3/</link>
+      <pubDate>Sun, 07 Oct 2018 18:12:32 +0900</pubDate>
+      
+      <guid>http://integerous.github.io/post/2018/aws/s3/</guid>
+      <description>S3 (Simple Storage Service) 인터넷 스토리지 서비스. 용량에 관계 없이 파일을 저장할 수 있고 웹(HTTP 프로토콜)에서 파일에 접근할 수 있다. 1. 사용 이유 S3는 저장 용량이 무한대</description>
+    </item>
+    
+    <item>
+      <title>181007 아침공부 #15</title>
+      <link>http://integerous.github.io/post/2018/early-bird/181007/</link>
+      <pubDate>Sun, 07 Oct 2018 10:04:01 +0900</pubDate>
+      
+      <guid>http://integerous.github.io/post/2018/early-bird/181007/</guid>
+      <description>자바의 정석(남궁성 저) 2권 학습 오늘은 어머니 생신! 1. ArrayList ArrayList는 기존의 Vector를 개선한 것. ArrayList는 Object 배열을 이용해서 데</description>
+    </item>
+    
+    <item>
+      <title>181006 아침공부 #14</title>
+      <link>http://integerous.github.io/post/2018/early-bird/181006/</link>
+      <pubDate>Sun, 07 Oct 2018 10:02:58 +0900</pubDate>
+      
+      <guid>http://integerous.github.io/post/2018/early-bird/181006/</guid>
+      <description>자바의 정석(남궁성 저) 2권 학습 비 많이 오는 토요일 아침 7시. 깔깔이 입고 공부 시작! 1. 컬렉션 프레임웍 (Collections Framework) &amp;lsquo;데이터 그룹을 다루고 표현하기 위한</description>
     </item>
     
   </channel>
