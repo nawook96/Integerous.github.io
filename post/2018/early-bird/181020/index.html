@@ -26,7 +26,7 @@
     <script>hljs.initHighlightingOnLoad();</script>
     
     <link rel="stylesheet" type="text/css" href="/css/style.css">
-    <title>180926 아침공부 #4 | Integerous Devlog</title>
+    <title>181020 아침공부 #24 | Integerous Devlog</title>
   </head>
   <body>
     
@@ -60,9 +60,9 @@ if (!doNotTrack) {
 <div class="article">
   <header>
     <div class="article-header">
-      <h1>180926 아침공부 #4</h1>
+      <h1>181020 아침공부 #24</h1>
       <div class="article-meta">
-        <span class="posttime">2018/10/03</span>
+        <span class="posttime">2018/10/22</span>
         
         
         
@@ -89,86 +89,64 @@ if (!doNotTrack) {
     
 
 <blockquote>
-<p>자바의 정석(남궁성 저) 학습<br />
-연휴 마지막 날. 날씨가 너무 좋아서 강아지 운동장에 가게되어 공부를 많이 못했다.</p>
+<p>자바의 정석(남궁성 저) 2권 학습</p>
 </blockquote>
 
-<h2 id="1-예외-처리-exception-handling">1. 예외 처리 (Exception handling)</h2>
+<h2 id="1-treemap">1. TreeMap</h2>
+
+<blockquote>
+<p>TreeMap은 이름에서 알 수 있듯이 이진검색트리의 형태로 키와 값의 쌍으로 이루어진 데이터를 저장한다.<br />
+그래서 검색과 정렬에 적합한 클래스이다.<br />
+검색의 경우 대부분의 경우에서 HashMap이 TreeMap보다 더 뛰어나다.<br />
+다만 범위검색이나 정렬이 필요한 경우 TreeMap이 낫다.</p>
+</blockquote>
+
+<h2 id="2-properties">2. Properties</h2>
+
+<blockquote>
+<p>Properties는 HashMap의 구버전인 Hashtable을 상속받아 구현한 것이다.<br />
+Hashtable은 키와 값을 (Object, Object)의 형태로 저장하는데 비해<br />
+Properties는 (String, String)의 형태로 저장하는 보다 단순화된 컬렉션클래스이다.</p>
+</blockquote>
 
 <ul>
-<li>에러는 메모리 부족(OutOfMemoryError)이나 스택오버플로우(StackOverFlowError)처럼 일단 발생하면 복구할 수 없는 심각한 오류</li>
-<li>예외는 발생하더라도 수습될 수 있는 오류</li>
+<li>주로 애플리케이션의 환경설정과 관련된 속성(property)을 저장하는데 사용된다.<br /></li>
+<li>데이터를 파일로부터 읽고 쓰는 편리한 기능을 제공한다.</li>
+<li>Properties는 컬렉션프레임웍 이전의 구버전이므로 Iterator가 아닌 Enumeration을 사용한다.<br /></li>
+<li>list메소드로 Properties에 저장된 모든 데이터를 화면 또는 파일에 편하게 출력할 수 있다.<br /></li>
+</ul>
+<div class="highlight"><pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java">  <span style="color:#00688b;font-weight:bold">void</span> <span style="color:#008b45">list</span>(PrintStream out)
+  <span style="color:#00688b;font-weight:bold">void</span> <span style="color:#008b45">list</span>(PrintWriter out)</code></pre></div>
+<h2 id="3-collections">3. Collections</h2>
+
+<blockquote>
+<p>Arrays가 배열과 관련된 메소드를 제공하는 것처럼, Collections는 컬렉션과 관련된 메소드를 제공한다.<br />
+fill(), copy(), sort(), binarySearch() 등의 메소드는 두 클래스 모두에 포함되어 있으며 같은 기능을 한다.</p>
+</blockquote>
+
+<h3 id="3-1-컬렉션의-동기화">3.1. 컬렉션의 동기화</h3>
+
+<ul>
+<li>멀티 쓰레드(multi-thread) 프로그래밍에서는 하나의 객체를 여러 쓰레드가 동시에 접근할 수 있기 때문에 데이터의 일관성(consistency)을 유지하기 위해서는 공유되는 객체에 동기화(synchronization)가 필요하다.<br /></li>
+<li>새로 추가된 ArrayList와 HashMap과 같은 컬렉션은 동기화를 자체적으로 처리하지 않는다.<br /></li>
+<li>필요한 경우에만 java.util.Collections 클래스의 동기화 메소드를 이용해서 동기화처리가 가능하도록 변경하였다.
+<br /></li>
 </ul>
 
-<h2 id="2-예외-클래스-계층-구조">2. 예외 클래스 계층 구조</h2>
+<h2 id="4-컬렉션-클래스-요약">4. 컬렉션 클래스 요약</h2>
 
 <ul>
-<li>Object
-
-<ul>
-<li>Throwable</li>
-<li><strong><em>Exception</em></strong>
-
-<ul>
-<li><strong><em>RuntimeException</em></strong></li>
-<li>ArithmeticException</li>
-<li>ClassCastException</li>
-<li>NullPointerException</li>
-<li>IndexOutOfBoundException</li>
-<li>IOException</li>
-</ul></li>
-<li>Error</li>
-</ul></li>
-<li>예외 클래스는 <strong><em>Exception</em></strong> 클래스와 자식들과 <strong><em>RuntimeException</em></strong> 클래스와 자식들로 나뉜다.</li>
-<li><strong><em>Exception</em></strong> 클래스들 : 사용자의 실수와 같은 외적인 요인에 의해 발생하는 예외</li>
-<li><strong><em>RuntimeException</em></strong> 클래스들 : 개발자의 실수로 발생하는 예외</li>
-<li>모든 예외 클래스는 Exception 클래스의 자손이므로, catch블럭의 괄호()에 Exception클래스 타입의 참조변수를 선언하면, 어떤 종류의 예외가 발생하더라도 이 catch블럭()에 의해서 처리된다.</li>
-</ul>
-
-<h2 id="3-printstacktrace-와-getmessage">3. printStackTrace()와 getMessage()</h2>
-
-<ul>
-<li>예외가 발생했을 때 생성되는 예외 클래스의 인스턴스에는 발생한 예외에 대한 정보가 담겨져 있으며, getMessage()와 printStackTrace()를 사용해서 이 정보를 얻을 수 있다.</li>
-<li><code>printStackTrace()</code> : 예외발생 당시의 호출스택(Call Stack)에 있었던 메서드의 정보와 예외 메세지를 화면에 출력한다.</li>
-<li><code>getMessage()</code> : 발생한 예외클래스의 인스턴스에 저장된 메세지를 얻을 수 있다.</li>
-</ul>
-
-<h2 id="4-멀티-catch-블럭">4. 멀티 catch 블럭</h2>
-
-<ul>
-<li>JDK1.7부터 여러 catch블럭을 <code>|</code>기호를 이용해서 하나의 catch 블럭으로 합칠 수 있다.
-<div class="highlight"><pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#8b008b;font-weight:bold">try</span> {
-...
-} <span style="color:#8b008b;font-weight:bold">catch</span> (ExceptionA e)  {
-    e.<span style="color:#658b00">printStackTrace</span>();
-} <span style="color:#8b008b;font-weight:bold">catch</span> (ExceptionB e2) {
-    e2.<span style="color:#658b00">printStacktrace</span>();
-}</code></pre></div></li>
-<li>이 try-catch 문을 아래와 같이 바꿀 수 있다.
-<div class="highlight"><pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#8b008b;font-weight:bold">try</span> {
-...
-} <span style="color:#8b008b;font-weight:bold">catch</span> (ExceptionA | ExceptionB e) {
-    e.<span style="color:#658b00">printStackTrace</span>();
-}</code></pre></div></li>
-<li>단, 예외클래스들이 조상-자손 관계에 있으면 컴파일 에러가 발생한다.(불필요한 코드는 제거하라는 의미의 에러)</li>
-</ul>
-
-<h2 id="5-메소드에-예외-선언">5. 메소드에 예외 선언</h2>
-
-<ul>
-<li>메소드에 예외를 선언하는 방법
-<div class="highlight"><pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#00688b;font-weight:bold">void</span> <span style="color:#008b45">method</span>() <span style="color:#8b008b;font-weight:bold">throws</span> Exception1, Exception2, ... ExceptionN {
-...
-}</code></pre></div></li>
-<li>메소드의 선언부에 예외를 선언함으로써 메소드를 사용하려는 사람이 메소드의 선언부를 보았을 때, 이 메소드를 사용하기 위해서는 어떠한 예외들이 처리되어져야 하는지 쉽게 알 수 있다.</li>
-</ul>
-
-<h2 id="6-finally-블럭">6. finally 블럭</h2>
-
-<ul>
-<li>finally 블럭은 try-catch문과 함께 예외의 발생여부에 상관없이 실행되어야할 코드를 포함시킬 목적으로 사용된다.</li>
-<li>finally 블럭은 try-catch문의 맨 마지막에 위치해야 한다.</li>
-<li>try 블럭에서 return문이 실행되는 경우에도 finally블럭의 문장들이 먼저 실행된 후에, 현재 실행 중인 메소드를 종료한다.</li>
+<li>ArrayList : 배열기반. 데이터의 추가와 삭제에 불리. 순차적인 추가삭제는 제일 빠름. 임의의 요소에 대한 접근성이 뛰어남.</li>
+<li>LinkedList : 연결기반. 데이터의 추가와 삭제에 유리. 임의의 요소에 대한 접근성이 좋지 않다.</li>
+<li>HashMap : 배열과 연결이 결합된 상태. 추가,삭제,검색,접근성이 모두 뛰어남. 검색에는 최고의 성능.</li>
+<li>TreeMap : 연결기반. 정렬과 검색(특히 범위검색)에 적합. 검색성능은 HashMap보다 떨어짐.</li>
+<li>Stack : Vector를 상속받아 구현</li>
+<li>Queue : LinkedList가 Queue인터페이스를 구현</li>
+<li>Properties : Hashtable을 상속받아 구현</li>
+<li>HashSet : HashMap을 이용해서 구현</li>
+<li>TreeSet : TreeMap을 이용해서 구현</li>
+<li>LinkedHashMap : HashMap과 HashSet에 저장순서유지기능 추가</li>
+<li>LinkedHashSet : HashMap과 HashSet에 저장순서유지기능 추가</li>
 </ul>
 
   </div>
@@ -194,14 +172,9 @@ if (!doNotTrack) {
         
         <div id="pagenavigation-next">
           <span class="pagenav-label">&lt; 이전 글</span>
-          <a href="http://integerous.github.io/post/2018/early-bird/180925/">180925 아침공부 #3</a>
+          <a href="http://integerous.github.io/post/2018/etc/gitflow/">Git으로 협업하는 방법</a>
         </div>
         
-        
-        <div id="pagenavigation-prev">
-          <span class="pagenav-label">다음 글 ></span>
-          <a href="http://integerous.github.io/post/2018/early-bird/180927/">180927 아침공부 #5</a>
-        </div>
         
       </div>
       
@@ -263,12 +236,13 @@ if (!doNotTrack) {
 <ul>
 <li>
 <ul>
-<li><a href="#1-예외-처리-exception-handling">1. 예외 처리 (Exception handling)</a></li>
-<li><a href="#2-예외-클래스-계층-구조">2. 예외 클래스 계층 구조</a></li>
-<li><a href="#3-printstacktrace-와-getmessage">3. printStackTrace()와 getMessage()</a></li>
-<li><a href="#4-멀티-catch-블럭">4. 멀티 catch 블럭</a></li>
-<li><a href="#5-메소드에-예외-선언">5. 메소드에 예외 선언</a></li>
-<li><a href="#6-finally-블럭">6. finally 블럭</a></li>
+<li><a href="#1-treemap">1. TreeMap</a></li>
+<li><a href="#2-properties">2. Properties</a></li>
+<li><a href="#3-collections">3. Collections</a>
+<ul>
+<li><a href="#3-1-컬렉션의-동기화">3.1. 컬렉션의 동기화</a></li>
+</ul></li>
+<li><a href="#4-컬렉션-클래스-요약">4. 컬렉션 클래스 요약</a></li>
 </ul></li>
 </ul>
 </nav>
