@@ -7,16 +7,16 @@
     <description>Recent content in 2018 on Integerous Devlog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ko-kr</language>
-    <lastBuildDate>Mon, 22 Oct 2018 09:12:13 +0900</lastBuildDate>
+    <lastBuildDate>Thu, 25 Oct 2018 00:28:04 +0900</lastBuildDate>
     <atom:link href="/categories/2018/" rel="self" type="application/rss+xml" />
     
     <item>
-      <title>181020 아침공부 #24</title>
-      <link>http://integerous.github.io/post/2018/early-bird/181020/</link>
-      <pubDate>Mon, 22 Oct 2018 09:12:13 +0900</pubDate>
+      <title>자바의 정석 - 지네릭스(Generics)</title>
+      <link>http://integerous.github.io/post/2018/early-bird/181023/</link>
+      <pubDate>Thu, 25 Oct 2018 00:28:04 +0900</pubDate>
       
-      <guid>http://integerous.github.io/post/2018/early-bird/181020/</guid>
-      <description>자바의 정석(남궁성 저) 2권 학습 1. TreeMap TreeMap은 이름에서 알 수 있듯이 이진검색트리의 형태로 키와 값의 쌍으로 이루어진 데이터를 저장한다. 그래서 검색과</description>
+      <guid>http://integerous.github.io/post/2018/early-bird/181023/</guid>
+      <description>2018년 10월 22일~23일 아침공부 통합 정리 1. 지네릭스(Generics) 지네릭스는 다양한 타입의 객체들을 다루는 메서드나 컬렉션 클래스에 컴파일</description>
     </item>
     
     <item>
@@ -29,84 +29,12 @@
     </item>
     
     <item>
-      <title>181019 아침공부 #23</title>
-      <link>http://integerous.github.io/post/2018/early-bird/181019/</link>
-      <pubDate>Sat, 20 Oct 2018 13:33:44 +0900</pubDate>
-      
-      <guid>http://integerous.github.io/post/2018/early-bird/181019/</guid>
-      <description>자바의 정석(남궁성 저) 2권 학습 1. HashMap Hashtable과 HashMap의 관계는 Vector와 ArrayList의 관계와 같아서 Hashtable</description>
-    </item>
-    
-    <item>
-      <title>181018 아침공부 #22</title>
-      <link>http://integerous.github.io/post/2018/early-bird/181018/</link>
-      <pubDate>Fri, 19 Oct 2018 09:34:40 +0900</pubDate>
-      
-      <guid>http://integerous.github.io/post/2018/early-bird/181018/</guid>
-      <description>자바의 정석(남궁성 저) 2권 학습 1. TreeSet TreeSet은 이진검색트리(binary search tree) 형태로 데이터를 저장하는 컬렉션 클래스다. TreeSet은 이진검</description>
-    </item>
-    
-    <item>
-      <title>181017 아침공부 #21</title>
-      <link>http://integerous.github.io/post/2018/early-bird/181017/</link>
-      <pubDate>Thu, 18 Oct 2018 00:17:21 +0900</pubDate>
-      
-      <guid>http://integerous.github.io/post/2018/early-bird/181017/</guid>
-      <description>자바의 정석(남궁성 저) 2권 학습 1. Comparator와 Comparable Arrays.sort()를 호출하면 알아서 배열을 정렬하는 것처럼 보이지만, 사실은 Chr</description>
-    </item>
-    
-    <item>
-      <title>181016 아침공부 #20</title>
-      <link>http://integerous.github.io/post/2018/early-bird/181016/</link>
-      <pubDate>Wed, 17 Oct 2018 00:52:20 +0900</pubDate>
-      
-      <guid>http://integerous.github.io/post/2018/early-bird/181016/</guid>
-      <description>자바의 정석(남궁성 저) 2권 학습 13일(토) 성주에서 참외 농사 지으시는 작은외삼촌댁 방문 14일(일) 거창에서 사과 농사 지으시는 큰외삼촌댁 방문 15일(</description>
-    </item>
-    
-    <item>
-      <title>181012 아침공부 #19</title>
-      <link>http://integerous.github.io/post/2018/early-bird/181012/</link>
-      <pubDate>Tue, 16 Oct 2018 23:57:21 +0900</pubDate>
-      
-      <guid>http://integerous.github.io/post/2018/early-bird/181012/</guid>
-      <description>자바의 정석(남궁성 저) 2권 학습 아침에는 공부하지만 저녁에 복습하며 정리를 못하고 있다.. 1. Iterator 컬렉션 프레임웍에서는 컬렉션에 저장된 요소들을 읽어오는 방법</description>
-    </item>
-    
-    <item>
       <title>286컴퓨터와 도트프린터</title>
       <link>http://integerous.github.io/post/2018/essay/father/</link>
       <pubDate>Sun, 14 Oct 2018 12:49:22 +0900</pubDate>
       
       <guid>http://integerous.github.io/post/2018/essay/father/</guid>
       <description>2018년 10월 14일 성주 외삼촌댁에서 1997년 어느 가을 날. 나는 8살이었다. 아빠는 오토바이에 누나와 나를 앉히시고 10분 거리의 할아버지 댁에 갔다.</description>
-    </item>
-    
-    <item>
-      <title>181011 아침공부 #18</title>
-      <link>http://integerous.github.io/post/2018/early-bird/20181011/</link>
-      <pubDate>Sat, 13 Oct 2018 10:22:30 +0900</pubDate>
-      
-      <guid>http://integerous.github.io/post/2018/early-bird/20181011/</guid>
-      <description>자바의 정석(남궁성 저) 2권 학습 10월 10일 아침공부 첫 실패! &amp;lsquo;하루도 빠짐 없이&amp;rsquo; 라는 표현은 못쓰게 되었으므로..완벽하기보</description>
-    </item>
-    
-    <item>
-      <title>181009 아침공부 #17</title>
-      <link>http://integerous.github.io/post/2018/early-bird/20181009/</link>
-      <pubDate>Sat, 13 Oct 2018 10:05:35 +0900</pubDate>
-      
-      <guid>http://integerous.github.io/post/2018/early-bird/20181009/</guid>
-      <description>자바의 정석(남궁성 저) 2권 학습 한글날! 어제 3시에 자버려서 아침 9시부터 공부시작! 1. Stack과 Queue Stack은 마지막에 저장한 데이터를 가장 먼저 꺼내</description>
-    </item>
-    
-    <item>
-      <title>181008 아침공부 #16</title>
-      <link>http://integerous.github.io/post/2018/early-bird/20181008/</link>
-      <pubDate>Tue, 09 Oct 2018 01:59:36 +0900</pubDate>
-      
-      <guid>http://integerous.github.io/post/2018/early-bird/20181008/</guid>
-      <description>자바의 정석(남궁성 저) 2권 학습 {출퇴근길 개발 읽기} 운영 첫날이라 공부를 별로 못했다. 1. LinkedList 배열은 데이터를 읽어오는데 걸리는 시간이 빠르다는 장점이 있지만</description>
     </item>
     
     <item>
@@ -143,6 +71,78 @@
       
       <guid>http://integerous.github.io/post/2018/aws/s3/</guid>
       <description>S3 (Simple Storage Service) 인터넷 스토리지 서비스. 용량에 관계 없이 파일을 저장할 수 있고 웹(HTTP 프로토콜)에서 파일에 접근할 수 있다. 1. 사용 이유 S3는 저장 용량이 무한대</description>
+    </item>
+    
+    <item>
+      <title>자바의 정석 - 컬렉션 프레임웍(Collections Framework)</title>
+      <link>http://integerous.github.io/post/2018/early-bird/181006/</link>
+      <pubDate>Sun, 07 Oct 2018 10:02:58 +0900</pubDate>
+      
+      <guid>http://integerous.github.io/post/2018/early-bird/181006/</guid>
+      <description>2018년 10월 6일~20일 아침공부 통합 정리 1. 컬렉션 프레임웍 (Collections Framework) &amp;lsquo;데이터 그룹을 다루고 표현하기 위한 단일화된 구조&amp;rsquo; - Java A</description>
+    </item>
+    
+    <item>
+      <title>자바의 정석 - 날짜와 시간(Calendar와 Date, java.time패키지)</title>
+      <link>http://integerous.github.io/post/2018/early-bird/181001/</link>
+      <pubDate>Wed, 03 Oct 2018 14:01:53 +0900</pubDate>
+      
+      <guid>http://integerous.github.io/post/2018/early-bird/181001/</guid>
+      <description>2018년 10월 1일~5일 아침공부 통합 정리 1. Calendar 와 Date Date는 JDK1.0, Calendar는 JDK1.1 부터 제공되었다. JDK1.8부터 java.time 패키지로 Calendar</description>
+    </item>
+    
+    <item>
+      <title>자바의 정석 - java.lang 패키지</title>
+      <link>http://integerous.github.io/post/2018/early-bird/180927/</link>
+      <pubDate>Wed, 03 Oct 2018 13:26:15 +0900</pubDate>
+      
+      <guid>http://integerous.github.io/post/2018/early-bird/180927/</guid>
+      <description>2018년 9월 27일~30일 아침공부 통합 정리 1. java.lang 패키지 java.lang 패키지의 클래스들은 import문 없이도 사용 가능하다. 2. Object 클래스 Object 클래스는 모든 클래스의</description>
+    </item>
+    
+    <item>
+      <title>자바의 정석 - 예외 처리(Exception handling)</title>
+      <link>http://integerous.github.io/post/2018/early-bird/180926/</link>
+      <pubDate>Wed, 03 Oct 2018 13:20:33 +0900</pubDate>
+      
+      <guid>http://integerous.github.io/post/2018/early-bird/180926/</guid>
+      <description>2018년 9월 26일 아침공부 1. 예외 처리 (Exception handling) 에러는 메모리 부족(OutOfMemoryError)이나 스택오버플로우(StackOverFlow</description>
+    </item>
+    
+    <item>
+      <title>자바의 정석 - 추상클래스, 인터페이스</title>
+      <link>http://integerous.github.io/post/2018/early-bird/180924/</link>
+      <pubDate>Wed, 03 Oct 2018 12:33:20 +0900</pubDate>
+      
+      <guid>http://integerous.github.io/post/2018/early-bird/180924/</guid>
+      <description>2018년 9월 24일~25일 아침공부 통합 정리 1. 추상 클래스 (Abstract class) 미완성 메소드(추상메소드)를 포함하고 있다는 것을 제외하고는 일반클래스와 같다. 추상메</description>
+    </item>
+    
+    <item>
+      <title>자바의 정석 - 다형성(Polymorphism)</title>
+      <link>http://integerous.github.io/post/2018/early-bird/180923/</link>
+      <pubDate>Wed, 03 Oct 2018 11:43:34 +0900</pubDate>
+      
+      <guid>http://integerous.github.io/post/2018/early-bird/180923/</guid>
+      <description>2018년 9월 23일 아침공부 1. 다형성 (Polymorphism) Java에서는 한 타입의 참조변수로 여러 타입의 객체를 참조할 수 있도록 하는 것. 부모클래스 타입의 참조변수로 자식클</description>
+    </item>
+    
+    <item>
+      <title>내 우주가 생긴 날</title>
+      <link>http://integerous.github.io/post/2018/essay/myuniverse/</link>
+      <pubDate>Tue, 18 Sep 2018 04:00:42 +0900</pubDate>
+      
+      <guid>http://integerous.github.io/post/2018/essay/myuniverse/</guid>
+      <description>10년 만에 내 방이 생긴 2016년 어느 겨울날 2016년 2월 5일 본인 몸뚱아리 눕힐 작은 공간마저 구하기 힘들었다던 어느 유명인사의 인생사에 비하면 엄살이지만</description>
+    </item>
+    
+    <item>
+      <title>퇴사한 회사 동기들에게 쓴 글</title>
+      <link>http://integerous.github.io/post/2018/essay/tofellows/</link>
+      <pubDate>Tue, 11 Sep 2018 12:45:00 +0900</pubDate>
+      
+      <guid>http://integerous.github.io/post/2018/essay/tofellows/</guid>
+      <description>퇴사와 결혼이 논쟁거리가 된 퇴사한 회사 동기들 단톡방에 쓴 글인데, 동기들로부터 개인톡으로 고맙다는 메세지를 많이 받아, 여기에 저장해둔다. 2018년 9월 7</description>
     </item>
     
   </channel>
