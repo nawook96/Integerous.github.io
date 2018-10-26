@@ -29,20 +29,20 @@
     </item>
     
     <item>
-      <title>Early Bird</title>
-      <link>http://integerous.github.io/categories/early-bird/</link>
-      <pubDate>Thu, 25 Oct 2018 00:28:04 +0900</pubDate>
-      
-      <guid>http://integerous.github.io/categories/early-bird/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>Etc</title>
       <link>http://integerous.github.io/categories/etc/</link>
       <pubDate>Sat, 20 Oct 2018 21:17:01 +0900</pubDate>
       
       <guid>http://integerous.github.io/categories/etc/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Java</title>
+      <link>http://integerous.github.io/categories/java/</link>
+      <pubDate>Thu, 25 Oct 2018 00:28:04 +0900</pubDate>
+      
+      <guid>http://integerous.github.io/categories/java/</guid>
       <description></description>
     </item>
     
