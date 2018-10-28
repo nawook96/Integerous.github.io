@@ -26,7 +26,7 @@
     <script>hljs.initHighlightingOnLoad();</script>
     
     <link rel="stylesheet" type="text/css" href="/css/style.css">
-    <title>퇴사한 회사 동기들에게 쓴 글 | Integerous Devlog</title>
+    <title>자바의 정석 - 열거형(Enums) | Integerous Devlog</title>
   </head>
   <body>
     
@@ -60,9 +60,9 @@ if (!doNotTrack) {
 <div class="article">
   <header>
     <div class="article-header">
-      <h1>퇴사한 회사 동기들에게 쓴 글</h1>
+      <h1>자바의 정석 - 열거형(Enums)</h1>
       <div class="article-meta">
-        <span class="posttime">2018/09/11</span>
+        <span class="posttime">2018/10/28</span>
         
         
         
@@ -70,7 +70,7 @@ if (!doNotTrack) {
   <ul>
     
     <li>
-        <a href="/tags/essay">essay</a>
+        <a href="/tags/java">java</a>
     </li>
     
   </ul>
@@ -82,49 +82,66 @@ if (!doNotTrack) {
     
   </header>
   <div class="content">
-    <blockquote>
-<p>퇴사와 결혼이 논쟁거리가 된<br />
-퇴사한 회사 동기들 단톡방에 쓴 글인데,<br />
-동기들로부터 개인톡으로 고맙다는 메세지를 많이 받아, 여기에 저장해둔다.</p>
+    
+
+<blockquote>
+<p>자바의 정석(남궁성 저) 학습내용 정리</p>
 </blockquote>
 
-<p><strong>2018년 9월 7일</strong></p>
+<h2 id="1-열거형-enums">1. 열거형(Enums)</h2>
 
-<p>제 생각에 퇴사에는 정답이 없습니다. 개인의 성향과 가치관의 차이입니다.<br />
-본인 성향과 가치관이 글로비스와 맞다면 열심히 다니면 되고, 안 맞으면 나오면 됩니다.<br />
-퇴사한다고 세상이 무너지는게 아니며, 퇴사 안한다고 뒤쳐지는 것도 아닙니다.<br />
-본인이 어떤 성향과 가치관을 가졌는지 안다면, 선택은 어렵지 않습니다.<br />
-오히려 본인에 대한 고민과 관찰 없이 퇴사하거나 하지 않는 것이 가장 큰 리스크입니다.</p>
+<blockquote>
+<p>Java의 열거형은 C언어의 열거형과 다르게 열거형이 갖는 값 뿐만 아니라 타입까지 관리한다.<br />
+기존의 상수의 값이 바뀌면, 해당 상수를 참조하는 모든 소스를 다시 컴파일 해야한다. 하지만 열거형 상수를 사용하면 기존의 소스를 다시 컴파일하지 않아도 된다.</p>
+</blockquote>
 
-<p>흔히 퇴사한 사람들이 리스크를 감당한다고 생각하지만,<br />
-회사와 안맞는데 회사에서 버티는 것이 더 큰 리스크가 되기도 합니다(vice versa).<br />
-언제나 기회비용이 존재하기 때문에 &lsquo;현상유지&rsquo;는 진정한 &lsquo;유지&rsquo;가 아님을 계산해야하고,<br />
-&lsquo;현상 이탈&rsquo;이 가져올 파장도 고려해야 합니다. 저는 제 선택을 후회하지 않습니다.<br />
-(결과론적이지만) 오히려 더 빨리 퇴사했으면 하는 아쉬움이 아직도 있습니다.<br />
-내가 어떤 사람이고 어떤 일을 해야 행복하고 잘할 수 있는지 확신이 생겼기 때문입니다.<br />
-방황하는 이 글의 핵심은 자기 자신을 알아야 한다는 것입니다.</p>
+<h3 id="1-1-사용방법">1.1. 사용방법</h3>
+<div class="highlight"><pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#8b008b;font-weight:bold">enum</span> 열거형이름 { 상수명1, 상수명2, ...}</code></pre></div>
+<ul>
+<li>열거형 상수 간의 비교에는 <code>==</code>을 사용할 수 있다. <code>equals()</code>가 아닌 <code>==</code>으로 비교가능한 것은 그만큼 빠르다는 것이다.</li>
+<li>하지만 비교연산자(&lt;, &gt;)는 사용할 수 없고 <code>compareTo()</code>는 사용 가능하다.</li>
+<li>switch문의 조건식에 열거형 사용하기</li>
+</ul>
+<div class="highlight"><pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java">  <span style="color:#00688b;font-weight:bold">void</span> <span style="color:#008b45">move</span>() {
+    <span style="color:#8b008b;font-weight:bold">switch</span>(dir) {
+        <span style="color:#8b008b;font-weight:bold">case</span> EAST: x++; <span style="color:#228b22">//Direction.EAST라고 쓰면 안된다.(열거형 이름 없이 상수 이름만 적어야 한다.)
+</span><span style="color:#228b22"></span>          <span style="color:#8b008b;font-weight:bold">break</span>;
+        <span style="color:#8b008b;font-weight:bold">case</span> WEST: x--;
+          <span style="color:#8b008b;font-weight:bold">break</span>;
+        <span style="color:#8b008b;font-weight:bold">case</span> SOUTH: y++;
+          <span style="color:#8b008b;font-weight:bold">break</span>;
+        <span style="color:#8b008b;font-weight:bold">case</span> NORTH: y--;
+          <span style="color:#8b008b;font-weight:bold">break</span>;
+    }
+  }</code></pre></div>
+<h3 id="1-2-열거형의-이해">1.2. 열거형의 이해</h3>
+<div class="highlight"><pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#8b008b;font-weight:bold">enum</span> Direction { EAST, WEST, SOUTH, NORTH }</code></pre></div>
+<ul>
+<li>열거형 상수 하나하나가 Direction 객체이다.</li>
+</ul>
 
-<p>결혼도 마찬가지입니다. 본인과 배우자의 성향과 가치관을 최우선으로 고려해야 합니다.<br />
-결혼에는 득과 실이 있지만, 가장 중요한 것은 인연을 소중히 여기는 것 입니다.<br />
-우리의 시간은 한정되어 있으니까요. 지금 만나고 있는 사람이 평생 함께할 사람인지<br />
-매 순간 고민하고 관찰해야 합니다.</p>
+<p>위의 문장을 클래스로 정의하면,</p>
+<div class="highlight"><pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#8b008b;font-weight:bold">class</span> <span style="color:#008b45;font-weight:bold">Direction</span> {
+  <span style="color:#8b008b;font-weight:bold">static</span> <span style="color:#8b008b;font-weight:bold">final</span> Direction EAST = <span style="color:#8b008b;font-weight:bold">new</span> Direction(<span style="color:#cd5555">&#34;EAST&#34;</span>);
+  <span style="color:#8b008b;font-weight:bold">static</span> <span style="color:#8b008b;font-weight:bold">final</span> Direction WEST = <span style="color:#8b008b;font-weight:bold">new</span> Direction(<span style="color:#cd5555">&#34;WEST&#34;</span>);
+  <span style="color:#8b008b;font-weight:bold">static</span> <span style="color:#8b008b;font-weight:bold">final</span> Direction SOUTH = <span style="color:#8b008b;font-weight:bold">new</span> Direction(<span style="color:#cd5555">&#34;SOUTH&#34;</span>);
+  <span style="color:#8b008b;font-weight:bold">static</span> <span style="color:#8b008b;font-weight:bold">final</span> Direction NORTH = <span style="color:#8b008b;font-weight:bold">new</span> Direction(<span style="color:#cd5555">&#34;NORTH&#34;</span>);
+  
+  <span style="color:#8b008b;font-weight:bold">private</span> String name;
+  
+  <span style="color:#8b008b;font-weight:bold">private</span> <span style="color:#008b45">Direction</span>(String name)  {
+    <span style="color:#8b008b;font-weight:bold">this</span>.<span style="color:#658b00">name</span> = name;
+  }
+}</code></pre></div>
+<ul>
+<li>Direction클래스의 static상수 EAST, WEST, SOUTH, NORTH의 값은 객체의 주소이고, 이 값은 바뀌지 않는 값이므로 <code>==</code>로 비교가 가능한 것이다.</li>
+</ul>
 
-<p>저는 개발자가 되어 작은 스타트업에서 재미있게 성장하고 있습니다.<br />
-퇴사해서 행복한게 아니라, 제 길을 찾아서 행복합니다.<br />
-결혼 생활은 더할 나위 없습니다.<br />
-하지만 친구들과 피시방에서 밤새 놀지 못하는 것은 아쉽습니다.</p>
+<h3 id="추가학습">*추가학습</h3>
 
-<p>인생에 정답은 없듯이, 퇴사와 결혼에도 정석이라는 것은 없습니다.<br />
-스스로 고민하고 관찰하고 끊임 없이 행복을 추구하는 것이 옳은 길이라 생각합니다.<br />
-돈과 사회적 지위, 외향적인 것들의 최종 목적지도 행복입니다.<br />
-본인이 언제 행복했는지 돌이켜보고,<br />
-그 행복을 일상에서 되풀이 할 방법을 찾아 삶의 모습으로 만들어야 합니다.</p>
-
-<p>남에게 보여지는 자신이 아닌, 스스로가 행복한 삶의 모습을 찾는다면,<br />
-많은 돈과 높은 사회적 지위 없이도 우리가 열심히 살아가는 최종 목적인 행복에<br />
-보다 쉽게 도달할 수 있다고 생각합니다.</p>
-
-<p>이만 졸려서 줄이겠습니다. 행복한 금요일 보내세요.</p>
+<ul>
+<li><a href="http://woowabros.github.io/tools/2017/07/10/java-enum-uses.html">Java Enum 활용기 - 우아한형제들 기술블로그</a></li>
+</ul>
 
   </div>
   <footer>
@@ -149,14 +166,9 @@ if (!doNotTrack) {
         
         <div id="pagenavigation-next">
           <span class="pagenav-label">&lt; 이전 글</span>
-          <a href="http://integerous.github.io/post/2018/essay/lifestyle/">삶의 모습</a>
+          <a href="http://integerous.github.io/post/2018/java/java-generics/">자바의 정석 - 지네릭스(Generics)</a>
         </div>
         
-        
-        <div id="pagenavigation-prev">
-          <span class="pagenav-label">다음 글 ></span>
-          <a href="http://integerous.github.io/post/2018/essay/myuniverse/">내 우주가 생긴 날</a>
-        </div>
         
       </div>
       
@@ -214,7 +226,19 @@ if (!doNotTrack) {
     <div class="sidebar-header">
       <span>Table of Contents</span>
     </div>
-    
+    <nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li><a href="#1-열거형-enums">1. 열거형(Enums)</a>
+<ul>
+<li><a href="#1-1-사용방법">1.1. 사용방법</a></li>
+<li><a href="#1-2-열거형의-이해">1.2. 열거형의 이해</a></li>
+<li><a href="#추가학습">*추가학습</a></li>
+</ul></li>
+</ul></li>
+</ul>
+</nav>
   </div>
   
   

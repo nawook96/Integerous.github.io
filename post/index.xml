@@ -7,8 +7,17 @@
     <description>Recent content in Posts on Integerous Devlog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ko-kr</language>
-    <lastBuildDate>Thu, 25 Oct 2018 00:28:04 +0900</lastBuildDate>
+    <lastBuildDate>Sun, 28 Oct 2018 19:29:48 +0900</lastBuildDate>
     <atom:link href="/post/" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>자바의 정석 - 열거형(Enums)</title>
+      <link>http://integerous.github.io/post/2018/java/java-enums/</link>
+      <pubDate>Sun, 28 Oct 2018 19:29:48 +0900</pubDate>
+      
+      <guid>http://integerous.github.io/post/2018/java/java-enums/</guid>
+      <description>자바의 정석(남궁성 저) 학습내용 정리 1. 열거형(Enums) Java의 열거형은 C언어의 열거형과 다르게 열거형이 갖는 값 뿐만 아니라 타입까지 관리한다. 기</description>
+    </item>
     
     <item>
       <title>자바의 정석 - 지네릭스(Generics)</title>
@@ -134,15 +143,6 @@
       
       <guid>http://integerous.github.io/post/2018/essay/myuniverse/</guid>
       <description>10년 만에 내 방이 생긴 2016년 어느 겨울날 2016년 2월 5일 본인 몸뚱아리 눕힐 작은 공간마저 구하기 힘들었다던 어느 유명인사의 인생사에 비하면 엄살이지만</description>
-    </item>
-    
-    <item>
-      <title>퇴사한 회사 동기들에게 쓴 글</title>
-      <link>http://integerous.github.io/post/2018/essay/tofellows/</link>
-      <pubDate>Tue, 11 Sep 2018 12:45:00 +0900</pubDate>
-      
-      <guid>http://integerous.github.io/post/2018/essay/tofellows/</guid>
-      <description>퇴사와 결혼이 논쟁거리가 된 퇴사한 회사 동기들 단톡방에 쓴 글인데, 동기들로부터 개인톡으로 고맙다는 메세지를 많이 받아, 여기에 저장해둔다. 2018년 9월 7</description>
     </item>
     
   </channel>
