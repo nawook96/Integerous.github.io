@@ -7,8 +7,26 @@
     <description>Recent content in Posts on Integerous Devlog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ko-kr</language>
-    <lastBuildDate>Tue, 30 Oct 2018 01:39:34 +0900</lastBuildDate>
+    <lastBuildDate>Thu, 29 Nov 2018 00:10:13 +0900</lastBuildDate>
     <atom:link href="/post/" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>자바의 정석 - 스트림(Stream)</title>
+      <link>http://integerous.github.io/post/2018/java/java-stream/</link>
+      <pubDate>Thu, 29 Nov 2018 00:10:13 +0900</pubDate>
+      
+      <guid>http://integerous.github.io/post/2018/java/java-stream/</guid>
+      <description>자바의 정석(남궁성 저) 2권 학습내용 정리 1. 스트림(Stream) 스트림은 데이터 소스를 추상화하고, 데이터를 다루는데 자주 사용되는 메서드들을 정의해 놓</description>
+    </item>
+    
+    <item>
+      <title>자바의 정석 - 람다식(Lambda Expression)</title>
+      <link>http://integerous.github.io/post/2018/java/java-lambda/</link>
+      <pubDate>Thu, 29 Nov 2018 00:10:00 +0900</pubDate>
+      
+      <guid>http://integerous.github.io/post/2018/java/java-lambda/</guid>
+      <description>자바의 정석(남궁성 저) 2권 학습내용 정리 1. 람다식 메서드를 하나의 식(expression)으로 표현한 것. 메서드를 람다식으로 표현하면 메서드의 이름과</description>
+    </item>
     
     <item>
       <title>자바의 정석 - 쓰레드(Thread)</title>
@@ -125,24 +143,6 @@
       
       <guid>http://integerous.github.io/post/2018/java/java-exception/</guid>
       <description>자바의 정석(남궁성 저) 학습내용 정리 1. 예외 처리 (Exception handling) 에러는 메모리 부족(OutOfMemoryError)이나 스택오버플로우(StackOverF</description>
-    </item>
-    
-    <item>
-      <title>자바의 정석 - 추상클래스, 인터페이스</title>
-      <link>http://integerous.github.io/post/2018/java/java-abstract-interface/</link>
-      <pubDate>Wed, 03 Oct 2018 12:33:20 +0900</pubDate>
-      
-      <guid>http://integerous.github.io/post/2018/java/java-abstract-interface/</guid>
-      <description>자바의 정석(남궁성 저) 학습내용 정리 1. 추상 클래스 (Abstract class) 미완성 메소드(추상메소드)를 포함하고 있다는 것을 제외하고는 일반클래스와 같다. 추상메소드가 없어</description>
-    </item>
-    
-    <item>
-      <title>자바의 정석 - 다형성(Polymorphism)</title>
-      <link>http://integerous.github.io/post/2018/java/java-polymorphism/</link>
-      <pubDate>Wed, 03 Oct 2018 11:43:34 +0900</pubDate>
-      
-      <guid>http://integerous.github.io/post/2018/java/java-polymorphism/</guid>
-      <description>자바의 정석(남궁성 저) 학습내용 정리 1. 다형성 (Polymorphism) Java에서는 한 타입의 참조변수로 여러 타입의 객체를 참조할 수 있도록 하는 것. 부모클래스 타입의 참조변수로</description>
     </item>
     
   </channel>
