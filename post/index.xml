@@ -7,8 +7,17 @@
     <description>Recent content in Posts on Integerous Devlog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ko-kr</language>
-    <lastBuildDate>Thu, 29 Nov 2018 00:10:13 +0900</lastBuildDate>
+    <lastBuildDate>Sun, 02 Dec 2018 00:37:49 +0900</lastBuildDate>
     <atom:link href="/post/" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>자바의 정석 - 직렬화(Serialization)</title>
+      <link>http://integerous.github.io/post/2018/java/java-serialization/</link>
+      <pubDate>Sun, 02 Dec 2018 00:37:49 +0900</pubDate>
+      
+      <guid>http://integerous.github.io/post/2018/java/java-serialization/</guid>
+      <description>자바의 정석(남궁성 저) 2권 학습내용 정리 1. 직렬화란? 객체를 데이터 스트림으로 만드는 것 객체에 저장된 데이터를 스트림에 쓰기 위해 연속적인 데이터로 변환하는</description>
+    </item>
     
     <item>
       <title>자바의 정석 - 스트림(Stream)</title>
@@ -134,15 +143,6 @@
       
       <guid>http://integerous.github.io/post/2018/java/java-lang/</guid>
       <description>자바의 정석(남궁성 저) 학습내용 정리 1. java.lang 패키지 java.lang 패키지의 클래스들은 import문 없이도 사용 가능하다. 2. Object 클래스 Object 클래스는 모든 클래스의 최고 조상 Object</description>
-    </item>
-    
-    <item>
-      <title>자바의 정석 - 예외 처리(Exception handling)</title>
-      <link>http://integerous.github.io/post/2018/java/java-exception/</link>
-      <pubDate>Wed, 03 Oct 2018 13:20:33 +0900</pubDate>
-      
-      <guid>http://integerous.github.io/post/2018/java/java-exception/</guid>
-      <description>자바의 정석(남궁성 저) 학습내용 정리 1. 예외 처리 (Exception handling) 에러는 메모리 부족(OutOfMemoryError)이나 스택오버플로우(StackOverF</description>
     </item>
     
   </channel>
