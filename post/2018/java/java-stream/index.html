@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html lang="ko-kr">
   <head>
@@ -25,7 +27,7 @@
     <script src="https://yandex.st/highlightjs/8.0/highlight.min.js"></script>
     <script>hljs.initHighlightingOnLoad();</script>
     
-    <link rel="stylesheet" type="text/css" href="/css/style.css">
+    <link rel="stylesheet" type="text/css" href="/css/single.css">
     <title>자바의 정석 - 스트림(Stream) | Integerous Devlog</title>
   </head>
   <body>
@@ -56,6 +58,9 @@ if (!doNotTrack) {
       </header>
       <div class="container">
         <div id="main">
+
+
+
 
 <div class="article">
   <header>
@@ -791,150 +796,26 @@ Map&lt;Integer, HashSet&lt;Student&gt;&gt; stuByHak
     </script>
   </footer>
 </div>
-        </div>
-        <div class="sidebar">
-  
-  
-  <div class="sidebar-content">
-    <div class="sidebar-header">
-      <span>Author</span>
-    </div>
-    <div id="author">
-      <img src="https://ryan-han.com/images/ryanjs.png">
-      <span>Jeongsu Han (Ryan)</span>
-      <div>
-        
-        <a href="https://github.com/integerous"><i class="fa fa-github-square fa-2x" aria-hidden="true"></i></a>
-        
-        
-        
-        <a href="http://bit.ly/2zX6Zmo"><i class="fa fa-facebook-square fa-2x" aria-hidden="true"></i></a>
-        
-      </div>
-    </div>
-  </div>
-  
-  
-  
-  <div class="sidebar-content">
-    <div class="sidebar-header">
-      <span>Table of Contents</span>
-    </div>
-    <nav id="TableOfContents">
-<ul>
-<li>
-<ul>
-<li><a href="#1-스트림-stream">1. 스트림(Stream)</a></li>
-<li><a href="#2-스트림-만들기">2. 스트림 만들기</a>
-<ul>
-<li><a href="#2-1-컬렉션">2.1. 컬렉션</a></li>
-<li><a href="#2-2-배열">2.2. 배열</a></li>
-<li><a href="#2-3-특정-범위의-정수">2.3. 특정 범위의 정수</a></li>
-<li><a href="#2-4-임의의-수">2.4. 임의의 수</a></li>
-<li><a href="#2-5-람다식-iterate-generate">2.5. 람다식 - iterate(), generate()</a></li>
-<li><a href="#2-6-빈-스트림">2.6. 빈 스트림</a></li>
-<li><a href="#2-7-두-스트림의-연결">2.7. 두 스트림의 연결</a></li>
-</ul></li>
-<li><a href="#3-스트림의-중간연산">3. 스트림의 중간연산</a>
-<ul>
-<li><a href="#3-1-스트림-자르기">3.1. 스트림 자르기</a></li>
-<li><a href="#3-2-스트림-요소-걸러내기">3.2. 스트림 요소 걸러내기</a></li>
-<li><a href="#3-3-스트림-정렬">3.3. 스트림 정렬</a></li>
-<li><a href="#3-4-스트림-변환">3.4. 스트림 변환</a></li>
-</ul></li>
-<li><a href="#4-스트림의-중간연산">4. 스트림의 중간연산</a>
-<ul>
-<li><a href="#4-1-스트림-조회">4.1. 스트림 조회</a></li>
-<li><a href="#4-2-stream-t-스트림을-기본형-스트림으로-변환">4.2. Stream<T> 스트림을 기본형 스트림으로 변환</a></li>
-<li><a href="#4-3-stream-t-를-stream-t-로-변환">4.3. Stream<T[]>를 Stream<T>로 변환</a></li>
-</ul></li>
-<li><a href="#5-optional-t">5. Optional<T></a>
-<ul>
-<li><a href="#5-1-optional-객체-생성하기">5.1. Optional 객체 생성하기</a></li>
-<li><a href="#5-2-optional-객체의-값-가져오기">5.2. Optional 객체의 값 가져오기</a></li>
-</ul></li>
-<li><a href="#6-스트림의-최종-연산">6. 스트림의 최종 연산</a>
-<ul>
-<li><a href="#6-1-foreach">6.1. forEach()</a></li>
-<li><a href="#6-2-조건검사">6.2. 조건검사</a></li>
-<li><a href="#6-3-통계">6.3. 통계</a></li>
-<li><a href="#6-4-reduce">6.4. reduce()</a></li>
-</ul></li>
-<li><a href="#7-collect">7. collect()</a>
-<ul>
-<li><a href="#7-1-스트림을-컬렉션과-배열로-변환">7.1. 스트림을 컬렉션과 배열로 변환</a></li>
-<li><a href="#7-2-통계">7.2. 통계</a></li>
-<li><a href="#7-3-문자열-결합">7.3. 문자열 결합</a></li>
-<li><a href="#7-4-그룹화와-분할">7.4. 그룹화와 분할</a></li>
-<li><a href="#7-5-partitioningby-에-의한-분류">7.5. partitioningBy()에 의한 분류</a></li>
-<li><a href="#7-6-groupingby-에-의한-분류">7.6. groupingBy()에 의한 분류</a></li>
-</ul></li>
-<li><a href="#8-스트림-변환-정리">8. 스트림 변환 정리</a></li>
-</ul></li>
-</ul>
-</nav>
-  </div>
-  
-  
-  
-  
-  <div class="sidebar-content">
-    <div class="sidebar-header">
-      <span>Categories</span>
-    </div>
-    <div class="categories">
-      <ul>
-        
-        <li>
-          <a href="/categories/2018"><span></span>2018 (29)</a>
-        </li>
-        
-        <li>
-          <a href="/categories/aws"><span></span>aws (5)</a>
-        </li>
-        
-        <li>
-          <a href="/categories/etc"><span></span>etc (3)</a>
-        </li>
-        
-        <li>
-          <a href="/categories/java"><span></span>java (12)</a>
-        </li>
-        
-        <li>
-          <a href="/categories/%EC%83%9D%EA%B0%81%EC%A0%95%EB%A6%AC"><span></span>생각정리 (9)</a>
-        </li>
-        
-      </ul>
-    </div>
-  </div>
-  
-  <div class="sidebar-content">
-    <div class="sidebar-header">
-      <span>RSS</span>
-    </div>
-    <div id="rss">
-      <a href="http://integerous.github.io/index.xml" type="application/rss+xml" target="_blank">
-        <i class="fa fa-rss-square fa-2x" aria-hidden="true"></i>
-      </a>
-    </div>
-  </div>
+
+
+
+
+
 </div>
 
-      </div>
-      <footer>
-        <div id="site-footer-wrap">
-          <div id="site-footer">
-            <span>Powered by <a href="https://gohugo.io/">Hugo</a>.</span>
-            <span>
-              
-              Copyright (c) 2018, <a href="http://integerous.github.io/">Integerous Devlog</a>
-              
-            </span>
-          </div>
-        </div>
-      </footer>
-    </div>
-  </body>
+</div>
+<footer>
+<div id="site-footer-wrap">
+  <div id="site-footer">
+    <span>Powered by <a href="https://gohugo.io/">Hugo</a>.</span>
+    <span>
+      
+      Copyright (c) 2018, <a href="http://integerous.github.io/">Integerous Devlog</a>
+      
+    </span>
+  </div>
+</div>
+</footer>
+</div>
+</body>
 </html>
-

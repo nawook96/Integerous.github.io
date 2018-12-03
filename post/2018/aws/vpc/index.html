@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html lang="ko-kr">
   <head>
@@ -25,7 +27,7 @@
     <script src="https://yandex.st/highlightjs/8.0/highlight.min.js"></script>
     <script>hljs.initHighlightingOnLoad();</script>
     
-    <link rel="stylesheet" type="text/css" href="/css/style.css">
+    <link rel="stylesheet" type="text/css" href="/css/single.css">
     <title>AWS VPC 총정리 | Integerous Devlog</title>
   </head>
   <body>
@@ -56,6 +58,9 @@ if (!doNotTrack) {
       </header>
       <div class="container">
         <div id="main">
+
+
+
 
 <div class="article">
   <header>
@@ -748,179 +753,26 @@ Flow log data is stored using Amazon CloudWatch Logs. After creating a flow log,
     </script>
   </footer>
 </div>
-        </div>
-        <div class="sidebar">
-  
-  
-  <div class="sidebar-content">
-    <div class="sidebar-header">
-      <span>Author</span>
-    </div>
-    <div id="author">
-      <img src="https://ryan-han.com/images/ryanjs.png">
-      <span>Jeongsu Han (Ryan)</span>
-      <div>
-        
-        <a href="https://github.com/integerous"><i class="fa fa-github-square fa-2x" aria-hidden="true"></i></a>
-        
-        
-        
-        <a href="http://bit.ly/2zX6Zmo"><i class="fa fa-facebook-square fa-2x" aria-hidden="true"></i></a>
-        
-      </div>
-    </div>
-  </div>
-  
-  
-  
-  <div class="sidebar-content">
-    <div class="sidebar-header">
-      <span>Table of Contents</span>
-    </div>
-    <nav id="TableOfContents">
-<ul>
-<li>
-<ul>
-<li><a href="#1-what-is-a-vpc">1. What is a VPC ?</a></li>
-<li><a href="#2-what-can-you-do-with-a-vpc">2. What can you do with a VPC ?</a></li>
-<li><a href="#3-default-vpc-vs-custom-vpc">3. Default VPC vs Custom VPC</a>
-<ul>
-<li><a href="#default-vpc">Default VPC</a></li>
-<li><a href="#custom-vpc">Custom VPC</a></li>
-</ul></li>
-<li><a href="#4-vpc-peering">4. VPC Peering</a></li>
-<li><a href="#5-summary">5. Summary</a></li>
-</ul></li>
-<li><a href="#vpc-실습-1">VPC 실습 1</a>
-<ul>
-<li>
-<ul>
-<li><a href="#1-vpc-만들기">1. <strong>VPC 만들기</strong></a></li>
-<li><a href="#2-현재까지-상태">2. <strong>현재까지 상태</strong></a></li>
-<li><a href="#3-subnet-만들기">3. <strong>Subnet 만들기</strong></a></li>
-<li><a href="#4-각-서브넷-cidr-블록에서-첫-4개의-ip-주소와-마지막-ip-주소는-사용자가-사용할-수-없으므로-인스턴스에-할당할-수-없습니다-예를-들어-10-0-0-0-24-cidr-블록의-서브넷에서는-다음-5개-ip-주소가-예약되어-있습니다">4. 각 서브넷 CIDR 블록에서 첫 4개의 IP 주소와 마지막 IP 주소는 사용자가 사용할 수 없으므로 인스턴스에 할당할 수 없습니다. 예를 들어 10.0.0.0/24 CIDR 블록의 서브넷에서는 다음 5개 IP 주소가 예약되어 있습니다.</a></li>
-<li><a href="#5-두번째-subnet-만들기">5. <strong>두번째 Subnet 만들기</strong></a></li>
-<li><a href="#6-현재까지-상태">6. <strong>현재까지 상태</strong></a></li>
-<li><a href="#7-internet-gateway-만들기">7. <strong>Internet Gateway 만들기</strong></a></li>
-<li><a href="#8-route-table-만들기">8. <strong>Route Table 만들기</strong></a></li>
-<li><a href="#9-route-table의-인터넷-연결-설정하기">9. <strong>Route Table의 인터넷 연결 설정하기</strong></a></li>
-<li><a href="#10-subnet을-route-table과-연결하기">10. <strong>Subnet을 Route Table과 연결하기</strong></a></li>
-<li><a href="#11-public-서브넷을-위한-ec2-생성">11. <strong>Public 서브넷을 위한 EC2 생성</strong></a></li>
-<li><a href="#12-private-서브넷을-위한-ec2-생성">12. <strong>Private 서브넷을 위한 EC2 생성</strong></a></li>
-<li><a href="#13-ssh로-접속">13. <strong>ssh로 접속</strong></a></li>
-<li><a href="#14-현재까지-상태">14. <strong>현재까지 상태</strong></a></li>
-<li><a href="#15-이후에-해야할-것">15. <strong>이후에 해야할 것</strong></a></li>
-</ul></li>
-</ul></li>
-<li><a href="#vpc-실습-2">VPC 실습 2</a>
-<ul>
-<li>
-<ul>
-<li><a href="#1-인스턴스명-및-보안그룹-수정">1. 인스턴스명 및 보안그룹 수정</a></li>
-<li><a href="#2-ssh로-public-서버에서-private-서버로-접속해보기-실무에서는-절대-하지-말-것">2. ssh로 Public 서버에서 Private 서버로 접속해보기 (실무에서는 절대 하지 말 것)</a></li>
-</ul></li>
-</ul></li>
-<li><a href="#network-address-translation-nat-nat-instances-nat-gateways">Network Address Translation(NAT) / NAT Instances &amp; NAT Gateways</a>
-<ul>
-<li>
-<ul>
-<li><a href="#1-nat-instance-설정하기">1. NAT Instance 설정하기</a></li>
-<li><a href="#2-nat-인스턴스의-한계">2. NAT 인스턴스의 한계</a></li>
-<li><a href="#3-nat-gateway-설정하기">3. NAT Gateway 설정하기</a></li>
-<li><a href="#4-nat-gateway와-nat-instance-비교">4. NAT Gateway와 NAT Instance 비교</a></li>
-<li><a href="#5-nat-gateway-구성-모습">5. NAT Gateway 구성 모습</a></li>
-<li><a href="#6-정리">6. 정리</a></li>
-</ul></li>
-</ul></li>
-<li><a href="#network-access-control-lists-vs-security-groups">Network Access Control Lists vs. Security Groups</a>
-<ul>
-<li><a href="#1-network-acl-설정">1. Network ACL 설정</a></li>
-<li><a href="#2-exam-tips-network-acls">2. Exam Tips - Network ACLs</a></li>
-</ul></li>
-<li><a href="#load-balancers-custom-vpcs">Load Balancers &amp; Custom VPCs</a>
-<ul>
-<li><a href="#load-balancer-설정">Load Balancer 설정</a></li>
-</ul></li>
-<li><a href="#vpc-flow-logs">VPC Flow Logs</a>
-<ul>
-<li><a href="#flow-log-설정">Flow Log 설정</a></li>
-<li><a href="#vpc-flow-logs-exam-tips">VPC Flow Logs Exam Tips</a></li>
-</ul></li>
-<li><a href="#nat-vs-bastion">NAT vs Bastion</a>
-<ul>
-<li><a href="#bastion-host">Bastion host</a></li>
-<li><a href="#ssh-tunneling">SSH Tunneling</a></li>
-<li><a href="#nat-vs-bastion-exam-tips">NAT vs Bastion Exam Tips</a></li>
-</ul></li>
-<li><a href="#vpc-endpoint">VPC Endpoint</a>
-<ul>
-<li><a href="#프라이빗-네트워크로-endpoint-s3에-접근하기">프라이빗 네트워크로 Endpoint S3에 접근하기</a></li>
-</ul></li>
-<li><a href="#reference">*Reference</a></li>
-</ul>
-</nav>
-  </div>
-  
-  
-  
-  
-  <div class="sidebar-content">
-    <div class="sidebar-header">
-      <span>Categories</span>
-    </div>
-    <div class="categories">
-      <ul>
-        
-        <li>
-          <a href="/categories/2018"><span></span>2018 (29)</a>
-        </li>
-        
-        <li>
-          <a href="/categories/aws"><span></span>aws (5)</a>
-        </li>
-        
-        <li>
-          <a href="/categories/etc"><span></span>etc (3)</a>
-        </li>
-        
-        <li>
-          <a href="/categories/java"><span></span>java (12)</a>
-        </li>
-        
-        <li>
-          <a href="/categories/%EC%83%9D%EA%B0%81%EC%A0%95%EB%A6%AC"><span></span>생각정리 (9)</a>
-        </li>
-        
-      </ul>
-    </div>
-  </div>
-  
-  <div class="sidebar-content">
-    <div class="sidebar-header">
-      <span>RSS</span>
-    </div>
-    <div id="rss">
-      <a href="http://integerous.github.io/index.xml" type="application/rss+xml" target="_blank">
-        <i class="fa fa-rss-square fa-2x" aria-hidden="true"></i>
-      </a>
-    </div>
-  </div>
+
+
+
+
+
 </div>
 
-      </div>
-      <footer>
-        <div id="site-footer-wrap">
-          <div id="site-footer">
-            <span>Powered by <a href="https://gohugo.io/">Hugo</a>.</span>
-            <span>
-              
-              Copyright (c) 2018, <a href="http://integerous.github.io/">Integerous Devlog</a>
-              
-            </span>
-          </div>
-        </div>
-      </footer>
-    </div>
-  </body>
+</div>
+<footer>
+<div id="site-footer-wrap">
+  <div id="site-footer">
+    <span>Powered by <a href="https://gohugo.io/">Hugo</a>.</span>
+    <span>
+      
+      Copyright (c) 2018, <a href="http://integerous.github.io/">Integerous Devlog</a>
+      
+    </span>
+  </div>
+</div>
+</footer>
+</div>
+</body>
 </html>
-
