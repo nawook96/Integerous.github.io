@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Aws on Integerous Devlog</title>
+    <title>Aws on Integerous DevLog</title>
     <link>http://integerous.github.io/categories/aws/</link>
     
-    <description>Recent content in Aws on Integerous Devlog</description>
+    <description>Recent content in Aws on Integerous DevLog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ko-kr</language>
     <lastBuildDate>Sun, 07 Oct 2018 23:30:21 +0900</lastBuildDate>

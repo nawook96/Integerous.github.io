@@ -171,7 +171,7 @@
     color: #303030;
     font-size: 14px;
     padding: 2px 3px;
-    border: 1px dotted #747474;
+    border: 1px solid #747474;
   }
   
   .tags a:hover {
@@ -398,7 +398,7 @@
   #TableOfContents{
     font-size: 12px;
     padding: 10px;
-    border: 1px solid #B4B3BA;
+    /* border: 1px solid #B4B3BA; */
   }
   
   #TableOfContents li a{

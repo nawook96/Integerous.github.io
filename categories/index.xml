@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Categories on Integerous Devlog</title>
+    <title>Categories on Integerous DevLog</title>
     <link>http://integerous.github.io/categories/</link>
     
-    <description>Recent content in Categories on Integerous Devlog</description>
+    <description>Recent content in Categories on Integerous DevLog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ko-kr</language>
     <lastBuildDate>Sun, 02 Dec 2018 00:37:49 +0900</lastBuildDate>
