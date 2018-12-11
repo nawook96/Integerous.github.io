@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>http://integerous.github.io/post/2018/etc/books/</loc>
+    <lastmod>2018-12-04T00:29:40+09:00</lastmod>
+  </url>
+  
+  <url>
     <loc>http://integerous.github.io/post/2018/java/java-serialization/</loc>
     <lastmod>2018-12-02T00:39:53+09:00</lastmod>
   </url>
@@ -149,7 +154,7 @@
   
   <url>
     <loc>http://integerous.github.io/categories/2018/</loc>
-    <lastmod>2018-12-02T00:39:53+09:00</lastmod>
+    <lastmod>2018-12-04T00:29:40+09:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -172,8 +177,14 @@
   </url>
   
   <url>
+    <loc>http://integerous.github.io/tags/book/</loc>
+    <lastmod>2018-12-04T00:29:40+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>http://integerous.github.io/categories/</loc>
-    <lastmod>2018-12-02T00:39:53+09:00</lastmod>
+    <lastmod>2018-12-04T00:29:40+09:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -197,7 +208,7 @@
   
   <url>
     <loc>http://integerous.github.io/categories/etc/</loc>
-    <lastmod>2018-10-30T01:41:06+09:00</lastmod>
+    <lastmod>2018-12-04T00:29:40+09:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -221,7 +232,7 @@
   
   <url>
     <loc>http://integerous.github.io/</loc>
-    <lastmod>2018-12-02T00:39:53+09:00</lastmod>
+    <lastmod>2018-12-04T00:29:40+09:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -239,7 +250,7 @@
   
   <url>
     <loc>http://integerous.github.io/post/</loc>
-    <lastmod>2018-12-02T00:39:53+09:00</lastmod>
+    <lastmod>2018-12-04T00:29:40+09:00</lastmod>
     <priority>0</priority>
   </url>
   

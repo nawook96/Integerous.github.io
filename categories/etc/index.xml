@@ -7,8 +7,17 @@
     <description>Recent content in Etc on Integerous DevLog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ko-kr</language>
-    <lastBuildDate>Sat, 20 Oct 2018 21:17:01 +0900</lastBuildDate>
+    <lastBuildDate>Tue, 04 Dec 2018 00:29:40 +0900</lastBuildDate>
     <atom:link href="/categories/etc/" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>내가 읽은&#43;읽을 개발서적 정리</title>
+      <link>http://integerous.github.io/post/2018/etc/books/</link>
+      <pubDate>Tue, 04 Dec 2018 00:29:40 +0900</pubDate>
+      
+      <guid>http://integerous.github.io/post/2018/etc/books/</guid>
+      <description>2018년 12월 11일 기준 읽고 있는 책 HTTP 완벽 가이드 SQL 레벨업 하루 3분 네트워크 교실 그림으로 개념을 이해하는 알고리즘 프로그래밍 대회에서 배우는 알고리즘 문</description>
+    </item>
     
     <item>
       <title>Git으로 협업하는 방법</title>
