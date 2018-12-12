@@ -43,6 +43,8 @@
     margin-left: auto;
     padding-bottom:50px;
     overflow: hidden;
+    display: flex;
+      justify-content: center;
   }
   
   /**

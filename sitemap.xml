@@ -4,7 +4,7 @@
   
   <url>
     <loc>http://integerous.github.io/post/2018/etc/books/</loc>
-    <lastmod>2018-12-04T00:29:40+09:00</lastmod>
+    <lastmod>2018-12-12T01:39:27+09:00</lastmod>
   </url>
   
   <url>
@@ -154,18 +154,18 @@
   
   <url>
     <loc>http://integerous.github.io/categories/2018/</loc>
-    <lastmod>2018-12-04T00:29:40+09:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://integerous.github.io/tags/aws/</loc>
-    <lastmod>2018-11-29T22:32:49+09:00</lastmod>
+    <lastmod>2018-12-12T01:39:27+09:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>http://integerous.github.io/categories/aws/</loc>
+    <lastmod>2018-11-29T22:32:49+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://integerous.github.io/tags/aws/</loc>
     <lastmod>2018-11-29T22:32:49+09:00</lastmod>
     <priority>0</priority>
   </url>
@@ -178,13 +178,13 @@
   
   <url>
     <loc>http://integerous.github.io/tags/book/</loc>
-    <lastmod>2018-12-04T00:29:40+09:00</lastmod>
+    <lastmod>2018-12-12T01:39:27+09:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>http://integerous.github.io/categories/</loc>
-    <lastmod>2018-12-04T00:29:40+09:00</lastmod>
+    <lastmod>2018-12-12T01:39:27+09:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -208,7 +208,7 @@
   
   <url>
     <loc>http://integerous.github.io/categories/etc/</loc>
-    <lastmod>2018-12-04T00:29:40+09:00</lastmod>
+    <lastmod>2018-12-12T01:39:27+09:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -232,13 +232,7 @@
   
   <url>
     <loc>http://integerous.github.io/</loc>
-    <lastmod>2018-12-04T00:29:40+09:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://integerous.github.io/tags/java/</loc>
-    <lastmod>2018-12-02T00:39:53+09:00</lastmod>
+    <lastmod>2018-12-12T01:39:27+09:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -249,8 +243,14 @@
   </url>
   
   <url>
+    <loc>http://integerous.github.io/tags/java/</loc>
+    <lastmod>2018-12-02T00:39:53+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>http://integerous.github.io/post/</loc>
-    <lastmod>2018-12-04T00:29:40+09:00</lastmod>
+    <lastmod>2018-12-12T01:39:27+09:00</lastmod>
     <priority>0</priority>
   </url>
   
