@@ -751,6 +751,7 @@
   
     .container {
       width: auto;
+      display: block;
     }
   
     .content {
